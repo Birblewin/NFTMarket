@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lexend", sans-serif;
+  background-color: #141414;
+}
+
+.carousel-container {
+  width: 100vw;
+  position: relative;
+}
+.hidden.carousel {
+  display: none;
+}
+.active.carousel {
+  display: block;
+}
+.active.carousel {
+  display: flex;
+  align-items: center;
+}
+
+.details-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 1;
+  padding: 1rem;
+}
+
+.image-container img {
+  width: 80%;
+  height: auto;
+  border-radius: 30px;
+  margin: 20px;
+}
+.carousel-container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.carousel-slideshow {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-card-container.active {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.8s ease;
+}
+
+.carousel-card-container.active {
+  transform: translateX(0);
+}
+
+.title {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.trending {
+  font-size: 14px;
+  color: #ffdb24;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  position: relative;
+  flex: 1;
+  padding: 20px;
+  width: 60%;
+  height: 100%;
+}
+.nft-details {
+  max-width: 100%;
+  color: #8b919b;
+  margin-bottom: 50px;
+}
+
+.image-container {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+}
+
+.image-container img {
+
+  max-width: 350px;
+  height: auto;
+  margin-left: 300px;
+  
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.carousel-control {
+  padding: 10px;
+  background: #141414;
+  border: none;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  left: -20px;
+  color: #8b919b;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.carousel-control-next {
+  position: absolute;
+  color: #8b919b;
+  font-size: 36px;
+  right: -20px;
+  cursor: pointer;
+}
+
+.major-button {
+  background-color: #ffdb24;
+  padding: 1em 2em;
+  margin: 0;
+  position: absolute;
+  bottom: 10;
+  height: 51px;
+  font-size: 16px;
+  font-family: inherit;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
