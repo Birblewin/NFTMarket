@@ -1,27 +1,48 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Import your CSS file for styling
-
+import SearchIcon from '@mui/icons-material/Search';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 function Navbar() {
-  const [isMobile, setIsMobile] = useState(false);
+ 
 
-  const handleToggle = () => {
-    setIsMobile(!isMobile);
-  };
 
   return (
-    <div className={`navbar ${isMobile ? 'mobile' : ''}`}>
-      <div className="logo">Your Logo</div>
-      <ul className={`nav-links ${isMobile ? 'active' : ''}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div className="mobile-toggle" onClick={handleToggle}>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div className='navbar'>
+      <a href="/">
+      <div className='nav-title'>
+      <img src='../img/birble.png'/>
+      <p>Birble.store</p>
       </div>
+      </a>
+      
+        
+      <SearchIcon className='search-icon'/>
+      <div>
+      
+      <input
+       className="search-bar"
+        type="text"
+        placeholder="Search collection, or NFT" 
+        
+      />
+    </div>
+     
+      <div className="nav-links">
+        <div ><a className='rewards' href="/rewards">Rewards</a></div>
+        <span><a href="/explore">Explore</a></span>
+        <span><a href="/creators">Creators</a></span>
+        <span><a href="/about">About</a></span>
+        <span><a href="/launchpad">Launchpad</a></span>
+        <span><LightModeIcon className='light-mode-icon'/></span>
+        <span><NotificationsIcon className='notification-icon'/></span>
+        <div className='en'>EN</div>
+        <button className='wallet'>Connect wallet</button>
+      </div>
+    
+      
+      
+      
     </div>
   );
 }
