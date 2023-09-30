@@ -6,13 +6,16 @@
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-    max-height: 50px;
-  }
+    height: 95px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
   
 .navbar img{
   width: 60px;
   margin: 10px;
 }
+
 .navbar p{
   font-size: 28px;
   font-weight: bold;
@@ -20,62 +23,73 @@
   margin-right: 30px;
   color: white;
   text-decoration: none;
+  text-align: center;
 }
+
 .nav-title{
   display:flex ;
+  justify-content: center;
+  align-items: center;
 }
+
 .navbar a{
   text-decoration: none;
 }
+
 .search-bar{
-  background: #14141480;
+  background-color: #14141480;
   padding: 12px 0px 12px 44px;
-  border-radius: 10px;
   border-width: 0.1px;
   border-style: solid;
   border-color: #5f5f5f;
   margin-left: -35px;
-
-
+  border-radius: 20px;
+  border: 1px solid #8B919B;
 }
+
 .search-icon{
- 
-  
   color: #706f6f;
 }
+
 .nav-links{
   text-decoration: none;
-   align-items: center;
+  align-items: center;
   display: flex;
   margin: 0px 20px 0px 80.104px;
   padding: 0px 0px 0px 20px;
+  justify-content: space-evenly;
 }
+
 .nav-links span{
   font-size: 16px;
   margin: 0px 32px 0px 0px;
 }
-.nav-links span a{
- 
+
+.nav-links span a{ 
   color: white;
   text-decoration: none;
-  
 }
+
 .rewards{
   color: #FFDB24;
   text-decoration: none;
   margin: 0px 32px 0px 0px;
   font-size: 16px;
 }
+
 .light-mode-icon{
   color: #FFDB24;
 }
+
 .notification-icon{
   color: #9CA3AF;
 }
+
 .en{
   color: #9CA3AF;
   font-size: 16px;
 }
+
 .wallet{
   color: #000000;
   font-size: 14px;
@@ -84,5 +98,5 @@
   border: none;
   border-radius: 10px;
   margin: 10px;
-  
+  margin-left: 25px;  
 }
