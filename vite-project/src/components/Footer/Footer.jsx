@@ -26,8 +26,8 @@ export default function Footer(){
                             alt="Instagram_logo"
                             title='Instagram_account'
                             loading='lazy'
-                            width={100}
-                            height={100}
+                            width={35}
+                            height={30}
                         />
                     </a>
 
@@ -37,8 +37,8 @@ export default function Footer(){
                             alt="Facebook_logo"
                             title='Facebook_account'
                             loading='lazy'
-                            width={100}
-                            height={100}
+                            width={35}
+                            height={30}
                         />
                     </a>
 
@@ -48,8 +48,8 @@ export default function Footer(){
                             alt="Telegram_logo"
                             title='Telegram_account'
                             loading='lazy'
-                            width={100}
-                            height={100}
+                            width={35}
+                            height={30}
                         />
                     </a>
 
@@ -59,32 +59,32 @@ export default function Footer(){
                             alt="Twitter_logo"
                             title='Twitter_account'
                             loading='lazy'
-                            width={100}
-                            height={100}
+                            width={35}
+                            height={30}
                         />
                     </a>
                 </div>
             </div>
 
-            <div className='footer__browse'>
-                <h3 className="footer__browse--title">Browse</h3>
-                <a className="footer__browse--link" href='/'>Marketplace</a>
-                <a className="footer__browse--link" href='/'>Collections</a>
+            <div className='footer__list'>
+                <h3 className="footer__list--title">Browse</h3>
+                <a className="footer__list--link" href='/'>Marketplace</a>
+                <a className="footer__list--link" href='/'>Collections</a>
             </div>
 
-            <div className='footer__creators'>
-                <h3 className="footer__browse--title">Creators</h3>
-                <a className="footer__browse--link" href='/'>Verification</a>
-                <a className="footer__browse--link" href='/'>NFT Mining</a>
+            <div className='footer__list'>
+                <h3 className="footer__list--title">Creators</h3>
+                <a className="footer__list--link" href='/'>Verification</a>
+                <a className="footer__list--link" href='/'>NFT Mining</a>
             </div>
 
-            <div className='footer__about'>
-                <h3 className="footer__browse--title">About</h3>
-                <a className="footer__browse--link" href='/'>Our Team</a>
-                <a className="footer__browse--link" href='/'>Our Impact</a>
-                <a className="footer__browse--link" href='/'>See FAQ</a>
-                <a className="footer__browse--link" href='/'>Terms and conditions</a>
-                <a className="footer__browse--link" href='/'>Privacy Policy</a>
+            <div className='footer__list about'>
+                <h3 className="footer__list--title">About</h3>
+                <a className="footer__list--link" href='/'>Our Team</a>
+                <a className="footer__list--link" href='/'>Our Impact</a>
+                <a className="footer__list--link" href='/'>See FAQ</a>
+                <a className="footer__list--link" href='/'>Terms and conditions</a>
+                <a className="footer__list--link" href='/'>Privacy Policy</a>
             </div>
         </footer>
     )
