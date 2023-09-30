@@ -1,7 +1,7 @@
 import React from 'react'
 import Launchpadcontainer from './Launchpadcontainer'
 
-const launchpad = () => {
+const Launchpad = () => {
   return (
     <div className='Launchpad-container'>
       <h1>Launchpad</h1>
@@ -10,4 +10,4 @@ const launchpad = () => {
   )
 }
 
-export default launchpad
+export default Launchpad

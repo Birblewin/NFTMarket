@@ -3,8 +3,8 @@ import './table.css'; // Import the CSS file
 
 class TableContainer extends React.Component {
   render() {
-    const data = [
-      { id: 1, Collections: "Reezy", Volume: 30,Floors: 444 , Owners: 34 },
+    let data = [
+      { id: 1, Collections: "Reezy", Volume: 757,Floors: 444 , Owners: 34 },
       { id: 2, Collections: "Supper", Volume: 25, Floors:445 , Owners: 34 },
       { id: 1, Collections: "Ape", Volume: 30 , Floors: 544, Owners: 56 },
       { id: 2, Collections: "New", Volume: 25 ,Floors: 543, Owners: 77 },
