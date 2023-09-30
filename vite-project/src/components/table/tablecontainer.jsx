@@ -12,7 +12,27 @@ class TableContainer extends React.Component {
     ];
 
     return (
-      <div className="Tablecontainer">
+      <div className="TableContainer">
+        <table>
+          <thead>
+            <tr>
+              <th>Collections</th>
+              <th>Volume</th>
+              <th>Floors</th>
+              <th>Owner</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item) => (
+              <tr key={item.id}>
+                <td>{item.Collections}</td>
+                <td>{item.Volume}</td>
+                <td>{item.Floors}</td>
+                <td>{item.Owners}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
         <table>
           <thead>
             <tr>

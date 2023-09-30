@@ -7,6 +7,7 @@
   align-items: center; /* Center the table vertically */
   
 }
+
 h4{
   color: #FFFFFF;
   margin-left: 150px;
@@ -15,6 +16,7 @@ h4{
 .bt{
   margin-left: 90%;
   background-color: #18191B;
+  padding: 15px;
   
 }
 /* Table styles */
@@ -31,7 +33,7 @@ table {
 th, td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd; /* Border between rows */
+  border-bottom: 1px solid #1D2022; /* Border between rows */
 }
 tr{
   color: #F0FFFF;
