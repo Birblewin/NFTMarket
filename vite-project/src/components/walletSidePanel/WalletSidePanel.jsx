@@ -9,12 +9,13 @@ export default function WalletSidePanel(){
     return(
         <div className="side_panel_container">
             <div className="side_panel_container__side_panel">
+
                 <figure className="side_panel_container__side_panel--title">
-                    <p>&#128091;</p>
-                    <h1>Connect Wallet</h1>
+                    <p title='Click To Close'>&#128091;</p>
+                    <h3>Connect Wallet</h3>
                     
                     <figcaption className='side_panel--title--description'>
-                        <p>By connecting your wallet, you agree to the <span>Terms & Conditions</span> and <span>Privacy Policy</span></p>
+                        <p>By connecting your wallet, you agree to the <a href='/' target='_blank'>Terms & Conditions</a> and <a href='/' target='_blank'>Privacy Policy</a></p>
                     </figcaption>
                 </figure>
 
