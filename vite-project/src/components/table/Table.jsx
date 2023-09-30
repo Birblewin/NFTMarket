@@ -28,7 +28,7 @@ const Table = () => {
         border-radius={10}
           />&nbsp;
              Biggs</td>
-            <td>433.43K <br /> <span color='red'>43%</span></td>
+            <td>433.43K <br /> 43%</td>
             <td>433 <br /> 65%</td>
             <td>433 <br /> 4.4%</td>
           </tr>
