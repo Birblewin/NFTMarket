@@ -1,0 +1,41 @@
+/* TableContainer styles */
+.TableContainer {
+    height: 50vh; /* 50% of the viewport height */
+    background-color: #141414;
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+    align-items: center; /* Center the table vertically */
+  }
+  
+  /* Table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+
+  }
+
+  th, td {
+    border-bottom: 1px solid #1D2022;
+    padding: 8px;
+    text-align: left;
+  }
+  tr{
+    color: #FFFFFF;
+  }
+  
+  th {
+    background-color: #141414;
+    color: #9CA3AF;
+  }
+
+  .table2{
+    padding-left: 30px;
+    display: flex;
+  }
+  .table-wrapper{
+    justify-content: center;
+    display: flex;
+  }
+  /* Add more CSS rules as needed */
+  

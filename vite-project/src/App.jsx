@@ -4,6 +4,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Carousel from './components/carousel/Carousel'
 import WhaleActivityContainer from './components/whaleActivity/WhaleActivityContainer'
 import Footer from './components/footer/Footer';
+import Table from './components/table/Table'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Navbar/>
         <Carousel/>
         <WhaleActivityContainer />
+        <Table/>
         
         <div className='top'>
           <div className='collection'>
