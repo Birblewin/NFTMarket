@@ -34,7 +34,11 @@ function App() {
 
   return (
     <>
-        {showWalletSidePanel && <WalletSidePanel/>}
+        {
+          showWalletSidePanel && <WalletSidePanel
+              hideWalletSidePanel = {() => setShowWalletSidePanel(false)}
+            />
+        }
         
         <Navbar
           searchData = {searchData}
