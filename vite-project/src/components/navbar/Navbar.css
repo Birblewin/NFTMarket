@@ -17,13 +17,16 @@
 }
 
 .navbar p{
-  font-size: 28px;
-  font-weight: bold;
   margin-left: -10px;
   margin-right: 30px;
-  color: white;
   text-decoration: none;
   text-align: center;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .nav-title{
@@ -37,18 +40,29 @@
 }
 
 .search-bar{
-  background-color: #14141480;
   padding: 12px 0px 12px 44px;
-  border-width: 0.1px;
-  border-style: solid;
-  border-color: #5f5f5f;
   margin-left: -35px;
+  width: 240px;
+  height: 43px;
+  flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid #8B919B;
+  background-color: rgba(255, 255, 255, 0.00);
+
 }
 
 .search-icon{
   color: #706f6f;
+  cursor: pointer;
+}
+
+input{
+  color: #8B919B;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .nav-links{
@@ -61,8 +75,13 @@
 }
 
 .nav-links span{
-  font-size: 16px;
   margin: 0px 32px 0px 0px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .nav-links span a{ 
@@ -71,18 +90,24 @@
 }
 
 .rewards{
-  color: #FFDB24;
   text-decoration: none;
   margin: 0px 32px 0px 0px;
-  font-size: 16px;
+  color: #FFDB24;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .light-mode-icon{
   color: #FFDB24;
+  cursor: pointer;
 }
 
 .notification-icon{
   color: #9CA3AF;
+  cursor: pointer;
 }
 
 .en{
@@ -98,5 +123,12 @@
   border: none;
   border-radius: 10px;
   margin: 10px;
-  margin-left: 25px;  
+  margin-left: 25px;
+  transition: all 500ms ease-in-out normal;
+  cursor: pointer;  
+}
+
+.wallet:active{
+  scale: 0.8;
+  opacity: 0.7;
 }
