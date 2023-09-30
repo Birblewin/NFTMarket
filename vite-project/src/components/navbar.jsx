@@ -45,7 +45,7 @@ function Navbar() {
       </span>
 
       <span>
-        <a href="/launchpad">Launchpad</a>
+        <a href="../pages/launchpad.jsx">Launchpad</a>
       </span>
 
       <span>
