@@ -9,11 +9,14 @@ import Carousel from './components/carousel/Carousel'
 import WhaleActivityContainer from './components/whaleActivity/WhaleActivityContainer'
 import Footer from './components/footer/Footer';
 import Table from './components/Table/table';
+import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
+
+// IMPORT CSS FILE
 import './App.css'
 
 function App() {
   // A BOOLEAN TO INDICATE IF TO SHOW SIDE PANEL
-  // const [showSideWalletPanel, setShowSideWalletPanel] = React.useState(false)
+  const [showWalletSidePanel, setShowWalletSidePanel] = React.useState(false)
   // A USESTATE TO UPDATE SEARCHDATA FROM SEARCHBAR
   const [searchData, setSearchData] = React.useState({ searchInput: "" })
 
@@ -31,9 +34,12 @@ function App() {
 
   return (
     <>
+        {showWalletSidePanel && <WalletSidePanel/>}
+        
         <Navbar
           searchData = {searchData}
           handleSearchData = {(e) => updateSearchData(e)}
+          showWalletSidePanel = {() => setShowWalletSidePanel(true)}
         />
 
         <Carousel/>

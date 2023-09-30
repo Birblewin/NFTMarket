@@ -5,6 +5,7 @@ body{
   min-height: 100vh;
   scroll-behavior: smooth;
   position: relative;
+  transition: all 500ms ease-in-out normal;
 }
 
 .cards{

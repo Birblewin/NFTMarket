@@ -59,7 +59,11 @@ export default function Navbar(props) {
         </span>
 
         <div className='en'>EN</div>
-        <button className='wallet'>Connect wallet</button>
+        
+        <button 
+          className='wallet'
+          onClick={props.showWalletSidePanel}
+        >Connect wallet</button>
       </div>  
     </div>
   );

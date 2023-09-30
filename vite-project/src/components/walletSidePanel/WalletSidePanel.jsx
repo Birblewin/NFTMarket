@@ -1,9 +1,17 @@
+// IMPORING NECESSARY DATABASE
+// import walletSidePanelData from '../../database/walletSidePanelData.json'
+
+// IMPORING CSS FILE
+import './WalletSidePanel.css'
+
 // EXPORTING A FUNCTION THAT RETURNS A WALLETSIDEPANEL COMPONENT
 export default function WalletSidePanel(){
     return(
         <div className="side_panel_container">
             <div className="side_panel_container__side_panel">
-                <figure className="side_panel_container__side_panel--title"></figure>
+                <figure className="side_panel_container__side_panel--title">
+
+                </figure>
 
                 <small className="side_panel_container__side_panel--heading"></small>
 
