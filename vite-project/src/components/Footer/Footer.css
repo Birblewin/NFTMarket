@@ -79,6 +79,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 5px;
+    margin-top: -100px;
 }
 
 .footer__list--title{
@@ -101,5 +102,5 @@
 }
 
 .footer__list.about{
-    margin-top: 60px;
+    margin-top: -40px;
 }
