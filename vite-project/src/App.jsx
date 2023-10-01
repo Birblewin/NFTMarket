@@ -12,7 +12,7 @@ import Table from './components/Table/table';
 import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
 
 import AllCollections from './pages/AllCollections/AllCollections';
-
+import AllNfts from './pages/AllNFTS/AllNfts';
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 
@@ -49,6 +49,7 @@ function App() {
          <Route path='/allcollections' element={<AllCollections />} />
          <Route path="/rewardspage" element={<RewardsPage />} />
          <Route path="/launchpad" element={<Launchpad />} />
+         <Route path="/allnfts" element={<AllNfts />} />
         </Routes>
       
       </BrowserRouter>

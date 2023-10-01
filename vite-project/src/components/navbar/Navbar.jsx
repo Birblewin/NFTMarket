@@ -34,18 +34,42 @@ export default function Navbar(props) {
           <a className='rewards' href="/rewardspage">Rewards</a>
         </div>
 
-        <span>
+       <div className='dropdown'>
+       <span>
           <a href="/explore">Explore</a>
+          <div className="dropdown-content">
+      {/* Dropdown links */}
+      <a href="/allcollections">All collections</a>
+      <a href="/allnfts">All NFTs</a>
+      {/* Add more links as needed */}
+    </div>
         </span>
+        </div>
 
-        <span>
+       <div className='dropdown'>
+       <span>
           <a href="/creators">Creators</a>
+          <div className="dropdown-content">
+      {/* Dropdown links */}
+      <a href="#">Create your collection</a>
+      <a href="#">Verify your collection</a>
+      {/* Add more links as needed */}
+    </div>
         </span>
+       </div>
 
+        <div className='dropdown'>
         <span>
           <a href="/about">About</a>
+          <div className="dropdown-content">
+      {/* Dropdown links */}
+      <a href="#">Our team</a>
+      <a href="#">Our impact</a>
+      {/* Add more links as needed */}
+    </div>
         </span>
-
+        </div>
+        
         <span>
           <a href="/launchpad">Launchpad</a>
         </span>
