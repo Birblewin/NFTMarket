@@ -31,7 +31,7 @@ export default function Navbar(props) {
      
       <div className="nav-links">
         <div>
-          <a className='rewards' href="/rewards">Rewards</a>
+          <a className='rewards' href="/rewardspage">Rewards</a>
         </div>
 
         <span>
@@ -47,7 +47,7 @@ export default function Navbar(props) {
         </span>
 
         <span>
-          <a href="../pages/launchpad.jsx">Launchpad</a>
+          <a href="/launchpad">Launchpad</a>
         </span>
 
         <span>
