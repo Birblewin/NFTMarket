@@ -13,6 +13,7 @@ import WhaleActivityContainer from './components/whaleActivity/WhaleActivityCont
 import Footer from './components/footer/Footer';
 import Table from './components/Table/table';
 import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
+import AllCollections from './pages/AllCollections/AllCollections';
 
 // IMPORT CSS FILE
 import './App.css'
@@ -79,6 +80,7 @@ function App() {
         </section> 
 
         <Footer/>
+        <AllCollections />
     </>
   )
 }

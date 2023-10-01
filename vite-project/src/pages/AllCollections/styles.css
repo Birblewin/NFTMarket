@@ -1,0 +1,32 @@
+.all-collections {
+    align-items: center;
+}
+.cards-container {
+    align-content: center;
+    display: grid; /* This creates a grid container */
+    grid-template-columns: repeat(5, 1fr); /* 3 columns with equal width */
+    gap: 20px;
+    padding: 30px;
+    margin-bottom: 80px;
+  }
+.collection-card {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 10px;
+    background-color: #18191b;
+    border-radius: 20px;
+    max-width: fit-content;
+    border:  solid 1px #555c69 ;
+}
+
+.collection-card .collection-card-img-container img {
+    width: 200px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 0;
+}
+
+.collection-details-container {
+    padding: 10px;
+    color: #99a0ac;
+}
