@@ -2,7 +2,7 @@
 import React from 'react';
 
 // IMPORTING VARIOUS COMPONENTS
-import Navbar from './components/navbar/Navbar'
+import Navbar from './components/navbar/navbar'
 import Card from './components/CollectionCard'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Carousel from './components/carousel/Carousel'
