@@ -1,6 +1,4 @@
-import React from 'react'
 import './launchpad.css'
-import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ProgressBar from './progressbarholder';
 import CountdownTimer from './timer'
