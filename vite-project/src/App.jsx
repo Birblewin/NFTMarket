@@ -5,15 +5,17 @@ import Carousel from './components/carousel/Carousel'
 import WhaleActivityContainer from './components/whaleActivity/WhaleActivityContainer'
 import Footer from './components/footer/Footer';
 import Table from './components/Table/table'
+import Launchpad from './pages/launchpad/launchpad'
 import './App.css'
 
 function App() {
   return (
     <>
         <Navbar/>
-        <Carousel/>
+        <Launchpad/>
+         {/* <Carousel/>
         <WhaleActivityContainer />
-        <Table/>
+        <Table/> */}
         
         <div className='top'>
           <div className='collection'>
@@ -34,7 +36,7 @@ function App() {
           <Card/>
           <Card/>
           <Card/>
-        </section>
+        </section> 
 
         <Footer/>
     </>
