@@ -36,7 +36,7 @@ export default function Navbar(props) {
 
        <div className='dropdown'>
        <span>
-          <a href="/explore">Explore</a>
+          <a>Explore</a>
           <div className="dropdown-content">
       {/* Dropdown links */}
       <a href="/allcollections">All collections</a>
@@ -48,7 +48,7 @@ export default function Navbar(props) {
 
        <div className='dropdown'>
        <span>
-          <a href="/creators">Creators</a>
+          <a >Creators</a>
           <div className="dropdown-content">
       {/* Dropdown links */}
       <a href="#">Create your collection</a>
@@ -60,7 +60,7 @@ export default function Navbar(props) {
 
         <div className='dropdown'>
         <span>
-          <a href="/about">About</a>
+          <a >About</a>
           <div className="dropdown-content">
       {/* Dropdown links */}
       <a href="#">Our team</a>
