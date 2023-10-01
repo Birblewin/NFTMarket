@@ -2,6 +2,7 @@ import './launchpad.css'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ProgressBar from './progressbarholder';
 import CountdownTimer from './timer'
+import Overviewteam from './columns/overview-team'
 const Launchpadcontainer = () => {
   return (
     <div className="container">
@@ -56,6 +57,7 @@ const Launchpadcontainer = () => {
         <button style={{backgroundColor:'#2a2a24',padding:'18px',paddingLeft:'30px',paddingRight:'30px', borderRadius:'30px',marginLeft:'180px', fontSize:'14px'}}>Make offer</button><button style={{backgroundColor:'#2a2a24',padding:'18px',paddingLeft:'30px',paddingRight:'30px', borderRadius:'30px',fontSize:'14px'}}>Explore all NFTs</button>
       </div>
     </div>
+    
  </div>
 
   )

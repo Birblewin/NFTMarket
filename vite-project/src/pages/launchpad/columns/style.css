@@ -2,13 +2,25 @@
 
 .two-column {
     display: flex;
-    justify-content: space-between; /* Arrange columns with space in between */
+    justify-content: space-between ; /* Arrange columns with space in between */
+    align-items: center;
   }
   
   .column {
     flex: 1; /* Each column takes up equal width */
     padding: 10px; /* Add padding for spacing */
   }
-  .column-container{
-    background-color: red;
+  .left-column {
+    padding: auto;
+    max-width: 45%;
+    color: #ffff;
+  }
+  .right-column {
+    padding: auto;
+    max-width: 45%;
+    color: #ffff;
+  }
+  .Details{
+    background-color:#141414;
+    padding: 80px;
   }
