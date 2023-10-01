@@ -1,18 +1,24 @@
+
+
 // IMPORTING REACT
 import React from 'react';
 
 // IMPORTING VARIOUS COMPONENTS
-import Navbar from './components/navbar/navbar'
-import Card from './components/CollectionCard'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import Carousel from './components/carousel/Carousel'
-import WhaleActivityContainer from './components/whaleActivity/WhaleActivityContainer'
+import Navbar from './components/navbar/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Footer from './components/footer/Footer';
 import Table from './components/Table/table';
 import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
 
+import AllCollections from './pages/AllCollections/AllCollections';
+import AllNfts from './pages/AllNFTS/AllNfts';
+import RewardsPage from './pages/RewardsPage'
+import Home from './pages/Home';
+
 // IMPORT CSS FILE
 import './App.css'
+import Launchpad from './pages/launchpad/launchpad';
 
 function App() {
   // A BOOLEAN TO INDICATE IF TO SHOW SIDE PANEL
@@ -32,45 +38,24 @@ function App() {
     )
   }
 
+ 
   return (
     <>
-        {
-          showWalletSidePanel && <WalletSidePanel
-              hideWalletSidePanel = {() => setShowWalletSidePanel(false)}
-            />
-        }
-        
-        <Navbar
-          searchData = {searchData}
-          handleSearchData = {(e) => updateSearchData(e)}
-          showWalletSidePanel = {() => setShowWalletSidePanel(true)}
-        />
 
-        <Carousel/>
-        <WhaleActivityContainer />      
-        <Table/>
+     <BrowserRouter>
+     <Navbar/>
+        <Routes>
+         <Route path='/' element={<Home />} />
+         <Route path='/allcollections' element={<AllCollections />} />
+         <Route path="/rewardspage" element={<RewardsPage />} />
+         <Route path="/launchpad" element={<Launchpad />} />
+         <Route path="/allnfts" element={<AllNfts />} />
+        </Routes>
+      
+      </BrowserRouter>
+      
         
-        <div className='top'>
-          <div className='collection'>
-            <h3 className='title'>Top collections  <span>Generative</span></h3> <KeyboardArrowDownIcon className='arrow-down'/>
-          </div>
-          
-          <button>View all</button>
-        </div>
         
-        <section className='cards'>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-        </section>
-
         <Footer/>
     </>
   )

@@ -5,13 +5,28 @@
   display: flex;
   justify-content: center; /* Center the table horizontally */
   align-items: center; /* Center the table vertically */
-  
+  padding-bottom: 10%;
 }
-
+.bg{
+  background-color: #1D2022;
+  display: flex;
+  padding: 5px;
+  margin-left: 30%;
+  margin-right: 42%;
+  font-size: 13px;
+  border-radius: 15px;
+}
+.header{
+  justify-content: center;
+}
 h4{
   color: #FFFFFF;
-  margin-left: 150px;
-  margin-top: 70px;
+  margin-left: 20%;
+  margin-top: 80px;
+}
+.upside{
+  display: flex;
+  justify-content: center;
 }
 .bt{
   margin-left: 90%;

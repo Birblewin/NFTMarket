@@ -24,30 +24,54 @@ export default function Navbar(props) {
           placeholder="Search collection, or NFT"
           name="searchInput"
           // eslint-disable-next-line react/prop-types
-          value={props.searchData.searchInput}
-          onChange={props.handleSearchData}
+         /*  value={props.searchData.searchInput || "Search collection, or NFT"}
+          onChange={props.handleSearchData} */
         />
       </div>
      
       <div className="nav-links">
         <div>
-          <a className='rewards' href="/rewards">Rewards</a>
+          <a className='rewards' href="/rewardspage">Rewards</a>
         </div>
 
-        <span>
-          <a href="/explore">Explore</a>
+       <div className='dropdown'>
+       <span>
+          <a>Explore</a>
+          <div className="dropdown-content">
+      {/* Dropdown links */}
+      <a href="/allcollections">All collections</a>
+      <a href="/allnfts">All NFTs</a>
+      {/* Add more links as needed */}
+    </div>
         </span>
+        </div>
 
-        <span>
-          <a href="/creators">Creators</a>
+       <div className='dropdown'>
+       <span>
+          <a >Creators</a>
+          <div className="dropdown-content">
+      {/* Dropdown links */}
+      <a href="#">Create your collection</a>
+      <a href="#">Verify your collection</a>
+      {/* Add more links as needed */}
+    </div>
         </span>
+       </div>
 
+        <div className='dropdown'>
         <span>
-          <a href="/about">About</a>
+          <a >About</a>
+          <div className="dropdown-content">
+      {/* Dropdown links */}
+      <a href="#">Our team</a>
+      <a href="#">Our impact</a>
+      {/* Add more links as needed */}
+    </div>
         </span>
-
+        </div>
+        
         <span>
-          <a href="../pages/launchpad.jsx">Launchpad</a>
+          <a href="/launchpad">Launchpad</a>
         </span>
 
         <span>
