@@ -39,60 +39,69 @@ export default function Navbar(props) {
         </div>
 
        <div className='dropdown'>
-       <span>
+        <span>
           <a>Explore</a>
+          
           <div className="dropdown-content">
-      {/* Dropdown links */}
-      <NavLink to="/allcollections">All collections</NavLink>
-      <NavLink to="/allnfts">All NFTs</NavLink>
-      {/* Add more links as needed */}
-    </div>
+            {/* Dropdown links */}
+            <NavLink to="/allcollections">All collections</NavLink>
+            <NavLink to="/allnfts">All NFTs</NavLink>
+            {/* Add more links as needed */}
+          </div>
         </span>
-        </div>
+      </div>
 
-       <div className='dropdown'>
-       <span>
+      <div className='dropdown'>
+        <span>
           <a >Creators</a>
           <div className="dropdown-content">
-      {/* Dropdown links */}
-      <NavLink href="#">Create your collection</NavLink>
-      <NavLink href="#">Verify your collection</NavLink>
-      {/* Add more links as needed */}
-    </div>
+            {/* Dropdown links */}
+            <NavLink href="#">Create your collection</NavLink>
+            <NavLink href="#">Verify your collection</NavLink>
+            {/* Add more links as needed */}
+          </div>
         </span>
-       </div>
+      </div>
 
-        <div className='dropdown'>
+      <div className='dropdown'>
         <span>
           <a >About</a>
           <div className="dropdown-content">
-      {/* Dropdown links */}
-      <NavLink to="#">Our team</NavLink>
-      <NavLink href="#">Our impact</NavLink>
-      {/* Add more links as needed */}
-    </div>
+            {/* Dropdown links */}
+            <NavLink to="#">Our team</NavLink>
+            <NavLink to="#">Our impact</NavLink>
+            {/* Add more links as needed */}
+          </div>
         </span>
-        </div>
-        
-        <span>
-          <NavLink to="/launchpad">Launchpad</NavLink>
-        </span>
+      </div>
 
+      <div className='dropdown'>
         <span>
-          <LightModeIcon className='light-mode-icon'/>
+          <a >Launchpad</a>
+          <div className="dropdown-content">
+            {/* Dropdown links */}
+            <NavLink to="/launchpad/launches">Launches</NavLink>
+            <NavLink to="/launchpad/apply for launchpad">Apply For Launchpad</NavLink>
+            {/* Add more links as needed */}
+          </div>
         </span>
+      </div>
 
-        <span>
-          <NotificationsIcon className='notification-icon'/>
-        </span>
+      <span>
+        <LightModeIcon className='light-mode-icon'/>
+      </span>
 
-        <div className='en'>EN</div>
-        
-        <button 
-          className='wallet'
-          onClick={props.showWalletSidePanel}
-        >Connect wallet</button>
-      </div>  
-    </div>
+      <span>
+        <NotificationsIcon className='notification-icon'/>
+      </span>
+
+      <div className='en'>EN</div>
+      
+      <button 
+        className='wallet'
+        onClick={props.showWalletSidePanel}
+      >Connect wallet</button>
+    </div>  
+  </div>
   );
 }
