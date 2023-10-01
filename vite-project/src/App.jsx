@@ -1,8 +1,13 @@
+
+
+import Navbar from './components/navbar'
+
 // IMPORTING REACT
 import React from 'react';
 
 // IMPORTING VARIOUS COMPONENTS
 import Navbar from './components/navbar/Navbar'
+
 import Card from './components/CollectionCard'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Carousel from './components/carousel/Carousel'

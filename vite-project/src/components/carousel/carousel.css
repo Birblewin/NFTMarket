@@ -49,6 +49,7 @@ html {
   display: flex;
   overflow: hidden;
   text-align: left;
+  transition: 0.5s ease;
 }
 
 .carousel-card-container.active {
@@ -134,6 +135,12 @@ html {
   padding: 10px;
   background: #141414;
   border: none;
+}
+
+.carousel-control span:hover {
+  background-color: #141414;
+  transform: scale(1.05);
+  transition: 0.3s ease-in ;
 }
 
 .carousel-control-prev {
