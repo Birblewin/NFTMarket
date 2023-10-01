@@ -1,4 +1,3 @@
-import React from 'react'
 import Launchpadcontainer from './Launchpadcontainer'
 import Overviewteam from './columns/overview-team'
 const Launchpad = () => {
