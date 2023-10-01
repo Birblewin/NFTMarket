@@ -1,3 +1,4 @@
+
 import Navbar from './components/navbar'
 import Card from './components/CollectionCard'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
