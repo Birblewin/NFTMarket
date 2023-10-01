@@ -6,7 +6,12 @@ import CarouselEntry from "./CarouselEntry"
 export default function LaunchesCarousel(){
     // AN ARRAY OF CAROUSELENTRIES
     const generatedEntriesArray = Details.map(
-        detail => (<CarouselEntry key={detail._id}/>)
+        detail => (<CarouselEntry 
+            key={detail._id}
+            image={detail.cardImage}
+            heading={detail.cardTitle}
+            description={detail.cardInfo}
+        />)
     )
 
     return(
