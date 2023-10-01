@@ -1,0 +1,55 @@
+[
+    {
+        "index": 1,
+        "name": "Eternl",
+        "site_address": "eternl.io"
+    },
+
+    {
+        "index": 2,
+        "name": "VESPR",
+        "site_address": "vespr.xyz"
+    },
+
+    {
+        "index": 3,
+        "name": "Flint",
+        "site_address": "flint-wallet.com"
+    },
+
+    {
+        "index": 4,
+        "name": "Gero",
+        "site_address": "gerowallet.io"
+    },
+
+    {
+        "index": 5,
+        "name": "Begin",
+        "site_address": "begin.is"
+    },
+
+    {
+        "index": 6,
+        "name": "Lace",
+        "site_address": "lace.io"
+    },
+
+    {
+        "index": 7,
+        "name": "Nami",
+        "site_address": "namiwallet.io"
+    },
+
+    {
+        "index": 8,
+        "name": "Typhon",
+        "site_address": "typhonwallet.io"
+    },
+
+    {
+        "index": 9,
+        "name": "Nufi",
+        "site_address": "nu.fi"
+    }
+]
