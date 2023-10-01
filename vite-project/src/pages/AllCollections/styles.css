@@ -16,6 +16,9 @@
 }
 
 .all-collections .explore span {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
     font-size: 28px;
     margin-left: 10px;
     color: #75a8f9;
@@ -39,7 +42,7 @@
     border:  solid 1px #555c69 ;
     font-size: 14px;
     border-radius: 10px;
-
+    
     
 }
 
@@ -47,19 +50,50 @@
     display: flex;
     gap: 10px;
 }
+.all-collections .filter-bar .search-area {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+}
 
+.verified {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.verified .drop {
+    margin-left: 5px;
+}
+
+.all-collections .filter-bar .search-area .search-area-bar {
+    display: flex;
+    border-bottom:  1px solid #8B919B ;
+    align-items: center;
+    max-width: fit-content;
+    padding: 0 10px 0 0 ;
+}
 
 .coll-search-bar{
-    padding: 12px 0px 12px 44px;
-    width: 240px;
+    padding: 12px 0px 12px 20px;
+    width: 200px;
     height: 43px;
     flex-shrink: 0;
-    border-radius: 20px;
-    border: 1px solid #8B919B;
+    border: none;
+    
     background-color: rgba(255, 255, 255, 0.00);
   
   }
 
+  .filter-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  
 
 .cards-container {
     align-content: center;
@@ -100,6 +134,9 @@
 }
 
 .collection-details-container .collection-title {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
     color: #75a8f9;
     font-weight: bold;
     letter-spacing: 0.062rem;

@@ -57,7 +57,6 @@ function App() {
         
         
         <Footer/>
-        <AllCollections />
     </>
   )
 }
