@@ -1,4 +1,3 @@
-import React from 'react'
 import Launchpadcontainer from './Launchpadcontainer'
 
 const Launchpad = () => {

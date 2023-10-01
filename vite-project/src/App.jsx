@@ -17,11 +17,15 @@ import './App.css'
 const appRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout/>}>
-      <Route path='/allCollections' element={<AllCollections/>}></Route>
-      <Route path='/allNFTs' element={<AllNftsPage/>}></Route>
-      <Route path='/rewards' element={<RewardsPage/>}></Route>
+      <Route path='allCollections' element={<AllCollections/>}></Route>
+      <Route path='allNFTs' element={<AllNftsPage/>}></Route>
+      <Route path='rewards' element={<RewardsPage/>}></Route>
       <Route path='/' element={<Home/>}></Route>
-      <Route path='/launchpad' element={<LaunchpadPage/>}></Route>
+      
+      <Route path='launchpad'>
+        <Route path='launches' element={<LaunchpadPage/>}></Route>
+        <Route path='apply for launchpad' element={<LaunchpadPage/>}></Route>
+      </Route>
     </Route>
   )
 )
