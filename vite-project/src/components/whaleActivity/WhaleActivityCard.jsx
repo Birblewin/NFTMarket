@@ -1,19 +1,8 @@
 import Details from "../carousel/NFTDetails";
 import "./styles.css";
-import HorizontalScroller from "./HorizontalScroller";
 
 const WhaleActivityCard = () => {
-  const element = document.querySelector(".whale-carousel-card-container");
-  const leftArrow = document.querySelector(".left");
-  const rightArrow = document.querySelector(".right");
 
-  leftArrow.addEventListener("click", () => {
-    element.scrollLeft -= 100;
-  });
-
-  rightArrow.addEventListener("click", () => {
-    element.scrollLeft += 100;
-  });
 
   const carouselCards = Details.map((nft, index) => (
     <div className={`whale-carousel-card-container`} key={index}>
