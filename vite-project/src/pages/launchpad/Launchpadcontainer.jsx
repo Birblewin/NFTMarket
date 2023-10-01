@@ -1,5 +1,6 @@
 import React from 'react'
 import './launchpad.css'
+import ProgressBar from './progressbarholder';
 const Launchpadcontainer = () => {
   return (
     <div className="container">
@@ -24,7 +25,7 @@ const Launchpadcontainer = () => {
 
       <div className="paragraph" style={{ backgroundColor: '#18191B' }}>
       <h2 style={{fontSize:'10px', marginTop:'-38px', paddingRight:'60px', color:'#FFFF'}}>Total minted</h2>
-        <p></p>
+        <ProgressBar/>
       </div>
 
       {/* container3 with basic styling*/}
