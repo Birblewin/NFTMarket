@@ -3,6 +3,9 @@ import React from "react"
 import Details from "../../../components/carousel/NFTDetails"
 import CarouselEntry from "./CarouselEntry"
 
+// IMPORTING CSS FILE
+import './LaunchesCarousel.css'
+
 // EXPORTING THE LAUNCHESCAROUSEL FUNCTIONS
 export default function LaunchesCarousel(){
     // A STATE TO HOLD THE CURRENT INDEX OF CARD DISPLAYED
@@ -31,14 +34,14 @@ export default function LaunchesCarousel(){
     return(
         <div className="carousel-container">
             <button 
-                className="carousel-container__decrease-button"
+                className="carousel-container__button"
                 onClick={() => checkPreviousCard()}
             >&lt;</button>
 
             <div className="carousel-container__current-slide">{generatedEntriesArray[currentCard]}</div>
 
             <button 
-                className="carousel-container__increase-button"
+                className="carousel-container__button"
                 onClick={() => checkNextCard()}
             >&gt;</button>
         </div>
