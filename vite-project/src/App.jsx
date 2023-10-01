@@ -1,64 +1,27 @@
+// IMPORTING REACT ROUTER
+import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 
-
-// IMPORTING REACT
-import React from 'react';
-
-// IMPORTING VARIOUS COMPONENTS
-import Navbar from './components/navbar/Navbar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-import Footer from './components/footer/Footer';
-import Table from './components/Table/table';
-import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
-
-import AllCollections from './pages/AllCollections/AllCollections';
-import AllNfts from './pages/AllNFTS/AllNfts';
+// IMPORTING THE NECESSARY PAGES AND LAYOUTS
+import AllCollectionsPage from './pages/AllCollectionsPage';
+import AllNftsPagde from './pages/AllNftsPage';
 import RewardsPage from './pages/RewardsPage'
-import Home from './pages/Home';
+import HomePage from './pages/HomePage';
+import LaunchpadPage from './pages/LaunchpadPage';
+
+import RootLayout from './layouts/RootLayout'
 
 // IMPORT CSS FILE
 import './App.css'
-import Launchpad from './pages/launchpad/launchpad';
 
-function App() {
-  // A BOOLEAN TO INDICATE IF TO SHOW SIDE PANEL
-  const [showWalletSidePanel, setShowWalletSidePanel] = React.useState(false)
-  // A USESTATE TO UPDATE SEARCHDATA FROM SEARCHBAR
-  const [searchData, setSearchData] = React.useState({ searchInput: "" })
-
-  // A FUNCTION TO UPDATE SEARCHDATA
-  function updateSearchData(e){
-    const {name, value} = e.target
-
-    setSearchData(
-      prevSearchData => ({
-        ...prevSearchData,
-        [name] : value
-      })
-    )
-  }
-
- 
-  return (
-    <>
-
-     <BrowserRouter>
-     <Navbar/>
-        <Routes>
-         <Route path='/' element={<Home />} />
-         <Route path='/allcollections' element={<AllCollections />} />
-         <Route path="/rewardspage" element={<RewardsPage />} />
-         <Route path="/launchpad" element={<Launchpad />} />
-         <Route path="/allnfts" element={<AllNfts />} />
-        </Routes>
-      
-      </BrowserRouter>
-      
-        
-        
-        <Footer/>
-    </>
+// CREATING A APPROUTER FUNCTION
+const appRouter = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout/>}>
+      <Route path='/allCollections' ></Route>
+      <Route path=''></Route>
+      <Route path=''></Route>
+      <Route path=''></Route>
+      <Route path=''></Route>
+    </Route>
   )
-}
-
-export default App
+)
