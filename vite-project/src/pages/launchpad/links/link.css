@@ -1,0 +1,16 @@
+/* Add this CSS to your stylesheet or a separate CSS file */
+.links-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .links-container a {
+    margin-right: 20px; /* Add spacing between the links */
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Set link color */
+  }
+  
+  .links-container a:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+  }
+  

@@ -39,6 +39,7 @@
 
 .h1{
   margin-left: 7px;
+  font-size: 14px;
 }
 .division1{
   padding: 55px;
@@ -46,13 +47,13 @@
   color: white; /* Text color for paragraphs */
 }
 .division2{
-  padding: 55px;
+  padding: 56px;
   border-radius: 10px; /* Add rounded corners */
   color: white; /* Text color for paragraphs */
 }
 .connection{
   background-color:#18191B;
-  padding: 50px;
+  padding: 56px;
   margin-top: 8px;
   border-radius: 10px;
   align-items: center;
@@ -62,6 +63,7 @@
   font-size: 5px;
   margin-top: -40px;
   margin-left: 158px;
+  font-weight: 600;
 }
 .button1{
   margin-left: 240px;

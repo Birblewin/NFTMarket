@@ -1,6 +1,5 @@
 import React from 'react';
 import Details from './collections';
-
 import { Icon } from "@iconify/react";
 
 const Cards = () => {
