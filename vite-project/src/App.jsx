@@ -11,6 +11,8 @@ import Footer from './components/footer/Footer';
 import Table from './components/Table/table';
 import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
 
+import AllCollections from './pages/AllCollections/AllCollections';
+
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 
