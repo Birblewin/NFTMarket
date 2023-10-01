@@ -6,9 +6,9 @@
   
 .whale-carousel-slideshow {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-bottom: 100px;
-  transition: transform 0.3s ease normal;
+  transition: 0.5s ease normal;
 }
 
 .whale-carousel-card-container:hover {
@@ -72,12 +72,16 @@
 }
 
 .purchase {
+  display: flex;
+  flex-flow: row nowrap;
+  row-gap: 5px;
   padding: 0.23rem;
   background-color: #093030;
-  max-width: fit-content;
+  min-width: fit-content;
   border-radius: 5px;
 }
-
+.purchase img  {margin-right: 10px;
+}
 .whale-purchase {
   font-size: 14px;
   color: #2CB382;
