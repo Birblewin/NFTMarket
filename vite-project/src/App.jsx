@@ -47,15 +47,15 @@ function App() {
             />
         }
         
-        <Navbar
-          /* searchData = {searchData}
+      {/* <Navbar
+          searchData = {searchData}
           handleSearchData = {(e) => updateSearchData(e)}
-          showWalletSidePanel = {() => setShowWalletSidePanel(true)} */
+          showWalletSidePanel = {() => setShowWalletSidePanel(true)} 
         />
 
         <Carousel/>
         <WhaleActivityContainer />      
-        <Table/>
+        <Table/> */}
         
         <div className='top'>
           <div className='collection'>
