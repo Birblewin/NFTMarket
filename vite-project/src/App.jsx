@@ -1,7 +1,5 @@
 
 
-import Navbar from './components/navbar'
-
 // IMPORTING REACT
 import React from 'react';
 
@@ -13,8 +11,6 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Carousel from './components/carousel/Carousel'
 import WhaleActivityContainer from './components/whaleActivity/WhaleActivityContainer'
 import Footer from './components/footer/Footer';
-import Table from './components/Table/table'
-import Launchpad from './pages/launchpad/launchpad'
 import Table from './components/Table/table';
 import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
 
@@ -43,8 +39,24 @@ function App() {
     <>
         <Navbar/>
         <Carousel/>
+        <WhaleActivityContainer />
+        <Table/>
+        {
+          showWalletSidePanel && <WalletSidePanel
+              hideWalletSidePanel = {() => setShowWalletSidePanel(false)}
+            />
+        }
+        
+        <Navbar
+          searchData = {searchData}
+          handleSearchData = {(e) => updateSearchData(e)}
+          showWalletSidePanel = {() => setShowWalletSidePanel(true)}
+        />
+
+        <Carousel/>
         <WhaleActivityContainer />      
         <Table/>
+        
         <div className='top'>
           <div className='collection'>
             <h3 className='title'>Top collections  <span>Generative</span></h3> <KeyboardArrowDownIcon className='arrow-down'/>
