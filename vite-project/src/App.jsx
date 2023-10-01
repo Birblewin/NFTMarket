@@ -2,11 +2,11 @@
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 
 // IMPORTING THE NECESSARY PAGES AND LAYOUTS
-import AllCollectionsPage from './pages/AllCollectionsPage';
-import AllNftsPagde from './pages/AllNftsPage';
+import AllCollections from './pages/AllCollections/AllCollections';
+import AllNftsPage from './pages/AllNFTS/AllNFTs';
 import RewardsPage from './pages/RewardsPage'
-import HomePage from './pages/HomePage';
-import LaunchpadPage from './pages/LaunchpadPage';
+import Home from './pages/Home';
+import LaunchpadPage from './pages/launchpad/launchpad';
 
 import RootLayout from './layouts/RootLayout'
 
@@ -17,11 +17,20 @@ import './App.css'
 const appRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout/>}>
-      <Route path='/allCollections' ></Route>
-      <Route path=''></Route>
-      <Route path=''></Route>
-      <Route path=''></Route>
-      <Route path=''></Route>
+      <Route path='/allCollections' element={<AllCollections/>}></Route>
+      <Route path='/allNFTs' element={<AllNftsPage/>}></Route>
+      <Route path='/rewards' element={<RewardsPage/>}></Route>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/launchpad' element={<LaunchpadPage/>}></Route>
     </Route>
   )
 )
+
+// CREATING AN APP FUNCTION
+export default function App(){
+  return(
+    <div>
+      <RouterProvider router={appRouter}/>
+    </div>
+  )
+}
