@@ -1,0 +1,25 @@
+/* CountdownTimer.css */
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .time-unit {
+    margin: 0 20px; /* Adjust margin for spacing */
+    text-align: center;
+  }
+  
+  .unit-title {
+    font-size: 10px; /* Title font size */
+    font-weight: bold; /* Title font weight */
+    margin-bottom: 4px; /* Adjust spacing between title and time */
+  }
+  
+  .time {
+    font-size: 10px; /* Time font size */
+    font-weight: normal; /* Time font weight */
+  }
+  
