@@ -1,7 +1,5 @@
 
 
-import Navbar from './components/navbar'
-
 // IMPORTING REACT
 import React from 'react';
 
