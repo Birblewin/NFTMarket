@@ -8,8 +8,8 @@ const Cards = () => {
         <img src={collection.cardImage} alt={collection.cardTitle} />
       </div>
       <div className='collection-details-container'>
-        <div className='collecton-title'>{collection.cardTitle}</div>
-        <p>{collection.volume}</p>
+        <div className='collection-title'>{collection.cardTitle}</div>
+        <p className='volume'>{collection.volume} <span className='light-300'>  Volume</span></p>
       </div>
     </div>
   ));

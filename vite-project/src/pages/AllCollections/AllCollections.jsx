@@ -1,32 +1,17 @@
 import React from "react";
 import Cards from "./Cards";
+import FilterBar from "./FilterBar";
 import './styles.css'
 
 const AllCollections = () => {
   return (
     <div className="all-collections">
-      <div>
+      <div className="explore">
         <h1>Explore</h1>
+        <span>All Collections</span>
       </div>
-      <div className="filter-bar">
-        <div className="categories">
-          <div>Categories</div>
-          <div>All Time Volume</div>
-        </div>
-        <div className="search-area">
-          <div>
-            <input
-              className="search-bar"
-              type="text"
-              placeholder="Search collections"
-              name="searchInput"
-            />
-          </div>
-          <div>
-            <span></span>
-          </div>
-        </div>
-      </div>
+      <FilterBar />
+     
       <Cards />
     </div>
   );
