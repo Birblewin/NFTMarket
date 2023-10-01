@@ -1,8 +1,6 @@
 import image1 from "../../components/carousel/images/image1.png";
 import image2 from "../../components/carousel/images/image2.jpeg";
 import image3 from "../../components/carousel/images/image3.png";
-import image4 from "../../components/carousel/images/image4.jpeg";
-import image5 from "../../components/carousel/images/image5.jpeg";
 const Details = [
   {
     key: 1,
