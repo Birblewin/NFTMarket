@@ -21,12 +21,26 @@
     color: #75a8f9;
 
 }
+.all-collections .filter-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .all-collections .filter-bar {
+    min-width: 800px;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     color: #FFF;
+    background-color: #18191b;
+    padding: 0.3em 30px;
+    border:  solid 1px #555c69 ;
+    font-size: 14px;
+    border-radius: 10px;
+
+    
 }
 
 .all-collections .filter-bar .categories {

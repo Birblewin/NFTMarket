@@ -2,6 +2,7 @@ import React from "react";
 
 const FilterBar = () => {
   return (
+    <div className="filter-bar-container">
     <div className="filter-bar">
       <div className="categories">
         <div>Categories</div>
@@ -20,6 +21,7 @@ const FilterBar = () => {
           <span></span>
         </div>
       </div>
+    </div>
     </div>
   );
 };
