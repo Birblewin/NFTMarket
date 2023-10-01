@@ -16,7 +16,6 @@ import AllCollections from './pages/AllCollections/AllCollections';
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 
-
 // IMPORT CSS FILE
 import './App.css'
 import Launchpad from './pages/launchpad/launchpad';
@@ -57,7 +56,7 @@ function App() {
         
         
         <Footer/>
-        <AllCollections />
+       
     </>
   )
 }
