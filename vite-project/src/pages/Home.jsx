@@ -4,7 +4,7 @@ import WhaleActivityContainer from '../components/whaleActivity/WhaleActivityCon
 import Table from '../components/Table/table'
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
 
-import AllCollections from './AllCollections/AllCollections'
+import Cards from './AllCollections/Cards'
 import './Home.css'
 function Home() {
   return (
@@ -27,7 +27,7 @@ function Home() {
         </div>
         
        
-        <AllCollections />
+        <Cards/>
 
     </div>
   )
