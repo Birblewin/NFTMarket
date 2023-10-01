@@ -1,0 +1,94 @@
+
+.cards{
+    display: grid; /* This creates a grid container */
+    grid-template-columns: repeat(5, 1fr); /* 3 columns with equal width */
+    gap: 20px;
+    padding: 50px;
+    margin-bottom: 50px;
+    
+  }
+  
+
+.card{
+    border-radius: 10px;
+    
+    margin: auto;
+    width: fit-content;
+    background-color: #18191b;
+   
+   
+    border:  solid 1px #555c69 ;
+}
+
+.card img{
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card p{
+    color: #3189F0;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 20.8px */
+    justify-self: center;
+    margin-top: 15px;
+}
+
+.verified-icon{
+    color: #3189F0;
+    font-size: 14px !important;
+    margin: 5px; 
+    margin-top: 20px;
+}
+
+.texts{
+    display: flex;
+    align-items: center;
+    padding: 10px;   
+    margin-top: -20px;
+}
+.name{
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px;
+   
+    
+}
+.details{
+    margin-top: 20px ;
+    justify-content: space-between;
+    margin-bottom: 20px ;
+   
+}
+.price{
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 35px;
+   
+}
+.banner{
+    color: #E5BC27;
+    background-color: #382e00;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.line{
+    color: #555c69 ;
+   border: solid 0.5px;
+   margin-bottom: 1px
+
+}
+.action{
+    color: #ffffff;
+  display: flex;
+  margin-top: 0;
+  margin-left: 145px;
+}
+.action span{
+  padding: 3px;
+  
+}

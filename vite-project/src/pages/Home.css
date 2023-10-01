@@ -1,11 +1,4 @@
-.cards{
-    display: grid; /* This creates a grid container */
-    grid-template-columns: repeat(5, 1fr); /* 3 columns with equal width */
-    gap: 30px;
-    padding: 30px;
-    margin-bottom: 80px;
-  }
-  
+
   .title{
     margin-left: 50px;
     color: #FFF;
@@ -34,11 +27,13 @@
     height: 6.174px;
     margin: 0;
     padding: 0;
+    margin-left: -45px;
   }
   
   .collection{
     display: flex;
     align-items: center;
+    
   }
   
   .top{
