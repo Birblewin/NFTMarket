@@ -37,6 +37,10 @@ function App() {
 
   return (
     <>
+        <Navbar/>
+        <Carousel/>
+        <WhaleActivityContainer />
+        <Table/>
         {
           showWalletSidePanel && <WalletSidePanel
               hideWalletSidePanel = {() => setShowWalletSidePanel(false)}
@@ -44,9 +48,9 @@ function App() {
         }
         
         <Navbar
-          searchData = {searchData}
+          /* searchData = {searchData}
           handleSearchData = {(e) => updateSearchData(e)}
-          showWalletSidePanel = {() => setShowWalletSidePanel(true)}
+          showWalletSidePanel = {() => setShowWalletSidePanel(true)} */
         />
 
         <Carousel/>
@@ -72,7 +76,7 @@ function App() {
           <Card/>
           <Card/>
           <Card/>
-        </section>
+        </section> 
 
         <Footer/>
     </>
