@@ -1,4 +1,8 @@
 /* eslint-disable react/prop-types */
+// IMPORING NECESSARY MODULES
+import { NavLink } from 'react-router-dom';
+
+//  IMPORING NECESSARY COMPONENTS
 import './Navbar.css'; // Import your CSS file for styling
 import SearchIcon from '@mui/icons-material/Search';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -8,12 +12,12 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 export default function Navbar(props) {
   return (
     <div className='navbar'>
-      <a href="/">
+      <NavLink to="/">
         <div className='nav-title'>
           <img src='../img/birble.png'/>
           <p>Birble.store</p>
         </div>
-      </a>
+      </NavLink>
       
       <SearchIcon className='search-icon'/>
 
@@ -31,7 +35,7 @@ export default function Navbar(props) {
      
       <div className="nav-links">
         <div>
-          <a className='rewards' href="/rewardspage">Rewards</a>
+          <NavLink className='rewards' to="/rewards">Rewards</NavLink>
         </div>
 
        <div className='dropdown'>
@@ -39,8 +43,8 @@ export default function Navbar(props) {
           <a>Explore</a>
           <div className="dropdown-content">
       {/* Dropdown links */}
-      <a href="/allcollections">All collections</a>
-      <a href="/allnfts">All NFTs</a>
+      <NavLink to="/allcollections">All collections</NavLink>
+      <NavLink to="/allnfts">All NFTs</NavLink>
       {/* Add more links as needed */}
     </div>
         </span>
@@ -51,8 +55,8 @@ export default function Navbar(props) {
           <a >Creators</a>
           <div className="dropdown-content">
       {/* Dropdown links */}
-      <a href="#">Create your collection</a>
-      <a href="#">Verify your collection</a>
+      <NavLink href="#">Create your collection</NavLink>
+      <NavLink href="#">Verify your collection</NavLink>
       {/* Add more links as needed */}
     </div>
         </span>
@@ -63,15 +67,15 @@ export default function Navbar(props) {
           <a >About</a>
           <div className="dropdown-content">
       {/* Dropdown links */}
-      <a href="#">Our team</a>
-      <a href="#">Our impact</a>
+      <NavLink to="#">Our team</NavLink>
+      <NavLink href="#">Our impact</NavLink>
       {/* Add more links as needed */}
     </div>
         </span>
         </div>
         
         <span>
-          <a href="/launchpad">Launchpad</a>
+          <NavLink to="/launchpad">Launchpad</NavLink>
         </span>
 
         <span>
