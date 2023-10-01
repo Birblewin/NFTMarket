@@ -48,9 +48,9 @@ function App() {
         }
         
         <Navbar
-          searchData = {searchData}
+          /* searchData = {searchData}
           handleSearchData = {(e) => updateSearchData(e)}
-          showWalletSidePanel = {() => setShowWalletSidePanel(true)}
+          showWalletSidePanel = {() => setShowWalletSidePanel(true)} */
         />
 
         <Carousel/>

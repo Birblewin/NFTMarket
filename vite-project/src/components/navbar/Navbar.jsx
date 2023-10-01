@@ -24,8 +24,8 @@ export default function Navbar(props) {
           placeholder="Search collection, or NFT"
           name="searchInput"
           // eslint-disable-next-line react/prop-types
-          value={props.searchData.searchInput}
-          onChange={props.handleSearchData}
+         /*  value={props.searchData.searchInput || "Search collection, or NFT"}
+          onChange={props.handleSearchData} */
         />
       </div>
      
