@@ -29,7 +29,7 @@ class ProgressBar extends Component {
   render() {
     return (
       <div>
-        <h2>Progress Bar Example</h2>
+        <h2></h2>
         <progress max="100" value={this.state.progressValue} />
         <p>{this.state.progressValue}%</p>
       </div>
