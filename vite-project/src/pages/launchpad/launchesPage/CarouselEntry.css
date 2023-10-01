@@ -98,4 +98,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    cursor: pointer;
+    transition: all 500ms ease-in-out normal;
+}
+
+.description--buttons--link:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+    scale: 1.1;
+
 }
