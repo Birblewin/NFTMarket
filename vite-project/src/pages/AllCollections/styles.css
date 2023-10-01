@@ -1,6 +1,66 @@
 .all-collections {
-    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
 }
+
+.all-collections .explore {
+    display: block;
+    color: #FFF;
+    font-weight: 600;
+    margin: 80px 0 32px 80px;
+}
+.all-collections .explore h1 {
+    display: inline;
+
+}
+
+.all-collections .explore span {
+    font-size: 28px;
+    margin-left: 10px;
+    color: #75a8f9;
+
+}
+.all-collections .filter-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-collections .filter-bar {
+    min-width: 800px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    background-color: #18191b;
+    padding: 0.3em 30px;
+    border:  solid 1px #555c69 ;
+    font-size: 14px;
+    border-radius: 10px;
+
+    
+}
+
+.all-collections .filter-bar .categories {
+    display: flex;
+    gap: 10px;
+}
+
+
+.coll-search-bar{
+    padding: 12px 0px 12px 44px;
+    width: 240px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #8B919B;
+    background-color: rgba(255, 255, 255, 0.00);
+  
+  }
+
+
 .cards-container {
     align-content: center;
     display: grid; /* This creates a grid container */
@@ -9,24 +69,47 @@
     padding: 30px;
     margin-bottom: 80px;
   }
+
+
 .collection-card {
     display: flex;
     flex-flow: column nowrap;
     padding-bottom: 10px;
     background-color: #18191b;
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: fit-content;
     border:  solid 1px #555c69 ;
 }
+.collection-card:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+
 
 .collection-card .collection-card-img-container img {
     width: 200px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     margin: 0;
 }
 
 .collection-details-container {
     padding: 10px;
     color: #99a0ac;
+    font-size: 14px;
+}
+
+.collection-details-container .collection-title {
+    color: #75a8f9;
+    font-weight: bold;
+    letter-spacing: 0.062rem;
+    margin-bottom: 4px;
+}
+
+.collection-details-container .volume {
+    font-weight: bolder;
+}
+
+.collection-details-container .light-300 {
+    font-weight: 300;
 }
