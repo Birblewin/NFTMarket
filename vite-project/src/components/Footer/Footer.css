@@ -1,0 +1,106 @@
+.footer{
+    width: 100%;
+    height: 280px;
+    border-top: 1px double white;
+    border-bottom: 2px double white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.footer__description{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer__description--title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__description--title img{
+    width: 30px;
+    height: auto;
+}
+
+.footer__description--title figcaption{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer__description--description{
+    color: #968E8E;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-wrap: wrap;
+    max-width: 50ch;
+}
+
+.footer__description--social_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer__description--social_links--link{
+    margin-right: 5px;
+    cursor: pointer;
+    border-right: 1px solid white;
+    padding: 0 10px 0 5px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: all 500ms ease-in-out normal;
+}
+
+.footer__description--social_links--link:hover{
+    scale: 1.3;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: -100px;
+}
+
+.footer__list--title{
+    color: #666464;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer__list--link{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer__list.about{
+    margin-top: -40px;
+}

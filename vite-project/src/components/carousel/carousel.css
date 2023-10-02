@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Lexend", sans-serif;
   background-color: #141414;
@@ -12,20 +13,18 @@ html {
   width: 100vw;
   position: relative;
 }
+
 .hidden.carousel {
   display: none;
 }
+
 .active.carousel {
   display: block;
 }
+
 .active.carousel {
   display: flex;
   align-items: center;
-}
-
-.details-container {
-  flex: 1;
-  padding: 20px;
 }
 
 .image-container {
@@ -39,6 +38,7 @@ html {
   border-radius: 30px;
   margin: 20px;
 }
+
 .carousel-container {
   width: 90vw;
   margin: 0 auto;
@@ -48,6 +48,8 @@ html {
   position: relative;
   display: flex;
   overflow: hidden;
+  text-align: left;
+  transition: 0.5s ease;
 }
 
 .carousel-card-container.active {
@@ -55,23 +57,41 @@ html {
   height: 350px;
   display: flex;
   align-items: center;
-  transition: transform 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .carousel-card-container.active {
   transform: translateX(0);
+  transition-delay: 500ms;
 }
 
 .title {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: left;
+  color: #FFF;
+  font-family: Inter;
   font-size: 48px;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 25% */
+  letter-spacing: 1.92px;
+  margin-left: 0;
+  width: auto;
+  position: relative;
+  left: -50px;
 }
+
 .trending {
-  font-size: 14px;
-  color: #ffdb24;
   margin-bottom: 20px;
+  color: #FFDB24;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-decoration-line: underline;
 }
 
 .details-container {
@@ -81,6 +101,7 @@ html {
   width: 60%;
   height: 100%;
 }
+
 .nft-details {
   max-width: 100%;
   color: #8b919b;
@@ -94,11 +115,9 @@ html {
 }
 
 .image-container img {
-
   max-width: 350px;
   height: auto;
   margin-left: 150px;
-  
 }
 
 .carousel-controls {
@@ -116,6 +135,12 @@ html {
   padding: 10px;
   background: #141414;
   border: none;
+}
+
+.carousel-control span:hover {
+  background-color: #141414;
+  transform: scale(1.05);
+  transition: 0.3s ease-in ;
 }
 
 .carousel-control-prev {
@@ -146,4 +171,23 @@ html {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.learn-more-button{
+  background-color: #FFDB24;
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+  width: 166px;
+  height: 56px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  top: 295px;
+  left: 10px;
 }

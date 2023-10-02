@@ -1,42 +1,10 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #111;
+  background-color: #141414;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  position: relative;
+  transition: all 500ms ease-in-out normal;
 }
-.cards{
-  display: grid; /* This creates a grid container */
-  grid-template-columns: repeat(5, 1fr); /* 3 columns with equal width */
-  grid-gap: 10px;
-  padding: 50px;
-}
-.title{
-  color: aliceblue;
- 
-  margin-left: 50px;
-}
-.title span{
-  color: #76a9fa;
-  align-items: center;
-}
-.arrow-down{
-  color: #76a9fa;
-}
-.collection{
-  display: flex;
-  align-items: center;
-}
-.top{
-  display: flex;
-  justify-content: space-between;
-}
-.top button{
-    border-radius: 5px;
-    color: white;
-    background: #151515;
-    border: solid;
-    margin-right: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: -5px;
-    padding-bottom: -5px;
-}
+
