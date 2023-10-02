@@ -1,6 +1,5 @@
 /* TableContainer styles */
-.TableContainer {
-  height: 50vh; /* 50% of the viewport height */
+.TableContainer {/* 50% of the viewport height */
   background-color: #141414;
   display: flex;
   justify-content: center; /* Center the table horizontally */
@@ -37,8 +36,8 @@ h4{
 /* Table styles */
 table {
   border-collapse: collapse;
-  width: 80%; /* Adjust the table width as needed */
-  max-width: 600px; /* Limit the maximum width of the table */
+/*   width: 80% */; /* Adjust the table width as needed */
+ /*  max-width: 600px; */ /* Limit the maximum width of the table */
   margin: 0 auto; /* Center the table within its container */
   background-color: #141414; /* Background color for the table */
   border-radius: 5px; /* Rounded corners for the table */
@@ -75,3 +74,7 @@ button:hover {
 }
 
 /* Add more CSS rules as needed */
+.table-cell {
+  display: inline-flex;
+  flex-flow: column nowrap;
+}

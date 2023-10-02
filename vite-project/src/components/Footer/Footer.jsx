@@ -78,17 +78,17 @@ export default function Footer(){
 
             <div className='footer__list'>
                 <h3 className="footer__list--title">Creators</h3>
-                <NavLink className="footer__list--link" to='/'>Verification</NavLink>
-                <NavLink className="footer__list--link" to='/'>NFT Mining</NavLink>
+                <a className="footer__list--link" href='/'>Verification</a>
+                <a className="footer__list--link" href='/'>NFT Mining</a>
             </div>
 
             <div className='footer__list about'>
                 <h3 className="footer__list--title">About</h3>
-                <NavLink className="footer__list--link" to='/'>Our Team</NavLink>
-                <NavLink className="footer__list--link" to='/'>Our Impact</NavLink>
-                <NavLink className="footer__list--link" to='/'>See FAQ</NavLink>
-                <NavLink className="footer__list--link" to='/'>Terms and conditions</NavLink>
-                <NavLink className="footer__list--link" to='/'>Privacy Policy</NavLink>
+                <a className="footer__list--link" href='/'>Our Team</a>
+                <a className="footer__list--link" href='/'>Our Impact</a>
+                <a className="footer__list--link" href='/'>See FAQ</a>
+                <a className="footer__list--link" href='/'>Terms and conditions</a>
+                <a className="footer__list--link" href='/'>Privacy Policy</a>
             </div>
         </footer>
     )

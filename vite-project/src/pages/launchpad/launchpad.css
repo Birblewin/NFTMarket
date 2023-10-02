@@ -12,29 +12,35 @@
   margin-right: 30px;
   margin-top: 20px;
 }
-
 .image-container img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+.Live{
+  margin-left: 2%;
+  padding-top: 3%;
+}
 .calender{
-  margin-left: 90%;
+  margin-left: 85%;
+
 }
 .button-icon{
-  padding:6px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background-color: #2B2037;
 }
-.paragraph-container {
+.container2 {
   flex: 1.9;
   display: flex;
   flex-direction: column;
   padding: 10px;
   gap: 20px; /* Add space between paragraphs */
   margin-right: 30px;
-  margin-top: 14px;
+  margin-top: 5px;
 }
 
 .h1{

@@ -13,10 +13,11 @@ const Launchpadcontainer = () => {
 
     {/*Main-Container */}
     
-    <div className="paragraph-container">
+    <div className="container2">
 
       {/* Container1 with basic styling*/}
-      <div  className='calender'>
+      
+     <div  className='calender'>
       <button className='button-icon'><CalendarMonthIcon/></button>
       </div>
       
@@ -53,9 +54,10 @@ const Launchpadcontainer = () => {
       {/* container3 with basic styling*/}
 
       <div className="division3" style={{ backgroundColor: '#1d2022'}}>
-        <button style={{backgroundColor:'#2a2a24',padding:'18px',paddingLeft:'30px',paddingRight:'30px', borderRadius:'30px',marginLeft:'180px', fontSize:'14px'}}>Make offer</button><button style={{backgroundColor:'#2a2a24',padding:'18px',paddingLeft:'30px',paddingRight:'30px', borderRadius:'30px',fontSize:'14px'}}>Explore all NFTs</button>
+        <button style={{backgroundColor:'#2a2a24',padding:'18px',paddingLeft:'30px',paddingRight:'30px', borderRadius:'30px',marginLeft:'25%', fontSize:'14px'}}>Make offer</button><button style={{backgroundColor:'#2a2a24',padding:'18px',paddingLeft:'30px',paddingRight:'30px', borderRadius:'30px',fontSize:'14px'}}>Explore all NFTs</button>
       </div>
     </div>
+    
  </div>
 
   )

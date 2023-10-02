@@ -5,9 +5,11 @@ import LinksDiv from '../links/link'
 const Overviewteam = () => {
   return (
     <div className="App">
- 
+      
     <LinksDiv/>
-    
+    &nbsp;&nbsp;
+  
+    <div className='Details'>
     <Columnlayout>
     <div className='Column-container'>
       <div className="column">
@@ -20,6 +22,7 @@ const Overviewteam = () => {
       </div>
      </div>
     </Columnlayout>
+    </div>
   </div>
   )
 }

@@ -19,9 +19,11 @@ const AllCollections = () => {
           />
         </span>
       </div>
-      <FilterBar />
+      <div className="main-content">
+        <FilterBar />
 
-      <Cards />
+        <Cards />
+      </div>
     </div>
   );
 };
