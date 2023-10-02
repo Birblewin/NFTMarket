@@ -2,6 +2,8 @@
 import React from "react"
 
 import LaunchesCarousel from "./LaunchesCarousel"
+import LiveCollection from "./LiveCollection"
+import PastCollection from "./PastCollection"
 
 // IMPORTING CSS FILE
 import './LaunchesPage.css'
@@ -12,10 +14,26 @@ export default function LaunchesPage(){
     const [viewPastCollections, setViewPastCollections] = React.useState(false)
 
     // A FUNCTION TO GENERATE AN ARRAY OF LIVE COLLECTIONS
-    const liveCollectionsArray = []
+    function liveCollectionsGenerator() {
+        const liveCollectionsArray = []
+
+        for(let i = 0; i < 20; i++){
+            liveCollectionsArray.push(<LiveCollection/>)
+        }
+
+        return liveCollectionsArray
+    }
 
     // A FUNCTION TO GENERATE AN ARRAY OF PAST COLLECTIONS
-    const pastCollectionsArray = []
+    function pastCollectionsGenerator() {
+        const pastCollectionsArray = []
+
+        for(let i = 0; i < 20; i++){
+            pastCollectionsArray.push(<PastCollection/>)
+        }
+
+        return pastCollectionsArray
+    }
 
     return(
         <div className="launches_page_container">
@@ -58,7 +76,7 @@ export default function LaunchesPage(){
             </div>
 
             <div className="launches_page_container__collectionsHolder">
-                {viewPastCollections ? pastCollectionsArray : liveCollectionsArray}
+                {viewPastCollections ? pastCollectionsGenerator() : liveCollectionsGenerator()}
             </div>
         </div>
     )
