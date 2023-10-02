@@ -13,8 +13,12 @@ import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
 
 import AllCollections from './pages/AllCollections/AllCollections';
 
+import AllNftsPage from './pages/AllNFTS/AllNfts';
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
+import LaunchpadPage from './pages/launchpad/launchpad';
+import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
+
 
 
 // IMPORT CSS FILE
@@ -52,12 +56,31 @@ function App() {
          <Route path="/launchpad" element={<Launchpad />} />
         </Routes>
       
-      </BrowserRouter>
+
+      
       
         
         
         <Footer/>
-    </>
+  
+
+      <Route path='launchpad'>
+        <Route path='launches' element={<LaunchesPage/>}></Route>
+        <Route path='apply for launchpad' element={<LaunchpadPage/>}></Route>
+      </Route>
+    </Route>
+</BrowserRouter>
+  </>
+  )
+)
+
+// CREATING AN APP FUNCTION
+export default function App(){
+  return(
+    <div>
+      <RouterProvider router={appRouter}/>
+    </div>
+
   )
 }
 

@@ -187,7 +187,7 @@ html {
   flex-shrink: 0;
   border: none;
   border-radius: 20px;
-  position: relative;
-  top: -45px;
-  left: 20px;
+  position: absolute;
+  top: 295px;
+  left: 10px;
 }
