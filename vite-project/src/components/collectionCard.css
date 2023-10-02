@@ -1,0 +1,39 @@
+.card{
+    border-radius: 5px;
+    background: #141414;
+    margin: auto;
+    width: fit-content;
+    border-color: white;
+    
+}
+
+.card img{
+    height: 230px;
+    width: 186px;
+    height: 196px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.card p{
+    color: #3189F0;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 20.8px */
+    justify-self: center;
+}
+
+.verified-icon{
+    color: #3189F0;
+    font-size: 14px !important;
+    margin: 5px; 
+}
+
+.texts{
+    display: flex;
+    align-items: center;
+    padding: 10px;   
+    margin-top: -20px;
+}

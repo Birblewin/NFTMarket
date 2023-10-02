@@ -29,8 +29,9 @@ class ProgressBar extends Component {
   render() {
     return (
       <div>
-        <p style={{fontSize:'11px', marginLeft:'80%'}}>{this.state.progressValue}%(450/1000)</p>
+        <h2>Progress Bar Example</h2>
         <progress max="100" value={this.state.progressValue} />
+        <p>{this.state.progressValue}%</p>
       </div>
     );
   }

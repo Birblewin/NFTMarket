@@ -1,33 +1,76 @@
-// IMPORTING REACT ROUTER
-import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 
-// IMPORTING THE NECESSARY PAGES AND LAYOUTS
+
+// IMPORTING REACT
+import React from 'react';
+
+// IMPORTING VARIOUS COMPONENTS
+import Navbar from './components/navbar/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Footer from './components/footer/Footer';
+import Table from './components/Table/table';
+import WalletSidePanel from './components/walletSidePanel/WalletSidePanel';
+
 import AllCollections from './pages/AllCollections/AllCollections';
-import AllNftsPage from './pages/AllNFTS/AllNFTs';
+
+import AllNftsPage from './pages/AllNFTS/AllNfts';
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 import LaunchpadPage from './pages/launchpad/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
 
-import RootLayout from './layouts/RootLayout'
+
 
 // IMPORT CSS FILE
 import './App.css'
+import Launchpad from './pages/launchpad/launchpad';
 
-// CREATING A APPROUTER FUNCTION
-const appRouter = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<RootLayout/>}>
-      <Route path='allCollections' element={<AllCollections/>}></Route>
-      <Route path='allNFTs' element={<AllNftsPage/>}></Route>
-      <Route path='rewards' element={<RewardsPage/>}></Route>
-      <Route path='/' element={<Home/>}></Route>
+function App() {
+  // A BOOLEAN TO INDICATE IF TO SHOW SIDE PANEL
+  const [showWalletSidePanel, setShowWalletSidePanel] = React.useState(false)
+  // A USESTATE TO UPDATE SEARCHDATA FROM SEARCHBAR
+  const [searchData, setSearchData] = React.useState({ searchInput: "" })
+
+  // A FUNCTION TO UPDATE SEARCHDATA
+  function updateSearchData(e){
+    const {name, value} = e.target
+
+    setSearchData(
+      prevSearchData => ({
+        ...prevSearchData,
+        [name] : value
+      })
+    )
+  }
+
+ 
+  return (
+    <>
+
+     <BrowserRouter>
+     <Navbar/>
+        <Routes>
+         <Route path='/' element={<Home />} />
+         <Route path='/allcollections' element={<AllCollections />} />
+         <Route path="/rewardspage" element={<RewardsPage />} />
+         <Route path="/launchpad" element={<Launchpad />} />
+        </Routes>
       
+
+      
+      
+        
+        
+        <Footer/>
+  
+
       <Route path='launchpad'>
         <Route path='launches' element={<LaunchesPage/>}></Route>
         <Route path='launch details' element={<LaunchpadPage/>}></Route>
       </Route>
     </Route>
+</BrowserRouter>
+  </>
   )
 )
 
@@ -37,5 +80,8 @@ export default function App(){
     <div>
       <RouterProvider router={appRouter}/>
     </div>
+
   )
 }
+
+export default App
