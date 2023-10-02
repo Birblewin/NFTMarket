@@ -1,0 +1,22 @@
+.carousel-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.carousel-container__button{
+    width: 49px;
+    height: 107px;
+    background-color: transparent;
+    color: gray;
+    font-size: 50px;
+    transition: all 500ms ease-in-out normal;
+}
+
+.carousel-container__button:hover{
+    scale: 1.114;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: white;
+}

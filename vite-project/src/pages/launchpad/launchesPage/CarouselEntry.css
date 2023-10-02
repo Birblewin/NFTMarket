@@ -1,0 +1,109 @@
+.carousel_entry_container{
+    width: 100%;
+    padding: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.carousel_entry_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.carousel_entry_container__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.carousel_entry_container__description--title{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.carousel_entry_container__description--banner{
+    color: #298F27;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 19.5px */
+    text-align: center;
+    width: 20%;
+}
+
+.carousel_entry_container__description--banner::marker{
+    font: inherit;
+    font-size: 50px;
+    content: '.';
+}
+
+.carousel_entry_container__description--paragraph{
+    color: #79A3AF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.carousel_entry_container__description div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.description--buttons--calender{
+    width: 50px;
+    height: 50px;
+    background-color: #2B2037;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms ease-in-out normal;
+}
+
+.description--buttons--calender:active{
+    scale: 0.8;
+    border: 2px solid black;
+}
+
+.description--buttons--link{
+    width: 30%;
+    height: 50px;
+    width: 267px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFDB24;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 500ms ease-in-out normal;
+}
+
+.description--buttons--link:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+    scale: 1.1;
+
+}

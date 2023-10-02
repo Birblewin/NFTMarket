@@ -1,3 +1,7 @@
+// IMPORTING NECESSARY MODULES
+import { NavLink } from 'react-router-dom'
+
+// IMPORTING CSS FILE
 import './Footer.css'
 
 export default function Footer(){
@@ -20,7 +24,7 @@ export default function Footer(){
                 <p className="footer__description--description">Birble is the largest Cardano NFT marketplace. We believe in people, planet, & purpose before profit. We believe in endlessly supporting creators. We believe in YOU. Join us in our mission to create a brighter future for all.</p>
                 
                 <div className="footer__description--social_links">
-                    <a href="/" className="footer__description--social_links--link" target='_blank'>
+                    <NavLink to="https://www.instagram.com" className="footer__description--social_links--link" target='_blank'>
                         <img 
                             src="../../../img/social_logos/InstagramPNG4.png" 
                             alt="Instagram_logo"
@@ -29,9 +33,9 @@ export default function Footer(){
                             width={35}
                             height={30}
                         />
-                    </a>
+                    </NavLink>
 
-                    <a href="/" className="footer__description--social_links--link" target='_blank'>
+                    <NavLink to="https://www.facebook.com" className="footer__description--social_links--link" target='_blank'>
                         <img 
                             src="../../../img/social_logos/FacebookPNG4.png" 
                             alt="Facebook_logo"
@@ -40,9 +44,9 @@ export default function Footer(){
                             width={35}
                             height={30}
                         />
-                    </a>
+                    </NavLink>
 
-                    <a href="/" className="footer__description--social_links--link" target='_blank'>
+                    <NavLink to="https://www.telegram.com" className="footer__description--social_links--link" target='_blank'>
                         <img 
                             src="../../../img/social_logos/Telegram_logo_PNG1.png" 
                             alt="Telegram_logo"
@@ -51,9 +55,9 @@ export default function Footer(){
                             width={35}
                             height={30}
                         />
-                    </a>
+                    </NavLink>
 
-                    <a href="/" className="footer__description--social_links--link" target='_blank'>
+                    <NavLink to="https://www.x.com" className="footer__description--social_links--link" target='_blank'>
                         <img 
                             src="../../../img/social_logos/Twitter_logo_PNG15.png" 
                             alt="Twitter_logo"
@@ -62,29 +66,29 @@ export default function Footer(){
                             width={35}
                             height={30}
                         />
-                    </a>
+                    </NavLink>
                 </div>
             </div>
 
             <div className='footer__list'>
                 <h3 className="footer__list--title">Browse</h3>
-                <a className="footer__list--link" href='#'>Marketplace</a>
-                <a className="footer__list--link" href='/allcollections'>Collections</a>
+                <NavLink className="footer__list--link" to='/allNFTs'>Marketplace</NavLink>
+                <NavLink className="footer__list--link" to='/allCollections'>Collections</NavLink>
             </div>
 
             <div className='footer__list'>
                 <h3 className="footer__list--title">Creators</h3>
-                <a className="footer__list--link" href='#'>Verification</a>
-                <a className="footer__list--link" href='#'>NFT Mining</a>
+                <a className="footer__list--link" href='/'>Verification</a>
+                <a className="footer__list--link" href='/'>NFT Mining</a>
             </div>
 
             <div className='footer__list about'>
                 <h3 className="footer__list--title">About</h3>
-                <a className="footer__list--link" href='#'>Our Team</a>
-                <a className="footer__list--link" href='#'>Our Impact</a>
-                <a className="footer__list--link" href='#'>See FAQ</a>
-                <a className="footer__list--link" href='#'>Terms and conditions</a>
-                <a className="footer__list--link" href='#'>Privacy Policy</a>
+                <a className="footer__list--link" href='/'>Our Team</a>
+                <a className="footer__list--link" href='/'>Our Impact</a>
+                <a className="footer__list--link" href='/'>See FAQ</a>
+                <a className="footer__list--link" href='/'>Terms and conditions</a>
+                <a className="footer__list--link" href='/'>Privacy Policy</a>
             </div>
         </footer>
     )
