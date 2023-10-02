@@ -8,9 +8,8 @@ const Overviewteam = () => {
       
     <LinksDiv/>
     &nbsp;&nbsp;
-    <hr />
+  
     <div className='Details'>
-
     <Columnlayout>
     <div className='Column-container'>
       <div className="column">

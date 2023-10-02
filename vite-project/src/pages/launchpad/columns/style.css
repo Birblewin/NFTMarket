@@ -1,14 +1,13 @@
-/* TwoColumnLayout.css */
-
 .two-column {
     display: flex;
-    justify-content: space-between ; /* Arrange columns with space in between */
+    justify-content: space-between ; 
     align-items: center;
+    margin-top: -2%;
   }
   
   .column {
-    flex: 1; /* Each column takes up equal width */
-    padding: 10px; /* Add padding for spacing */
+    flex: 1; 
+    padding: 10px; 
   }
   .left-column {
     padding: auto;
@@ -19,8 +18,18 @@
     padding: auto;
     max-width: 45%;
     color: #ffff;
+    
   }
   .Details{
     background-color:#141414;
     padding: 80px;
+  }
+  .socials{
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  #bt{
+    background-color: #121212;
+    padding: 5px;
+    border-radius: 5px;
   }
