@@ -24,3 +24,9 @@
     cursor: pointer;
     transition: all 500ms ease-in-out normal;
 }
+
+.launches_page_container__collectionsHolder{
+    display: grid;
+    grid-auto-flow: column; 
+    grid-template-rows: repeat(4, 1fr);
+}
