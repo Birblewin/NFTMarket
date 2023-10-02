@@ -1,10 +1,12 @@
-import NftCard from './NFTCard'
+import NftCard from './NftCard'
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
 import './NftCard.css'
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import { Icon } from "@iconify/react";
 import SearchIcon from "@mui/icons-material/Search";
 import BlurOnOutlinedIcon from '@mui/icons-material/BlurOnOutlined';
+
+
 
 function AllNfts() {
   return (
