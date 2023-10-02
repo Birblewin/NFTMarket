@@ -1,80 +1,145 @@
 /* TableContainer styles */
-.TableContainer {/* 50% of the viewport height */
+.TableContainer {
+  /* 50% of the viewport height */
   background-color: #141414;
   display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
   justify-content: center; /* Center the table horizontally */
   align-items: center; /* Center the table vertically */
-  padding-bottom: 10%;
+  padding: 20px 30px;
+  color: #ffffff;
+  font-size: 14px;
 }
-.bg{
-  background-color: #1D2022;
+
+.top-coll-header{
   display: flex;
-  padding: 5px;
-  margin-left: 30%;
-  margin-right: 42%;
-  font-size: 13px;
-  border-radius: 15px;
+  flex-flow: row nowrap;
+  min-width: 80vw;
+  align-items: center;
+  margin: 0 10%;
+  color: #777777;
+
 }
-.header{
-  justify-content: center;
-}
-h4{
-  color: #FFFFFF;
-  margin-left: 20%;
-  margin-top: 80px;
-}
-.upside{
+.total-bar {
   display: flex;
-  justify-content: center;
+  padding: 0 16px;
+  background-color: #1d2022;
+  color: #61809b;
+  align-items: center;
 }
-.bt{
-  margin-left: 90%;
-  background-color: #18191B;
-  padding: 15px;
-  
+.total-time {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.top-coll-header h3 {
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.time-frames {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-self: flex-end;
+}
+
+.time-frames div {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  padding: 0 12px;
+  border-radius: 10px;
+}
+
+.time-frames div:nth-child(2) {
+  background-color: #76a9fa;
+  color: #141414;
+  font-weight: 900;
+}
+
+.time-frames div:active {
+  background-color: #76a9fa;
+  color: #141414;
+  font-weight: 900;
+}
+
+.table-section{
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 4px;
+}
+
+
+.bt {
+  display: flex;
+  width: 100px;
+  height: 54px;
+  background-color: #1d2022;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border-radius: 10px;
 }
 /* Table styles */
-table {
-  border-collapse: collapse;
-/*   width: 80% */; /* Adjust the table width as needed */
- /*  max-width: 600px; */ /* Limit the maximum width of the table */
-  margin: 0 auto; /* Center the table within its container */
-  background-color: #141414; /* Background color for the table */
-  border-radius: 5px; /* Rounded corners for the table */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for the table */
-}
 
-th, td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #1D2022; /* Border between rows */
+.table1 {
+  display: flex;
+  flex-flow: column nowrap;
 }
-tr{
-  color: #F0FFFF;
+.top-table {
+  color: #ffffff;
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: 1px solid #1d2022;
 }
-
-th {
-  font-weight: bold;
-  color:#9CA3AF;
+.top-table.cont {
+  color: #777777;
+  font-weight: 900;
 }
-
-/* Button styles */
-button {
-  margin: 8px;
-  padding: 8px 16px;
-  background-color: #0074d9;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.top-table.div:hover {
+  background-color: #18191b;
 }
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Add more CSS rules as needed */
 .table-cell {
   display: inline-flex;
   flex-flow: column nowrap;
+  width: 90px;
+  height: 54px;
+}
+.table-cell .loss {
+  color: #f05252;
+}
+.table-cell .gain{
+  color: #1ECD4F;
+}
+
+.collection-name {
+  height: 54px;
+  width: 215px;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 16px;
+}
+.coll-floor {
+  width: 90px;
+  height: 54px;
+  padding: 8px 16px;
+}
+.coll-volume {
+  width: 90px;
+  height: 54px;
+  padding: 8px 16px;
+}
+.coll-owners {
+  width: 90px;
+  height: 54px;
+  padding: 8px 16px;
+}
+
+.coll-no {
+  height: 100%;
+  text-align: center;
 }
