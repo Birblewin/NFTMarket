@@ -1,6 +1,9 @@
 // IMPORT NECESSARY MODULES
 import { NavLink } from "react-router-dom"
 
+// IMPORT CSS FILE
+import './LiveCollection.css'
+
 // EXPORTING A LIVECOLLECTION FUNCTION
 export default function LiveCollection(){
     return(
@@ -11,9 +14,11 @@ export default function LiveCollection(){
                     alt="live-collection-photo"
                     title="live-collection-photo"
                     loading="lazy"
+                    width={100}
+                    height={100}
                 />
 
-                <figcaption>Railey Freemans Edditon</figcaption>
+                <figcaption>Railey Freemans Editon</figcaption>
             </figure>
 
             <div className="live_collection_container__data">
