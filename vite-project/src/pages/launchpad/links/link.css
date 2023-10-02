@@ -1,0 +1,24 @@
+.links-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 8%;
+  border-bottom: gray 2px solid;
+  margin-right: 80px;
+  margin-top: 2%;
+  
+}
+
+.links-container a {
+  margin-right: 20px; 
+  text-decoration: none; 
+  color: #5b5252; 
+}
+
+.links-container a:last-child {
+  margin-right: 0; 
+}
+#bt2{
+  background-color: rgb(21, 16, 16);
+  border: 0;
+  border-bottom: 2px solid;
+}

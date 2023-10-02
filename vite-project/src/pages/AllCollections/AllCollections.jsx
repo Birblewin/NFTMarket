@@ -1,4 +1,3 @@
-import React from "react";
 import Cards from "./Cards";
 import FilterBar from "./FilterBar";
 
@@ -20,9 +19,11 @@ const AllCollections = () => {
           />
         </span>
       </div>
-      <FilterBar />
+      <div className="main-content">
+        <FilterBar />
 
-      <Cards />
+        <Cards />
+      </div>
     </div>
   );
 };

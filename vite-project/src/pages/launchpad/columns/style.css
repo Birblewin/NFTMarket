@@ -1,0 +1,35 @@
+.two-column {
+    display: flex;
+    justify-content: space-between ; 
+    align-items: center;
+    margin-top: -2%;
+  }
+  
+  .column {
+    flex: 1; 
+    padding: 10px; 
+  }
+  .left-column {
+    padding: auto;
+    max-width: 45%;
+    color: #ffff;
+  }
+  .right-column {
+    padding: auto;
+    max-width: 45%;
+    color: #ffff;
+    
+  }
+  .Details{
+    background-color:#141414;
+    padding: 80px;
+  }
+  .socials{
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  #bt{
+    background-color: #121212;
+    padding: 5px;
+    border-radius: 5px;
+  }
