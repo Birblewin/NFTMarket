@@ -1,4 +1,8 @@
 /* eslint-disable react/prop-types */
+// IMPORING NECESSARY MODULES
+import { NavLink } from 'react-router-dom';
+
+//  IMPORING NECESSARY COMPONENTS
 import './Navbar.css'; // Import your CSS file for styling
 import SearchIcon from '@mui/icons-material/Search';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -8,12 +12,12 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 export default function Navbar(props) {
   return (
     <div className='navbar'>
-      <a href="/">
+      <NavLink to="/">
         <div className='nav-title'>
           <img src='../img/birble.png'/>
           <p>Birble.store</p>
         </div>
-      </a>
+      </NavLink>
       
       <SearchIcon className='search-icon'/>
 
@@ -31,40 +35,73 @@ export default function Navbar(props) {
      
       <div className="nav-links">
         <div>
-          <a className='rewards' href="/rewardspage">Rewards</a>
+          <NavLink className='rewards' to="/rewards">Rewards</NavLink>
         </div>
 
+       <div className='dropdown'>
         <span>
-          <a href="/explore">Explore</a>
+          <a>Explore</a>
+          
+          <div className="dropdown-content">
+            {/* Dropdown links */}
+            <NavLink to="/allcollections">All collections</NavLink>
+            <NavLink to="/allnfts">All NFTs</NavLink>
+            {/* Add more links as needed */}
+          </div>
         </span>
+      </div>
 
+      <div className='dropdown'>
         <span>
-          <a href="/creators">Creators</a>
+          <a >Creators</a>
+          <div className="dropdown-content">
+            {/* Dropdown links */}
+            <NavLink href="#">Create your collection</NavLink>
+            <NavLink href="#">Verify your collection</NavLink>
+            {/* Add more links as needed */}
+          </div>
         </span>
+      </div>
 
+      <div className='dropdown'>
         <span>
-          <a href="/about">About</a>
+          <a >About</a>
+          <div className="dropdown-content">
+            {/* Dropdown links */}
+            <NavLink to="#">Our team</NavLink>
+            <NavLink to="#">Our impact</NavLink>
+            {/* Add more links as needed */}
+          </div>
         </span>
+      </div>
 
+      <div className='dropdown'>
         <span>
-          <a href="/launchpad">Launchpad</a>
+          <a>Launchpad</a>
+          <div className="dropdown-content">
+            {/* Dropdown links */}
+            <NavLink to="/launchpad/launches">Launches</NavLink>
+            <NavLink to="#">Apply For Launchpad</NavLink>
+            {/* Add more links as needed */}
+          </div>
         </span>
+      </div>
 
-        <span>
-          <LightModeIcon className='light-mode-icon'/>
-        </span>
+      <span>
+        <LightModeIcon className='light-mode-icon'/>
+      </span>
 
-        <span>
-          <NotificationsIcon className='notification-icon'/>
-        </span>
+      <span>
+        <NotificationsIcon className='notification-icon'/>
+      </span>
 
-        <div className='en'>EN</div>
-        
-        <button 
-          className='wallet'
-          onClick={props.showWalletSidePanel}
-        >Connect wallet</button>
-      </div>  
-    </div>
+      <div className='en'>EN</div>
+      
+      <button 
+        className='wallet'
+        onClick={props.showWalletSidePanel}
+      >Connect wallet</button>
+    </div>  
+  </div>
   );
 }
