@@ -1,25 +1,45 @@
-import React from 'react'
-import TableContainer from './tablecontainer'
+import React from "react";
+import TableContainer from "./TableContainer";
+import { Icon } from "@iconify/react";
 
 const Table = () => {
   return (
-    <div className='table'>
-        <div classsName='upside'>
-        <section className='header'>
-        <h4>Top Collections</h4>
-        <section className='bg'>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style={{color:'#9CA3AF'}}>Total 24h volume:&nbsp;&nbsp;&nbsp;</span> <span style={{color: '#ffff'}}>856.3k ADA &nbsp;&nbsp;&nbsp;&nbsp;</span><span style={{ color: 'red' }}>↗103%</span></h3>
-        </section>
-        <div>
-        <button className='bt'>Veiw all</button>
+    <div className="table">
+      <div className="top-coll-header">
+          <h3>Top Collections</h3>
+        
+        <div className="total-time">
+          <div className="total-bar">
+            <span>
+              Total 24h Volume: <span>450.6k ₳</span>{" "}
+              <span className="loss">
+                <Icon
+                  icon="tdesign:arrow-left-down"
+                  color="#f05252"
+                  width="15"
+                  height="15"
+                  hFlip={true}
+                />{" "}
+                26.78%
+              </span>
+            </span>
+          </div>
+          <div className="time-frames">
+            <div>1h</div>
+            <div>24h</div>
+            <div>7d</div>
+            <div>30d</div>
+            <div>All</div>
+            <span className="bt">View All</span>
+          </div>
         </div>
-        </section>
-        </div>
-        <div>
-        <TableContainer/>
-        </div>
-        </div>
-  )
-}
+        <div></div>
+      </div>
+      <div>
+        <TableContainer />
+      </div>
+    </div>
+  );
+};
 
-export default Table
+export default Table;

@@ -72,8 +72,10 @@ export default function Footer(){
 
             <div className='footer__list'>
                 <h3 className="footer__list--title">Browse</h3>
+
                 <NavLink className="footer__list--link" to='/allNFTs'>Marketplace</NavLink>
                 <NavLink className="footer__list--link" to='/allCollections'>Collections</NavLink>
+
             </div>
 
             <div className='footer__list'>
