@@ -81,7 +81,7 @@ export default function Navbar(props) {
           <div className="dropdown-content">
             {/* Dropdown links */}
             <NavLink to="/launchpad/launches">Launches</NavLink>
-            <NavLink to="/launchpad/apply for launchpad">Apply For Launchpad</NavLink>
+            <NavLink to="#">Apply For Launchpad</NavLink>
             {/* Add more links as needed */}
           </div>
         </span>
