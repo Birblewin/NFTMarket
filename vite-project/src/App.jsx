@@ -1,5 +1,7 @@
 // IMPORTING REACT ROUTER
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
+// IMPORTING REACT ROUTER
+import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 
 // IMPORTING THE NECESSARY PAGES AND LAYOUTS
 import AllCollections from './pages/AllCollections/AllCollections';
