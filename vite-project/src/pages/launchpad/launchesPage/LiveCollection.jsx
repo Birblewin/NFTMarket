@@ -7,7 +7,7 @@ import './LiveCollection.css'
 // EXPORTING A LIVECOLLECTION FUNCTION
 export default function LiveCollection(){
     return(
-        <NavLink className="live_collection_container">
+        <NavLink className="live_collection_container" to='/launchpad/launch details'>
             <figure className="live_collection_container__image">
                 <img 
                     src="../../../../img/launchpad/live_photo.png" 
