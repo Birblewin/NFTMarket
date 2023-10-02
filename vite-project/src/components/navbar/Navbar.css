@@ -132,39 +132,3 @@ input{
   scale: 0.8;
   opacity: 0.7;
 }
-
-
-/* Initially hide the dropdown content */
-.dropdown .dropdown-content {
-  display: none;
-  position: absolute;
-  color: #555c69;
-  background-color: #18191b;
-  border:  solid 1px #555c69 ;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 5px;
-  
-  margin-left: -10px;
-  
-}
-
-/* Show the dropdown content on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-
-}
-
-/* Style the dropdown links */
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: #555c69;
-}
-
-/* Add styles for dropdown links on hover or focus */
-.dropdown-content a:hover {
-  background-color: #2a2929;
-}
