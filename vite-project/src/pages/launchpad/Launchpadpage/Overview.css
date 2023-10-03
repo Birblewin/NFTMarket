@@ -1,0 +1,11 @@
+.overview-container{
+    width: 200px;
+    height: 300px;
+    
+}
+
+.Overview-container:active{
+    scale: 1.2;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
