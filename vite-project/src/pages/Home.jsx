@@ -1,4 +1,3 @@
-import React from 'react'
 import Carousel from '../components/carousel/Carousel'
 import WhaleActivityContainer from '../components/whaleActivity/WhaleActivityContainer'
 import Table from '../components/Table/table'

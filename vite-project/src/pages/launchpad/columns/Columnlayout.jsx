@@ -18,7 +18,7 @@ const Columnlayout = () => {
         <p>Season 1 is our first range of products, licensing IP from popular web3 brands, we create high quality limited edition figure drops. So far we have partnered with the likes of Liberty Square and y00ts. With every drop we expand our community of collectors, strengthen our network and delivering more quality products but rest assured we have big ambitions and plans to scale further beyond the NFT space in the near future.</p>
         &nbsp;
         <p>
-        The next addition to our Season 1 range is no other than the Famous Fox Federation. You can mint your digital FFF figure then use our seamless "redeem shop" to pay shipping, claim your physical figure, and FREE Geek Card NFT. This time we have two versions that can be minted, 250 of each, 500 total. Limited edition will never re-run. With AR activations, custom branded packaging and custom "pop protector" enjoy a unique unboxing experience like no other!
+        The next addition to our Season 1 range is no other than the Famous Fox Federation. You can mint your digital FFF figure then use our seamless `redeem shop` to pay shipping, claim your physical figure, and FREE Geek Card NFT. This time we have two versions that can be minted, 250 of each, 500 total. Limited edition will never re-run. With AR activations, custom branded packaging and custom `pop protector` enjoy a unique unboxing experience like no other!
         </p>
         &nbsp;
         <h2>Utility</h2>
