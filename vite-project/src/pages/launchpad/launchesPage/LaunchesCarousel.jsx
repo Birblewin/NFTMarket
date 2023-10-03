@@ -1,20 +1,20 @@
-// IMPORING NECESSARY MODULES AND COMPONENTS AND DATA
-import React from "react"
-import Details from "../../../components/carousel/NFTDetails"
-import CarouselEntry from "./CarouselEntry"
+// // IMPORING NECESSARY MODULES AND COMPONENTS AND DATA
+// import React from "react"
+// import Details from "../../../components/carousel/NFTDetails"
+// import CarouselEntry from "./CarouselEntry"
 
-// IMPORTING CSS FILE
-import './LaunchesCarousel.css'
+// // IMPORTING CSS FILE
+// import './LaunchesCarousel.css'
 
-// EXPORTING THE LAUNCHESCAROUSEL FUNCTIONS
-export default function LaunchesCarousel(){
-    // A STATE TO HOLD THE CURRENT INDEX OF CARD DISPLAYED
-    const [currentCard, setCurrentCard] = React.useState(0)
+// // EXPORTING THE LAUNCHESCAROUSEL FUNCTIONS
+// export default function LaunchesCarousel(){
+//     // A STATE TO HOLD THE CURRENT INDEX OF CARD DISPLAYED
+//     const [currentCard, setCurrentCard] = React.useState(0)
 
-    // A FUNCTION TO MOVE TO THE NEXT CARD
-    function checkNextCard(){
-        setCurrentCard(prevCard => prevCard < Details.length - 1 ? prevCard + 1 : 0)
-    }
+//     // A FUNCTION TO MOVE TO THE NEXT CARD
+//     function checkNextCard(){
+//         setCurrentCard(prevCard => prevCard < Details.length - 1 ? prevCard + 1 : 0)
+//     }
 
     // A FUNCTION TO MOVE TO THE PREVIOUS CARD
     function checkPreviousCard(){
