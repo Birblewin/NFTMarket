@@ -1,6 +1,7 @@
 import './launchpad.css'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ProgressBar from './progressbarholder';
+import { Icon } from '@iconify/react';
 import CountdownTimer from './timer'
 const Launchpadcontainer = () => {
   return (
@@ -35,26 +36,31 @@ const Launchpadcontainer = () => {
      
       {/* Container2 with basic styling */}
 
-      <div className="division2" style={{ backgroundColor: '#1d2022' }}>
-      <h2 style={{fontSize:'14px', marginTop:'-38px', paddingRight:'60px', color:'#FFFF'}}>Total minted</h2>
-        <ProgressBar/>
-        <div className='connection'>
-          <div  className='divisionh2'>
-            <h2 className='h1'>Price</h2>
+       <div className="division2" style={{ backgroundColor: '#1d2022' }}>
+         <h2 style={{fontSize:'14px', marginTop:'-38px', paddingRight:'60px', color:'#FFFF'}}>Total minted</h2>
+           <ProgressBar/>
+             <div className='connection'>
+               <div  className='divisionh2'>
+              <h2 className='h1'>Price</h2>
             &nbsp;&nbsp;&nbsp;
-          <h1 style={{fontSize:'14px'}}>₳  11490K</h1>
-          </div>
-          <div className='button1'>
-          {/* <CurrencyBitcoinIcon/> */}
-          <button style={{backgroundColor:'#FFDB24', color: '#363636', borderRadius:'20px',fontSize:'14px'}}>connect wallet</button>
-          </div>
+            <h1 style={{fontSize:'14px', marginTop:'13px'}}>₳  11490K</h1>
+              </div>
+                 <div className='cardano'>
+                    <div>
+                       <Icon icon="formkit:cardano" width={80} height={80}/>
+                       </div>
+                     <div className='button1'>
+                   <button className='button'>connect wallet</button>
+                 </div>
+               </div>
         </div>
       </div>
 
       {/* container3 with basic styling*/}
 
-      <div className="division3" style={{ backgroundColor: '#1d2022'}}>
-        <button style={{backgroundColor:'#2a2a24',padding:'18px',paddingLeft:'30px',paddingRight:'30px', borderRadius:'30px',marginLeft:'25%', fontSize:'14px'}}>Make offer</button><button style={{backgroundColor:'#2a2a24',padding:'18px',paddingLeft:'30px',paddingRight:'30px', borderRadius:'30px',fontSize:'14px'}}>Explore all NFTs</button>
+      <div className="division3">
+        <button className='button'>Make offer</button>
+        <button>Explore all NFTs</button>
       </div>
     </div>
     
