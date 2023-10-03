@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './progressbarr.css'
 class ProgressBar extends Component {
   constructor(props) {
@@ -29,9 +29,8 @@ class ProgressBar extends Component {
   render() {
     return (
       <div>
-        <h2>Progress Bar Example</h2>
+        <p style={{fontSize:'11px', marginLeft:'80%'}}>{this.state.progressValue}%(450/1000)</p>
         <progress max="100" value={this.state.progressValue} />
-        <p>{this.state.progressValue}%</p>
       </div>
     );
   }

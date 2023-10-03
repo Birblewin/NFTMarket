@@ -77,7 +77,7 @@ export default function Navbar(props) {
 
       <div className='dropdown'>
         <span>
-          <a>Launchpad</a>
+          <a >Launchpad</a>
           <div className="dropdown-content">
             {/* Dropdown links */}
             <NavLink to="/launchpad/launches">Launches</NavLink>
