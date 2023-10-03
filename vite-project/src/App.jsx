@@ -6,7 +6,7 @@ import AllCollections from './pages/AllCollections/AllCollections';
 import AllNftsPage from './pages/AllNFTS/AllNfts';
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
-import LaunchpadPage from './pages/launchpad/launchpad';
+import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
 
 import RootLayout from './layouts/RootLayout'

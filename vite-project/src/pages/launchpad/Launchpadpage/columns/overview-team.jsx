@@ -1,13 +1,11 @@
 import Columnlayout from './Columnlayout'
 import './style.css'
-import LinksDiv from '../links/link'
 
-const Overviewteam = () => {
+const Notes = () => {
   return (
     <div className="App">
       
-    <LinksDiv/>
-    &nbsp;&nbsp;
+    
   
     <div className='Details'>
     <Columnlayout>
@@ -27,4 +25,4 @@ const Overviewteam = () => {
   )
 }
 
-export default Overviewteam
+export default Notes
