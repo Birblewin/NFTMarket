@@ -3,7 +3,7 @@ import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} fr
 
 // IMPORTING THE NECESSARY PAGES AND LAYOUTS
 import AllCollections from './pages/AllCollections/AllCollections';
-import AllNftsPage from './pages/AllNFTS/AllNfts';
+import AllNftsPage from './pages/AllNFTS/AllNFTs';
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 import LaunchpadPage from './pages/launchpad/launchpad';
@@ -25,7 +25,7 @@ const appRouter = createBrowserRouter(
       
       <Route path='launchpad'>
         <Route path='launches' element={<LaunchesPage/>}></Route>
-        <Route path='apply for launchpad' element={<LaunchpadPage/>}></Route>
+        <Route path='launch details' element={<LaunchpadPage/>}></Route>
       </Route>
     </Route>
   )

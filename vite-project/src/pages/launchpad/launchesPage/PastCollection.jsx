@@ -7,7 +7,7 @@ import './PastCollection.css'
 // EXPORTING A PASTCOLLECTION FUNCTION
 export default function PastCollection(){
     return(
-        <NavLink className="past_collection_container">
+        <NavLink className="past_collection_container" to='/launchpad/launch details'>
             <figure className="past_collection_container__image">
                 <img 
                     src="../../../../img/launchpad/past_photo.png" 

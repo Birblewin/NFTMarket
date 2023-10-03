@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './progressbarr.css'
 class ProgressBar extends Component {
   constructor(props) {

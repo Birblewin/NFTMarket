@@ -1,12 +1,11 @@
-import React from 'react'
 import VerifiedIcon from '@mui/icons-material/Verified'
 import './NftCard.css'
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import Details from '../AllCollections/collections';
 
 function NftCard() {
-    const cards = Details.map((collection, index) =>(
-        <div>
+    const cards = Details.map((collection) =>(
+        <div key={collection._id}>
       
         <div   className='card'>
           <img src={collection.cardImage}/>

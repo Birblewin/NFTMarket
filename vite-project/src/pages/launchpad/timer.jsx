@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './timerr.css'; // Import the CSS file for styling
 
 class CountdownTimer extends Component {

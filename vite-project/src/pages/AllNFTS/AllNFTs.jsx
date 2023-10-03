@@ -1,4 +1,3 @@
-import React from 'react'
 import NftCard from './NftCard'
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
 import './NftCard.css'
