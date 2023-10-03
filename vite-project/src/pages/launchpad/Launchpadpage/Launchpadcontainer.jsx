@@ -1,5 +1,4 @@
 import './launchpad.css'
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ProgressBar from './progressbarholder';
 import { Icon } from '@iconify/react';
 import CountdownTimer from './timer'
@@ -20,7 +19,8 @@ const Launchpadcontainer = () => {
       {/* Container1 with basic styling*/}
       
      <div  className='calender'>
-      <button className='button-icon'><CalendarMonthIcon/></button>
+      <div className='live'><Icon icon="tabler:live-photo" /><span style={{fontSize:'8px'}}><h1>&nbsp;Live</h1></span></div>
+      <button className='button-icon'><Icon icon="uil:calender" width={30} height={30} color='#ffff'/></button>
       </div>
       
       <div className="division1" style={{ backgroundColor: '#1d2022' }}>
@@ -60,11 +60,16 @@ const Launchpadcontainer = () => {
       {/* container3 with basic styling*/}
 
       <div className="division3">
-        <button className='button'>Make offer</button>
-        <button>Explore all NFTs</button>
+        <div className='gen'>
+          <a href="/">
+          <button className='button2'>Make offer &nbsp;<Icon icon="solar:wallet-bold" /></button>
+          </a>
+           <a href="/">
+           <button className='button2'>Explore all NFTs</button>
+           </a>
+        </div>
       </div>
     </div>
-    
  </div>
 
   )

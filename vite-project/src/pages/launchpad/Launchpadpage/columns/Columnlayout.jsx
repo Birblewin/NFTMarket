@@ -1,7 +1,5 @@
 import './style.css'
-import LanguageIcon from '@mui/icons-material/Language';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import { Icon } from '@iconify/react';
 const Columnlayout = () => {
   return (
     <div className="two-column">
@@ -9,9 +7,9 @@ const Columnlayout = () => {
         {/* Content for the left column */}
         <h2>Reazy Cleacks Collection</h2>
         <div className='socials'>
-        <button id='bt'><a href="/"><LanguageIcon/></a></button>
-        <button id='bt'><a href="/"><InstagramIcon/></a></button>
-        <button id='bt'><a href="/"><TwitterIcon/></a></button>
+        <button id='bt'><a href="/"><Icon icon="tabler:world" width={40} height={40}/></a></button>
+        <button id='bt'><a href="https://discord.com/login"><Icon icon="ic:baseline-discord" width={40} height={40}/></a></button>     
+        <button id='bt'><a href="https://discord.com/login"></a><Icon icon="mdi:github" width={40} height={40} color='#551A8B'/></button>
         </div>
         &nbsp;
        <p>We are Reezy cleeks Collection. A next-gen collectible brand bringing popular web3 IP to life.</p>&nbsp;

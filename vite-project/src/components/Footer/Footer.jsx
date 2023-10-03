@@ -1,6 +1,6 @@
 // IMPORTING NECESSARY MODULES
 import { NavLink } from 'react-router-dom'
-
+import { Icon } from '@iconify/react';
 // IMPORTING CSS FILE
 import './Footer.css'
 
@@ -25,47 +25,16 @@ export default function Footer(){
                 
                 <div className="footer__description--social_links">
                     <NavLink to="https://www.instagram.com" className="footer__description--social_links--link" target='_blank'>
-                        <img 
-                            src="../../../img/social_logos/InstagramPNG4.png" 
-                            alt="Instagram_logo"
-                            title='Instagram_account'
-                            loading='lazy'
-                            width={35}
-                            height={30}
-                        />
+                    <Icon icon="ri:instagram-fill" width={35} height={35}/>
                     </NavLink>
-
                     <NavLink to="https://www.facebook.com" className="footer__description--social_links--link" target='_blank'>
-                        <img 
-                            src="../../../img/social_logos/FacebookPNG4.png" 
-                            alt="Facebook_logo"
-                            title='Facebook_account'
-                            loading='lazy'
-                            width={35}
-                            height={30}
-                        />
+                    <Icon icon="ic:baseline-facebook" width={35} height={35}/>  
                     </NavLink>
-
                     <NavLink to="https://www.telegram.com" className="footer__description--social_links--link" target='_blank'>
-                        <img 
-                            src="../../../img/social_logos/Telegram_logo_PNG1.png" 
-                            alt="Telegram_logo"
-                            title='Telegram_account'
-                            loading='lazy'
-                            width={35}
-                            height={30}
-                        />
+                    <Icon icon="ic:baseline-telegram" width={35} height={35}/>
                     </NavLink>
-
                     <NavLink to="https://www.x.com" className="footer__description--social_links--link" target='_blank'>
-                        <img 
-                            src="../../../img/social_logos/Twitter_logo_PNG15.png" 
-                            alt="Twitter_logo"
-                            title='Twitter_account'
-                            loading='lazy'
-                            width={35}
-                            height={30}
-                        />
+                    <Icon icon="ic:baseline-facebook" width={35} height={35}/>
                     </NavLink>
                 </div>
             </div>
