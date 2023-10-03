@@ -73,7 +73,7 @@ const Launchpad = () => {
 
             </div>
                   
-            <div className="launchpad-page-container-Holder">
+            <div className={viewTeam ? "launchpad-page-container-Holder" : ""}>
                 {viewTeam ? TeamGenerator() : 
                 OverviewGenerator()}
             </div>
