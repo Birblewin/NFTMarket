@@ -1,6 +1,6 @@
-import React from 'react'
 import Columnlayout from './Columnlayout'
 import './style.css'
+
 const Notes = () => {
   return (
     <div className="App">
