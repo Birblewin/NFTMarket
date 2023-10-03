@@ -4,41 +4,42 @@ import Overview from "./Overview"
 import Team from './team'
 
 const Launchpad = () => {
-      // A BOOLEAN TO KEEP TRACK OF WHETHER OR NOT TO VIEW THE PAST COLLECTIONS
-      const [viewTeam, setViewTeam] = React.useState(false)
+    // A BOOLEAN TO KEEP TRACK OF WHETHER OR NOT TO VIEW THE TEAM SECTION
+    const [viewTeam, setViewTeam] = React.useState(false)
 
-      // A FUNCTION TO GENERATE AN ARRAY OF LIVE COLLECTIONS
-      function OverviewGenerator() {
-          const OverviewArray = []
-  
-          for(let i = 0; i < 1; i++){
-              OverviewArray.push(<Overview/>)
-          }
-  
-          return OverviewArray
-      }
-  
-      // A FUNCTION TO GENERATE AN ARRAY OF PAST COLLECTIONS
-      function TeamGenerator() {
-          const TeamArray = []
-  
-          for(let i = 0; i < 5; i++){
-              TeamArray.push(<Team/>)
-          }
-  
-          return TeamArray
-      }
+    // A FUNCTION TO GENERATE THE OVERVIEW SECTION
+    function OverviewGenerator() {
+        const OverviewArray = []
+
+        for(let i = 0; i < 1; i++){
+            OverviewArray.push(<Overview/>)
+        }
+
+        return OverviewArray
+    }
+
+    // A FUNCTION TO GENERATE THE TEAM SECTION
+    function TeamGenerator() {
+        const TeamArray = []
+
+        for(let i = 0; i < 5; i++){
+            TeamArray.push(<Team/>)
+        }
+
+        return TeamArray
+    }
+
   return (
     <div className='Launchpad-container'>
       <Launchpadcontainer/>
       
       <div className="launchpad-page-container-viewOverviewToggle">
                 <p 
-                    onClick={() => setViewOvervieww(true)}
+                    onClick={() => setViewTeam(false)}
                     
                     style={
                         
-                      Overview 
+                      viewTeam
                             ? 
                         null 
                             : 
@@ -72,7 +73,7 @@ const Launchpad = () => {
 
             </div>
                   
-            <div className="launchpad-page-container-Holder">
+            <div className={viewTeam ? "launchpad-page-container-Holder" : ""}>
                 {viewTeam ? TeamGenerator() : 
                 OverviewGenerator()}
             </div>
