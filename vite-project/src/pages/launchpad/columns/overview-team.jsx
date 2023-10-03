@@ -1,6 +1,7 @@
 import Columnlayout from './Columnlayout'
 import './style.css'
 import LinksDiv from '../links/link'
+
 const Overviewteam = () => {
   return (
     <div className="App">
