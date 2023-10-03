@@ -1,6 +1,6 @@
 // IMPORT NECESSARY MODULES
 import { NavLink } from "react-router-dom"
-
+import { Icon } from "@iconify/react"
 // IMPORT CSS FILE
 import './team.css'
 
@@ -19,6 +19,7 @@ export default function Team(){
                 />
 
                 <figcaption>Railey Freemans </figcaption>
+                <Icon icon="ri:instagram-fill" width={30} height={35} style={{marginLeft:'43%'}}/>
             </figure>
 
 

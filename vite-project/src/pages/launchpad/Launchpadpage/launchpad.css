@@ -55,12 +55,20 @@
   height: auto;
   display: block;
 }
-.Live{
-  margin-left: 2%;
-  padding-top: 3%;
+.live{
+  background-color:#2B2037;
+  padding: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 2px;
+  display: flex;
+  color: green;
+  justify-content: center;align-items: center;
 }
+
 .calender{
-  margin-left: 85%;
+  justify-content: space-between;
+  display: flex;
 
 }
 .button-icon{
@@ -130,4 +138,15 @@
   padding: 20px;
   border-radius: 10px; /* Add rounded corners */
   color: white; /* Text color for paragraphs */
+  background-color: #1d2022;
+}
+.gen{
+  margin-left: 30%;
+  gap: 4px;
+}
+.button2{
+  background-color: #18191B;
+  padding: 14px;
+  color: #ffff;
+  border-radius: 23px;
 }
