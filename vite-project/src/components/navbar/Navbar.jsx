@@ -18,19 +18,42 @@ export default function Navbar(props) {
           <p>Birble.store</p>
         </div>
       </NavLink>
-      
-      <SearchIcon className='search-icon'/>
 
-      <div>
+      <div className='search-bar-container'>
+        <SearchIcon className='search-icon'/>
+
         <input
           className="search-bar"
           type="text"
           placeholder="Search collection, or NFT"
           name="searchInput"
-          // eslint-disable-next-line react/prop-types
-         /*  value={props.searchData.searchInput || "Search collection, or NFT"}
-          onChange={props.handleSearchData} */
         />
+      </div>
+
+      <div className='small-screen-buttons'>
+        <button 
+          className='small-screen-buttons__search-button'
+          title='search-button'
+        >
+          <SearchIcon className='search-icon-'/>
+        </button>
+
+        <button 
+          className='small-screen-buttons__wallet-button'
+          onClick={props.showWalletSidePanel}
+          title='show-wallet'
+        >
+          <img crossOrigin="anonymous" id="" src="https://static.jpgstoreapis.com/icons/wallet-outline-dark.svg" alt="wallet icon"/>
+        </button>
+        
+        <button 
+          className='small-screen-buttons__side-panel-button'
+          title='show-sidebar'
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
       </div>
      
       <div className="nav-links">
