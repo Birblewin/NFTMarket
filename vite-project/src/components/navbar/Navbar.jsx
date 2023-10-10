@@ -35,7 +35,10 @@ export default function Navbar(props) {
           className='small-screen-buttons__search-button'
           title='search-button'
         >
-          <SearchIcon className='search-icon-'/>
+          <SearchIcon 
+            className='search-icon'
+            onClick={props.showSearchBar}
+          />
         </button>
 
         <button 
