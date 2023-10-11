@@ -7,6 +7,7 @@ import {Outlet} from 'react-router-dom'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
+import LinkSidePanel from '../components/linkSidePanel/LinkSidePanel'
 import SearchBar from "../components/searchBar/SearchBar";
 
 // IMPORT THE CSS FILE
@@ -33,9 +34,15 @@ export default function RootLayout(){
     const [showWalletSidePanel, setShowWalletSidePanel] = React.useState(false)
     // A BOOLEAN TO KEEP TRACK OF SHOWING THE SEARCHBAR
     const [showSearchBar, setShowSearchBar] = React.useState(false)
+    // A BOOLEAN TO KEEP TRACK OF SHOWING THE SEARCHBAR
+    const [showLinkSidePanel, setShowLinkSidePanel] = React.useState(false)
 
     return(
         <main>
+            {
+                showLinkSidePanel && <LinkSidePanel hideLinkSidePanel = {() => setShowLinkSidePanel(false)}/>
+            }           
+
             {   
                 showSearchBar && <SearchBar 
                     hideSearchBar = {() => setShowSearchBar(false)}
@@ -43,13 +50,14 @@ export default function RootLayout(){
                     updateFormData = {(e) => updateFormData(e)}
                 />
             }
-            
+
             {
                 showWalletSidePanel && <WalletSidePanel hideWalletSidePanel = {() => setShowWalletSidePanel(false)}/>
             }
 
             <Navbar 
                 showWalletSidePanel = {() => setShowWalletSidePanel(true)}
+                showLinkSidePanel = {() => setShowLinkSidePanel(true)}
                 showSearchBar = {() => setShowSearchBar(true)}
             />
 

@@ -58,6 +58,7 @@ export default function Navbar(props) {
         <button 
           className='small-screen-buttons__side-panel-button'
           title='show-sidebar'
+          onClick={props.showLinkSidePanel}
         >
           <div></div>
           <div></div>
