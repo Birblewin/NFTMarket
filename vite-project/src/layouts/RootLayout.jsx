@@ -36,6 +36,14 @@ export default function RootLayout(){
 
     return(
         <main>
+            {   
+                showSearchBar && <SearchBar 
+                    hideSearchBar = {() => setShowSearchBar(false)}
+                    formData = {formData}
+                    updateFormData = {(e) => updateFormData(e)}
+                />
+            }
+            
             {
                 showWalletSidePanel && <WalletSidePanel hideWalletSidePanel = {() => setShowWalletSidePanel(false)}/>
             }
@@ -44,14 +52,6 @@ export default function RootLayout(){
                 showWalletSidePanel = {() => setShowWalletSidePanel(true)}
                 showSearchBar = {() => setShowSearchBar(true)}
             />
-
-            {
-                showSearchBar && <SearchBar 
-                    hideSearchBar = {() => setShowSearchBar(false)}
-                    formData = {formData}
-                    updateFormData = {(e) => updateFormData(e)}
-                />
-            }
 
             <Outlet/>
             <Footer/>
