@@ -23,7 +23,10 @@ const Cards = () => {
         <div className="title">{Details[index].cardTitle}</div>
         
         <div className="nft-details">
-            {Details[index].cardInfo}
+          <div>{Details[index].cardInfo}</div>
+          <div><button className="learn-more-button">Learn More</button></div>
+            
+            
         </div>
       </div>
       
@@ -47,7 +50,7 @@ const Cards = () => {
         </span>
       </div>
 
-      <button className="learn-more-button">Learn More</button>
+      
     </div>
   );
 };
