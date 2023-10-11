@@ -1,0 +1,203 @@
+[33me127f0e[m[33m ([m[1;36mHEAD -> [m[1;32mRonnie[m[33m, [m[1;31morigin/Ronnie[m[33m)[m HEAD@{0}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33m954001e[m HEAD@{1}: commit: update
+[33m51987b0[m HEAD@{2}: reset: moving to HEAD~
+[33mfa66051[m HEAD@{3}: reset: moving to HEAD~
+[33ma2755c8[m HEAD@{4}: reset: moving to HEAD~
+[33mc26cd05[m HEAD@{5}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33ma2755c8[m HEAD@{6}: commit: Finished
+[33mfa66051[m HEAD@{7}: reset: moving to HEAD~
+[33m1383a42[m HEAD@{8}: reset: moving to HEAD~
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{9}: reset: moving to HEAD~
+[33m6381d31[m HEAD@{10}: reset: moving to HEAD~
+[33m74205c3[m HEAD@{11}: reset: moving to HEAD~
+[33meb1cbe2[m HEAD@{12}: checkout: moving from Ronnie to Ronnie
+[33meb1cbe2[m HEAD@{13}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33m74205c3[m HEAD@{14}: commit: Merge pull request #22 from Birblewin/Ronnie
+[33m6381d31[m HEAD@{15}: reset: moving to HEAD~
+[33ma6d6363[m HEAD@{16}: reset: moving to HEAD~
+[33mda3f265[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{17}: checkout: moving from main to Ronnie
+[33mda3f265[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{18}: pull --tags origin main: Fast-forward
+[33ma6d6363[m HEAD@{19}: checkout: moving from Ronnie to main
+[33mda3f265[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{20}: pull --tags origin main: Fast-forward
+[33m50f9a12[m HEAD@{21}: commit: added linksidepanel, except for language dropdown
+[33mae7f3b2[m HEAD@{22}: commit: completed html of linksidepanel
+[33m49c46f4[m HEAD@{23}: commit: implemented linksidepanel feature
+[33m66ac151[m HEAD@{24}: commit: finished up on searchbar
+[33mc1cb9df[m HEAD@{25}: commit: adding navbar features
+[33m9d10548[m HEAD@{26}: commit: successfully implemented searchBar skeleton
+[33ma6d6363[m HEAD@{27}: checkout: moving from main to Ronnie
+[33ma6d6363[m HEAD@{28}: checkout: moving from main to main
+[33ma6d6363[m HEAD@{29}: checkout: moving from Ronnie to main
+[33ma6d6363[m HEAD@{30}: checkout: moving from karisa to Ronnie
+[33m2a58962[m[33m ([m[1;31morigin/karisa[m[33m, [m[1;32mkarisa[m[33m)[m HEAD@{31}: pull --tags origin karisa: Fast-forward
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{32}: checkout: moving from main to karisa
+[33ma6d6363[m HEAD@{33}: pull --tags origin main: Fast-forward
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{34}: checkout: moving from Ronnie to main
+[33ma6d6363[m HEAD@{35}: pull --tags origin main: Fast-forward
+[33mc4630cc[m HEAD@{36}: commit: added view of small screen in navbar, below 640px
+[33m6381d31[m HEAD@{37}: pull --tags origin main: Fast-forward
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{38}: checkout: moving from briian to Ronnie
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{39}: pull --tags origin main: Fast-forward
+[33m713c266[m HEAD@{40}: checkout: moving from raymond to briian
+[33mae7de79[m[33m ([m[1;31morigin/raymond[m[33m, [m[1;32mraymond[m[33m)[m HEAD@{41}: checkout: moving from karisa to raymond
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{42}: checkout: moving from Ronnie to karisa
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{43}: checkout: moving from raymond to Ronnie
+[33mae7de79[m[33m ([m[1;31morigin/raymond[m[33m, [m[1;32mraymond[m[33m)[m HEAD@{44}: checkout: moving from Ronnie to raymond
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{45}: pull --tags origin main: Fast-forward
+[33m1383a42[m HEAD@{46}: checkout: moving from main to Ronnie
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{47}: pull --tags origin main: Fast-forward
+[33m14a53c4[m HEAD@{48}: checkout: moving from karisa to main
+[33m1767e62[m[33m ([m[1;31morigin/briian[m[33m, [m[1;32mbriian[m[33m)[m HEAD@{49}: pull --tags origin main: Fast-forward
+[33mbf49933[m HEAD@{50}: merge origin/main: Merge made by the 'ort' strategy.
+[33m7fa6762[m HEAD@{51}: pull --tags origin karisa: Fast-forward
+[33md5bf517[m HEAD@{52}: checkout: moving from Ronnie to karisa
+[33m1383a42[m HEAD@{53}: pull --tags origin main: Fast-forward
+[33m33d0422[m HEAD@{54}: pull --tags origin main: Fast-forward
+[33maac7aac[m HEAD@{55}: commit: fixed raymond's issues
+[33mbfc4c4c[m HEAD@{56}: commit: fixed choosing technique
+[33m6afc1ab[m HEAD@{57}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m4a90b68[m HEAD@{58}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33mcb00509[m HEAD@{59}: checkout: moving from main to Ronnie
+[33m14a53c4[m HEAD@{60}: checkout: moving from main to main
+[33m14a53c4[m HEAD@{61}: checkout: moving from karisa to main
+[33md5bf517[m HEAD@{62}: checkout: moving from main to karisa
+[33m14a53c4[m HEAD@{63}: pull --tags origin main: Fast-forward
+[33mda60e00[m HEAD@{64}: checkout: moving from Ronnie to main
+[33mcb00509[m HEAD@{65}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m5e0e819[m HEAD@{66}: checkout: moving from main to Ronnie
+[33mda60e00[m HEAD@{67}: commit: successfully restored files
+[33mc6447d1[m HEAD@{68}: commit: attempt at restoring files
+[33me42640a[m HEAD@{69}: commit: added missing details
+[33m2bb965a[m HEAD@{70}: commit: fixed column layout
+[33mbdb0e65[m HEAD@{71}: commit: fixed navbar
+[33me2b8e4d[m HEAD@{72}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33me1c6468[m HEAD@{73}: commit: managed to savour page
+[33m1e0ec3e[m HEAD@{74}: reset: moving to 1e0ec3e
+[33m6a31877[m HEAD@{75}: reset: moving to HEAD~12
+[33m12f0ff0[m HEAD@{76}: commit: added layouts folder
+[33me7f8109[m HEAD@{77}: commit: added AllNFTs folder
+[33mdeb5a3e[m HEAD@{78}: pull --tags origin main: Fast-forward
+[33m93a02eb[m HEAD@{79}: checkout: moving from Ronnie to main
+[33m5e0e819[m HEAD@{80}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33m3fa37c0[m HEAD@{81}: commit: fixing
+[33m1e0ec3e[m HEAD@{82}: reset: moving to HEAD~
+[33m44807d8[m HEAD@{83}: reset: moving to HEAD~
+[33m294b463[m HEAD@{84}: merge origin/Ronnie: Fast-forward
+[33m1e0ec3e[m HEAD@{85}: reset: moving to HEAD~
+[33m44807d8[m HEAD@{86}: reset: moving to HEAD~
+[33m294b463[m HEAD@{87}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33m44807d8[m HEAD@{88}: merge origin/main: Merge made by the 'ort' strategy.
+[33m1e0ec3e[m HEAD@{89}: reset: moving to HEAD~
+[33m35994e1[m HEAD@{90}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33m1e0ec3e[m HEAD@{91}: commit: added link to raymond's page
+[33m31db3f5[m HEAD@{92}: reset: moving to HEAD~
+[33m710508e[m HEAD@{93}: reset: moving to HEAD~
+[33m024b29a[m HEAD@{94}: reset: moving to HEAD~
+[33mfcf814e[m HEAD@{95}: reset: moving to HEAD~
+[33m2b730f2[m HEAD@{96}: reset: moving to HEAD~
+[33m6db94af[m HEAD@{97}: pull --tags origin Ronnie: Fast-forward
+[33m2b730f2[m HEAD@{98}: reset: moving to HEAD~
+[33m6db94af[m HEAD@{99}: checkout: moving from main to Ronnie
+[33m93a02eb[m HEAD@{100}: reset: moving to HEAD
+[33m93a02eb[m HEAD@{101}: reset: moving to HEAD~
+[33m2a82a59[m HEAD@{102}: reset: moving to HEAD~
+[33mdeb5a3e[m HEAD@{103}: pull --tags origin main: Fast-forward
+[33mb091b57[m HEAD@{104}: reset: moving to HEAD~
+[33m93a02eb[m HEAD@{105}: reset: moving to HEAD~
+[33m2a82a59[m HEAD@{106}: reset: moving to HEAD~
+[33mdeb5a3e[m HEAD@{107}: pull --tags origin main: Fast-forward
+[33m2a82a59[m HEAD@{108}: reset: moving to HEAD~
+[33mdeb5a3e[m HEAD@{109}: pull --tags origin main: Fast-forward
+[33m31db3f5[m HEAD@{110}: checkout: moving from Ronnie to main
+[33m6db94af[m HEAD@{111}: commit: fixing attempt
+[33m2b730f2[m HEAD@{112}: commit (merge): Merge branch 'main' of https://github.com/Birblewin/NFTMarket into Ronnie
+[33mfcf814e[m HEAD@{113}: checkout: moving from main to Ronnie
+[33m31db3f5[m HEAD@{114}: checkout: moving from Ronnie to main
+[33mfcf814e[m HEAD@{115}: commit: fixing page
+[33m024b29a[m HEAD@{116}: pull --tags origin Ronnie: Fast-forward
+[33m710508e[m HEAD@{117}: reset: moving to HEAD~
+[33m024b29a[m HEAD@{118}: pull --tags origin Ronnie: Fast-forward
+[33m31db3f5[m HEAD@{119}: reset: moving to HEAD~
+[33m8d84f7a[m HEAD@{120}: commit: added link to raymond's page
+[33m31db3f5[m HEAD@{121}: reset: moving to HEAD~
+[33m710508e[m HEAD@{122}: reset: moving to HEAD~
+[33m024b29a[m HEAD@{123}: pull --tags origin Ronnie: Fast-forward
+[33m710508e[m HEAD@{124}: reset: moving to HEAD~
+[33m024b29a[m HEAD@{125}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33m710508e[m HEAD@{126}: commit: added link to raymond's page
+[33m31db3f5[m HEAD@{127}: reset: moving to HEAD~
+[33mebe1d2c[m HEAD@{128}: reset: moving to HEAD~
+[33mdf7a205[m HEAD@{129}: commit (merge): Merge branch 'main' of https://github.com/Birblewin/NFTMarket into Ronnie
+[33mebe1d2c[m HEAD@{130}: commit: added link to raymond's page
+[33m31db3f5[m HEAD@{131}: checkout: moving from main to Ronnie
+[33m31db3f5[m HEAD@{132}: pull --tags origin main: Fast-forward
+[33maa2d57f[m HEAD@{133}: checkout: moving from Ronnie to main
+[33m31db3f5[m HEAD@{134}: pull --tags origin main: Fast-forward
+[33m4762078[m HEAD@{135}: commit: completed launches page
+[33m4287024[m HEAD@{136}: commit: styled the liveCollections
+[33m1bb6b53[m HEAD@{137}: commit: implemented liveCollection component and fleshed
+[33maeb4def[m HEAD@{138}: commit: implemented live and past collection component
+[33maa2d57f[m HEAD@{139}: checkout: moving from main to Ronnie
+[33maa2d57f[m HEAD@{140}: pull --tags origin main: Fast-forward
+[33m3a36802[m HEAD@{141}: checkout: moving from Ronnie to main
+[33maa2d57f[m HEAD@{142}: pull --tags origin main: Fast-forward
+[33mace1d78[m HEAD@{143}: checkout: moving from main to Ronnie
+[33m3a36802[m HEAD@{144}: pull --tags origin main: Fast-forward
+[33mdd02501[m HEAD@{145}: checkout: moving from Ronnie to main
+[33mace1d78[m HEAD@{146}: commit (merge): Merge branch 'main' of https://github.com/Birblewin/NFTMarket into Ronnie
+[33maa21d57[m HEAD@{147}: commit: updated footer links
+[33m7f1428c[m HEAD@{148}: commit: added launcespage skeleton
+[33m7ee970d[m HEAD@{149}: commit: finished styling the launchesCarousel component
+[33m977d78c[m HEAD@{150}: commit: fleshed out and implemented carousel component
+[33m6dcd095[m HEAD@{151}: commit: styled the carouselEntry component
+[33mb80440b[m HEAD@{152}: commit: created CarouselEntry skeleton
+[33m84fc0a9[m HEAD@{153}: commit: added carouselEntry component
+[33m30e4b46[m HEAD@{154}: commit: Created launchesCarousel component
+[33m4aa60bd[m HEAD@{155}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33m29ce2df[m HEAD@{156}: commit: added launchespage in routes
+[33mdd02501[m HEAD@{157}: reset: moving to HEAD~
+[33m8a146ce[m HEAD@{158}: commit: added launchespage in routes
+[33mdd02501[m HEAD@{159}: pull --tags origin main: Fast-forward
+[33m2b35c22[m HEAD@{160}: checkout: moving from main to Ronnie
+[33mdd02501[m HEAD@{161}: pull --tags origin main: Fast-forward
+[33m284c350[m HEAD@{162}: commit: added launches dropdown
+[33m2b35c22[m HEAD@{163}: pull --tags origin main: Fast-forward
+[33m923d75f[m HEAD@{164}: checkout: moving from Ronnie to main
+[33m2b35c22[m HEAD@{165}: pull --tags origin main: Fast-forward
+[33m203130a[m HEAD@{166}: commit: added new launchpad routes
+[33mb2ee84f[m HEAD@{167}: commit: added navlinks to navbar
+[33m0b10b80[m HEAD@{168}: commit: finished router implementation
+[33m83719b8[m HEAD@{169}: pull --tags origin Ronnie: Merge made by the 'ort' strategy.
+[33md1f5333[m HEAD@{170}: commit: added rootlayout
+[33m6888f7d[m HEAD@{171}: reset: moving to HEAD~
+[33m74ac0dd[m HEAD@{172}: checkout: moving from main to Ronnie
+[33m923d75f[m HEAD@{173}: pull --tags origin main: Fast-forward
+[33m103557b[m HEAD@{174}: checkout: moving from Ronnie to main
+[33m74ac0dd[m HEAD@{175}: commit: added rootlayout
+[33m6888f7d[m HEAD@{176}: commit: added newer routing version
+[33mca58d25[m HEAD@{177}: commit (merge): Merge branch 'main' of https://github.com/Birblewin/NFTMarket into Ronnie
+[33me661d5a[m HEAD@{178}: commit: changed file path on app.jsx
+[33m103557b[m HEAD@{179}: pull --tags origin main: Fast-forward
+[33mde74353[m HEAD@{180}: checkout: moving from main to Ronnie
+[33m103557b[m HEAD@{181}: commit: finished implementing sidebar
+[33mfb6d5b4[m HEAD@{182}: commit: styled the sidepanel
+[33m040e38c[m HEAD@{183}: commit: fleshed out the walletsidepanel component
+[33m2b30344[m HEAD@{184}: commit: confirmed positioning of side wallet
+[33md1296f2[m HEAD@{185}: commit: added walletsidepanel database
+[33m7a30405[m HEAD@{186}: commit: added walletsidepanel component
+[33md9c8590[m HEAD@{187}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m73ec518[m HEAD@{188}: commit: updated footer css
+[33mb383c26[m HEAD@{189}: checkout: moving from Ronnie to main
+[33mde74353[m HEAD@{190}: checkout: moving from Ronnie to Ronnie
+[33mde74353[m HEAD@{191}: checkout: moving from main to Ronnie
+[33mb383c26[m HEAD@{192}: pull --tags origin main: Fast-forward
+[33mabdcf3a[m HEAD@{193}: checkout: moving from Ronnie to main
+[33mde74353[m HEAD@{194}: checkout: moving from main to Ronnie
+[33mabdcf3a[m HEAD@{195}: checkout: moving from Ronnie to main
+[33mde74353[m HEAD@{196}: commit: finished styling footer
+[33m72c6d52[m HEAD@{197}: commit: added footer content
+[33m985bf67[m HEAD@{198}: commit: added base BEM skeleton for footer
+[33m4219f0b[m HEAD@{199}: commit: finished team code review
+[33mabdcf3a[m HEAD@{200}: checkout: moving from Ronnie to Ronnie
+[33mabdcf3a[m HEAD@{201}: checkout: moving from main to Ronnie
+[33mabdcf3a[m HEAD@{202}: clone: from https://github.com/Birblewin/NFTMarket.git
