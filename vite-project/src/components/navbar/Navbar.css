@@ -166,7 +166,6 @@ input{
 /* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
 
 /* Style the dropdown links */

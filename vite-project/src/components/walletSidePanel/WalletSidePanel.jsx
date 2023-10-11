@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 // IMPORING NECESSARY DATABASE
 import walletSidePanelData from '../../database/walletSidePanelData.json'
+import { Link } from 'react-router-dom'
 
 // IMPORING CSS FILE
 import './WalletSidePanel.css'
@@ -9,15 +10,15 @@ import './WalletSidePanel.css'
 export default function WalletSidePanel(props){
     const generatedWalletArray = walletSidePanelData.map(
         walletData => (
-            <a 
+            <Link 
                 key={walletData.index}
                 className='walletLink'
-                href={`https://${walletData.site_address}`}
+                to={`https://${walletData.site_address}`}
                 target='_blank'
                 rel='noreferrer'
             >
                 {walletData.name}
-            </a>
+            </Link>
         )
     ) 
 
@@ -34,7 +35,7 @@ export default function WalletSidePanel(props){
                     <h3>Connect Wallet</h3>
                     
                     <figcaption className='side_panel--title--description'>
-                        <p>By connecting your wallet, you agree to the <a href='/' target='_blank'>Terms & Conditions</a> and <a href='/' target='_blank'>Privacy Policy</a></p>
+                        <p>By connecting your wallet, you agree to the <Link to='/' target='_blank'>Terms & Conditions</Link> and <Link to='/' target='_blank'>Privacy Policy</Link></p>
                     </figcaption>
                 </figure>
 
