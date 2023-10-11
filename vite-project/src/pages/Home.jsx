@@ -11,17 +11,12 @@ function Home() {
         <WhaleActivityContainer />
         <Table/>
         
-        
-        
-
-       
-        
         <div className='top'>
           <div className='collection'>
             <h3 className='title'>Top collections  <span>Generative</span></h3> <KeyboardArrowDown className='arrow-down'/>
           </div>
           
-          <button>View all</button>
+          <button style={{cursor: "pointer"}} onClick={() => location.assign('/allcollections')}>View all</button>
         </div>
         
         <section className='cards'>
