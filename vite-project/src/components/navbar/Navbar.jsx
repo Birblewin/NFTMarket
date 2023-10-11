@@ -46,7 +46,13 @@ export default function Navbar(props) {
           onClick={props.showWalletSidePanel}
           title='show-wallet'
         >
-          <img crossOrigin="anonymous" id="" src="https://static.jpgstoreapis.com/icons/wallet-outline-dark.svg" alt="wallet icon"/>
+          <img 
+            crossOrigin="anonymous" 
+            id="" 
+            src="https://static.jpgstoreapis.com/icons/wallet-outline-dark.svg" 
+            alt="wallet icon"
+            loading='lazy'
+          />
         </button>
         
         <button 

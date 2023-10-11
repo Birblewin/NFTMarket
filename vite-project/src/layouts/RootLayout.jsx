@@ -14,6 +14,21 @@ import './RootLayout.css'
 
 // EXPORTING A ROOTLAYOUT FUNCTION
 export default function RootLayout(){
+    // A USESTATE FUNCTION TO TRACK CHANGES IN SEARCHBAR CONTENT
+    const [formData, setFormData] = React.useState({
+        search: ""
+    })
+
+    // A FUNCTION TO UPDATE FORMDATA
+    function updateFormData(e){
+        const {name, value} = e.target
+
+        setFormData(prevFormData => ({
+            ...prevFormData,
+            [name]: value
+        }))
+    }
+
     // A BOOLEAN TO KEEP TRACK OF SHOWING THE WALLETSIDEPANNEL
     const [showWalletSidePanel, setShowWalletSidePanel] = React.useState(false)
     // A BOOLEAN TO KEEP TRACK OF SHOWING THE SEARCHBAR
@@ -31,7 +46,11 @@ export default function RootLayout(){
             />
 
             {
-                showSearchBar && <SearchBar hideSearchBar = {() => setShowSearchBar(false)}/>
+                showSearchBar && <SearchBar 
+                    hideSearchBar = {() => setShowSearchBar(false)}
+                    formData = {formData}
+                    updateFormData = {(e) => updateFormData(e)}
+                />
             }
 
             <Outlet/>
