@@ -284,6 +284,10 @@ input{
     justify-content: space-between;
   }
 
+  .navbar p{
+    font-size: 24px;
+  }
+
   .small-screen-buttons{
     display: none;
   }
@@ -309,5 +313,12 @@ input{
     justify-content: center;
     align-items: center;
     gap: 15px;
+  }
+}
+
+/* Basic styling for width above 768px but below 1024px */
+@media screen and (min-width: 768px) {
+  .search-bar{
+    width: 356px;
   }
 }
