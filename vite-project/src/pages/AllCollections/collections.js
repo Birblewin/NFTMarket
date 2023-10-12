@@ -28,7 +28,7 @@ const Details = [
   {
     _id: 3,
     cardImage: image3,
-    cardTitle: "The Ape Society",
+    cardTitle: "Ape Society",
     name: "Ape society #9757",
     released: "30m ago",
     price: "₳ 44",
@@ -61,7 +61,7 @@ const Details = [
   {
     _id: 6,
     cardImage: image3,
-    cardTitle: "The Ape Society",
+    cardTitle: "Ape Society",
     name: "Ape society #9757",
     released: "30m ago",
     price: "₳ 44",
@@ -94,7 +94,7 @@ const Details = [
   {
     _id: 9,
     cardImage: image3,
-    cardTitle: "The Ape Society",
+    cardTitle: "Ape Society",
     name: "Ape society #9757",
     released: "30m ago",
     price: "₳ 44",
@@ -127,7 +127,7 @@ const Details = [
   {
     _id: 12,
     cardImage: image3,
-    cardTitle: "The Ape Society",
+    cardTitle: "Ape Society",
     name: "Ape society #9757",
     released: "30m ago",
     price: "₳ 44",
@@ -160,7 +160,7 @@ const Details = [
   {
     _id: 15,
     cardImage: image3,
-    cardTitle: "The Ape Society",
+    cardTitle: "Ape Society",
     name: "Ape society #9757",
     released: "30m ago",
     price: "₳ 44",
@@ -193,7 +193,7 @@ const Details = [
   {
     _id: 18,
     cardImage: image3,
-    cardTitle: "The Ape Society",
+    cardTitle: "Ape Society",
     name: "Ape society #9757",
     released: "30m ago",
     price: "₳ 44",

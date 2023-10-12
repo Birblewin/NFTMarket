@@ -17,7 +17,7 @@ function NftCard() {
             <span className='name'>{collection.name}</span>
             <div className='details'>
           <span className='price'>{collection.price}</span>
-          <span className='banner'>For Sale</span>
+          <span className='banner'><span>For Sale</span></span>
           
         </div>
         <hr className='line'/>
@@ -32,7 +32,12 @@ function NftCard() {
       </div>
     ))
   
-  return <div className='cards'>{cards}</div>;
+  return (
+    <div className='render-cards'>
+ <div className='cards'>{cards}</div>;
+    </div>
+   
+  )
 }
 
 export default NftCard
