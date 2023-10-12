@@ -19,17 +19,6 @@ export default function Navbar(props) {
         </div>
       </NavLink>
 
-      {/* <div className='search-bar-container'>
-        <SearchIcon className='search-icon'/>
-
-        <input
-          className="search-bar"
-          type="text"
-          placeholder="Search collection, or NFT"
-          name="searchInput"
-        />
-      </div> */}
-
       <div className='small-screen-buttons'>
         <button 
           className='small-screen-buttons__search-button'
@@ -65,6 +54,46 @@ export default function Navbar(props) {
           <div></div>
         </button>
       </div>
+      
+      <div className="medium-screen-buttons">
+        <div className='search-bar-container'>
+          <SearchIcon className='search-icon'/>
+
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Search collection, or NFT"
+            name="searchInput"
+          />
+        </div>
+
+        <div className='medium-screen-buttons__button-container'>
+          <button 
+            className='small-screen-buttons__wallet-button'
+            onClick={props.showWalletSidePanel}
+            title='show-wallet'
+          >
+            <img 
+              crossOrigin="anonymous" 
+              id="" 
+              src="https://static.jpgstoreapis.com/icons/wallet-outline-dark.svg" 
+              alt="wallet icon"
+              loading='lazy'
+            />
+          </button>
+          
+          <button 
+            className='small-screen-buttons__side-panel-button'
+            title='show-sidebar'
+            onClick={props.showLinkSidePanel}
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </div>
+      </div>
+
      
       {/* <div className="nav-links">
         <div>
