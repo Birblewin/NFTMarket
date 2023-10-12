@@ -30,7 +30,7 @@ const Table = () => {
             <div>7d</div>
             <div>30d</div>
             <div>All</div>
-            <span className="bt">View All</span>
+            <span className="bt none">View All</span>
           </div>
         </div>
         <div></div>

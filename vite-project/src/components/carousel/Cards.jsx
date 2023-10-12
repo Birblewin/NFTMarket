@@ -25,6 +25,7 @@ const Cards = () => {
         <div className="nft-details">
             {Details[index].cardInfo}
         </div>
+        <button className="learn-more-button">Learn More</button>
       </div>
       
       <div className="image-container">
@@ -47,7 +48,7 @@ const Cards = () => {
         </span>
       </div>
 
-      <button className="learn-more-button">Learn More</button>
+      
     </div>
   );
 };

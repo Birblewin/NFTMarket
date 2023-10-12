@@ -86,3 +86,11 @@
   font-size: 14px;
   color: #2CB382;
 }
+
+
+@media screen and (max-width: 640px) {
+  .whale-carousel-card-container{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}

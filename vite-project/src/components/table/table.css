@@ -91,6 +91,7 @@
 .top-table {
   color: #ffffff;
   display: flex;
+  align-items: center;
   flex-flow: row nowrap;
   border-bottom: 1px solid #1d2022;
 }
@@ -140,6 +141,13 @@
 }
 
 .coll-no {
-  height: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  align-content: center;
+  background-color: #1ECD4F;
+}
+
+.lg-hidden {
+  display: none;
 }

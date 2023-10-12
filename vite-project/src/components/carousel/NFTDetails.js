@@ -13,7 +13,7 @@ const Details = [
     volume: '₳ 5m',
     released: '23m ago',
     cardInfo:
-    "Enter the dazzling world of APPRENTICES: an anime PFP collection that's not just about avatars—it's an epic narrative-driven universe. Uniting cool aesthetics with community passion, it's where your chosen character becomes a hero in a captivating saga. Dive into this thrilling adventure where creativity and beauty collide. Join now and let your anime avatar's story shine!",
+    "Enter the dazzling world of APPRENTICES: an anime PFP collection that's not just about avatars—it's an epic narrative-driven universe. Uniting cool aesthetics with community passion, it's where your chosen character becomes a hero in a captivating saga. ",
   },
   {
     _id: 2,
@@ -23,7 +23,7 @@ const Details = [
     volume: '₳ 15m',
     released: '3m ago',
     cardInfo:
-    "EarthNodes are the brain powering the Sharing Economy of World Mobile, the first mobile network owned by the people and built on blockchain. Connecting the unconnected narrative-driven universe. Uniting cool aesthetics with community passion, it's where your chosen character becomes a hero in a captivating saga. Dive into this thrilling adventure where creativity and beauty collide. Join now and let your anime avatar's story shine!",
+    "EarthNodes are the brain powering the Sharing Economy of World Mobile, the first mobile network owned by the people and built on blockchain. Connecting the unconnected narrative-driven universe. ",
   },
   {
     _id: 3,
@@ -33,7 +33,7 @@ const Details = [
     price: '₳ 440',
     volume: '₳ 17m',
     cardInfo:
-    "The Ape Society is a collection of 7,000 NFTs generated on the Cardano blockchain. Every holder is a member of one of 35 families, and gets access to the DAO. We aim to create tools, resources, art, and harness the power of community to create a breeding ground for knowledge, collaboration, and fun.",
+    "The Ape Society is a collection of 7,000 NFTs generated on the Cardano blockchain. Every holder is a member of one of 35 families, and gets access to the DAO. ",
   },{
     _id: 4,
     cardImage: image4,
@@ -42,7 +42,7 @@ const Details = [
     price: '₳ 360',
     volume: '₳ 30m',
     cardInfo:
-    "Enter the dazzling world of APPRENTICES: an anime PFP collection that's not just about avatars—it's an epic narrative-driven universe. Uniting cool aesthetics with community passion, it's where your chosen character becomes a hero in a captivating saga. Dive into this thrilling adventure where creativity and beauty collide. Join now and let your anime avatar's story shine!",
+    "Enter the dazzling world of APPRENTICES: an anime PFP collection that's not just about avatars—it's an epic narrative-driven universe.  ",
   },{
     _id: 5,
     cardImage: image5,
@@ -51,7 +51,7 @@ const Details = [
     volume: '₳ 18m',
     released: '13m ago',
     cardInfo:
-      "EarthNodes are the brain powering the Sharing Economy of World Mobile, the first mobile network owned by the people and built on blockchain. Connecting the unconnected narrative-driven universe. Uniting cool aesthetics with community passion, it's where your chosen character becomes a hero in a captivating saga. Dive into this thrilling adventure where creativity and beauty collide. Join now and let your anime avatar's story shine!",
+      "EarthNodes are the brain powering the Sharing Economy of World Mobile, the first mobile network owned by the people and built on blockchain. Connecting the unconnected narrative-driven universe. ",
   },
 ];
 

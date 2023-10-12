@@ -52,9 +52,11 @@ const TableContainer = () => {
   const tableRow = data.map((coll, index) => {
     return (
       <div key={index} className="top-table div">
-        <div className="coll-no">{coll.id}</div>
-        <div className="collection-name">
-          <span>
+        <div className="coll-no">
+          <div>{coll.id}</div>
+        </div>
+        <div className="cell collection-name">
+          <div>
             <Icon
               icon="pajamas:profile"
               color="#ccd1de"
@@ -62,8 +64,24 @@ const TableContainer = () => {
               height="38"
               hFlip={true}
             />
-          </span>{" "}
-          <span>{coll.Collections}</span>
+          </div>{" "}
+          <div className="coll-name-floor">
+            <div>{coll.Collections}</div>
+
+            <div className="lg-hidden table-cell coll-floor">
+              <span className="coll-floor-sm">Floor: ₳{coll.Floors[0]}</span>
+              <span className="loss">
+                <Icon
+                  icon="tdesign:arrow-left-down"
+                  color="#f05252"
+                  width="12"
+                  height="12"
+                  hFlip={true}
+                />
+                {coll.Floors[1]}
+              </span>
+            </div>
+          </div>
         </div>
         <div className="table-cell coll-volume">
           <span>{coll.Volume[0]}</span>
@@ -79,7 +97,7 @@ const TableContainer = () => {
             {coll.Volume[1]}
           </span>
         </div>
-        <div className="table-cell coll-floor">
+        <div className="table-cell coll-floor none">
           <span>{coll.Floors[0]}</span>
           <span className="loss">
             <Icon
@@ -92,7 +110,7 @@ const TableContainer = () => {
             {coll.Floors[1]}
           </span>
         </div>
-        <div className="table-cell coll-owners">
+        <div className="table-cell coll-owners none">
           <span>{coll.Owners[0]}</span>
 
           <span className="gain">
@@ -116,20 +134,20 @@ const TableContainer = () => {
       <div className="table-section">
         <div className="top-table cont">
           <div className="coll-no"></div>
-          <div className="collection-name"> COLLECTION</div>
+          <div className="collection-name "> COLLECTION</div>
           <div className="coll-volume">VOLUME</div>
-          <div className="coll-floor">FLOOR</div>
-          <div className="coll-owners">OWNER</div>
+          <div className="coll-floor none">FLOOR</div>
+          <div className="coll-owners none">OWNER</div>
         </div>
         <div className="table-1">{tableRow}</div>
       </div>
       <div className="table-section">
-        <div className="top-table cont">
-          <div className="coll-no"></div>
+        <div className="top-table cont none">
+          <div className="coll-no "></div>
           <div className="collection-name"> COLLECTION</div>
-          <div className="coll-volume">VOLUME</div>
-          <div className="coll-floor">FLOOR</div>
-          <div className="coll-owners">OWNER</div>
+          <div className="coll-volume ">VOLUME</div>
+          <div className="coll-floor none">FLOOR</div>
+          <div className="coll-owners none">OWNER</div>
         </div>
         <div className="table-1">{tableRow}</div>
       </div>

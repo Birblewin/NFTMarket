@@ -57,3 +57,77 @@
   font-weight: 400;
   line-height: normal;
 }
+
+
+.top-cards {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+    .TableContainer {
+      display: flex;
+      flex-flow:  column nowrap;
+      font-size: 12px;
+    }
+    .none {
+      display: none;
+    }
+
+    .lg-hidden {
+      display: block;
+    }
+    .table {
+      width: 100vw;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: column nowrap;
+    }
+    .table-section {
+      margin: 0;
+      padding: 0;
+    }
+    .top-coll-header{
+      display: flex;
+      flex-flow:  column nowrap;
+      padding: 0;
+      column-gap: 1.125rem;
+    }
+    .total-time {
+      display: flex;
+      flex-flow:  column-reverse nowrap;
+    }
+    .total-bar {
+      min-width: 100%;
+      padding: 0;
+    }
+    .top-table.div {
+      height: fit-content;
+    }
+    
+    
+
+    .coll-name-floor {
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 0;
+    }
+    .coll-name-floor .lg-hidden.coll-floor {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 0;
+    }
+    .coll-floor-sm {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 0;
+    }
+    .lg-hidden.coll-floor .loss {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 0;
+    }
+}

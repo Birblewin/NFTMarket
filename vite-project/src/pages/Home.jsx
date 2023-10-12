@@ -3,6 +3,7 @@ import WhaleActivityContainer from '../components/whaleActivity/WhaleActivityCon
 import Table from '../components/Table/table'
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
 import Card from '../components/CollectionCard'
+import Cards from './AllCollections/Cards'
 import './Home.css'
 function Home() {
   return (
@@ -24,18 +25,9 @@ function Home() {
           <button>View all</button>
         </div>
         
-        <section className='cards'>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-        </section> 
+      {/*   <section className='top-cards'>
+          <Cards />
+        </section>  */}
 
     </div>
   )
