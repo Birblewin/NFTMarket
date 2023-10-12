@@ -1,4 +1,4 @@
-/* Basic styling */
+/* Basic styling for width below 640px */
 .navbar {
   display: flex;
   align-items: center;
@@ -45,10 +45,9 @@
 }
 
 .search-bar-container{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .search-bar{
@@ -237,3 +236,41 @@ input{
   transition: all 500ms ease-in-out normal;
 }
 
+.medium-screen-buttons{
+  display: none;
+}
+
+
+/* Basic styling for width above 640px but below 768px */
+@media screen and (min-width: 640px) {
+  .navbar{
+    justify-content: space-between;
+  }
+
+  .small-screen-buttons{
+    display: none;
+  }
+
+  .search-bar-container{
+    display: flex;
+  }
+
+  .medium-screen-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search-bar-container{
+    margin: 0 auto;
+  }
+
+  .medium-screen-buttons__button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
