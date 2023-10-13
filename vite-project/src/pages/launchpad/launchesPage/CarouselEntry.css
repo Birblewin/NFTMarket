@@ -119,12 +119,12 @@
     scale: 0.9; 
 }
 
-/* For screens whose min width is 640px and max width is 768px */
-    /* MEDIUM SCREENS */
+/* For screens whose min width is 640px and max width is 1024px */
+    /* MEDIUM AND LARGE SCREENS */
 @media screen and (min-width: 640px) {
     .carousel_entry_container img{
         width: 100%;
-        height: 150%;
+        height: 130%;
     }
 
     .carousel_entry_container__description--buttons{
@@ -136,5 +136,40 @@
 
     .carousel_entry_container{
         margin: 100px 0;
+    }
+
+    .description--buttons--link{
+        width: 100%;
+    }
+}
+
+/* For screens whose min width is 1024px and max width is 1280px */
+    /* EXTRA LARGE SCREENS */
+@media screen and (min-width: 1024px) {
+    .carousel_entry_container{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .carousel_entry_container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel_entry_container__description--title{
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .carousel_entry_container__description--paragraph{
+        max-height: 10ch;
+        overflow-y: hidden;
+    }
+
+    .description--buttons--link{
+        width: 80%;
     }
 }

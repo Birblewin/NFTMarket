@@ -21,7 +21,7 @@ export default function CarouselEntry(props){
                     <div className="carousel_entry_container__description">
                         <li className="carousel_entry_container__description--banner">live</li>
                         <h1 className="carousel_entry_container__description--title">{props.heading}</h1>
-                        <p className="carousel_entry_container__description--paragraph">{props.description}...</p>
+                        <p className="carousel_entry_container__description--paragraph">{props.description}</p>
         
                         <div>
                             <div className="carousel_entry_container__description--buttons">
