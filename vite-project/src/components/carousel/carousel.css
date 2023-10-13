@@ -193,3 +193,39 @@ html {
   position: absolute;
   bottom: 10;
 }
+@media screen and (max-width: 640px) {
+ 
+ 
+  .carousel-container-outer {
+      width: 90vw;
+      font-size: 12px;
+      margin: 0;
+  }
+  .carousel-card-container.active {
+    display: flex;
+    flex-flow: column-reverse nowrap ;
+    height: fit-content;
+  }
+  .image-container{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+  }
+  .title{
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  .learn-more-button{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .details-container {
+    width: 100%;
+  }
+
+}
