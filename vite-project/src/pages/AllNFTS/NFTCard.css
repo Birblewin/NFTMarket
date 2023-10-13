@@ -36,7 +36,7 @@
 }
 .verified-icon{
     color: #3189F0;
-    font-size: 14px ;
+    font-size: 14px !important;
     margin: 5px; 
     margin-top: 20px !important;
 }
@@ -194,6 +194,7 @@
         grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
         gap: 0.5%;
        margin: 0.5%; 
+       margin-bottom: 50%;
       }
       .card{
         border-radius: 10px;
@@ -217,7 +218,12 @@
     .filter-bar{
         height: 50px;
     }
+   
+   .collection .arrow-down{
+    margin-top: -12% !important;
+   }
     .title{
+         margin-top: -5% !important;
         margin-left: 20% !important;
         font-size: 25px !important;
     }
@@ -256,9 +262,15 @@
         padding: 12px 0px 12px 5px;
         width: 75%;
     }
+    .collection .arrow-down{
+        margin-top: -17% !important;
+       }
     
     .title span{
         font-size: 18px !important;
+    }
+    .collection{
+        margin-top: -20% !important;
     }
   }
   @media screen and (max-width: 400px){
