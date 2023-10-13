@@ -24,10 +24,10 @@ const Cards = () => {
         
         <div className="nft-details">
           <div>{Details[index].cardInfo}</div>
+          <div><button className="learn-more-button">Learn More</button></div>
             
             
         </div>
-        <button className="learn-more-button">Learn More</button>
       </div>
       
       <div className="image-container">

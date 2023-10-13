@@ -1,22 +1,38 @@
-.top-div {
-  margin-top: 100px;
-  width: 100vw;
+.title{
+  margin-left: 50px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 36.4px */
+  letter-spacing: 1.12px;
 }
-.top-div .collection {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-.top-div .collection .title {
-  font-size: 48px;
-  white-space: none;
-}
-.drop-down {
-  display: flex;
-  flex-flow: row nowrap;
+
+.title span{
   align-items: center;
+  color: #76A9FA;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 36.4px */
+  letter-spacing: 1.68px;
+}
+
+.arrow-down{
   color: #76a9fa;
-  font-size: 48px;
+  width: 38px;
+  height: 6.174px;
+  margin: 0;
+  padding: 0;
+  margin-left: -45px;
+}
+
+.collection{
+  display: flex;
+  align-items: center;
+  
 }
 
 @media screen and (max-width: 640px) {
