@@ -10,8 +10,8 @@ const Table = () => {
         
         <div className="total-time">
           <div className="total-bar">
-            <span>
-              Total 24h Volume: <span>450.6k ₳</span>{" "}
+            
+              <span className="tot-24-vol">Total 24h Volume: </span> <span><span className="bold">450.6k ₳</span>{" "}
               <span className="loss">
                 <Icon
                   icon="tdesign:arrow-left-down"
@@ -23,6 +23,7 @@ const Table = () => {
                 26.78%
               </span>
             </span>
+           
           </div>
           <div className="time-frames">
             <div>1h</div>
@@ -35,9 +36,10 @@ const Table = () => {
         </div>
         <div></div>
       </div>
-      <div>
+      <div className="table-cont">
         <TableContainer />
       </div>
+      <button className="btn lg-hidden">View All</button>
     </div>
   );
 };
