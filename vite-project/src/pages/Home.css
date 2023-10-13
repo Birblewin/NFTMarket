@@ -56,9 +56,8 @@
     font-size: 28px;
   }
   .table {
-    width: 100vw;
+    width: 90vw;
     display: flex;
-    align-content: center;
     flex-flow: column nowrap;
   }
 
@@ -68,8 +67,6 @@
   }
   .TableContainer {
     width: 100%;
-    align-self: center;
-    margin: 0 auto;
   }
   .table-section {
     margin: 0;
@@ -78,9 +75,11 @@
   .top-coll-header {
     display: flex;
     flex-flow: column nowrap;
-    padding: 0;
+    padding: 1rem;
     column-gap: 1.125rem;
-    width: 100vw;
+    width: 100%;
+    justify-self: flex-start;
+    margin-left: auto;
   }
   .total-time {
     display: flex;
