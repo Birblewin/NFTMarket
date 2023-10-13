@@ -205,6 +205,7 @@ html {
     display: flex;
     flex-flow: column-reverse nowrap ;
     height: fit-content;
+    padding: 10px;
   }
   .image-container{
     display: flex;
@@ -216,13 +217,16 @@ html {
     height: auto;
     justify-self: center;
   }
+  .trending{
+    margin-bottom: 2rem;
+  }
   .title{
     font-size: 16px;
-    margin: 8px 0;
+    margin: 15px 0;
   }
   .learn-more-button{
     width: 90%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .details-container {
     width: 100%;
