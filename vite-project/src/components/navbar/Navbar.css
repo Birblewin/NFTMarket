@@ -304,8 +304,6 @@ input{
   }
 }
 
-/* Basic styling for width above 1024px but below 1280px  */
-  /* EXTRA LARGE SCREENS */
 @media screen and (min-width: 1024px) {
   .small-screen-buttons{
     display: none;
