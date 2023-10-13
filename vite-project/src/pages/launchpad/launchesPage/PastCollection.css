@@ -1,11 +1,12 @@
 .past_collection_container{
-    width: 200px;
+    width: 170px;
     height: 300px;
     border-radius: 20px;
     border: 0.5px solid #968E8E;
     background-color: #1E1E1E;
     text-decoration: none;
     transition: all 500ms ease-in-out normal;
+    margin: 0 auto;
 }
 
 .past_collection_container:active{
