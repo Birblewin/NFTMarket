@@ -1,4 +1,5 @@
 /* Basic styling for width below 640px */
+  /* SMALL SCREENS */
 .navbar {
   display: flex;
   align-items: center;
@@ -84,7 +85,6 @@ input{
   margin: 0px 20px 0px 30.104px;
   padding: 0px 0px 0px 20px;
   justify-content: space-evenly;
-  display: none;
 }
 
 .nav-links span{
@@ -240,45 +240,13 @@ input{
   display: none;
 }
 
-
-/* Basic styling for width above 640px but below 768px */
-@media screen and (min-width: 640px) {
-  .navbar{
-    justify-content: space-between;
-  }
-
-  .small-screen-buttons{
-    display: none;
-  }
-
-  .search-bar-container{
-    display: flex;
-  }
-
-  .medium-screen-buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .search-bar-container{
-    margin: 0 auto;
-  }
-
-  .medium-screen-buttons__button-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-}
-.medium-screen-buttons{
+.extra-large-screen-buttons{
   display: none;
 }
 
+
 /* Basic styling for width above 640px but below 768px */
+  /* MEDIUM SCREEN */
 @media screen and (min-width: 640px) {
   .navbar{
     justify-content: space-between;
@@ -314,11 +282,40 @@ input{
     align-items: center;
     gap: 15px;
   }
+
+  .extra-large-screen-buttons{
+    display: none;
+  }
 }
 
 /* Basic styling for width above 768px but below 1024px */
+  /* LARGE SCREEN */
 @media screen and (min-width: 768px) {
   .search-bar{
     width: 356px;
+  }
+
+  .small-screen-buttons{
+    display: none;
+  }
+
+  .extra-large-screen-buttons{
+    display: none;
+  }
+}
+
+/* Basic styling for width above 1024px but below 1280px  */
+  /* EXTRA LARGE SCREENS */
+@media screen and (min-width: 1024px) {
+  .small-screen-buttons{
+    display: none;
+  }
+
+  .medium-screen-buttons{
+    display: none;
+  }
+
+  .extra-large-screen-buttons{
+    display: block;
   }
 }
