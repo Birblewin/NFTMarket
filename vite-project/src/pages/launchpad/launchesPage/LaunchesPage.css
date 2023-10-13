@@ -65,4 +65,8 @@
         margin-top: 50px;
         gap: 50px;
     }
+
+    .launches_page_container__collectionsHolder{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

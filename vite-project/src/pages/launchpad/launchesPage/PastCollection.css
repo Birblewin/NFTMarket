@@ -1,3 +1,7 @@
+/* GENERAL STYLING */
+
+/* For screens whose max width is 640px */
+    /* SMALL SCREENS */
 .past_collection_container{
     width: 170px;
     height: 300px;
@@ -52,4 +56,31 @@
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 18.2px */
+}
+
+/* For screens whose min width is 640px and max width is 768px */
+    /* MEDIUM SCREENS */
+@media screen and (min-width: 640px) {
+    .past_collection_container{
+        width: 300px;
+        height: 450px;
+    }
+}
+
+/* For screens whose min width is 768px and max width is 1024px */
+    /* LARGE SCREENS */
+@media screen and (min-width: 768px) {
+    .past_collection_container{
+        width: 230px;
+        height: 320px;
+    }
+}
+
+/* For screens whose min width is 1024px and max width is 1280px */
+    /* EXTRA LARGE SCREENS */
+@media screen and (min-width: 768px) {
+    .past_collection_container{
+        width: 300px;
+        height: 450px;
+    }
 }
