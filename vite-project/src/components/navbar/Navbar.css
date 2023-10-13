@@ -177,6 +177,13 @@ input{
 
 /* Add styles for dropdown links on hover or focus */
 .dropdown-content a:hover {
+
+background-color: #2a2929;
+}
+@media screen and (max-width: 640px) {
+  .navbar {
+    margin-bottom: 10px;
+
   background-color: #2a2929;
 }
 
@@ -317,5 +324,6 @@ input{
 
   .extra-large-screen-buttons{
     display: block;
+
   }
 }

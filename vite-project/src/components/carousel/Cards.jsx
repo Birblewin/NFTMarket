@@ -28,6 +28,7 @@ const Cards = () => {
             
             
         </div>
+        <button className="learn-more-button">Learn More</button>
       </div>
       
       <div className="image-container">
