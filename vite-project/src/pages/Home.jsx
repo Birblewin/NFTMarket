@@ -31,7 +31,6 @@ function Home() {
         <Cards />
       </section>
     </div>
-    </div>
   );
 }
 
