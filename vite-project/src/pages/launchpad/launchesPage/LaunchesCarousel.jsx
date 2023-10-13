@@ -32,18 +32,40 @@ export default function LaunchesCarousel(){
     )
 
     return(
-        <div className="carousel-container">
-            <button 
-                className="carousel-container__button"
-                onClick={() => checkPreviousCard()}
-            >&lt;</button>
+        <div>
+            <div className="small-screen-container-entry">
+                <div className="carousel-container">
+                    <div className="carousel-container__current-slide">{generatedEntriesArray[currentCard]}</div>
 
-            <div className="carousel-container__current-slide">{generatedEntriesArray[currentCard]}</div>
+                    <div className="carousel-container__button-holder">
+                        <button 
+                            className="carousel-container__button"
+                            onClick={() => checkPreviousCard()}
+                        >&lt;</button>
 
-            <button 
-                className="carousel-container__button"
-                onClick={() => checkNextCard()}
-            >&gt;</button>
+                        <button 
+                            className="carousel-container__button"
+                            onClick={() => checkNextCard()}
+                        >&gt;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="medium-screen-container-entry">
+                <div className="carousel-container">
+                    <button 
+                        className="carousel-container__button"
+                        onClick={() => checkPreviousCard()}
+                    >&lt;</button>
+
+                    <div className="carousel-container__current-slide">{generatedEntriesArray[currentCard]}</div>
+
+                    <button 
+                        className="carousel-container__button"
+                        onClick={() => checkNextCard()}
+                    >&gt;</button>
+                </div>
+            </div>
         </div>
     )
 }

@@ -5,7 +5,7 @@ const Carousel = () => {
     <div className='carousel-container-outer'>
       
         <Cards />
-    </div>
+    </div> 
   )
 }
 

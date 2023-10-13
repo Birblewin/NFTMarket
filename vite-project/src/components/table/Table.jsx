@@ -2,6 +2,7 @@ import React from "react";
 import TableContainer from "./TableContainer";
 import { Icon } from "@iconify/react";
 
+
 const Table = () => {
   return (
     <div className="table">
@@ -31,7 +32,10 @@ const Table = () => {
             <div>7d</div>
             <div>30d</div>
             <div>All</div>
-            <span className="bt none">View All</span>
+
+
+            <span className="bt none"  style={{cursor: "pointer"}} onClick={() => location.assign('/allcollections')}>View All</span>
+
           </div>
         </div>
         <div></div>
