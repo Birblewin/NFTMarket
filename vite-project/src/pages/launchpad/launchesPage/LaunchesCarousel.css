@@ -1,26 +1,41 @@
-.carousel-container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.carousel-container__button{
-    width: 49px;
-    height: 107px;
-    background-color: transparent;
-    color: gray;
-    font-size: 50px;
-    transition: all 500ms ease-in-out normal;
-}
-
-.carousel-container__button:hover{
-    scale: 1.114;
-    background-color: rgb(255, 255, 255, 0.5);
-    color: white;
-}
-
 button{
     border: none;
+}
+
+/* For screens whose max width is 640px */
+    /* SMALL SCREENS */
+@media screen and (max-width: 640px) {
+    .carousel-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    .carousel-container__button-holder{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .carousel-container__button{
+        width: 49px;
+        height: 10px;
+        background-color: transparent;
+        color: gray;
+        font-size: 50px;
+        transition: all 500ms ease-in-out normal;
+        margin-top: 20px;
+    }
+    
+    .carousel-container__button:hover{
+        scale: 1.114;
+        background-color: rgb(255, 255, 255, 0.5);
+        color: white;
+    }
 }
