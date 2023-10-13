@@ -2,7 +2,6 @@ import Carousel from "../components/carousel/Carousel";
 import WhaleActivityContainer from "../components/whaleActivity/WhaleActivityContainer";
 import Table from "../components/Table/table";
 import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
-import Card from "../components/CollectionCard";
 import Cards from "./AllCollections/Cards";
 import "./Home.css";
 function Home() {
@@ -11,14 +10,15 @@ function Home() {
       <Carousel />
       <WhaleActivityContainer />
       <Table />
-      <div className="top-div">
+
+      <div className="top">
         <div className="collection">
-          <h3 className="title">Top collections </h3>
-          <div className="drop-down">
-            <h3>Generative</h3>
-            <KeyboardArrowDown className="arrow-down" />
-          </div>
+          <h3 className="title">
+            Top collections <span>Generative</span>
+          </h3>{" "}
+          <KeyboardArrowDown className="arrow-down" />
         </div>
+
         <button
           style={{ cursor: "pointer" }}
           onClick={() => location.assign("/allcollections")}
@@ -27,9 +27,9 @@ function Home() {
         </button>
       </div>
 
-      <section className="main-content">
+      <div className="main-content">
         <Cards />
-      </section>
+      </div>
     </div>
   );
 }

@@ -104,3 +104,17 @@
 .footer__list.about{
     margin-top: -40px;
 }
+
+@media screen and (max-width: 768px){
+    .footer{
+      display: grid;
+      height: 100%;
+    }
+    .footer__list{
+        margin-top: 10%;
+    }
+    .footer__list.about{
+        margin-top: 10%;
+        margin-bottom: 20px;
+    }
+}
