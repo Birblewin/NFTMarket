@@ -166,3 +166,44 @@
 @media screen and (min-width: 768px) {
   
 }
+
+@media screen and (min-width: 1280px) {
+  .TableContainer {
+    /* 50% of the viewport height */
+    background-color: #141414;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .top-table.cont.none {
+    display: none;
+  }
+  .table-section.second {
+    margin-top: -10px;
+  }
+  .top-table.div {
+    width: 90vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .top-table.cont {
+    width: 90vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-weight: 900;
+  }
+  .top-coll-header {
+    width: 100%;
+  }
+  .total-time {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .total-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    
+  }
+}
