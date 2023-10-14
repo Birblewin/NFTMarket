@@ -1,6 +1,8 @@
+// IMPORTING CSS FILE
 import './launchpad.css'
 
-const Launchpadcontainer = () => {
+// A FUNCTION THAT RETURNS AN EXPORTED LAUNCHPAD COMPONENT
+export default function Launchpadcontainer(){
   return (
     <div>
       <div className="small_screen_launchpad-container_entry">
@@ -55,5 +57,3 @@ const Launchpadcontainer = () => {
     </div>
   )
 }
-
-export default Launchpadcontainer
