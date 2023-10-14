@@ -25,7 +25,7 @@ const appRouter = createBrowserRouter(
       
       <Route path='launchpad'>
         <Route path='launches' element={<LaunchesPage/>}></Route>
-        <Route path='launch details' element={<LaunchpadPage/>}></Route>
+        <Route path='launch details/:id' element={<LaunchpadPage/>}></Route>
       </Route>
     </Route>
   )

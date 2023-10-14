@@ -1,6 +1,6 @@
 // IMPORING NECESSARY MODULES AND COMPONENTS AND DATA
 import React from "react"
-import Details from "../../../components/carousel/NFTDetails"
+import {launchpadCollectionsData} from '../../../database/launchpadCollectionsData'
 import CarouselEntry from "./CarouselEntry"
 
 // IMPORTING CSS FILE
@@ -11,18 +11,21 @@ export default function LaunchesCarousel(){
     // A STATE TO HOLD THE CURRENT INDEX OF CARD DISPLAYED
     const [currentCard, setCurrentCard] = React.useState(0)
 
+    // OBTAINING THE DATA CONCERNING THE CAROUSEL
+    const {carouselCollections} = launchpadCollectionsData
+
     // A FUNCTION TO MOVE TO THE NEXT CARD
     function checkNextCard(){
-        setCurrentCard(prevCard => prevCard < Details.length - 1 ? prevCard + 1 : 0)
+        setCurrentCard(prevCard => prevCard < carouselCollections.length - 1 ? prevCard + 1 : 0)
     }
 
     // A FUNCTION TO MOVE TO THE PREVIOUS CARD
     function checkPreviousCard(){
-        setCurrentCard(prevCard => prevCard > 0 ? prevCard - 1 : Details.length - 1)
+        setCurrentCard(prevCard => prevCard > 0 ? prevCard - 1 : carouselCollections.length - 1)
     }
 
     // AN ARRAY OF CAROUSELENTRIES
-    const generatedEntriesArray = Details.map(
+    const generatedEntriesArray = carouselCollections.map(
         detail => (<CarouselEntry 
             key={detail._id}
             image={detail.cardImage}
