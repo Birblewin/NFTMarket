@@ -1,8 +1,15 @@
+// IMPORTING NECESSARY FILES
+  // IMPORTING NECESSARY HOOKS
+import WalletSidePanelContextHook from '../../../hooks/WalletSidePanelContextHook'
+
 // IMPORTING CSS FILE
 import './launchpad.css'
 
 // A FUNCTION THAT RETURNS AN EXPORTED LAUNCHPAD COMPONENT
 export default function Launchpadcontainer(){
+  // GETTING GLOBAL CONTEXTS FROM HOOKS
+  const {dispatch} = WalletSidePanelContextHook()
+
   return (
     <div>
       <div className="small_screen_launchpad-container_entry">
@@ -48,7 +55,7 @@ export default function Launchpadcontainer(){
                   <span></span>
                 </figcaption>
 
-                <button>Connect Wallet</button>
+                <button onClick={() => dispatch({ type: "SHOW_WALLET_PANEL" })}>Connect Wallet</button>
               </figure>
             </div>
           </div>
