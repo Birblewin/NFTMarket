@@ -1,77 +1,58 @@
 import './launchpad.css'
-import ProgressBar from './progressbarholder';
-import { Icon } from '@iconify/react';
-import CountdownTimer from './timer'
 
 const Launchpadcontainer = () => {
   return (
-    <div className="container">
-      {/* Where the img is */}
-      <div className="image-container">
-        <h2 style={{color:'#FFFF',marginLeft:'155px'}}>Reezy cleacks collection</h2>
-      <img src="../img/Railey 2.PNG" alt="Sample Image" />
-    </div>
+    <div>
+      <div className="small_screen_launchpad-container_entry">
+        <div className="container">
+          {/* TITLE OF THE COLLECTION */}
+          <h1></h1>
 
-    {/*Main-Container */}
-    
-    <div className="container2">
+          {/* WHERE SELLING STATS ARE */}
+          <div className="container__selling_stats">
+            <div className='container__selling_stats--chosen_chain'></div>
+            <div className='container__selling_stats--total_sold'></div>
+            <div className='container__selling_stats--timing'></div>
+          </div>
 
-      {/* Container1 with basic styling*/}
-      
-     <div  className='calender'>
-      <div className='live'><Icon icon="tabler:live-photo" /><span style={{fontSize:'8px'}}><h1>&nbsp;Live</h1></span></div>
-      <button className='button-icon'><Icon icon="uil:calender" width={30} height={30} color='#ffff'/></button>
-      </div>
-      
-      <div className="division1" style={{ backgroundColor: '#1d2022' }}>
-        
-        <h2 style={{fontSize:'14px', marginTop:'-38px', paddingRight:'60px', color:'#C5B206'}}>Minting stages</h2>&nbsp;
-        <div  style={{display:'flex'}}>  
-        <h1 style={{fontSize:'14px', color:'#FFFF', marginTop: '10px'}}>public</h1>
-        <div className='timer'>
-        <CountdownTimer/>
-        </div>
-        </div>
-    <p style={{color: '#C5B206', fontSize:'14px', marginBottom:'-30px'}}>1212.2K. 44K</p>
-      </div>
-     
-      {/* Container2 with basic styling */}
+          {/* WHERE THE IMAGES ARE */}
+          <div className="container__image-container">
+            <img src="" alt="" />
 
-       <div className="division2" style={{ backgroundColor: '#1d2022' }}>
-         <h2 style={{fontSize:'14px', marginTop:'-38px', paddingRight:'60px', color:'#FFFF'}}>Total minted</h2>
-           <ProgressBar/>
-             <div className='connection'>
-               <div  className='divisionh2'>
-              <h2 className='h1'>Price</h2>
-            &nbsp;&nbsp;&nbsp;
-            <h1 style={{fontSize:'14px', marginTop:'13px'}}>₳  11490K</h1>
-              </div>
-                 <div className='cardano'>
-                    <div>
-                       <Icon icon="formkit:cardano" width={80} height={80}/>
-                       </div>
-                     <div className='button1'>
-                   <button className='button'>connect wallet</button>
-                 </div>
-               </div>
-        </div>
-      </div>
+            <div className="container__image-container--bottom_images">
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+          </div>
 
-      {/* container3 with basic styling*/}
+          {/* WHERE THE CONTENT IS */}
+          <div className="container__content-container">
+            <p></p>
 
-      <div className="division3">
-        <div className='gen'>
-          <a href="/">
-          <button className='button2'>Make offer &nbsp;<Icon icon="solar:wallet-bold" /></button>
-          </a>
-           <a href="/">
-           <button className='button2'>Explore all NFTs</button>
-           </a>
+            <div className="container__content-container--paying_stats">
+              <h2></h2>
+
+              <figure className="content-container--paying-stats--image">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" color="#e42575">
+                  <path d="M20.59 13.91L13.42 21.08C13.2343 21.266 13.0137 21.4135 12.7709 21.5141C12.5281 21.6148 12.2678 21.6666 12.005 21.6666C11.7422 21.6666 11.4819 21.6148 11.2391 21.5141C10.9963 21.4135 10.7757 21.266 10.59 21.08L2 12.5V2.5H12L20.59 11.09C20.9625 11.4647 21.1716 11.9716 21.1716 12.5C21.1716 13.0284 20.9625 13.5353 20.59 13.91V13.91Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  
+                  <path d="M7 7.5H7.01" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+
+                <figcaption>
+                  <span></span>
+                  <span></span>
+                </figcaption>
+
+                <button>Connect Wallet</button>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>
- </div>
-
   )
 }
 
