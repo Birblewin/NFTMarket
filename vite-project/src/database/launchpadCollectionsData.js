@@ -67,13 +67,15 @@ export const launchpadCollectionsData = {
         "cardImage": livePhoto,
         "cardTitle": "Railey Freemans Editon",
         "cardBanner": "LIVE",
-        "price": "₳ 7.5k" 
+        "price": "₳ 7.5k",
+        "cardInfo": "D3fenders offers a new groundbreaking security protocol for your digital collectibles, making them safeguarded with lock / unlock functionality that you are in complete control of. It establishes an impenetrable shield against theft, offering owners unparalleled peace of mind. This tech acts as a self-governed fortress that will make theft and wallet drains across the space a thing of the past." 
     },
 
     "pastCollections": {
         "cardImage": pastPhoto,
         "cardTitle": "Vuitton Eddition",
         "cardBanner": "Sold Out",
-        "price": "₳ 7.5k" 
+        "price": "₳ 7.5k",
+        "cardInfo": "D3fenders offers a new groundbreaking security protocol for your digital collectibles, making them safeguarded with lock / unlock functionality that you are in complete control of. It establishes an impenetrable shield against theft, offering owners unparalleled peace of mind. This tech acts as a self-governed fortress that will make theft and wallet drains across the space a thing of the past."
     }
 }
