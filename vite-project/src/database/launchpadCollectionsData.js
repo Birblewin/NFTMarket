@@ -5,8 +5,8 @@ import image3 from '../components/carousel/images/image3.png'
 import image4 from '../components/carousel/images/image4.jpeg'
 import image5 from '../components/carousel/images/image5.jpeg'
 
-import livePhoto from '../../public/img/launchpad/live_photo.png'
-import pastPhoto from '../../public/img/launchpad/past_photo.png'
+import livePhoto from '/img/launchpad/live_photo.png'
+import pastPhoto from '/img/launchpad/past_photo.png'
 
 
 // CREATING A LAUNCHPADCOLLECTIONSDATA WHICH IS TO BE EXPORTED AS A VARIABLE

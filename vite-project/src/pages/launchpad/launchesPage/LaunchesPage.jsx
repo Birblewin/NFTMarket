@@ -29,6 +29,7 @@ export default function LaunchesPage(){
                 title = {liveCollections.cardTitle}
                 banner = {liveCollections.cardBanner}
                 price = {liveCollections.price}
+                id = {i}
             />)
         }
 
@@ -46,6 +47,7 @@ export default function LaunchesPage(){
                 title = {pastCollections.cardTitle}
                 banner = {pastCollections.cardBanner}
                 price = {pastCollections.price}
+                id = {i}
             />)
         }
 

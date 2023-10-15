@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // IMPORT NECESSARY MODULES
-import { NavLink } from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 // IMPORT CSS FILE
 import './LiveCollection.css'
@@ -9,8 +9,8 @@ import './LiveCollection.css'
 export default function LiveCollection(props){
     return(
         <NavLink 
-            className="live_collection_container" 
-            to='/launchpad/launch details'
+            className="live_collection_container"
+            to={`/launchpad/launch details/?liveCollectionID=${props.id}`}
         >
             <figure className="live_collection_container__image">
                 <img 

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // IMPORT NECESSARY MODULES
-import { NavLink } from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 // IMPORT CSS FILE
 import './PastCollection.css'
@@ -10,7 +10,7 @@ export default function PastCollection(props){
     return(
         <NavLink 
             className="past_collection_container" 
-            to='/launchpad/launch details'
+            to={`/launchpad/launch details/?pastCollectionID=${props.id}`}
         >
             <figure className="past_collection_container__image">
                 <img 
