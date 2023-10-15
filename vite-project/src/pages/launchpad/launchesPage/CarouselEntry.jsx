@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-// IMPORTING NECESSARY FILES
-    // IMPORTING NECESSARY MODULES
-import {NavLink} from 'react-router-dom'
+// IMPORTING NECESSARY MODULES
+import { NavLink} from 'react-router-dom'
 
 // IMPORTING CSS FILE
 import './CarouselEntry.css'

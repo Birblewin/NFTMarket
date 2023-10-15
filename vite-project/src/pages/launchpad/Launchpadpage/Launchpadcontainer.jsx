@@ -1,6 +1,10 @@
 // IMPORTING NECESSARY FILES
   // IMPORTING NECESSARY HOOKS
 import WalletSidePanelContextHook from '../../../hooks/WalletSidePanelContextHook'
+  // IMPORT NECESSARY MODULES
+import { useSearchParams } from 'react-router-dom'
+  // IMPORTING NECESSARY DATABASE
+import { launchpadCollectionsData } from '../../../database/launchpadCollectionsData'
 
 // IMPORTING CSS FILE
 import './launchpad.css'
@@ -9,6 +13,43 @@ import './launchpad.css'
 export default function Launchpadcontainer(){
   // GETTING GLOBAL CONTEXTS FROM HOOKS
   const {dispatch} = WalletSidePanelContextHook()
+  const [searchParams] = useSearchParams()
+
+  // A FUNCTION TO VALIDATE THE QUERY ID VALUE AND ITS RESPECTIVE DATA
+  function validateQueryParams(){
+    const carouselCollectionID = searchParams.get('carouselCollectionID')
+    const pastCollectionID = searchParams.get('pastCollectionID')
+    const liveCollectionID = searchParams.get('liveCollectionID')
+    const regex = /[0-9]/g
+
+    if(carouselCollectionID && !pastCollectionID && !liveCollectionID){
+      if(!regex.test(carouselCollectionID)){
+        throw new Error("Invalid value for query parameter")
+      }
+
+      const {carouselCollections} = launchpadCollectionsData
+      const relativeData = carouselCollections.find(dataEntry => dataEntry._id === parseInt(carouselCollectionID))
+      return relativeData
+    }else if(!carouselCollectionID && pastCollectionID && !liveCollectionID){
+      if(!regex.test(pastCollectionID)){
+        throw new Error("Invalid value for query parameter")
+      }
+
+      return launchpadCollectionsData.pastCollections
+    }else if(!carouselCollectionID && !pastCollectionID && liveCollectionID){
+      if(!regex.test(liveCollectionID)){
+        throw new Error("Invalid value for query parameter")
+      }
+
+      return launchpadCollectionsData.liveCollections
+    }else{
+      throw new Error("Invalid query parameter")
+    }
+  }
+
+  // OBTAINING THE CORRECT DATA ENTRY AFTER VALIDATION
+  const correctData = validateQueryParams()
+  correctData
 
   return (
     <div>
