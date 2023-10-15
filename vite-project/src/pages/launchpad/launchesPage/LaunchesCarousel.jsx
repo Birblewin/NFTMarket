@@ -31,6 +31,7 @@ export default function LaunchesCarousel(){
             image={detail.cardImage}
             heading={detail.cardTitle}
             description={detail.cardInfo}
+            id={detail._id}
         />)
     )
 

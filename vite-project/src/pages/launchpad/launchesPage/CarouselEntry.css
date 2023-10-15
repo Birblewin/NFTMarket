@@ -112,6 +112,7 @@
     line-height: normal;
     cursor: pointer;
     transition: all 500ms ease-in-out normal;
+    text-decoration: none;
 }
 
 .description--buttons--link:hover{

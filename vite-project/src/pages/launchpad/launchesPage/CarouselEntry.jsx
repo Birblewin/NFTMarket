@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+// IMPORTING NECESSARY MODULES
+import { NavLink} from 'react-router-dom'
 
 // IMPORTING CSS FILE
 import './CarouselEntry.css'
@@ -31,7 +33,10 @@ export default function CarouselEntry(props){
                                 </svg>
                             </span>
     
-                            <button className="description--buttons--link">Go To launchpad</button>
+                            <NavLink 
+                                className="description--buttons--link"
+                                to={`/launchpad/launch details/`}
+                            >Go To launchpad</NavLink>
                         </div>
                     </div>
                 </div>
