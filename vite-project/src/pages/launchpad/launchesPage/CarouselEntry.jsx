@@ -1,12 +1,17 @@
 /* eslint-disable react/prop-types */
-// IMPORTING NECESSARY MODULES
-import { NavLink} from 'react-router-dom'
+// IMPORTING NECESSARY FILES
+    // IMPORTING NECESSARY MODULES
+import {NavLink, useSearchParams} from 'react-router-dom'
 
 // IMPORTING CSS FILE
 import './CarouselEntry.css'
 
 // EXPORTING DEFAULT CAROUSELENTRY FUNCTION
 export default function CarouselEntry(props){
+    // OBTAINING THE QUERY PARAMETERS TO DIRECT TO SINGLE LAUNCHPAD PAGE
+    const [searchParams, setSearchParams] = useSearchParams()
+    searchParams.set('carouselCollectionID', props.id)
+
     return(
         <div>
             <div className="carousel_entry_container">
@@ -35,7 +40,8 @@ export default function CarouselEntry(props){
     
                             <NavLink 
                                 className="description--buttons--link"
-                                to={`/launchpad/launch details/`}
+                                to={`/launchpad/launch details/?${searchParams}`}
+                                onClick={() => setSearchParams(searchParams)}
                             >Go To launchpad</NavLink>
                         </div>
                     </div>
