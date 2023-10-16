@@ -191,6 +191,7 @@ html {
   border: none;
   border-radius: 20px;
 
+
   
 }
 @media screen and (max-width: 800px) {
@@ -198,6 +199,7 @@ html {
  
   .carousel-container-outer {
       width: 100vw;
+
       font-size: 12px;
       margin: 0;
   }
@@ -205,6 +207,8 @@ html {
     display: flex;
     flex-flow: column-reverse nowrap ;
     height: fit-content;
+
+    padding: 10px;
   }
   .image-container{
     display: flex;
@@ -216,6 +220,7 @@ html {
     height: auto;
     justify-self: center;
   }
+
   .title{
     font-size: 16px;
     margin: 8px 0;
@@ -227,6 +232,7 @@ html {
   .details-container {
     width: 100%;
     line-height: 1.4;
+
   }
 
 }

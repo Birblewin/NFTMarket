@@ -27,7 +27,8 @@ const AllCollections = () => {
       <>
        <div className='collection'>
             
-            <h3 className='title'>Explore    <span>All Collections</span></h3> <KeyboardArrowDown className='arrow-down'/>
+            <h3 className='title'>Explore    <span>All Collections</span></h3>
+             <KeyboardArrowDown className='arrow-downn'/>
           </div>
           <div className='filter-bar-container'>
           <div className='filter-bar'>

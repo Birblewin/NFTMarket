@@ -49,8 +49,8 @@ button{
     }
 }
 
-/* For screens whose min width is 640px and max width is 768px */
-    /* MEDIUM SCREENS */
+/* For screens whose min width is 640px and max width is 1280px */
+    /* MEDIUM AND LARGE AND EXTRA LARGE SCREENS */
 @media screen and (min-width: 640px) {
     .small-screen-container-entry{
         display: none;

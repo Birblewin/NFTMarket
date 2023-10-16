@@ -141,7 +141,7 @@ const TableContainer = () => {
         </div>
         <div className="table-1">{tableRow}</div>
       </div>
-      <div className="table-section second">
+      <div className="table-section">
         <div className="top-table cont none">
           <div className="coll-no "></div>
           <div className="collection-name"> COLLECTION</div>

@@ -1,16 +1,20 @@
+/* eslint-disable react/prop-types */
 // IMPORT NECESSARY MODULES
-import { NavLink } from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 // IMPORT CSS FILE
 import './LiveCollection.css'
 
 // EXPORTING A LIVECOLLECTION FUNCTION
-export default function LiveCollection(){
+export default function LiveCollection(props){
     return(
-        <NavLink className="live_collection_container" to='/launchpad/launch details'>
+        <NavLink 
+            className="live_collection_container"
+            to={`/launchpad/launch details/?liveCollectionID=${props.id}`}
+        >
             <figure className="live_collection_container__image">
                 <img 
-                    src="../../../../img/launchpad/live_photo.png" 
+                    src={`${props.image}`} 
                     alt="live-collection-photo"
                     title="live-collection-photo"
                     loading="lazy"
@@ -18,12 +22,12 @@ export default function LiveCollection(){
                     height={100}
                 />
 
-                <figcaption>Railey Freemans Editon</figcaption>
+                <figcaption>{props.title}</figcaption>
             </figure>
 
             <div className="live_collection_container__data">
-                <li className="live_collection_container__data--banner">LIVE</li>
-                <p className="live_collection_container__data--price">₳ 7.5k</p>
+                <li className="live_collection_container__data--banner">{props.banner}</li>
+                <p className="live_collection_container__data--price">{props.price}</p>
                 
                 <span className="live_collection_container__data--calender">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

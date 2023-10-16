@@ -1,9 +1,15 @@
+/* GENERAL STYLING */
+
+/* For screens with a max-width of 640px */
+  /* SMALL SCREENS */
 .launchpad-container{
   min-height: 100vh;
   scroll-behavior: smooth;
   box-sizing: border-box;
   transition: all 500ms ease-in-out normal;
+  padding: 20px;
 }
+
 .launchpad-page-container-viewOverviewToggle{
   display: flex;
   justify-content: flex-start;
@@ -35,118 +41,98 @@
   padding: 40px;
   gap: 40px;
 }
-.container {
+
+.container{
   display: flex;
-  padding: 2px;
-  margin-top: -130px;
-  margin-right: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -60px;
   transition: all 500ms ease-in-out normal;
 }
 
-.image-container {
-  flex: 1.6;
-  padding: 30px;
-  margin-left: -70px;
-  margin-right: 30px;
-  margin-top: 45px;
-}
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.live{
-  background-color:#2B2037;
-  padding: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: 2px;
-  display: flex;
-  color: green;
-  justify-content: center;align-items: center;
+.container h1{
+  color: rgb(248, 247, 248);
+  font-size: 30px;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
 }
 
-.calender{
+.container__selling_stats{
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  display: flex;
-
-}
-.button-icon{
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: #2B2037;
-}
-.container2 {
-  flex: 1.9;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 20px; /* Add space between paragraphs */
-  margin-right: 30px;
-  margin-top: 50px;
-}
-
-.h1{
-  margin-left: 7px;
-  font-size: 14px;
-}
-.division1{
-  padding: 55px;
-  border-radius: 10px; /* Add rounded corners */
-  color: white; /* Text color for paragraphs */
-}
-.division2{
-  padding: 56px;
-  border-radius: 10px; /* Add rounded corners */
-  color: white; /* Text color for paragraphs */
-}
-.connection{
-  background-color:#18191B;
-  padding: 56px;
-  margin-top: 8px;
-  border-radius: 10px;
   align-items: center;
-}
-.divisionh2{
-  color: #FFFF;
-  font-size: 5px;
-  margin-top: -40px;
-  margin-left: 158px;
+  font-size: 14px;
+  color: rgb(245, 243, 247);
+  margin: 10px 0;
   font-weight: 600;
 }
-.cardano{
+
+.container__selling_stats--chosen_chain{
+  background-color: rgba(161, 151, 170, 0.1);
+  width: 46px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out normal;
+}
+
+.container__selling_stats--total_sold{
+  padding: 8px 12px;
+  width: 146px;
+  height: 36px;
+  background-color: rgba(161, 151, 170, 0.1);
+  border-radius: 10px;
+  transition: all 500ms ease-in-out normal;
+  cursor: pointer;
+}
+
+.container__selling_stats--timing{
+  padding: 8px 10px;
+  width: 125px;
+  height: 36px;
+  background-color: rgba(161, 151, 170, 0.1);
+  border-radius: 10px;
+  transition: all 500ms ease-in-out normal;
+  cursor: pointer;
+}
+
+
+.container__selling_stats--chosen_chain:hover,
+.container__selling_stats--timing:hover,
+.container__selling_stats--total_sold:hover{
+  scale: 1.2;
+  background-color: blueviolet
+}
+
+.container__image-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.container__image-container img{
+  height: 345px;
+  width: auto;
+  border-radius: 12px;
+}
+
+.container__image-container--bottom_images{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.button{
-  background-color: #FFDB24;
-  color: #363636;
-  border-radius: 20px;
-  font-size: 14px;
-  padding: 15px;
-  margin-top: 19px;
-}
-.timer{
-  padding-left: 180px;
-  margin-right: -90px;
-  padding-bottom: 30px;
-}
-.division3{
-  padding: 20px;
-  border-radius: 10px; /* Add rounded corners */
-  color: white; /* Text color for paragraphs */
-  background-color: #1d2022;
-}
-.gen{
-  margin-left: 30%;
-  gap: 4px;
-}
-.button2{
-  background-color: #18191B;
-  padding: 14px;
-  color: #ffff;
-  border-radius: 23px;
+
+.container__image-container--bottom_images img{
+  width: 75px;
+  height: auto;
+  margin: 10px 0;
 }

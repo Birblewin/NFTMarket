@@ -1,78 +1,153 @@
+// IMPORTING NECESSARY FILES
+  // IMPORTING NECESSARY HOOKS
+import WalletSidePanelContextHook from '../../../hooks/WalletSidePanelContextHook'
+  // IMPORT NECESSARY MODULES
+import { useSearchParams } from 'react-router-dom'
+import {formatDistance} from 'date-fns'
+  // IMPORTING NECESSARY DATABASE
+import { launchpadCollectionsData } from '../../../database/launchpadCollectionsData'
+
+// IMPORTING CSS FILE
 import './launchpad.css'
-import ProgressBar from './progressbarholder';
-import { Icon } from '@iconify/react';
-import CountdownTimer from './timer'
 
-const Launchpadcontainer = () => {
+// A FUNCTION THAT RETURNS AN EXPORTED LAUNCHPAD COMPONENT
+export default function Launchpadcontainer(){
+  // GETTING GLOBAL CONTEXTS FROM HOOKS
+  const {dispatch} = WalletSidePanelContextHook()
+  // GETTING THE QUERY PARAMETERS FROM THE USESEARCHPARAMS FUNCTION
+  const [searchParams] = useSearchParams()
+  // GETTING THE DISTANCE BETWEEN THE DATE OF PRODUCTION AND NOW
+  const dateDistance = formatDistance(new Date(2023, 9, 15, 12, 0, 0), new Date())
+
+  // A FUNCTION TO VALIDATE THE QUERY ID VALUE AND ITS RESPECTIVE DATA
+  function validateQueryParams(){
+    // GETTING POSSIBLE QUERIES AND A REGEX EXPRESSIONS
+    const carouselCollectionID = searchParams.get('carouselCollectionID')
+    const pastCollectionID = searchParams.get('pastCollectionID')
+    const liveCollectionID = searchParams.get('liveCollectionID')
+    const regex = /[0-9]/g
+
+    // IF WE HAVE A CAROUSELCOLLECTION QUERY ONLY,VALIDATE IT AND RETURN RESPECTIVE DATA
+    if(carouselCollectionID && !pastCollectionID && !liveCollectionID){
+      if(!regex.test(carouselCollectionID)){
+        throw new Error("Invalid value for query parameter")
+      }
+
+      const {carouselCollections} = launchpadCollectionsData
+      const relativeData = carouselCollections.find(dataEntry => dataEntry._id === parseInt(carouselCollectionID))
+      return relativeData
+    // IF WE HAVE A PASTCOLLECTION QUERY ONLY,VALIDATE IT AND RETURN RESPECTIVE DATA
+    }else if(!carouselCollectionID && pastCollectionID && !liveCollectionID){
+      if(!regex.test(pastCollectionID)){
+        throw new Error("Invalid value for query parameter")
+      }
+
+      return launchpadCollectionsData.pastCollections
+    // IF WE HAVE A LIVECOLLECTION QUERY ONLY,VALIDATE IT AND RETURN RESPECTIVE DATA
+    }else if(!carouselCollectionID && !pastCollectionID && liveCollectionID){
+      if(!regex.test(liveCollectionID)){
+        throw new Error("Invalid value for query parameter")
+      }
+
+      return launchpadCollectionsData.liveCollections
+    // IF NO QUERY IS PASSED, THROW AN ERROR
+    }else{
+      throw new Error("Invalid query parameter")
+    }
+  }
+
+  // OBTAINING THE CORRECT DATA ENTRY AFTER VALIDATION
+  const correctData = validateQueryParams()
+
   return (
-    <div className="container">
-      {/* Where the img is */}
-      <div className="image-container">
-        <h2 style={{color:'#FFFF',marginLeft:'155px'}}>Reezy cleacks collection</h2>
-      <img src="../img/Railey 2.PNG" alt="Sample Image" />
+    <div>
+      <div className="small_screen_launchpad-container_entry">
+        <div className="container">
+          {/* TITLE OF THE COLLECTION */}
+          <h1>{correctData.cardTitle}</h1>
+
+          {/* WHERE SELLING STATS ARE */}
+          <div className="container__selling_stats">
+            <div className='container__selling_stats--chosen_chain'></div>
+            <div className='container__selling_stats--total_sold'>Total items: {correctData.volume || 6969}</div>
+            <div className='container__selling_stats--timing'>{dateDistance}</div>
+          </div>
+
+          {/* WHERE THE IMAGES ARE */}
+          <div className="container__image-container">
+            <img 
+              src={`${correctData.cardImage}`} 
+              alt="card-image"
+              loading='lazy'
+              width={100}
+              height={100}
+              title='card-image' 
+            />
+
+            <div className="container__image-container--bottom_images">
+              <img 
+                src={`${correctData.cardImage}`} 
+                alt="card-image"
+                loading='lazy'
+                width={100}
+                height={100}
+                title='card-image' 
+              />
+
+              <img 
+                src={`${correctData.cardImage}`} 
+                alt="card-image"
+                loading='lazy'
+                width={100}
+                height={100}
+                title='card-image' 
+              />
+
+              <img 
+                src={`${correctData.cardImage}`} 
+                alt="card-image"
+                loading='lazy'
+                width={100}
+                height={100}
+                title='card-image' 
+              />
+
+              <img 
+                src={`${correctData.cardImage}`} 
+                alt="card-image"
+                loading='lazy'
+                width={100}
+                height={100}
+                title='card-image' 
+              />
+            </div>
+          </div>
+
+          {/* WHERE THE CONTENT IS */}
+          <div className="container__content-container">
+            <p>{correctData.cardInfo}</p>
+
+            <div className="container__content-container--paying_stats">
+              <h2>Price</h2>
+
+              <figure className="content-container--paying-stats--image">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" color="#e42575">
+                  <path d="M20.59 13.91L13.42 21.08C13.2343 21.266 13.0137 21.4135 12.7709 21.5141C12.5281 21.6148 12.2678 21.6666 12.005 21.6666C11.7422 21.6666 11.4819 21.6148 11.2391 21.5141C10.9963 21.4135 10.7757 21.266 10.59 21.08L2 12.5V2.5H12L20.59 11.09C20.9625 11.4647 21.1716 11.9716 21.1716 12.5C21.1716 13.0284 20.9625 13.5353 20.59 13.91V13.91Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  
+                  <path d="M7 7.5H7.01" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+
+                <figcaption>
+                  <span>--</span>
+                  <b>◎</b>
+                </figcaption>
+              </figure>
+
+              <button onClick={() => dispatch({ type: "SHOW_WALLET_PANEL" })}>Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    {/*Main-Container */}
-    
-    <div className="container2">
-
-      {/* Container1 with basic styling*/}
-      
-     <div  className='calender'>
-      <div className='live'><Icon icon="tabler:live-photo" /><span style={{fontSize:'8px'}}><h1>&nbsp;Live</h1></span></div>
-      <button className='button-icon'><Icon icon="uil:calender" width={30} height={30} color='#ffff'/></button>
-      </div>
-      
-      <div className="division1" style={{ backgroundColor: '#1d2022' }}>
-        
-        <h2 style={{fontSize:'14px', marginTop:'-38px', paddingRight:'60px', color:'#C5B206'}}>Minting stages</h2>&nbsp;
-        <div  style={{display:'flex'}}>  
-        <h1 style={{fontSize:'14px', color:'#FFFF', marginTop: '10px'}}>public</h1>
-        <div className='timer'>
-        <CountdownTimer/>
-        </div>
-        </div>
-    <p style={{color: '#C5B206', fontSize:'14px', marginBottom:'-30px'}}>1212.2K. 44K</p>
-      </div>
-     
-      {/* Container2 with basic styling */}
-
-       <div className="division2" style={{ backgroundColor: '#1d2022' }}>
-         <h2 style={{fontSize:'14px', marginTop:'-38px', paddingRight:'60px', color:'#FFFF'}}>Total minted</h2>
-           <ProgressBar/>
-             <div className='connection'>
-               <div  className='divisionh2'>
-              <h2 className='h1'>Price</h2>
-            &nbsp;&nbsp;&nbsp;
-            <h1 style={{fontSize:'14px', marginTop:'13px'}}>₳  11490K</h1>
-              </div>
-                 <div className='cardano'>
-                    <div>
-                       <Icon icon="formkit:cardano" width={80} height={80}/>
-                       </div>
-                     <div className='button1'>
-                   <button className='button'>connect wallet</button>
-                 </div>
-               </div>
-        </div>
-      </div>
-
-      {/* container3 with basic styling*/}
-
-      <div className="division3">
-        <div className='gen'>
-          <a href="/">
-          <button className='button2'>Make offer &nbsp;<Icon icon="solar:wallet-bold" /></button>
-          </a>
-           <a href="/">
-           <button className='button2'>Explore all NFTs</button>
-           </a>
-        </div>
-      </div>
-    </div>
- </div>
-
   )
 }
-
-export default Launchpadcontainer

@@ -31,7 +31,8 @@ function AllNfts() {
             <>
              <div className='collection'>
             
-            <h3 className='title'>Explore    <span>All NFTs</span></h3> <KeyboardArrowDown className='arrow-down'/>
+            <h3 className='title'>Explore<span> All NFTs</span></h3>
+             <KeyboardArrowDown className='arrow-down'/>
           </div>
           <div className='filter-bar-container'>
           <div className='filter-bar'>

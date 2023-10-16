@@ -37,7 +37,7 @@
     flex-direction: row;
     position: sticky;
     top: 20px;
-    z-index: 1;
+    /* z-index: 1; */
     
 }
 
@@ -170,6 +170,28 @@
         align-content: center;
         display: grid; /* This creates a grid container */
         grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
+        gap: 0.5%;
+        padding-top: 10%;
+        margin-bottom: 25%;
+       
+      }
+}
+@media screen and (max-width: 1115px) and (min-width: 780px){
+    .cards-container {
+        align-content: center;
+        display: grid; /* This creates a grid container */
+        grid-template-columns: repeat(4, 1fr); /* 3 columns with equal width */
+        gap: 0.5%;
+        padding-top: 10%;
+        margin-bottom: 25%;
+       
+      }
+}
+@media screen and (max-width: 768px) and (min-width: 643px){
+    .cards-container {
+        align-content: center;
+        display: grid; /* This creates a grid container */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
         gap: 0.5%;
         padding-top: 10%;
         margin-bottom: 25%;

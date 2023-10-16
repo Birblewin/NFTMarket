@@ -5,6 +5,8 @@ import LaunchesCarousel from "./LaunchesCarousel"
 import LiveCollection from "./LiveCollection"
 import PastCollection from "./PastCollection"
 
+import {launchpadCollectionsData} from '../../../database/launchpadCollectionsData'
+
 // IMPORTING CSS FILE
 import './LaunchesPage.css'
 
@@ -13,12 +15,22 @@ export default function LaunchesPage(){
     // A BOOLEAN TO KEEP TRACK OF WHETHER OR NOT TO VIEW THE PAST COLLECTIONS
     const [viewPastCollections, setViewPastCollections] = React.useState(false)
 
+    // OBTAINING THE DATA FROM DATABASE OF LIVE AND PAST COLLECTIONS
+    const {liveCollections, pastCollections} = launchpadCollectionsData
+
     // A FUNCTION TO GENERATE AN ARRAY OF LIVE COLLECTIONS
     function liveCollectionsGenerator() {
         const liveCollectionsArray = []
 
         for(let i = 0; i < 20; i++){
-            liveCollectionsArray.push(<LiveCollection/>)
+            liveCollectionsArray.push(<LiveCollection
+                key = {i}
+                image = {liveCollections.cardImage}
+                title = {liveCollections.cardTitle}
+                banner = {liveCollections.cardBanner}
+                price = {liveCollections.price}
+                id = {i}
+            />)
         }
 
         return liveCollectionsArray
@@ -29,7 +41,14 @@ export default function LaunchesPage(){
         const pastCollectionsArray = []
 
         for(let i = 0; i < 20; i++){
-            pastCollectionsArray.push(<PastCollection/>)
+            pastCollectionsArray.push(<PastCollection
+                key = {i}
+                image = {pastCollections.cardImage}
+                title = {pastCollections.cardTitle}
+                banner = {pastCollections.cardBanner}
+                price = {pastCollections.price}
+                id = {i}
+            />)
         }
 
         return pastCollectionsArray
