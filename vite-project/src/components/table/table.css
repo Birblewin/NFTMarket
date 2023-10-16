@@ -1,4 +1,8 @@
 /* TableContainer styles */
+.table {
+  margin-bottom: 3em;
+}
+
 .TableContainer {
   /* 50% of the viewport height */
   background-color: #141414;
@@ -27,6 +31,7 @@
   background-color: #1d2022;
   color: #61809b;
   align-items: center;
+  border-radius: 9999px;
 }
 .total-time {
   width: 70%;
@@ -36,6 +41,13 @@
 .top-coll-header h3 {
   color: #ffffff;
   font-size: 28px;
+}
+.total-bar .bold {
+  font-weight: bolder;
+  color: #fff;
+}
+.total-bar .loss {
+  color: #f05252;
 }
 
 .time-frames {
@@ -87,6 +99,10 @@
 .table1 {
   display: flex;
   flex-flow: column nowrap;
+}
+.top-table.div {
+  padding: 0.25em 0;
+  align-items: center;
 }
 .top-table {
   color: #ffffff;
@@ -151,6 +167,4 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  
-}
+

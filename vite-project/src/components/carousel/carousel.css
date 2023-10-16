@@ -190,14 +190,16 @@ html {
   flex-shrink: 0;
   border: none;
   border-radius: 20px;
-  position: absolute;
-  bottom: 10;
+
+
+  
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
  
  
   .carousel-container-outer {
-      width: 90vw;
+      width: 100vw;
+
       font-size: 12px;
       margin: 0;
   }
@@ -205,6 +207,7 @@ html {
     display: flex;
     flex-flow: column-reverse nowrap ;
     height: fit-content;
+
     padding: 10px;
   }
   .image-container{
@@ -217,19 +220,19 @@ html {
     height: auto;
     justify-self: center;
   }
-  .trending{
-    margin-bottom: 2rem;
-  }
+
   .title{
     font-size: 16px;
-    margin: 15px 0;
+    margin: 8px 0;
   }
   .learn-more-button{
-    width: 90%;
-    margin: 15px auto;
+    margin-top: 1em;
+    width: 100%;
   }
   .details-container {
     width: 100%;
+    line-height: 1.4;
+
   }
 
 }
