@@ -221,10 +221,12 @@ html {
     margin: 8px 0;
   }
   .learn-more-button{
+    margin-top: 1em;
     width: 100%;
   }
   .details-container {
     width: 100%;
+    line-height: 1.4;
   }
 
 }
