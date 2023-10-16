@@ -95,6 +95,17 @@ export default function Navbar(props) {
       </div>
 
       <div className="extra-large-screen-buttons">
+        <div className='extra-search-bar'>
+          <SearchIcon className='search-icon'/>
+
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Search collection, or NFT"
+            name="searchInput"
+          />
+        </div>
+
         <div className="nav-links">
           <div>
             <NavLink className='rewards' to="/rewards">Rewards</NavLink>

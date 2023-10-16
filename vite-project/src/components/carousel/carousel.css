@@ -7,7 +7,6 @@
 html {
   font-family: "Lexend", sans-serif;
   background-color: #141414;
-  padding: 0 20px;
 }
 
 .carousel-container-outer {
@@ -41,10 +40,10 @@ html {
 }
 
 .carousel-container {
-
-  width: 100vw;
-  margin: 0 auto;
-
+  position: relative;
+  width: 90vw;
+  height: max-content;
+  margin: 0 5%;
 }
 
 .carousel-slideshow {
@@ -56,12 +55,8 @@ html {
 }
 
 .carousel-card-container.active {
-  box-sizing: border-box;
   width: 100%;
-
-  height: 350px;
-  padding: 20px;
-
+  height: fit-content;
   display: flex;
   align-items: center;
   transition: 0.8s ease;
@@ -73,8 +68,8 @@ html {
 }
 
 .title {
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   text-align: left;
   color: #FFF;
   font-family: Inter;
@@ -90,7 +85,7 @@ html {
 }
 
 .trending {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #FFDB24;
   font-family: Inter;
   font-size: 14px;
@@ -104,8 +99,8 @@ html {
 .details-container {
   position: relative;
   flex: 1;
-  padding: 10px;
-  width: 70%;
+  padding: 20px;
+  width: 60%;
   height: 100%;
 }
 
@@ -122,10 +117,9 @@ html {
 }
 
 .image-container img {
-  max-width: 250px;
+  max-width: 350px;
   height: auto;
-  margin-left: 100px;
-
+  margin-left: 130px;
 }
 
 .carousel-controls {
@@ -154,9 +148,7 @@ html {
 
 .carousel-control-prev {
   position: absolute;
-
-  left: -0px;
-
+  left: -10px;
   color: #8b919b;
   font-size: 36px;
   cursor: pointer;
@@ -166,9 +158,7 @@ html {
   position: absolute;
   color: #8b919b;
   font-size: 36px;
-
-  right: -0px;
-
+  right: -10px;
   cursor: pointer;
 }
 
@@ -176,6 +166,9 @@ html {
   background-color: #ffdb24;
   padding: 1em 2em;
   margin: 0;
+  position: absolute;
+  bottom: 10;
+  height: 51px;
   font-size: 16px;
   font-family: inherit;
   border: none;
@@ -191,6 +184,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 50px;
   width: 166px;
   height: 56px;
   flex-shrink: 0;
