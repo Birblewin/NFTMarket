@@ -33,6 +33,12 @@
 }
 .title{
     margin-left: 10% !important;
+    font-size: 30px !important;
+}
+.title span{
+    color: #3189F0;
+    font-size: 25px !important;
+  
 }
 .verified-icon{
     color: #3189F0;
@@ -97,9 +103,9 @@
 
 
 .filter-bar-container{
-    flex-direction: row;
-    position: sticky;
-    top: 20px;
+    flex-direction: row !important;
+    position: sticky !important;
+    top: 20px !important;
     /* z-index: 1; */
 }
 .filter-bar{
@@ -185,9 +191,17 @@
     padding: 5%;
   }
   .collection{
-    margin-top: -8%;
+    margin-top: -6%;
+    display: flex;
   }
-
+  .collection .arrow-down{
+    margin-top: 3% !important;
+    color: #3189F0;
+    position: absolute;
+    left: 25%;
+   
+   }
+   
   @media screen and (max-width: 768px) {
     .cards{
         display: grid; /* This creates a grid container */
@@ -220,22 +234,26 @@
     }
    
    .collection .arrow-down{
-    margin-top: -12% !important;
+    color: #3189F0;
+    margin-top: -9% !important;
+    position: absolute;
+    left: 62%;
+   }
+   .collection .arrow-downn{
+    color: #3189F0;
+    margin-top: -9% !important;
+    position: absolute;
+    left: 82%;
    }
     .title{
-         margin-top: -5% !important;
+         margin-top: -8% !important;
         margin-left: 20% !important;
         font-size: 25px !important;
     }
     .title span{
         font-size: 23px !important;
     }
-    .filter-bar-container{
-        flex-direction: row;
-        position: sticky !important;
-        top: 20px !important;
-        /* z-index: 1 !important; */
-    }
+   
   }
  
   @media screen and (max-width: 300px){
@@ -263,15 +281,22 @@
         width: 75%;
     }
     .collection .arrow-down{
-        margin-top: -17% !important;
+        margin-top: -9% !important;
+        position: absolute;
+        left: 75%;
        }
-    
-    .title span{
+       .collection{
+        margin-top: -10% !important;
+        margin-left: 5% !important;
+        
+    }
+    .collection .title{
         font-size: 18px !important;
     }
-    .collection{
-        margin-top: -20% !important;
+    .title span{
+        font-size: 16px !important;
     }
+   
   }
   @media screen and (max-width: 400px){
     .card{
@@ -342,6 +367,9 @@
     .render-cards{
       margin: 1% !important;
     }
+    .title span{
+        font-size: 18px !important;
+    }
   }
   @media screen and (max-width: 560px) and (min-width: 451px){
     .price{
@@ -365,6 +393,19 @@
         align-items: center;
         
       }
+      .collection .arrow-downn{
+        margin-top: -8.5% !important;
+        position: absolute;
+        left: 70%;
+       }
+       .collection{
+        margin-top: 0%;
+       }
+       .collection .arrow-down{
+        margin-top: -8.5% !important;
+        position: absolute;
+        left: 54%;
+       }
   }
   @media screen and (max-width: 640px) and (min-width: 561px){
     .price{
@@ -381,17 +422,50 @@
         align-items: center;
         
       }
+      .collection .arrow-downn{
+        margin-top: -8.5% !important;
+        position: absolute;
+        left: 59%;
+       }
+      
+       .collection{
+        margin-top: 0%;
+       }
+       .collection .arrow-down{
+        /* margin-top: 5% !important; */
+        position: absolute;
+        left: 45%;
+       }
   }
   @media screen and (max-width: 768px) and (min-width: 643px){
+    .cards{
+        display: grid; /* This creates a grid container */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+        gap: 0.5%;
+       margin: 0.5%; 
+       margin-bottom: 50%;
+      }
+      .card{
+        border-radius: 10px;
+        
+        background-color: #18191b;
+       
+       width: 100% !important;
+        border:  solid 1px #555c69 ;
+    }
+    .card img{
+        width: 100% !important;
+        height: auto !important;
+    }
     .price{
-        margin-right: 30%;
+        margin-right: 10% !important;
         font-size: 25px;
     }
     .banner{
-        padding: 10px 20px;
+        padding: 5px 10px;
     }
     .banner span{
-        font-size: 20px;
+        font-size: 16px;
     }
     .name{
         font-size: 20px;
@@ -409,4 +483,88 @@
         align-items: center;
         
       }
+      .collection .arrow-downn{
+        margin-top: -8.5% !important;
+        position: absolute;
+        left: 54%;
+       }
+       .collection .arrow-down{
+        margin-top: -8.5% !important;
+        position: absolute;
+        left: 44%;
+       }
+       .collection{
+        margin-top: 0%;
+       }
+  }
+
+  @media screen and (max-width: 1115px) and (min-width: 780px){
+    .cards{
+        display: grid; /* This creates a grid container */
+        grid-template-columns: repeat(4, 1fr); /* 3 columns with equal width */
+        gap: 0.5%;
+       margin: 0.5%; 
+       margin-bottom: 50%;
+      }
+      .card{
+        border-radius: 10px;
+        
+        background-color: #18191b;
+       
+       width: 100% !important;
+        border:  solid 1px #555c69 ;
+    }
+    .card img{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .price{
+        margin-right: 5% !important;
+        font-size: 18px;
+    }
+    .vertical-line {
+       
+       position: absolute;
+       right: 15%;
+      }
+      .collection .arrow-down{
+        margin-top: 5% !important;
+        position: absolute;
+        left: 33%;
+       }
+       .collection{
+        margin-top: -10%;
+       }
+  }
+  @media screen and (max-width: 643px) and (min-width: 550px){
+    .cards{
+        display: grid; /* This creates a grid container */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+        gap: 0.5%;
+       margin: 0.5%; 
+       margin-bottom: 50%;
+      }
+      .card{
+        border-radius: 10px;
+        
+        background-color: #18191b;
+       
+       width: 100% !important;
+        border:  solid 1px #555c69 ;
+    }
+    .card img{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .price{
+        margin-right: 9% !important;
+        font-size: 20px;
+    }
+    .banner{
+        padding: 5px 10px;
+    }
+    .banner span{
+        font-size: 16px;
+    }
+    
   }
