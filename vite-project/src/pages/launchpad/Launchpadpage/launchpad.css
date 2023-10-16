@@ -49,7 +49,7 @@
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-  margin-top: -60px;
+  margin-top: -80px;
   transition: all 500ms ease-in-out normal;
 }
 
@@ -211,4 +211,29 @@
   scale: 1.11;
   background-color: aqua;
   color: black;
+}
+
+/* For screens with a min-width of 640px and max-width of 768px */
+  /* MEDIUM SCREENS */
+@media screen and (min-width: 640px) {
+  .container__selling_stats{
+    width: 60%;
+  }
+
+  .container__image-container{
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .container__image-container img{
+    width: 100%;
+    height: auto;
+  }
+
+  .container__image-container--bottom_images img{
+    width: 130px;
+    height: auto;
+    margin: 20px 0;
+    margin-bottom: 0;
+  }
 }
