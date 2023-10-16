@@ -136,3 +136,79 @@
   height: auto;
   margin: 10px 0;
 }
+
+.container__content-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(18, 12, 24);
+  border-radius: 12px;
+  padding: 16px;
+  gap: 10px;
+  border: 2px solid rgb(28, 19, 38);
+}
+
+.container__content-container p{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgb(245, 243, 247);
+  width: 100%;
+  max-height: 20ch;
+  overflow-y: scroll;
+  border-bottom: 1px solid rgb(28, 19, 38);
+  padding-bottom: 20px;
+}
+
+.container__content-container--paying_stats{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgb(28, 19, 38);
+  margin: 20px 0;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.container__content-container--paying_stats h2{
+  color: rgb(245, 243, 247);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container__content-container--paying_stats figure{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.container__content-container--paying_stats figcaption{
+  font-size: 24px;
+  color: rgb(245, 243, 247);
+}
+
+.container__content-container--paying_stats button{
+  margin: 10px auto;
+  width: 95%;
+  height: 44px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(228, 37, 117);
+  color: rgb(245, 243, 247);
+  font-size: medium;
+  cursor: pointer;
+  transition: all 500ms ease-in-out normal;
+}
+
+.container__content-container--paying_stats button:active{
+  scale: 1.11;
+  background-color: aqua;
+  color: black;
+}
