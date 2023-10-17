@@ -33,7 +33,7 @@ const Launchpad = () => {
     <div className='Launchpad-container'>
       <Launchpadcontainer/>
       
-      <div className="launchpad-page-container-viewOverviewToggle">
+      <div className="launches_page_container__viewOverviewToggle">
                 <p 
                     onClick={() => setViewTeam(false)}
                     
