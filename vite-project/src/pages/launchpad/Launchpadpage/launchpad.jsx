@@ -1,6 +1,6 @@
 import React from 'react'
 import Launchpadcontainer from './Launchpadcontainer'
-import Overview from "./Overview"
+import Overview from './Overview'
 import Team from './team'
 
 const Launchpad = () => {
