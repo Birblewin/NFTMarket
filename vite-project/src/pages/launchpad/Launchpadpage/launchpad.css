@@ -2,7 +2,7 @@
 
 /* For screens with a max-width of 640px */
   /* SMALL SCREENS */
-.launchpad-container{
+.launchpad_container{
   min-height: 100vh;
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   padding: 20px;
 }
 
-.launches_page_container__viewOverviewToggle{
+.launchpad_container__viewOverviewToggle{
   display: flex;
   align-items: center;
   gap: 20px;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.launches_page_container__viewOverviewToggle p{
+.launchpad_container__viewOverviewToggle p{
   color: #FFF;
   font-family: Inter;
   font-size: 20px;
@@ -30,7 +30,7 @@
   transition: all 500ms ease-in-out normal;
 }
 
-.launchpad-page-container-Holder{
+.launchpad_container__teamCollectionsHolder{
   display: grid;
   grid-auto-flow:column; 
   grid-template-rows: repeat(1, 1fr);
@@ -243,7 +243,7 @@
     margin: 0 auto;
   }
 
-  .launches_page_container__viewOverviewToggle{
+  .launchpad_container__viewOverviewToggle{
     width: 70%;
     margin: 0 auto;
     margin-top: 150px;
@@ -257,7 +257,7 @@
 /* For screens whose min width is 768px and max width is 1024px */
     /* LARGE SCREENS */
 @media screen and (min-width: 768px) {
-  .launches_page_container__viewOverviewToggle{
+  .launchpad_container__viewOverviewToggle{
       width: 100%;
       margin-left: 12%;
   }
@@ -335,7 +335,7 @@
     font-weight: 600;
   }
 
-  .launches_page_container__viewOverviewToggle{
+  .launchpad_container__viewOverviewToggle{
     margin-top: 50px;
     gap: 50px;
   }
