@@ -213,8 +213,12 @@
   color: black;
 }
 
-/* For screens with a min-width of 640px and max-width of 768px */
-  /* MEDIUM SCREENS */
+.extra_large_screen_launchpad-container_entry{
+  display: none;
+}
+
+/* For screens with a min-width of 640px and max-width of 1024px */
+  /* MEDIUM AND LARGE SCREENS */
 @media screen and (min-width: 640px) {
   .container__selling_stats{
     width: 60%;
@@ -226,14 +230,90 @@
   }
 
   .container__image-container img{
-    width: 100%;
+    width: 500px;
     height: auto;
   }
 
   .container__image-container--bottom_images img{
-    width: 130px;
+    width: 115px;
     height: auto;
     margin: 20px 0;
     margin-bottom: 0;
+  }
+
+  .container__image-container--bottom_images{
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .extra_large_screen_launchpad-container_entry{
+    display: none;
+  }
+}
+
+/* For screens with a min-width of 1024px and max-width of 1280px */
+  /* EXTRA LARGE SCREENS */
+@media screen and (min-width: 1024px) {
+  .small_screen_launchpad-container_entry{
+    display: none;
+  }
+
+  .extra_large_screen_launchpad-container_entry{
+    display: block;
+  }
+
+  .container{
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .container__left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container__selling_stats{
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+
+  .container__image-container{
+    width: 100%;
+  }
+
+  .container__image-container img{
+    width: 450px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .container__image-container--bottom_images{
+    width: 450px;
+    margin: 0 auto;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .container__image-container--bottom_images img{
+    width: 100px;
+    height: auto;
+  }
+
+  .container__right-container{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 500px;
+  }
+
+  .container__content-container p{
+    max-height: none;
+    overflow-y: visible;
   }
 }
