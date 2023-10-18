@@ -129,8 +129,11 @@ export default function Overview(){
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                 </div>
-                
-                <div className='entry--circle_and_line--line'></div>
+
+                <div 
+                  className="entry--circle_and_line--line"
+                  style={{backgroundColor: 'transparent'}}
+                ></div>
               </div>
               
               <div className='list--entry--description'>
