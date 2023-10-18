@@ -244,7 +244,7 @@
   }
 
   .launchpad_container__viewOverviewToggle{
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
     margin-top: 150px;
   }
@@ -259,7 +259,7 @@
 @media screen and (min-width: 768px) {
   .launchpad_container__viewOverviewToggle{
       width: 100%;
-      margin-left: 12%;
+      margin-left: 20px;
   }
 }
 

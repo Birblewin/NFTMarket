@@ -10,12 +10,13 @@ export default function Overview(){
   return (
     <div className="small_screen_overview_entry">
       <div className="overview-container">
-        <h2>D3fenders</h2>
+        <h1>D3fenders</h1>
         
         <div className="overview-container__socials">
           <Link 
             to="https://d3fenders.gitbook.io/d3fenders/" 
             target="_blank"
+            title='website'
             className='overview-container__socials--website'
           >
             <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
@@ -28,6 +29,7 @@ export default function Overview(){
           <Link 
             to="https://discord.com/invite/D3fenders" 
             target="_blank"
+            title='discord'
             className='overview-container__socials--discord'
           >
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 640 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
@@ -36,8 +38,9 @@ export default function Overview(){
           </Link>
 
           <Link 
-            href="https://twitter.com/d3fenders" 
+            to="https://twitter.com/d3fenders" 
             target="_blank"
+            title='X.com'
             className='overview-container__socials--twitterX'
           >
             <svg width="20" height="20" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" size="20">
@@ -80,7 +83,7 @@ export default function Overview(){
         </div>
         
         <div className="overview-container__visions">
-          <h2>Vision</h2>
+          <h1>Vision</h1>
 
           <ul className='overview-container__visions--list'>
             <li className='visions--list--entry'>
@@ -139,11 +142,11 @@ export default function Overview(){
           </ul>
         </div>
         
-        <footer>
+        <div className='overview-container__footer'>
           <p>Certain information has been prepared by third parties, including the Creator using Launchpad. Magic Eden is not affiliated with such third parties or the Creator, and is not responsible for the information provided on Launchpad. Such information is provided for informational purposes only and is in no way investment advice. Magic Eden is not liable for any errors, changes or amendments to such information, including any actions taken in reliance on such information. Magic Eden makes no representation on the accuracy, suitability, or validity of any information provided in relation to any NFT project that chooses to use Launchpad.</p>
 
           <p>By clicking “Mint”, I acknowledge that I am choosing to mint the NFT with the understanding that it may be worth significantly less than the mint price, and may end up being worth nothing at all.</p>
-        </footer>
+        </div>
       </div>
     </div>
   )
