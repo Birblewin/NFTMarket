@@ -1,7 +1,7 @@
 /* GENERAL STYLING */
 
-/* for screens with a max-width of 640px */
-    /* SMALL SCREENS */
+/* for screens with a max-width of 1024px */
+    /* SMALL, MEDIUM AND LARGE SCREENS */
 .overview-container{
     display: flex;
     justify-content: center;
@@ -176,9 +176,54 @@
     margin: 10px 0;
 }
 
+.extra_large_screen_overview_entry{
+    display: none;
+}
+
 .list--entry--description p{
     color: rgb(161, 151, 170);
     font-size: 14px;
     text-align: left;
     font-weight: 400;
+}
+
+/* For screens with a min-width of 1024px and max-width of 1280px */
+  /* EXTRA LARGE SCREENS */
+  @media screen and (min-width: 1024px) {
+    .extra_large_screen_overview_entry{
+        display: block;
+    }
+
+    .small_screen_overview_entry{
+        display: none;
+    }
+
+    .overview-container__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 100px;
+    }
+
+    .overview-container__content--left_column{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 5px;
+        flex-direction: column;
+        gap: 20px;
+        transition: all 500ms ease-in-out normal;
+        font-family: Inter, sans-serif;
+        padding-left: 20px;
+    }
+
+    .overview-container__partnerships{
+        border: none;
+    }
+
+    .overview-container__visions{
+        margin-top: 20px;   
+    }
 }
