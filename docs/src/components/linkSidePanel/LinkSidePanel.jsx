@@ -1,14 +1,7 @@
 /* eslint-disable react/prop-types */
 // IMPORTING NECESSARY FILES
     // IMPORTING NECESSARY MODULES
-    import { Link } from 'react-router-dom'
-
-    //  cursor: pointer;
-    // transition: all 500ms ease-in-out normal;
-    // text-decoration: none;
-    // font-weight: bold;
-    // color: rgb(231, 215, 150);
-    // letter-spacing: 0.3px;
+    import { Link } from "react-router-dom"
 
     // CREATING A LINKSIDEPANEL FUNCTION THAT RETURNS THE SIDE PANEL
     export default function LinkSidePanel(props){
