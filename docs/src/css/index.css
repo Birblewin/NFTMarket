@@ -5,3 +5,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* IMPORTANT STYLES THAT CANT BE USED IN TAILWIND OR CONFIGURED */
+.link-side-panel-container__side-panel--navbar{
+    border-bottom: 2px solid rgb(156, 163, 175, 0.5);
+}
+
+.link-side-panel-container__side-panel--rewards-button,
+.link-side-panel-container__side-panel--link-section--figure--a,
+.link-side-panel-container__side-panel--launchpad-section--div--a{
+    text-decoration: none;
+}
+
+.link-side-panel-container__side-panel--link-section,
+.link-side-panel-container__side-panel--launchpad-section{
+    border-top: 2px solid rgb(156, 163, 175, 0.5);
+}
+
+.link-side-panel-container__side-panel--link-section--figure--a{
+    font-weight: bolder;
+}
