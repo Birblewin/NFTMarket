@@ -9,8 +9,21 @@
     // CREATING A LINKSIDEPANEL FUNCTION THAT RETURNS THE SIDE PANEL
     export default function LinkSidePanel(props){
         return(
-            <div className='link-side-panel-container'>
-                <div className='link-side-panel-container__side-panel'>
+            <div className='absolute w-[100%] h-[100%] z-[1] bg-link-side-panel-container transition-all duration-500 ease-in-out'>
+                {/* position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 380px;
+    background-color: rgb(24, 25, 27);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: all 500ms ease-in-out normal;
+    box-shadow: 0px 10px 20px black;
+    padding: 10px; */}
+                <div className='absolute right-0 flex flex-col gap-[10px] w-[380px] bg-link-side-panel-container__side-panel rounded-bl-[5px] rounded-tr-[5px] transition-all duration-500 p-[10px] h-[100%] rounded-tl-[5px] shadow-link-side-panel-container__side-panel items-start'>
                     <nav className='link-side-panel-container__side-panel--navbar'>
                         <div className='side-panel--navbar--side-buttons'>
                             <p>EN</p>
