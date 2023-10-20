@@ -16,7 +16,8 @@ export default {
         'small-screen-buttons__wallet-button': 'rgb(255, 219, 36)',
         'search-container': 'rgba(255, 255, 255, 0.2)',
         // SPECIAL CLASSES
-        'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)'
+        'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)',
+        'side_panel_container__side_panel--wallets_grid--a++hover': 'rgb(255, 255, 255, 0.5)'
       },
 
       boxShadow: { 
@@ -28,7 +29,8 @@ export default {
       colors: { 
         'side-panel--navbar--side-buttons--p': 'rgb(156, 163, 175)', 
         'link-side-panel-container__side-panel--launchpad-section--div--a': 'rgb(231, 215, 150)',
-        'link-side-panel-container__side-panel--rewards-button': 'rgb(231, 215, 150)', 
+        'link-side-panel-container__side-panel--rewards-button': 'rgb(231, 215, 150)',
+        '.side_panel--title--description--p--a': 'rgb(118, 169, 250)',
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(20, 20, 20)'
       },
