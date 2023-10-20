@@ -14,15 +14,18 @@
 .nav-links span a,
 .rewards,
 .dropdown-content a,
+
 .link-side-panel-container__side-panel--rewards-button,
 .link-side-panel-container__side-panel--link-section figure a,
 .link-side-panel-container__side-panel--launchpad-section div a,
 .side_panel--title--description p a,
-.side_panel_container__side_panel--wallets_grid a{
+.side_panel_container__side_panel--wallets_grid a,
+
+.description--buttons--link{
     text-decoration: none
 }
 
-        /* Show the dropdown content on hover */
+/* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }

@@ -17,7 +17,7 @@ export default {
         'search-container': 'rgba(255, 255, 255, 0.2)',
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)',
-        'side_panel_container__side_panel--wallets_grid--a++hover': 'rgb(255, 255, 255, 0.5)'
+        'description--buttons--link++hover': 'rgb(255, 255, 255, 0.7)',
       },
 
       boxShadow: { 
