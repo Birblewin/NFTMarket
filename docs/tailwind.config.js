@@ -11,11 +11,17 @@ export default {
         'link-side-panel-container': 'rgba(0, 0, 0, 0.6)',
         'link-side-panel-container__side-panel': 'rgb(24, 25, 27)',
         'link-side-panel-container__side-panel--rewards-button': 'rgb(20, 20, 20)',
+        'search-bar': 'rgba(255, 255, 255, 0.00)',
+        'small-screen-buttons__search-button': 'rgba(18, 18, 18, 0.5)',
+        'small-screen-buttons__wallet-button': 'rgb(255, 219, 36)',
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)'
       },
 
-      boxShadow: { 'link-side-panel-container__side-panel': '0px 10px 20px black' },
+      boxShadow: { 
+        'link-side-panel-container__side-panel': '0px 10px 20px black',
+        'dropdown-content': '0px 8px 16px 0px rgba(0,0,0,0.2)'
+      },
       
       colors: { 
         'side-panel--navbar--side-buttons--p': 'rgb(156, 163, 175)', 
@@ -26,6 +32,8 @@ export default {
 
       borderColor: {
         'link-side-panel-container__side-panel--rewards-button': 'rgb(231, 215, 150)',
+        'small-screen-buttons__search-button': 'rgb(47, 54, 65)',
+        'small-screen-buttons__wallet-button': 'rgb(255, 219, 36)',
       }
     },
   },
