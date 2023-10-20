@@ -25,3 +25,69 @@
 .link-side-panel-container__side-panel--link-section--figure--a{
     font-weight: bolder;
 }
+
+
+/* Modal animation by mkrs */
+.animate-modal {
+    animation-name: animateModal;
+    animation-duration: 0.1s;
+   
+  }
+@keyframes animateModal {
+    from {
+      right: -300px;
+    }
+    to {
+      right: 0;
+    }
+  }
+  .banner{
+    background-color: #382e00;
+  }
+ 
+  @media screen and (max-width: 640px){
+    .cards{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+  }
+
+  @media screen and (max-width: 370px){
+    .banner span{
+      font-size: 14px ;
+
+  }
+  .banner{
+    padding: 2px 3px ;
+    margin: 0;
+    margin-right: 3%;
+}
+  .price{
+    font-size: 18px;
+    margin-left: 1%;
+  }
+  .name{
+    font-size: 14px;
+  }
+  .custom-placeholder::placeholder {
+    font-size: 12px;
+    
+  }
+  .ml-48{
+    margin-left: 150px;
+  }
+  .px-4{
+    padding: 0;
+    
+  }
+  .ml-8{
+    margin-left: 3px;
+
+  }
+  .vertical-line{
+    height: 2.5rem;
+  }
+  
+  }
+  
