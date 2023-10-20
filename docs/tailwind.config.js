@@ -14,13 +14,15 @@ export default {
         'search-bar': 'rgba(255, 255, 255, 0.00)',
         'small-screen-buttons__search-button': 'rgba(18, 18, 18, 0.5)',
         'small-screen-buttons__wallet-button': 'rgb(255, 219, 36)',
+        'search-container': 'rgba(255, 255, 255, 0.2)',
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)'
       },
 
       boxShadow: { 
         'link-side-panel-container__side-panel': '0px 10px 20px black',
-        'dropdown-content': '0px 8px 16px 0px rgba(0,0,0,0.2)'
+        'dropdown-content': '0px 8px 16px 0px rgba(0,0,0,0.2)',
+        'search-container__search-bar': '0px 0px 10px black'
       },
       
       colors: { 

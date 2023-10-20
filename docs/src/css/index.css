@@ -7,8 +7,7 @@
 @tailwind utilities;
 
 /* IMPORTANT STYLES THAT CANT BE USED IN TAILWIND OR CONFIGURED */
-    
-    /* Navbar.jsx */
+
 .navbar p,
 .navbar a,
 .nav-links,
