@@ -16,7 +16,8 @@ export default {
         'small-screen-buttons__wallet-button': 'rgb(255, 219, 36)',
         'search-container': 'rgba(255, 255, 255, 0.2)',
         // SPECIAL CLASSES
-        'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)'
+        'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)',
+        'description--buttons--link++hover': 'rgb(255, 255, 255, 0.7)',
       },
 
       boxShadow: { 
