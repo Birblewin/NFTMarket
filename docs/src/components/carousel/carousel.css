@@ -12,6 +12,7 @@ html {
 .carousel-container-outer {
   display: flex;
   justify-content: center;
+  padding: 0 0.5rem;
 }
 
 .hidden.carousel {
@@ -184,7 +185,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 50px;
+  margin-top: 1em;
   width: 166px;
   height: 56px;
   flex-shrink: 0;
@@ -221,18 +222,33 @@ html {
     justify-self: center;
   }
 
+  .details-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    line-height: 1.4;
+    position: relative;
+
+  }
   .title{
     font-size: 16px;
     margin: 8px 0;
+  }
+  .trending{
+    display: block;
+    margin-bottom: 1em;
+    align-self: flex-start;
+    position: absolute;
+    top: 0;
   }
   .learn-more-button{
     margin-top: 1em;
     width: 100%;
   }
-  .details-container {
-    width: 100%;
-    line-height: 1.4;
-
+ 
+}
+@media screen and (max-width: 768px) {
+  .nft-details {
+    margin-top: 5em;
   }
-
 }

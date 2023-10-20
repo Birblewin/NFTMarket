@@ -328,11 +328,6 @@
   .main-content .top .collection .generative {
     display: flex;
     align-items: center;
-    align-self: center;
   }
-  .main-content .top .collection .generative .arrow-down {
-    align-self: center;
-    width: 26px;
-    height: 26px;
-  }
+  
 }
