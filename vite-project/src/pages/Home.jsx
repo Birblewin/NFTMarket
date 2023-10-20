@@ -1,7 +1,7 @@
 import Carousel from "../components/carousel/Carousel";
 import WhaleActivityContainer from "../components/whaleActivity/WhaleActivityContainer";
 import Table from "../components/Table/table";
-import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
+import { Icon } from "@iconify/react";
 import Cards from "./AllCollections/Cards";
 import "./Home.css";
 function Home() {
@@ -17,7 +17,12 @@ function Home() {
             <h3 className="title">Top collections</h3>
             <div className="generative">
               <span className="h3">Generative</span>
-              <KeyboardArrowDown className="arrow-down" />
+              <Icon
+                icon="mingcute:down-fill"
+                color="#76a9fa"
+                width="26"
+                height="26"
+              />
             </div>
           </div>
 

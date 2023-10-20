@@ -20,9 +20,9 @@ const Cards = () => {
     >
       <div className="details-container">
         <h3 className="trending">TRENDING</h3>
-        <div className="title">{Details[index].cardTitle}</div>
         
         <div className="nft-details">
+        <div className="title">{Details[index].cardTitle}</div>
           <div>{Details[index].cardInfo}</div>
           <div><button className="learn-more-button">Learn More</button></div>
             
