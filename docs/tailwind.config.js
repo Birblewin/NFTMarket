@@ -18,6 +18,7 @@ export default {
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)',
         'description--buttons--link++hover': 'rgb(255, 255, 255, 0.7)',
+        'carousel-container__button++hover': 'rgba(255, 255, 255, 0.5)',
       },
 
       boxShadow: { 
