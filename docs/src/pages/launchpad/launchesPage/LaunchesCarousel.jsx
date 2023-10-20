@@ -3,9 +3,6 @@ import React from "react"
 import {launchpadCollectionsData} from '../../../database/launchpadCollectionsData'
 import CarouselEntry from "./CarouselEntry"
 
-// IMPORTING CSS FILE
-import './LaunchesCarousel.css'
-
 // EXPORTING THE LAUNCHESCAROUSEL FUNCTIONS
 export default function LaunchesCarousel(){
     // A STATE TO HOLD THE CURRENT INDEX OF CARD DISPLAYED
