@@ -14,13 +14,16 @@
 .nav-links span a,
 .rewards,
 .dropdown-content a,
+
 .link-side-panel-container__side-panel--rewards-button,
 .link-side-panel-container__side-panel--link-section figure a,
-.link-side-panel-container__side-panel--launchpad-section div a{
+.link-side-panel-container__side-panel--launchpad-section div a,
+
+.description--buttons--link{
     text-decoration: none
 }
 
-        /* Show the dropdown content on hover */
+/* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
