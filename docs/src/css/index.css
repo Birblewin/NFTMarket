@@ -14,7 +14,10 @@
 .nav-links,
 .nav-links span a,
 .rewards,
-.dropdown-content a {
+.dropdown-content a,
+.link-side-panel-container__side-panel--rewards-button,
+.link-side-panel-container__side-panel--link-section figure a,
+.link-side-panel-container__side-panel--launchpad-section div a{
     text-decoration: none
 }
 
