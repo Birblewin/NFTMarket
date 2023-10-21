@@ -37,7 +37,7 @@ const AllCollections = () => {
             <div className="flex items-center justify-between rounded-lg bg-black border-2 border-gray-600 w-full " >
               <div className="relative">
                 <input
-                  className="bg-transparent border-b border-gray-600 focus:outline-none focus:border-blue-400 text-white w-40 pl-1"
+                  className="bg-transparent border-b border-gray-600   text-white w-40 pl-1 rounded-md"
                   type="text"
                   placeholder="Search collections"
                   name="searchInput"

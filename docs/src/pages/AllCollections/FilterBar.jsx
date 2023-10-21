@@ -29,7 +29,7 @@ const FilterBar = () => {
        <div className="search-area flex">
           <div className="search-area-bar flex items-center border-b border-gray-500">
             <input
-              className="coll-search-bar flex-shrink-0 bg-transparent outline-none border-none"
+              className="coll-search-bar flex-shrink-0 bg-transparent text-white rounded-md"
               type="text"
               placeholder="Search collections"
               name="searchInput"

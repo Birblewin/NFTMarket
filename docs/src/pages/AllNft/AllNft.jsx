@@ -95,16 +95,17 @@ function AllNfts() {
                   <div className="search-area flex">
                     <div className="search-area-bar flex items-center border-b border-slate-400 max-w-max p-1 w-60">
                       <input
-                        className="coll-search-bar bg-transparent p-1 w-11/12 rounded-lg "
+                        className="coll-search-bar text-white bg-transparent p-1 w-11/12 rounded-lg "
                         type="text"
                         placeholder="Search collection or NFT"
                         name="searchInput"
                       />
                       <SearchIcon className="coll-search-icon text-slate-400 " />
                     </div>
-                    <div className="vertical-line h-20 py-0  w-0.5  bg-slate-400 "></div>
+                   
                     <div className="lg:ml-3 mt-3 sm:ml-0">
-                      <span className="verified flex justify-center text-center items-center text-white font-bold lg:mt-4 md:mt-4">
+                    <div className="vertical-line absolute h-20 py-0 mx-0 top-48  w-0.5  bg-slate-400 "></div>
+                      <span className="verified flex justify-center text-center items-center text-white font-bold m-1">
                         Verified Only
                         <Icon icon="fluent:checkmark-starburst-16-filled" color="#75a8f9" width="16" height="16" />
                         <span className="drop ml-1">
