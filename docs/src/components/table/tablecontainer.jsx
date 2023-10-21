@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import "./table.css"; // Import the CSS file
 import { Icon } from "@iconify/react";
 

@@ -21,7 +21,9 @@
 .side_panel--title--description p a,
 .side_panel_container__side_panel--wallets_grid a,
 
-.description--buttons--link{
+.description--buttons--link,
+
+.live_collection_container{
     text-decoration: none
 }
 
