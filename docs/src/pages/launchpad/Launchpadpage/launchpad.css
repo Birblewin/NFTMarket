@@ -1,0 +1,342 @@
+/* GENERAL STYLING */
+
+/* For screens with a max-width of 640px */
+  /* SMALL SCREENS */
+.launchpad_container{
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  transition: all 500ms ease-in-out normal;
+  padding: 20px;
+}
+
+.launchpad_container__viewOverviewToggle{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 20px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.launchpad_container__viewOverviewToggle p{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 500ms ease-in-out normal;
+}
+
+.launchpad_container__teamCollectionsHolder{
+  display: grid;
+  grid-auto-flow:column; 
+  grid-template-rows: repeat(1, 1fr);
+  margin: 80px 0;
+  padding: 40px;
+  gap: 40px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -80px;
+  transition: all 500ms ease-in-out normal;
+}
+
+.container h1{
+  color: rgb(248, 247, 248);
+  font-size: 30px;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+}
+
+.container__selling_stats{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(245, 243, 247);
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.container__selling_stats--chosen_chain{
+  background-color: rgba(161, 151, 170, 0.1);
+  width: 46px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out normal;
+}
+
+.container__selling_stats--total_sold{
+  padding: 8px 12px;
+  width: 146px;
+  height: 36px;
+  background-color: rgba(161, 151, 170, 0.1);
+  border-radius: 10px;
+  transition: all 500ms ease-in-out normal;
+  cursor: pointer;
+}
+
+.container__selling_stats--timing{
+  padding: 8px 10px;
+  width: 125px;
+  height: 36px;
+  background-color: rgba(161, 151, 170, 0.1);
+  border-radius: 10px;
+  transition: all 500ms ease-in-out normal;
+  cursor: pointer;
+}
+
+
+.container__selling_stats--chosen_chain:hover,
+.container__selling_stats--timing:hover,
+.container__selling_stats--total_sold:hover{
+  scale: 1.2;
+  background-color: blueviolet
+}
+
+.container__image-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.container__image-container img{
+  height: 345px;
+  width: auto;
+  border-radius: 12px;
+}
+
+.container__image-container--bottom_images{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container__image-container--bottom_images img{
+  width: 75px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.container__content-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(18, 12, 24);
+  border-radius: 12px;
+  padding: 16px;
+  gap: 10px;
+  border: 2px solid rgb(28, 19, 38);
+}
+
+.container__content-container p{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgb(245, 243, 247);
+  width: 100%;
+  max-height: 20ch;
+  overflow-y: scroll;
+  border-bottom: 1px solid rgb(28, 19, 38);
+  padding-bottom: 20px;
+}
+
+.container__content-container--paying_stats{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgb(28, 19, 38);
+  margin: 20px 0;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.container__content-container--paying_stats h2{
+  color: rgb(245, 243, 247);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container__content-container--paying_stats figure{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.container__content-container--paying_stats figcaption{
+  font-size: 24px;
+  color: rgb(245, 243, 247);
+}
+
+.container__content-container--paying_stats button{
+  margin: 10px auto;
+  width: 95%;
+  height: 44px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(228, 37, 117);
+  color: rgb(245, 243, 247);
+  font-size: medium;
+  cursor: pointer;
+  transition: all 500ms ease-in-out normal;
+}
+
+.container__content-container--paying_stats button:active{
+  scale: 1.11;
+  background-color: aqua;
+  color: black;
+}
+
+.extra_large_screen_launchpad-container_entry{
+  display: none;
+}
+
+/* For screens with a min-width of 640px and max-width of 768px */
+  /* MEDIUM SCREENS */
+@media screen and (min-width: 640px) {
+  .container__selling_stats{
+    width: 60%;
+  }
+
+  .container__image-container{
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .container__image-container img{
+    width: 500px;
+    height: auto;
+  }
+
+  .container__image-container--bottom_images img{
+    width: 115px;
+    height: auto;
+    margin: 20px 0;
+    margin-bottom: 0;
+  }
+
+  .container__image-container--bottom_images{
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .launchpad_container__viewOverviewToggle{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+
+  .extra_large_screen_launchpad-container_entry{
+    display: none;
+  }
+}
+
+/* For screens whose min width is 768px and max width is 1024px */
+    /* LARGE SCREENS */
+@media screen and (min-width: 768px) {
+  .launchpad_container__viewOverviewToggle{
+      width: 100%;
+      margin-left: 20px;
+  }
+}
+
+/* For screens with a min-width of 1024px and max-width of 1280px */
+  /* EXTRA LARGE SCREENS */
+@media screen and (min-width: 1024px) {
+  .small_screen_launchpad-container_entry{
+    display: none;
+  }
+
+  .extra_large_screen_launchpad-container_entry{
+    display: block;
+  }
+
+  .container{
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .container__left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container__selling_stats{
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+
+  .container__image-container{
+    width: 100%;
+  }
+
+  .container__image-container img{
+    width: 450px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .container__image-container--bottom_images{
+    width: 450px;
+    margin: 0 auto;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .container__image-container--bottom_images img{
+    width: 100px;
+    height: auto;
+  }
+
+  .container__right-container{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 500px;
+  }
+
+  .container__content-container p{
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .container__selling_stats--timing{
+    color: rgb(245, 243, 247);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .launchpad_container__viewOverviewToggle{
+    margin-top: 50px;
+    gap: 50px;
+  }
+}

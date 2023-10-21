@@ -1,15 +1,15 @@
 /* eslint-disable react/prop-types */
 // IMPORTING NECESSARY FILES
     // IMPORTING NECESSARY MODULES
-    import { Link } from "react-router-dom"
-
+    import { Link } from 'react-router-dom'
+    
     // CREATING A LINKSIDEPANEL FUNCTION THAT RETURNS THE SIDE PANEL
     export default function LinkSidePanel(props){
         return(
             <div className='absolute w-[100%] h-[100%] z-[1] bg-link-side-panel-container transition-all duration-500 ease-in-out'>
-                <div className='absolute right-0 h-[100%] flex flex-col gap-[10px] w-[380px] bg-link-side-panel-container__side-panel rounded-bl-[5px] rounded-tl-[5px] transition-all duration-500 ease-in-out shadow-link-side-panel-container__side-panel p-[10px]'>
-                    <nav className='flex justify-between p-[10px] mb-[15px] border-b-[2px] pb-[20px] rounded-[2px] link-side-panel-container__side-panel--navbar'>
-                        <div className='flex justify-center items-center gap-[10px]'>
+                <div className='absolute right-0 h-[100%] flex flex-col gap-[10px] w-[380px] bg-link-side-panel-container__side-panel rounded-bl-[5px] rounded-tl-[5px] transition-all duration-500 ease-in-out shadow-link-side-panel-container__side-panel p-[10px] items-start'>
+                    <nav className='flex justify-between w-[100%] p-[10px] mb-[15px] border-b-[2px] border-b-link-side-panel-container__side-panel--navbar pb-[20px] rounded-b-[2px]'>
+                        <div className='flex justify-center items-center gap-[10px] text-center'>
                             <p className='text-side-panel--navbar--side-buttons--p text-[16px] font-bold transition-all duration-500 ease-in-out'>EN</p>
                             
                             <div className='text-side-panel--navbar--side-buttons--p text-[20px] font-[600] mb-[5px] cursor-pointer'>v</div>
@@ -20,28 +20,27 @@
                                 alt="sun"
                                 loading='lazy'
                                 title='light-mode-button'
-                                className='w-[24px] h-[24px] cursor-pointer transition-all duration-500 ease-in-out .side-panel--navbar--side-buttons--img'
+                                className='w-[24px] h-[24px] cursor-pointer transition-all duration-500 ease-in-out'
                             />
                         </div>
     
                         <img 
                             crossOrigin="anonymous" 
                             src="https://static.jpgstoreapis.com/icons/close-dark.svg" 
-                            className="dark-img" 
                             alt="close"
                             onClick={props.hideLinkSidePanel}
+                            className='w-[24px] h-[24px] cursor-pointer transition-all duration-500 ease-in-out'
                         />
                     </nav>
     
                     <Link 
-                        className='flex justify-center items-center w-[270px] h-[270px] my-0 mx-auto bg-link-side-panel-container__side-panel--rewards-button border-solid border-[2px] border-link-side-panel-container__side-panel--rewards-button rounded-[10px] py-[20px] px-0 transition-all duration-500 ease-in-out active:bg-link-side-panel-container__side-panel--rewards-button++active active:border-none active:text-link-side-panel-container__side-panel--rewards-button++active link-side-panel-container__side-panel--rewards-button'
-                        
+                        className='link-side-panel-container__side-panel--rewards-button flex justify-center items-center w-[270px] h-[20px] my-0 mx-auto bg-link-side-panel-container__side-panel--rewards-button text-link-side-panel-container__side-panel--rewards-button border-solid border-[2px] border-link-side-panel-container__side-panel--rewards-button rounded-[10px] py-[20px] px-0 transition-all duration-500 ease-in-out active:bg-link-side-panel-container__side-panel--rewards-button++active active:border-none active:text-link-side-panel-container__side-panel--rewards-button++active'
                         to={'/rewards'}
                     >Rewards</Link>
     
-                    <div className='mt-[15px] border-t-[2px] pt-[20px] rounded-[2px] link-side-panel-container__side-panel--link-section'>
+                    <div className='link-side-panel-container__side-panel--link-section mt-[15px] border-t-[2px] w-[100%] pt-[20px] rounded-[2px] border-t-link-side-panel-container__side-panel--navbar'>
                         <h4 className='text-side-panel--navbar--side-buttons--p font-bold text-[14px]'>EXPLORE</h4>
-    
+
                         <figure className='flex items-center gap-[10px] mt-[10px]'>
                             <img 
                                 src="https://static.jpgstoreapis.com/icons/squares-2x2-purple.svg" 
@@ -50,11 +49,7 @@
                                 loading='lazy'
                             />
     
-                            <Link
-                                className='cursor-pointer transition-all duration-500 ease-in-out text-side-panel--navbar--side-buttons--p active:scale-[0.95] link-side-panel-container__side-panel--link-section--figure--a'
-
-                                to={'/allCollections'}
-                            >All Collections</Link>
+                            <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/allCollections'}>All Collections</Link>
                         </figure>
     
                         <figure className='flex items-center gap-[10px] mt-[10px]'>
@@ -65,16 +60,11 @@
                                 loading='lazy'
                             />
     
-                            <Link 
-                                className='cursor-pointer transition-all duration-500 ease-in-out text-side-panel--navbar--side-buttons--p active:scale-[0.95] link-side-panel-container__side-panel--link-section--figure--a'
-
-                                
-                                to={'/allNFTs'}
-                            >All NFTs</Link>
+                            <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/allNFTs'}>All NFTs</Link>
                         </figure>
                     </div>
     
-                    <div className='mt-[15px] border-t-[2px] pt-[20px] rounded-[2px] link-side-panel-container__side-panel--link-section'>
+                    <div className='link-side-panel-container__side-panel--link-section mt-[15px] border-t-[2px] w-[100%] pt-[20px] rounded-t-[2px] border-t-link-side-panel-container__side-panel--navbar'>
                         <h4 className='text-side-panel--navbar--side-buttons--p font-bold text-[14px]'>CREATORS</h4>
     
                         <figure className='flex items-center gap-[10px] mt-[10px]'>
@@ -85,11 +75,7 @@
                                 loading='lazy'
                             />
     
-                            <Link
-                                className='cursor-pointer transition-all duration-500 ease-in-out text-side-panel--navbar--side-buttons--p active:scale-[0.95] link-side-panel-container__side-panel--link-section--figure--a'
-    
-                                to={'/'}
-                            >Create your collection</Link>
+                            <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/'}>Create your collection</Link>
                         </figure>
     
                         <figure className='flex items-center gap-[10px] mt-[10px]'>
@@ -100,16 +86,11 @@
                                 loading='lazy'
                             />
     
-                            <Link
-                                className='cursor-pointer transition-all duration-500 ease-in-out text-side-panel--navbar--side-buttons--p active:scale-[0.95] link-side-panel-container__side-panel--link-section--figure--a'
-
-                                
-                                to={'/'}
-                            >Verify your collection</Link>
+                            <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/'}>Verify your collection</Link>
                         </figure>
                     </div>
     
-                    <div className='mt-[15px] border-t-[2px] pt-[20px] rounded-[2px] link-side-panel-container__side-panel--link-section'>
+                    <div className='link-side-panel-container__side-panel--link-section mt-[15px] border-t-[2px] w-[100%] pt-[20px] rounded-t-[2px] border-t-link-side-panel-container__side-panel--navbar'>
                         <h4 className='text-side-panel--navbar--side-buttons--p font-bold text-[14px]'>ABOUT</h4>
     
                         <figure className='flex items-center gap-[10px] mt-[10px]'>
@@ -120,11 +101,7 @@
                                 loading='lazy'
                             />
     
-                            <Link
-                                className='cursor-pointer transition-all duration-500 ease-in-out text-side-panel--navbar--side-buttons--p active:scale-[0.95] link-side-panel-container__side-panel--link-section--figure--a'
-
-                                to={'/'}
-                            >Our Team</Link>
+                            <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/'}>Our Team</Link>
                         </figure>
     
                         <figure className='flex items-center gap-[10px] mt-[10px]'>
@@ -135,27 +112,16 @@
                                 loading='lazy'
                             />
     
-                            <Link
-                                className='cursor-pointer transition-all duration-500 ease-in-out text-side-panel--navbar--side-buttons--p active:scale-[0.95] link-side-panel-container__side-panel--link-section--figure--a'
-
-                                to={'/'}
-                            >Our Impact</Link>
+                            <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/'}>Our Impact</Link>
                         </figure>
                     </div>
-    
-                    <div className='mt-[15px] bt-[2px] pt-[20px] rounded-[2px] link-side-panel-container__side-panel--launchpad-section'>
+                   
+                    <div className='link-side-panel-container__side-panel--launchpad-section mt-[15px] border-t-[2px] w-full border-link-side-panel-container__side-panel--navbar pt-[20px] rounded-[2px]'>
                         <h4 className='text-side-panel--navbar--side-buttons--p font-bold text-[14px]'>LAUNCHPAD</h4>
                         
                         <div className='flex justify-evenly items-center mt-[10px]'>
-                            <Link
-                                className='transition-all duration-500 ease-in-out cursor-pointer font-bold text-link-side-panel-container__side-panel--launchpad-section--div--a tracking-[0.3px] link-side-panel-container__side-panel--launchpad-section--div--a'
-
-                                to={'/launchpad/launches'}>Launches</Link>
-
-                            <Link 
-                                className='transition-all duration-500 ease-in-out cursor-pointer font-bold text-link-side-panel-container__side-panel--launchpad-section--div--a tracking-[0.3px] link-side-panel-container__side-panel--launchpad-section--div--a'
-                            
-                                to={'#'}>Apply for launchpad</Link>
+                            <Link className='cursor-pointer transition-all duration-500 font-bold text-link-side-panel-container__side-panel--rewards-button tracking-[0.3px]' to={'/launchpad/launches'}>Launches</Link>
+                            <Link className='cursor-pointer transition-all duration-500 font-bold text-link-side-panel-container__side-panel--rewards-button tracking-[0.3px]' to={'#'}>Apply for launchpad</Link>
                         </div>
                     </div>
                 </div>
