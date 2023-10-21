@@ -23,7 +23,8 @@
 
 .description--buttons--link,
 
-.live_collection_container{
+.live_collection_container,
+.past_collection_container{
     text-decoration: none
 }
 
