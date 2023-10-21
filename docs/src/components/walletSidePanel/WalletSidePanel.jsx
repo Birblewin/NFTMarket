@@ -32,7 +32,7 @@ export default function WalletSidePanel(props){
                     <h3 className='text-[24px] font-[500] leading-[32px]'>Connect Wallet</h3>
                     
                     <figcaption className='side_panel--title--description'>
-                        <p className='text-[14px] font-[400]'>By connecting your wallet, you agree to the <Link to='/' target='_blank' className='text-.side_panel--title--description--p--a font-bold visited:text-[palevioletred]'>Terms & Conditions</Link> and <Link to='/' target='_blank' className='text-.side_panel--title--description--p--a font-bold visited:text-[palevioletred]'>Privacy Policy</Link></p>
+                        <p className='text-[14px] font-[400]'>By connecting your wallet, you agree to the <Link to='/' target='_blank' className='text-side_panel--title--description--p--a font-bold visited:text-[palevioletred]'>Terms & Conditions</Link> and <Link to='/' target='_blank' className='text-side_panel--title--description--p--a font-bold visited:text-[palevioletred]'>Privacy Policy</Link></p>
                     </figcaption>
                 </figure>
 
