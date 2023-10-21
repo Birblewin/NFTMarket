@@ -2,17 +2,14 @@
 // IMPORT NECESSARY MODULES
 import {NavLink} from "react-router-dom"
 
-// IMPORT CSS FILE
-import './LiveCollection.css'
-
 // EXPORTING A LIVECOLLECTION FUNCTION
 export default function LiveCollection(props){
     return(
         <NavLink 
-            className="live_collection_container"
+            className="live_collection_container w-[170px] h-[300px] rounded-[20px] border-solid border-[0.5px] border-[#968E8E] transition-all duration-500 ease-in-out my-0 mx-auto active:scale-[1.2] active:shadow-search-container__search-bar sm:w-[300px] sm:h-[450px] md:w-[230px] md:h-[320px] lg:w-[300px] lg:h-[450px]"
             to={`/launchpad/launch details/?liveCollectionID=${props.id}`}
         >
-            <figure className="live_collection_container__image">
+            <figure>
                 <img 
                     src={`${props.image}`} 
                     alt="live-collection-photo"
@@ -20,14 +17,15 @@ export default function LiveCollection(props){
                     loading="lazy"
                     width={100}
                     height={100}
+                    className="w-full h-[80%]"
                 />
 
-                <figcaption>{props.title}</figcaption>
+                <figcaption className="text-[#FFF] font-[Inter] text-[15px] not-italic font-[600] leading-[130%] text-center">{props.title}</figcaption>
             </figure>
 
-            <div className="live_collection_container__data">
-                <li className="live_collection_container__data--banner">{props.banner}</li>
-                <p className="live_collection_container__data--price">{props.price}</p>
+            <div className="flex justify-around mt-[10px]">
+                <li className="text-[#298F27] font-[Inter] text-[15px] not-italic font-[500] leading-[130%] text-center">{props.banner}</li>
+                <p className="text-[#968E8E] font-[Inter] text-[14px] not-italic font-[500] leading-[130%]">{props.price}</p>
                 
                 <span className="live_collection_container__data--calender">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
