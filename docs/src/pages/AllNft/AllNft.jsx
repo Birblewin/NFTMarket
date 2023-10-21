@@ -103,7 +103,7 @@ function AllNfts() {
                       <SearchIcon className="coll-search-icon text-slate-400 " />
                     </div>
                     <div className="vertical-line h-20 py-0  w-0.5  bg-slate-400 "></div>
-                    <div className="lg:ml-3 sm:ml-0">
+                    <div className="lg:ml-3 mt-3 sm:ml-0">
                       <span className="verified flex justify-center text-center items-center text-white font-bold lg:mt-4 md:mt-4">
                         Verified Only
                         <Icon icon="fluent:checkmark-starburst-16-filled" color="#75a8f9" width="16" height="16" />
