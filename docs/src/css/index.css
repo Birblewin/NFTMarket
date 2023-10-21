@@ -53,11 +53,12 @@
     .cards{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
     }
     
   }
 
-  @media screen and (max-width: 370px){
+  @media screen and (max-width: 377px){
     .banner span{
       font-size: 14px ;
 
@@ -92,6 +93,12 @@
   .vertical-line{
     height: 2.5rem;
   }
-  
+  .collections-title{
+    font-size: 20px;
+  }
+  .cards{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
   }
   

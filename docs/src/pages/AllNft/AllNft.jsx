@@ -25,7 +25,7 @@ function AllNfts() {
     <div >
       
         <div>
-          <div className=" flex p-4 text-white">
+          <div className=" flex px-4 text-white">
             <h3 className="text-2xl flex md:text-3xl ml-8">
               Explore <span className="text-blue-500  mx-2 ">All NFTs</span>
             </h3>

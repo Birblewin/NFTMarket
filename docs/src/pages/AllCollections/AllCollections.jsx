@@ -23,44 +23,48 @@ const AllCollections = () => {
   }
 
   return (
-    <div>
-      {isMobile ? (
+    <div className="bg-black">
+      
         <>
-          <div className="flex justify-between p-4 bg-gray-800">
-            <h3 className="text-white text-3xl">Explore <span className="text-blue-400">All Collections</span></h3>
-            <KeyboardArrowDown className="text-blue-400 text-3xl" />
+          <div className="flex justify-between p-4 bg-black">
+            <h3 className="text-white text-3xl collections-title">Explore <span className="text-blue-400">All Collections
+            <KeyboardArrowDown className="text-blue-400" />
+            </span></h3>
+           
           </div>
-          <div className="flex justify-between items-center bg-gray-900 p-4">
-            <div className="flex items-center space-x-4">
+
+          <div className="flex justify-between items-center bg-black mx-6 md:hidden">
+            <div className="flex items-center justify-between rounded-lg bg-black border-2 border-gray-600 w-full " >
               <div className="relative">
                 <input
-                  className="bg-transparent border-b border-gray-600 focus:outline-none focus:border-blue-400 text-white w-64 pl-8"
+                  className="bg-transparent border-b border-gray-600 focus:outline-none focus:border-blue-400 text-white w-40 pl-1"
                   type="text"
                   placeholder="Search collections"
                   name="searchInput"
                 />
-                <SearchIcon className="text-blue-400 absolute left-2 top-1/2 transform -translate-y-1/2" />
+                <SearchIcon className="text-gray-600 absolute left-36 top-1/2 transform -translate-y-1/2" />
               </div>
-              <div className="bg-blue-400 text-white px-4 py-2 cursor-pointer" onClick={toggleModal}>
-                <span><TuneIcon className="text-2xl" /></span>
-                <span>Filter</span>
+
+             
+
+              <div className="flex text-blue-400 px-4  cursor-pointer" onClick={toggleModal}>
+              <div className="vertical-line relative h-10  w-0.5  bg-slate-400 "></div>
+                <span><TuneIcon className="text-2xl pr-1 my-2" /></span>
+                <span className="my-2">Filter</span>
               </div>
               {isModalOpen && <CollectionModal closeModal={closeModal} />}
             </div>
           </div>
+          <div className=' hidden md:block' >
+          <FilterBar />
+          </div>
+        
           <Cards />
         </>
-      ) : (
-        <div className="bg-gray-800 p-4">
-          <div className="text-3xl font-bold text-white mb-8">
-            Explore <span className="text-blue-400">All Collections</span>
-          </div>
-          <div className="flex flex-col">
-            <FilterBar />
-            <Cards />
-          </div>
-        </div>
-      )}
+     
+        
+        
+      
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Details from '../AllCollections/Collection';
 
 function NftCard() {
   const cards = Details.map((collection) => (
-    <div key={collection._id} className="rounded-lg bg-#18191b border border-solid border-gray-600 w-full ">
+    <div key={collection._id} className="rounded-lg  border border-solid border-gray-600 w-full ">
       <img className="w-full h-auto rounded" src={collection.cardImage} alt={collection.cardTitle} />
       <div className="texts flex px-2 py-1">
         <p className="text-blue-500  text-base">{collection.cardTitle}</p>
@@ -28,7 +28,7 @@ function NftCard() {
 
   return (
     <div className="render-cards">
-      <div className="cards  gap-5 py-10 px-5 grid md:grid-cols-3  sm:grid-cols-3 lg:grid-cols-5 lg:px-20 ">
+      <div className="cards  gap-5 py-10 px-2 grid md:grid-cols-3  sm:grid-cols-3 lg:grid-cols-5 lg:px-20 ">
         {cards}
       </div>
     </div>
