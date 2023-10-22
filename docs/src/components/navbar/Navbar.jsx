@@ -10,7 +10,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
   return (
-    <div className='navbar flex items-center bg-[#111111] text-white pb-[20px] h-[95px] p-[10px] mb-[100px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between'>
+    <div className='navbar flex items-center bg-[#111111] text-white pb-[20px] h-[95px] p-[10px] mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between'>
       <NavLink to="/">
         <div className='flex justify-center items-center'>
           <img 
