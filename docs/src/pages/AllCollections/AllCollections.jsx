@@ -33,7 +33,7 @@ const AllCollections = () => {
            
           </div>
 
-          <div className="flex justify-between items-center bg-black mx-6 md:hidden">
+          <div className="flex justify-between items-center bg-black mx-6 sticky top-2 md:hidden">
             <div className="flex items-center justify-between rounded-lg bg-black border-2 border-gray-600 w-full " >
               <div className="relative">
                 <input
@@ -55,7 +55,7 @@ const AllCollections = () => {
               {isModalOpen && <CollectionModal closeModal={closeModal} />}
             </div>
           </div>
-          <div className=' hidden md:block' >
+          <div className='sticky hidden top-2 md:block' >
           <FilterBar />
           </div>
         

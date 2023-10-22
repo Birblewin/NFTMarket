@@ -32,7 +32,7 @@ function AllNfts() {
             <KeyboardArrowDownIcon className="text-blue-500 mt-2 " />
           </div>
 
-          <div className=" px-4 lg:hidden  justify-between" >
+          <div className=" px-4 lg:hidden sticky top-2 justify-between" >
             <div className="flex items-center rounded-lg bg-black border-2 border-gray-600 ">
               <div className="flex-1">
                 <div className="relative ">
@@ -65,7 +65,7 @@ function AllNfts() {
         </div>
       
 
-            <div className="filter-bar-container  hidden lg:block">
+            <div className="filter-bar-container sticky top-2 hidden lg:block">
               <div className="filter-bar h-20 w-11/12 m-auto bg-black border-solid border-2 border-gray-600 mb-2 mt-5 flex justify-between rounded-xl items-center">
                 <div className="flex">
                   <div className="flex items-center pl-3 pr-4">
