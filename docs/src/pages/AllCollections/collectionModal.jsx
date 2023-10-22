@@ -1,53 +1,39 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 function CollectionModal({ closeModal }) {
-  const [selectedOption, setSelectedOption] = useState(null);
-
-  const handleSpanClick = (index) => {
-    setSelectedOption(index);
-  };
-
   return (
-    <div className="modal-contentt fixed top-0 right-0 w-full h-full bg-black items-center bg-opacity-100 z-50 animate-modal">
-      <span className="close-button absolute top-5 left-5 text-3xl cursor-pointer text-gray-200 hover:text-gray-600" onClick={closeModal}>
+    <div className="fixed top-0 right-0 w-full h-full bg-black bg-opacity-100 flex items-center z-50 animate-modal animate-modal-right">
+      <span className="absolute top-4 left-4 text-3xl text-gray-800 cursor-pointer" onClick={closeModal}>
         &times;
       </span>
-      <div className="header mb-24  ">
-        <span className="filter text-xl font-bold absolute top-6  text-white left-1/2">Filter</span>
-        <span className="reset absolute top-7 right-8  text-blue-500 text-sm">Reset</span>
-      </div>
-
-      <div className="content flex items-center m-5 my-2 justify-between border-b border-slate-400 p-6   ">
-        <span className="collections  text-lg font-bold text-white ">Sort</span>
-        <div>
-        <span className="selected text-white text-sm">
-          All Time Volume
-        </span>
-        <span><NavigateNextIcon className="next-icon text-gray-600 text-lg" /></span>
-      </div>
-        </div>
-       
-      <div className="content flex items-center m-5 my-2 justify-between border-b border-slate-400 p-6  ">
-        <span className="collections  text-lg font-bold text-white ">Verification</span>
-        <div>
-        <span className="selected text-white text-sm">
-        Verified Only
-        </span>
-        <span><NavigateNextIcon className="next-icon text-gray-600 text-lg" /></span>
-      </div>
+      <div className="mt-20">
+        <div className="header">
+          <span className="close-button" onClick={closeModal}>
+            &times;
+          </span>
+          <span className="filter font-size-18 font-weight-bold">Filter</span>
+          <span className="reset text-14 font-blue">Reset</span>
         </div>
 
-        <div className="content flex items-center m-2 my-2 justify-between border-b border-slate-400 p-6  ">
-        <span className="collections  text-lg font-bold text-white ">Categories</span>
-        <div>
-        <span className="selected text-white text-sm">
-          All
-        </span>
-        <span><NavigateNextIcon className="next-icon text-gray-600 text-lg" /></span>
-      </div>
+        <div className="content">
+          <span className="collecti font-size-16 font-weight-bold">Sort</span>
+          <span className="selected font-size-14">All Time Volume</span>
+          <span><NavigateNextIcon className="next-icon text-gray-800" /></span>
         </div>
-    
+
+        <div className="content">
+          <span className="collect font-size-16 font-weight-bold">Verification</span>
+          <span className="selected font-size-14">Verified Only</span>
+          <span><NavigateNextIcon className="next-icon text-gray-800" /></span>
+        </div>
+
+        <div className="content">
+          <span className="collects font-size-16 font-weight-bold">Categories</span>
+          <span className="selected font-size-14">All</span>
+          <span><NavigateNextIcon className="next-icon text-gray-800" /></span>
+        </div>
+      </div>
     </div>
   );
 }
