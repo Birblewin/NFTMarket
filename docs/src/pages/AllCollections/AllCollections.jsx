@@ -4,13 +4,13 @@ import FilterBar from "./FilterBar";
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 import SearchIcon from "@mui/icons-material/Search";
 import TuneIcon from '@mui/icons-material/Tune';
-import { useMediaQuery } from 'react-responsive';
-import { Icon } from "@iconify/react";
 
-import CollectionModal from "./CollectionModal";
+
+
+import CollectionModal from "./collectionModal";
 
 const AllCollections = () => {
-  const isMobile = useMediaQuery({ maxWidth: '768px' });
+  
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
