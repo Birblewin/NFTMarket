@@ -2,14 +2,14 @@
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 
 // IMPORTING THE NECESSARY PAGES AND LAYOUTS
-import AllCollections from './pages/AllCollections/AllCollections';
-import AllNftsPage from './pages/AllNFTS/AllNFTs';
+ import AllCollections from './pages/AllCollections/AllCollections';
+import AllNftsPage from './pages/AllNft/AllNft';
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
 
-import RootLayout from './layouts/RootLayout'
+ import RootLayout from './layouts/RootLayout'
 
 // CREATING A APPROUTER FUNCTION
 const appRouter = createBrowserRouter(

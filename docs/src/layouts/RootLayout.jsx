@@ -10,8 +10,8 @@ import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
 import LinkSidePanel from '../components/linkSidePanel/LinkSidePanel'
 import SearchBar from "../components/searchBar/SearchBar";
 
-// IMPORTING NECESSARY HOOKS
-import WalletSidePanelContextHook from "../hooks/WalletSidePanelContextHook";
+// // IMPORTING NECESSARY HOOKS
+ import WalletSidePanelContextHook from "../hooks/WalletSidePanelContextHook";
 
 // EXPORTING A ROOTLAYOUT FUNCTION
 export default function RootLayout(){
@@ -60,10 +60,10 @@ export default function RootLayout(){
                 showWalletSidePanel = {() => dispatch({ type: "SHOW_WALLET_PANEL" })}
                 showLinkSidePanel = {() => setShowLinkSidePanel(true)}
                 showSearchBar = {() => setShowSearchBar(true)}
-            />
+             />
 
-            <Outlet/>
-            <Footer/>
-        </main>
-    )
+             <Outlet/>
+             <Footer/>
+         </main>
+     )
 }

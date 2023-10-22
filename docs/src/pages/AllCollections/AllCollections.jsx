@@ -1,14 +1,13 @@
-import {React, useState} from "react";
+import React, { useState } from "react";
 import Cards from "./Cards";
 import FilterBar from "./FilterBar";
-import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
+import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 import SearchIcon from "@mui/icons-material/Search";
 import TuneIcon from '@mui/icons-material/Tune';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 import { Icon } from "@iconify/react";
-import "./styles.css";
-import '../AllNFTS/NFTCard.css'
-import CollectionModal from "./collectionModal";
+
+import CollectionModal from "./CollectionModal";
 
 const AllCollections = () => {
   const isMobile = useMediaQuery({ maxWidth: '768px' });
@@ -18,66 +17,55 @@ const AllCollections = () => {
   const toggleModal = () => {
     setIsModalOpen(true);
   };
+
   const closeModal = () => {
     setIsModalOpen(false)
   }
+
   return (
-   <div>
-    {isMobile ? (
-      <>
-       <div className='collection'>
-            
-            <h3 className='title'>Explore    <span>All Collections</span></h3>
-             <KeyboardArrowDown className='arrow-downn'/>
+    <div className="bg-black">
+      
+        <>
+          <div className="flex justify-between p-4 bg-black">
+            <h3 className="text-white text-3xl collections-title">Explore <span className="text-blue-400">All Collections
+            <KeyboardArrowDown className="text-blue-400" />
+            </span></h3>
+           
           </div>
-          <div className='filter-bar-container'>
-          <div className='filter-bar'>
-          <div className="search-area">
-          <div className="search-area-bar">
-            <input
-              className="coll-search-bar"
-              type="text"
-              placeholder="Search collections"
-              name="searchInput"
-            />
-            <SearchIcon className="coll-search-icon" />
-            
+
+          <div className="flex justify-between items-center bg-black mx-6 sticky top-2 md:hidden">
+            <div className="flex items-center justify-between rounded-lg bg-black border-2 border-gray-600 w-full " >
+              <div className="relative">
+                <input
+                  className="bg-transparent border-b border-gray-600   text-white w-40 pl-1 rounded-md"
+                  type="text"
+                  placeholder="Search collections"
+                  name="searchInput"
+                />
+                <SearchIcon className="text-gray-600 absolute left-36 top-1/2 transform -translate-y-1/2" />
+              </div>
+
+             
+
+              <div className="flex text-blue-400 px-4  cursor-pointer" onClick={toggleModal}>
+              <div className="vertical-line relative h-10  w-0.5  bg-slate-400 "></div>
+                <span><TuneIcon className="text-2xl pr-1 my-2" /></span>
+                <span className="my-2">Filter</span>
+              </div>
+              {isModalOpen && <CollectionModal closeModal={closeModal} />}
+            </div>
           </div>
-         
-          <div className="vertical-line"></div>
-         
-        </div>
-       <div className='tune-icon' onClick={toggleModal}>
-        <span><TuneIcon /></span>
-        <span>Filter</span>
-      </div>
-      {isModalOpen && <CollectionModal closeModal={closeModal}/>}
-          </div >
+          <div className='sticky hidden top-2 md:block' >
+          <FilterBar />
           </div>
-          <Cards  className="main-content"/>
-      </>
-    ):(
-       <div className="all-collections">
-       <div className="explore">
-         <h1>Explore</h1>
-         <span className="coll-drop">
-           All Collections
-           <Icon
-             icon="ep:arrow-down-bold"
-             color="#75a8f9"
-             width="34"
-             height="34"
-           />
-         </span>
-       </div>
-       <div className="main-content">
-         <FilterBar />
- 
-         <Cards />
-       </div>
-     </div>
-    )}
-   </div>
+        
+          <Cards />
+        </>
+     
+        
+        
+      
+    </div>
   );
 };
 
