@@ -9,119 +9,42 @@ html {
   background-color: #141414;
 }
 
-.carousel-container-outer {
-  display: flex;
-  justify-content: center;
-  padding: 0 0.5rem;
-}
 
-.hidden.carousel {
-  display: none;
-}
 
-.active.carousel {
-  display: block;
-}
 
-.active.carousel {
-  display: flex;
-  align-items: center;
-}
 
-.image-container {
-  flex: 1;
-  padding: 1rem;
-}
+
+
+
 
 .image-container img {
-  width: 80%;
-  height: auto;
   border-radius: 30px;
-  margin: 20px;
 }
 
 .carousel-container {
-  position: relative;
-  width: 90vw;
-  height: max-content;
   margin: 0 5%;
 }
 
-.carousel-slideshow {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  text-align: left;
-  transition: 0.5s ease;
-}
 
-.carousel-card-container.active {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  transition: 0.8s ease;
-}
 
-.carousel-card-container.active {
-  transform: translateX(0);
-  transition-delay: 500ms;
-}
+
 
 .title {
-  margin-bottom: 40px;
-  margin-top: 40px;
   text-align: left;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 12px; /* 25% */
-  letter-spacing: 1.92px;
-  margin-left: 0;
-  width: auto;
-  position: relative;
-  left: -50px;
+  color: #fff;
+  font-family: Inter; /* 25% */
 }
 
 .trending {
-  margin-bottom: 20px;
-  color: #FFDB24;
+  color: #ffdb24;
   font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.4px;
-  text-decoration-line: underline;
-}
-
-.details-container {
-  position: relative;
-  flex: 1;
-  padding: 20px;
-  width: 60%;
-  height: 100%;
 }
 
 .nft-details {
-  max-width: 100%;
   color: #8b919b;
-  margin-bottom: 50px;
 }
 
-.image-container {
-  flex: 1;
-  padding: 10px;
-  position: relative;
-}
 
-.image-container img {
-  max-width: 350px;
-  height: auto;
-  margin-left: 130px;
-}
 
 .carousel-controls {
   display: flex;
@@ -144,23 +67,17 @@ html {
 .carousel-control span:hover {
   background-color: #141414;
   transform: scale(1.05);
-  transition: 0.3s ease-in ;
+  transition: 0.3s ease-in;
 }
 
 .carousel-control-prev {
-  position: absolute;
   left: -10px;
   color: #8b919b;
-  font-size: 36px;
-  cursor: pointer;
 }
 
 .carousel-control-next {
-  position: absolute;
   color: #8b919b;
-  font-size: 36px;
   right: -10px;
-  cursor: pointer;
 }
 
 .major-button {
@@ -177,41 +94,30 @@ html {
   cursor: pointer;
 }
 
-.learn-more-button{
-  background-color: #FFDB24;
+.learn-more-button {
+  background-color: #ffdb24;
   color: #000;
   font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 1em;
   width: 166px;
   height: 56px;
   flex-shrink: 0;
   border: none;
-  border-radius: 20px;
-
-
-  
 }
 @media screen and (max-width: 800px) {
- 
- 
   .carousel-container-outer {
-      width: 100vw;
+    width: 100vw;
 
-      font-size: 12px;
-      margin: 0;
+    font-size: 12px;
+    margin: 0;
   }
   .carousel-card-container.active {
     display: flex;
-    flex-flow: column-reverse nowrap ;
+    flex-flow: column-reverse nowrap;
     height: fit-content;
 
     padding: 10px;
   }
-  .image-container{
+  .image-container {
     display: flex;
     width: 80%;
     justify-content: center;
@@ -228,24 +134,22 @@ html {
     width: 100%;
     line-height: 1.4;
     position: relative;
-
   }
-  .title{
+  .title {
     font-size: 16px;
     margin: 8px 0;
   }
-  .trending{
+  .trending {
     display: block;
     margin-bottom: 1em;
     align-self: flex-start;
     position: absolute;
     top: 0;
   }
-  .learn-more-button{
+  .learn-more-button {
     margin-top: 1em;
     width: 100%;
   }
- 
 }
 @media screen and (max-width: 768px) {
   .nft-details {

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* TableContainer styles */
 .table {
   margin-bottom: 3em;
@@ -118,16 +121,16 @@
 .top-table.div:hover {
   background-color: #18191b;
 }
-.table-cell {
+.table-cells {
   display: inline-flex;
   flex-flow: column nowrap;
   width: 90px;
   height: 54px;
 }
-.table-cell .loss {
+.table-cells .loss {
   color: #f05252;
 }
-.table-cell .gain{
+.table-cells .gain{
   color: #1ECD4F;
 }
 

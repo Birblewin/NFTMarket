@@ -1,4 +1,26 @@
 /* TableContainer styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loss {
+    color: #F05252;
+}
+.gain {
+    color: #31c48d;
+}
+.gray-color{
+    color: #9ca3af;
+}
+body {
+    background-color: #141414;
+}
+
+@media screen and (max-width: 640px) {
+    .small-hidden {
+        display: none;
+    }
+}
 .table {
   margin-bottom: 3em;
 }
@@ -76,11 +98,6 @@
   font-weight: 900;
 }
 
-.table-section{
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 4px;
-}
 
 
 .bt {
@@ -96,72 +113,7 @@
 }
 /* Table styles */
 
-.table1 {
-  display: flex;
-  flex-flow: column nowrap;
-}
-.top-table.div {
-  padding: 0.25em 0;
-  align-items: center;
-}
-.top-table {
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  flex-flow: row nowrap;
-  border-bottom: 1px solid #1d2022;
-}
-.top-table.cont {
-  color: #777777;
-  font-weight: 900;
-}
-.top-table.div:hover {
-  background-color: #18191b;
-}
-.table-cell {
-  display: inline-flex;
-  flex-flow: column nowrap;
-  width: 90px;
-  height: 54px;
-}
-.table-cell .loss {
-  color: #f05252;
-}
-.table-cell .gain{
-  color: #1ECD4F;
-}
 
-.collection-name {
-  height: 54px;
-  width: 215px;
-  display: inline-flex;
-  flex-flow: row nowrap;
-  gap: 10px;
-  align-items: center;
-  padding: 8px 16px;
-}
-.coll-floor {
-  width: 90px;
-  height: 54px;
-  padding: 8px 16px;
-}
-.coll-volume {
-  width: 90px;
-  height: 54px;
-  padding: 8px 16px;
-}
-.coll-owners {
-  width: 90px;
-  height: 54px;
-  padding: 8px 16px;
-}
-
-.coll-no {
-  display: flex;
-  flex-direction: column;
-  
-  align-content: center;
-}
 
 .lg-hidden {
   display: none;
