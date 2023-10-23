@@ -6,11 +6,10 @@ import SearchIcon from "@mui/icons-material/Search";
 import TuneIcon from '@mui/icons-material/Tune';
 
 
-
-import CollectionModal from "./collectionModal";
+import CollectionModal from "./Modal";
 
 const AllCollections = () => {
-  
+
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
