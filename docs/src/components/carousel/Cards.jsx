@@ -21,7 +21,7 @@ const Cards = () => {
     <div
       key={index}
       className={`carousel-card-container ${
-        index === currentCard ? "active carousel" : "hidden carousel"
+        index === currentCard ? "active carousel flex items-center w-full h-fit duration-700 easee-in-out translate-x-0 delay-500" : "hidden carousel"
       }`}
     >
       <div className="details-container p-5 w-3/5 h-full flex-1 relative">
@@ -35,13 +35,14 @@ const Cards = () => {
         "
         >
           <div
-            className="title my-10 relative
+            className="title mb-5 relative
         tracking-widest
         font-bold
         w-auto
-        text-5xl
+        text-3xl
         text-left
         left-2
+        md:text-5xl
         "
           >
             {Details[index].cardTitle}
@@ -56,7 +57,7 @@ const Cards = () => {
       </div>
 
       <div className="image-container flex-1 p-2.5 relative">
-        <img src={Details[index].cardImage} alt={`Image ${index}`} />
+        <img className="max-w-sm h-auto m-5" src={Details[index].cardImage} alt={`Image ${index}`} />
       </div>
     </div>
   ));

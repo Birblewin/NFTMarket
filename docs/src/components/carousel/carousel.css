@@ -9,53 +9,25 @@ html {
   background-color: #141414;
 }
 
-.carousel-container-outer {
-  display: flex;
-  justify-content: center;
-  padding: 0 0.5rem;
-}
 
-.hidden.carousel {
-  display: none;
-}
 
-.active.carousel {
-  display: block;
-}
 
-.active.carousel {
-  display: flex;
-  align-items: center;
-}
 
-.image-container {
-  flex: 1;
-  padding: 1rem;
-}
+
+
+
 
 .image-container img {
-  width: 80%;
-  height: auto;
   border-radius: 30px;
-  margin: 20px;
 }
 
 .carousel-container {
   margin: 0 5%;
 }
 
-.carousel-card-container.active {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  transition: 0.8s ease;
-}
 
-.carousel-card-container.active {
-  transform: translateX(0);
-  transition-delay: 500ms;
-}
+
+
 
 .title {
   text-align: left;
@@ -72,10 +44,7 @@ html {
   color: #8b919b;
 }
 
-.image-container img {
-  max-width: 350px;
-  height: auto;
-}
+
 
 .carousel-controls {
   display: flex;

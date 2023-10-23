@@ -16,7 +16,7 @@ function Home() {
           <div className=" flex flex-row flex-nowrap gap-1 items-center text-left mr-20  ">
             <div className="title  flex flex-row flex-nowrap gap-2 items-center whitespace-nowrap text-2xl mr-auto w-full justify-self-start text-left">Top collections
             <div className="flex flex-row flex-nowrap gap-1">
-              <span className="h3 text-2xl font-bold inline-flex">Generative</span>
+              <span className="h3 text-2xl font-bold flex flex-row flex-nowrap items-center">Generative</span>
               <Icon
                 icon="mingcute:down-fill"
                 color="#76a9fa"
