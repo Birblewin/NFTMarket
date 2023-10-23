@@ -41,6 +41,9 @@ export default {
         'link-side-panel-container__side-panel--navbar': 'rgb(156, 163, 175, 0.5)',
         'small-screen-buttons__search-button': 'rgb(47, 54, 65)',
         'small-screen-buttons__wallet-button': 'rgb(255, 219, 36)',
+      },
+      width: {
+        '90': '90vw'
       }
     },
   },

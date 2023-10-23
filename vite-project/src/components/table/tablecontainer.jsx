@@ -68,7 +68,7 @@ const TableContainer = () => {
           <div className="coll-name-floor">
             <div>{coll.Collections}</div>
 
-            <div className="lg-hidden table-cell coll-floor">
+            <div className="lg-hidden table-cells coll-floor">
               <span className="coll-floor-sm">Floor: ₳{coll.Floors[0]}</span>
               <span className="loss">
                 <Icon
@@ -83,7 +83,7 @@ const TableContainer = () => {
             </div>
           </div>
         </div>
-        <div className="table-cell coll-volume">
+        <div className="table-cells coll-volume">
           <span>{coll.Volume[0]}</span>
           <span className="gain">
             <Icon
@@ -97,7 +97,7 @@ const TableContainer = () => {
             {coll.Volume[1]}
           </span>
         </div>
-        <div className="table-cell coll-floor none">
+        <div className="table-cells coll-floor none">
           <span>{coll.Floors[0]}</span>
           <span className="loss">
             <Icon
@@ -110,7 +110,7 @@ const TableContainer = () => {
             {coll.Floors[1]}
           </span>
         </div>
-        <div className="table-cell coll-owners none">
+        <div className="table-cells coll-owners none">
           <span>{coll.Owners[0]}</span>
 
           <span className="gain">

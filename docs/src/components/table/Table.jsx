@@ -12,8 +12,8 @@ const Table = () => {
         <div className="total-time">
           <div className="total-bar">
             
-              <span className="tot-24-vol">Total 24h Volume: </span> <span><span className="bold">450.6k ₳</span>{" "}
-              <span className="loss">
+              <span className="tot-24-vol flex flex-row flex-nowrap">Total 24h Volume: </span> <span className="flex flex-row flex-nowrap"><span className="font-bold text-white mx-2">450.6k ₳</span>{" "}
+              <span className="loss flex flex-row flex-nowrap">
                 <Icon
                   icon="tdesign:arrow-left-down"
                   color="#f05252"
@@ -40,10 +40,10 @@ const Table = () => {
         </div>
         <div></div>
       </div>
-      <div className="table-cont">
+      <div className="table-cont w-screen justify-center place-content-center">
         <TableContainer />
       </div>
-      <button className="btn lg-hidden">View All</button>
+      <button className="btn lg-hidden mt-4">View All</button>
     </div>
   );
 };
