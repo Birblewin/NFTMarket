@@ -18,7 +18,7 @@ export default {
         'container__selling_stats--chosen_chain': 'rgba(161, 151, 170, 0.1)',
         'container__content-container': 'rgb(18, 12, 24)',
         'container__content-container--paying_stats': 'rgb(28, 19, 38)',
-        '.container__content-container--paying_stats--button': 'rgb(228, 37, 117)',
+        'container__content-container--paying_stats--button': 'rgb(228, 37, 117)',
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)',
         'description--buttons--link++hover': 'rgb(255, 255, 255, 0.7)',
@@ -38,6 +38,8 @@ export default {
         'side_panel--title--description--p--a': 'rgb(118, 169, 250)',
         'container--h1': 'rgb(248, 247, 248)',
         'container__selling_stats': 'rgb(245, 243, 247)',
+        'overview-container__footer--p': 'rgb(150, 142, 142)',
+        'list--entry--description': 'rgb(161, 151, 170)',
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(20, 20, 20)'
       },
@@ -48,6 +50,7 @@ export default {
         'small-screen-buttons__search-button': 'rgb(47, 54, 65)',
         'small-screen-buttons__wallet-button': 'rgb(255, 219, 36)',
         'container__content-container': 'rgb(28, 19, 38)',
+        'overview-container__partnerships': 'rgb(255, 255, 255)',
       }
     },
   },
