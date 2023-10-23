@@ -177,7 +177,7 @@ const TableContainer = () => {
     );
   });
   return (
-    <div className="w-11/12 flex flex-col xl:flex-row flex-nowrap px-12 gap-8 mx-auto mt-7">
+    <div className="w-full flex flex-col xl:flex-row flex-nowrap px-12 gap-8 items-center mt-7">
       <table className=" w-4/5 text-center flex-1 p-4 xl:w-1/2 xl:mr-auto">
         <thead className="gray-color border-b divide-slate-700">
           <tr className="">
