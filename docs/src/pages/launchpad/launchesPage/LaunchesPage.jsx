@@ -55,8 +55,6 @@ export default function LaunchesPage(){
         <div className="min-h-[100vh] scroll-smooth box-border transition-all duration-500 ease-in-out">
             <LaunchesCarousel/>
 
-            {/* margin-top: 50px;
-        gap: 50px; */}
             <div className="flex items-center gap-[20px] my-0 mx-[20px] mt-[100px] w-full sm:w-[70%] sm:my-0 sm:mx-auto sm:mt-[150px] md:w-full md:ml-[12%] lg:mt-[50px] lg:gap-[50px]">
                 <p 
                     onClick={() => setViewPastCollections(false)}
