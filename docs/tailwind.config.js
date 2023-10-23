@@ -51,6 +51,11 @@ export default {
         'small-screen-buttons__wallet-button': 'rgb(255, 219, 36)',
         'container__content-container': 'rgb(28, 19, 38)',
         'overview-container__partnerships': 'rgb(255, 255, 255)',
+
+      },
+      width: {
+        '90': '90vw'
+
       }
     },
   },
