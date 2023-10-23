@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Cards from "./Cards";
 import FilterBar from "./FilterBar";
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
