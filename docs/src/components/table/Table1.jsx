@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Table1 = () => {
   return (
     <div>
