@@ -16,7 +16,8 @@ const appRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout/>}>
       <Route path='allCollections' element={<AllCollections/>}></Route>
-      <Route path='allNFTs' element={<AllNftsPage/>}></Route>
+      <Route path='allNFTs' element={<AllNftsPage/>
+}></Route>
       <Route path='rewards' element={<RewardsPage/>}></Route>
       <Route path='/' element={<Home/>}></Route>
       
