@@ -24,7 +24,7 @@ function AllNfts() {
   return (
     <div >
       
-        <div>
+        
           <div className=" flex px-4 text-white">
             <h3 className="text-2xl flex md:text-3xl ml-8">
               Explore <span className="text-blue-500  mx-2 ">All NFTs</span>
@@ -62,7 +62,7 @@ function AllNfts() {
             </div>
             {isModalOpen && <NftModal closeModal={closeModal} />}
           </div>
-        </div>
+        
       
 
             <div className="filter-bar-container sticky top-2 hidden lg:block">
