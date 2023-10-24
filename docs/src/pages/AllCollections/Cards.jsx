@@ -1,4 +1,3 @@
-import React from 'react';
 import Details from './Collection';
 
 import { Icon } from "@iconify/react";

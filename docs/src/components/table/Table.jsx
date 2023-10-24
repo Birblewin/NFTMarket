@@ -1,4 +1,3 @@
-import React from "react";
 import TableContainer from "./TableContainer";
 import { Icon } from "@iconify/react";
 

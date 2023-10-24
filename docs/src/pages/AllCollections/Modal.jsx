@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 function CollectionModal({ closeModal }) {
-  const [selectedOption, setSelectedOption] = useState(null);
-
-  const handleSpanClick = (index) => {
-    setSelectedOption(index);
-  };
 
   return (
     <div className="modal-contentt fixed top-0 right-0 w-full h-full bg-black items-center bg-opacity-100 z-50 animate-modal">
