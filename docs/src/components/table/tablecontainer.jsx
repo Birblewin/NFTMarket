@@ -1,4 +1,3 @@
-import React from "react";
 import data from "./NFTDetails";
 import { Icon } from "@iconify/react";
 import "./table.css";
@@ -6,9 +5,11 @@ import "./table.css";
 const TableContainer = () => {
   const tableOne = data.slice(0, 6);
   const tableTwo = data.slice(6, 12);
-  const firstTableRows = tableOne.map((nft, index) => {
+  
+  const firstTableRows = tableOne.map((nft) => {
     return (
       <tr key={index} className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700">
+
         <td className="text-white">{nft.id}</td>
         <td className="text-left">
           <div className="flex flex-row flex-nowrap items-center px-4 py-2">
@@ -91,9 +92,10 @@ const TableContainer = () => {
       </tr>
     );
   });
-  const secondTableRows = tableTwo.map((nft, index) => {
+  const secondTableRows = tableTwo.map((nft) => {
     return (
       <tr key={index} className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700">
+
         <td className="text-white">{nft.id}</td>
         <td className="text-left">
           <div className="flex flex-row flex-nowrap items-center px-4 py-2">

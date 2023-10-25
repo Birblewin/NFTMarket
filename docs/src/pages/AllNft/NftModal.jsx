@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 function NftModal({ closeModal }) {

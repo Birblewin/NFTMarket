@@ -86,7 +86,7 @@ export default function Overview(){
             <ul className='w-full flex flex-col justify-center items-start list-none'>
               <li className='w-full flex justify-between items-start gap-[20px]'>
                 <div className='flex flex-col items-center'>
-                  <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full'>
+                  <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full items-center'>
                     <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" color="#fff" width="16" height="16" xmlns="http://www.w3.org/2000/svg" >
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
@@ -104,7 +104,7 @@ export default function Overview(){
               
               <li className='w-full flex justify-between items-start gap-[20px]'>
                 <div className='flex flex-col items-center'>
-                  <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full'>
+                  <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full items-center'>
                     <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" color="#fff" width="16" height="16" xmlns="http://www.w3.org/2000/svg" >
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
@@ -122,7 +122,7 @@ export default function Overview(){
               
               <li className='w-full flex justify-between items-start gap-[20px]'>
                 <div className='flex flex-col items-center'>
-                  <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full'>
+                  <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full items-center'>
                     <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" color="#fff" width="16" height="16" xmlns="http://www.w3.org/2000/svg" >
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
@@ -234,7 +234,7 @@ export default function Overview(){
               <ul className='w-full flex flex-col justify-center items-start list-none'>
                 <li className='w-full flex justify-between items-start gap-[20px]'>
                   <div className='flex flex-col items-center'>
-                    <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full'>
+                    <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full items-center'>
                       <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" color="#fff" width="16" height="16" xmlns="http://www.w3.org/2000/svg" >
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
@@ -252,7 +252,7 @@ export default function Overview(){
                 
                 <li className='w-full flex justify-between items-start gap-[20px]'>
                   <div className='flex flex-col items-center'>
-                    <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full'>
+                    <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full items-center'>
                       <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" color="#fff" width="16" height="16" xmlns="http://www.w3.org/2000/svg" >
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
@@ -270,7 +270,7 @@ export default function Overview(){
                 
                 <li className='w-full flex justify-between items-start gap-[20px]'>
                   <div className='flex flex-col items-center'>
-                    <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full'>
+                    <div className='bg-container__content-container--paying_stats--button w-[50px] h-[50px] flex justify-center border-solid border-[2px] border-container__content-container rounded-full items-center'>
                       <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" color="#fff" width="16" height="16" xmlns="http://www.w3.org/2000/svg" >
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>

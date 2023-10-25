@@ -1,11 +1,12 @@
 // IMPORTING NECESSARY MODULES
-import React from "react";
+import  { useState } from 'react';
+
 
 import {Outlet} from 'react-router-dom'
 
 // IMPORTING NECESSARY COMPONENTS
 import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/footer/Footer'
+import Footer from '../components/Footer/Footer'
 import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
 import LinkSidePanel from '../components/linkSidePanel/LinkSidePanel'
 import SearchBar from "../components/searchBar/SearchBar";
@@ -16,12 +17,12 @@ import SearchBar from "../components/searchBar/SearchBar";
 // EXPORTING A ROOTLAYOUT FUNCTION
 export default function RootLayout(){
     // A BOOLEAN TO KEEP TRACK OF SHOWING THE SEARCHBAR
-    const [showSearchBar, setShowSearchBar] = React.useState(false)
+    const [showSearchBar, setShowSearchBar] = useState(false)
     // A BOOLEAN TO KEEP TRACK OF SHOWING THE SEARCHBAR
-    const [showLinkSidePanel, setShowLinkSidePanel] = React.useState(false)
+    const [showLinkSidePanel, setShowLinkSidePanel] = useState(false)
 
     // A USESTATE FUNCTION TO TRACK CHANGES IN SEARCHBAR CONTENT
-    const [formData, setFormData] = React.useState({
+    const [formData, setFormData] = useState({
         search: ""
     })
 

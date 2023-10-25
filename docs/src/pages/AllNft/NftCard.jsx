@@ -1,4 +1,3 @@
-import React from 'react';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import Details from '../AllCollections/Collection';

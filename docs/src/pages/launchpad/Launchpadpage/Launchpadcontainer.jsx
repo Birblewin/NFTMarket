@@ -59,7 +59,7 @@ export default function Launchpadcontainer(){
   return (
     <div>
       <div className="small_screen_launchpad-container_entry lg:hidden">
-        <div className="flex justify-center items-start flex-col w-[90%] my-0 mx-auto mt-[-80px] transition-all duration-500 ease-in-out lg:flex-row lg:gap-[50px]">
+        <div className="flex justify-center items-start flex-col w-[90%] my-0 mx-auto mt-[0px] transition-all duration-500 ease-in-out lg:flex-row lg:gap-[50px]">
           {/* TITLE OF THE COLLECTION */}
           <h1 className='text-container--h1 text-[30px] font-[700] w-full text-left'>{correctData.cardTitle}</h1>
 
@@ -154,7 +154,7 @@ export default function Launchpadcontainer(){
       </div>
 
       <div className="extra_large_screen_launchpad-container_entry hidden lg:block">
-        <div className="flex justify-center items-start flex-col w-[90%] my-0 mx-auto mt-[-80px] transition-all duration-500 ease-in-out lg:flex-row lg:gap-[50px]">
+        <div className="flex justify-center items-start flex-col w-[90%] my-0 mx-auto mt-[0px] transition-all duration-500 ease-in-out lg:flex-row lg:gap-[50px]">
           {/* LEFT SIDE OF CONTAINER */}
           <div className="lg:flex lg:flex-col lg:justify-center lg:items-start">
             {/* TITLE OF THE COLLECTION */}

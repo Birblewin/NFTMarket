@@ -1,4 +1,3 @@
-import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import FilterAltOutlinedIcon from "@mui/icons-material/FilterAltOutlined";
 import { Icon } from "@iconify/react";
@@ -6,7 +5,7 @@ import { Icon } from "@iconify/react";
 const FilterBar = () => {
   return (
     <div className="px-6">
-        <div className="filter-bar-container   rounded-lg bg-black border-2 h-20 p-5 pt-7 border-gray-600 w-full ">
+        <div className="filter-bar-container   rounded-lg bg-[#141414] border-2 h-20 p-5 pt-7 border-gray-600 w-full ">
       
       <div className="filter-bar flex justify-between">
         <div className="flex gap-10 items-center">

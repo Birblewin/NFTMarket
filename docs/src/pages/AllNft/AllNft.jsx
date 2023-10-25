@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import SearchIcon from '@mui/icons-material/Search';
@@ -24,7 +24,7 @@ function AllNfts() {
   return (
     <div >
       
-        <div>
+        
           <div className=" flex px-4 text-white">
             <h3 className="text-2xl flex md:text-3xl ml-8">
               Explore <span className="text-blue-500  mx-2 ">All NFTs</span>
@@ -62,14 +62,14 @@ function AllNfts() {
             </div>
             {isModalOpen && <NftModal closeModal={closeModal} />}
           </div>
-        </div>
+        
       
 
             <div className="filter-bar-container sticky top-2 hidden lg:block">
               <div className="filter-bar h-20 w-11/12 m-auto bg-black border-solid border-2 border-gray-600 mb-2 mt-5 flex justify-between rounded-xl items-center">
                 <div className="flex">
                   <div className="flex items-center pl-3 pr-4">
-                    <span className="font-bold pr-2 text-white" t><FilterAltOutlinedIcon /></span>
+                    <span className="font-bold pr-2 text-white"><FilterAltOutlinedIcon /></span>
                     <span className="font-bold text-white">Collections</span>
                   </div>
                   <div className="flex items-center pr-4">
