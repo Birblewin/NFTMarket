@@ -1,7 +1,0 @@
-main{
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-}

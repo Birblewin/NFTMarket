@@ -6,7 +6,7 @@ const TableContainer = () => {
   const tableOne = data.slice(0, 6);
   const tableTwo = data.slice(6, 12);
   
-  const firstTableRows = tableOne.map((nft) => {
+  const firstTableRows = tableOne.map((nft, index) => {
     return (
       <tr key={index} className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700">
 
@@ -92,7 +92,7 @@ const TableContainer = () => {
       </tr>
     );
   });
-  const secondTableRows = tableTwo.map((nft) => {
+  const secondTableRows = tableTwo.map((nft, index) => {
     return (
       <tr key={index} className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700">
 

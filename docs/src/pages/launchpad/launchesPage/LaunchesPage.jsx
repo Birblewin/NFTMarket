@@ -1,19 +1,23 @@
-// IMPORTING NECESSARY COMPONENTS AND MODULES
+// IMPORTING NECESSARY FILES
+    // IMPORTING NECESSARY MODULES
 import React from "react"
-
-import LaunchesCarousel from "./LaunchesCarousel"
+    // IMPORTING NECESSARY COMPONENTS
+import HeaderCarousel from "../../../components/carousel/HeaderCarousel"
 import LiveCollection from "./LiveCollection"
 import PastCollection from "./PastCollection"
-
+import CarouselEntry from "./CarouselEntry"
+    // IMPORTING NECESSARY DATABASES
 import {launchpadCollectionsData} from '../../../database/launchpadCollectionsData'
 
 // A LAUNCHESPAGE FUNCTION THAT IS EXPORTED
 export default function LaunchesPage(){
     // A BOOLEAN TO KEEP TRACK OF WHETHER OR NOT TO VIEW THE PAST COLLECTIONS
     const [viewPastCollections, setViewPastCollections] = React.useState(false)
+    // A STATE TO HOLD THE CURRENT INDEX OF CARD DISPLAYED
+    const [currentCard, setCurrentCard] = React.useState(0)
 
     // OBTAINING THE DATA FROM DATABASE OF LIVE AND PAST COLLECTIONS
-    const {liveCollections, pastCollections} = launchpadCollectionsData
+    const {liveCollections, pastCollections, carouselCollections} = launchpadCollectionsData
 
     // A FUNCTION TO GENERATE AN ARRAY OF LIVE COLLECTIONS
     function liveCollectionsGenerator() {
@@ -51,9 +55,61 @@ export default function LaunchesPage(){
         return pastCollectionsArray
     }
 
+    // A FUNCTION TO MOVE TO THE NEXT CARD
+    function checkNextCard(){
+        setCurrentCard(prevCard => prevCard < carouselCollections.length - 1 ? prevCard + 1 : 0)
+    }
+
+    // A FUNCTION TO MOVE TO THE PREVIOUS CARD
+    function checkPreviousCard(){
+        setCurrentCard(prevCard => prevCard > 0 ? prevCard - 1 : carouselCollections.length - 1)
+    }
+
+    // AN ARRAY OF CAROUSELENTRIES
+    const generatedEntriesArray = carouselCollections.map(
+        detail => (<CarouselEntry 
+            key={detail._id}
+            image={detail.cardImage}
+            heading={detail.cardTitle}
+            description={detail.cardInfo}
+            id={detail._id}
+        />)
+    )
+
+    // AN ARRAY OF DOTSELECTORS
+    function generatedDotSelectorsArray(){
+        const dotSelectorsArray = []
+
+        for(let i = 0; i < carouselCollections.length; i ++){
+            dotSelectorsArray.push(
+                <p 
+                    className="font-bold text-6xl cursor-pointer text-white transition-all duration-500"
+                    onClick={() => setCurrentCard(i)}
+                    key={i}
+                    
+                    style={
+                        i == currentCard 
+                            ? 
+                        { color:  "rgb(55 65 81)" } 
+                            : 
+                        null
+                    }
+                >.</p>
+            )
+        }
+
+        return dotSelectorsArray
+    }
+
     return(
         <div className="min-h-[100vh] scroll-smooth box-border transition-all duration-500 ease-in-out">
-            <LaunchesCarousel/>
+            <HeaderCarousel
+                carouselItems = {generatedEntriesArray}
+                currentCarouselItem = {currentCard}
+                dotScrollerButtons = {generatedDotSelectorsArray()}
+                checkPreviousItem = {() => checkPreviousCard()}
+                checkNextItem = {() => checkNextCard()}
+            />
 
             <div className="flex items-center gap-[20px] my-0 mx-[20px] mt-[100px] w-full sm:w-[70%] sm:my-0 sm:mx-auto sm:mt-[150px] md:w-full md:ml-[12%] lg:mt-[50px] lg:gap-[50px]">
                 <p 

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // IMPORTING NECESSARY MODULES
-import { NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 // EXPORTING DEFAULT CAROUSELENTRY FUNCTION
 export default function CarouselEntry(props){
