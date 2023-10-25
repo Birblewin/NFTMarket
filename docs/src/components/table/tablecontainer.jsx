@@ -8,7 +8,8 @@ const TableContainer = () => {
   
   const firstTableRows = tableOne.map((nft) => {
     return (
-      <tr className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700" key={nft.id}>
+      <tr key={index} className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700">
+
         <td className="text-white">{nft.id}</td>
         <td className="text-left">
           <div className="flex flex-row flex-nowrap items-center px-4 py-2">
@@ -93,7 +94,8 @@ const TableContainer = () => {
   });
   const secondTableRows = tableTwo.map((nft) => {
     return (
-      <tr className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700" key={nft.id}>
+      <tr key={index} className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700">
+
         <td className="text-white">{nft.id}</td>
         <td className="text-left">
           <div className="flex flex-row flex-nowrap items-center px-4 py-2">
