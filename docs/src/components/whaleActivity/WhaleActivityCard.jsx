@@ -1,4 +1,3 @@
-import React from "react";
 import Details from "../carousel/NFTDetails";
 import { Icon } from "@iconify/react";
 import { Navigation, Pagination, A11y } from 'swiper/modules';
