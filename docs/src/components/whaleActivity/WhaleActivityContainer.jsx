@@ -2,8 +2,8 @@ import Card from './WhaleActivityCard'
 
 const WhaleActivityContainer = () => {
   return (
-    <div className='whale-activity-container'>
-        <h1 className='title-sm'>Whale activity</h1>
+    <div className='flex flex-col justify-center items-center'>
+        <h1 className='title-sm text-white mr-auto px-4 mb-5 text-xl font-extrabold tracking-wider' >Whale activity</h1>
         <Card />
     </div>
   )
