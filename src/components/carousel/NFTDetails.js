@@ -1,13 +1,7 @@
-import image1 from "./images/image1.png";
-import image2 from "./images/image2.jpeg";
-import image3 from "./images/image3.png";
-import image4 from "./images/image4.jpeg";
-import image5 from "./images/image5.jpeg";
-
 const Details = [
   {
     _id: 1,
-    cardImage: image1,
+    cardImage: "/img/image1-a0c2a8f3.png",
     cardTitle: "Apprentices",
     price: '₳ 560',
     volume: '₳ 5m',
@@ -17,7 +11,7 @@ const Details = [
   },
   {
     _id: 2,
-    cardImage: image2,
+    cardImage: "/img/image2-ec2cf9c8.jpeg",
     cardTitle: "EarthNodes",
     price: '₳ 1650',
     volume: '₳ 15m',
@@ -27,7 +21,7 @@ const Details = [
   },
   {
     _id: 3,
-    cardImage: image3,
+    cardImage: "/img/image3-e1462d4e.png",
     cardTitle: "The Ape Society",
     released: '30m ago',
     price: '₳ 440',
@@ -36,7 +30,7 @@ const Details = [
     "The Ape Society is a collection of 7,000 NFTs generated on the Cardano blockchain. Every holder is a member of one of 35 families, and gets access to the DAO. ",
   },{
     _id: 4,
-    cardImage: image4,
+    cardImage: "/img/image4-fd191eda.jpeg",
     cardTitle: "Apprentices",
     released: '9m ago',
     price: '₳ 360',
@@ -45,7 +39,7 @@ const Details = [
     "Enter the dazzling world of APPRENTICES: an anime PFP collection that's not just about avatars—it's an epic narrative-driven universe.  ",
   },{
     _id: 5,
-    cardImage: image5,
+    cardImage: "/img/image5-cb18f9be.jpeg",
     cardTitle: "EarthNodes",
     price: '₳ 780',
     volume: '₳ 18m',
@@ -55,7 +49,7 @@ const Details = [
   },
   {
     _id: 6,
-    cardImage: image1,
+    cardImage: "/img/image1-a0c2a8f3.png",
     cardTitle: "Apprentices",
     price: '₳ 560',
     volume: '₳ 5m',
@@ -65,7 +59,7 @@ const Details = [
   },
   {
     _id: 7,
-    cardImage: image2,
+    cardImage: "/img/image2-ec2cf9c8.jpeg",
     cardTitle: "EarthNodes",
     price: '₳ 1650',
     volume: '₳ 15m',
@@ -75,7 +69,7 @@ const Details = [
   },
   {
     _id: 8,
-    cardImage: image3,
+    cardImage: "/img/image3-e1462d4e.png",
     cardTitle: "The Ape Society",
     released: '30m ago',
     price: '₳ 440',
@@ -84,7 +78,7 @@ const Details = [
     "The Ape Society is a collection of 7,000 NFTs generated on the Cardano blockchain. Every holder is a member of one of 35 families, and gets access to the DAO. ",
   },{
     _id: 9,
-    cardImage: image4,
+    cardImage: "/img/image4-fd191eda.jpeg",
     cardTitle: "Apprentices",
     released: '9m ago',
     price: '₳ 360',
@@ -93,7 +87,7 @@ const Details = [
     "Enter the dazzling world of APPRENTICES: an anime PFP collection that's not just about avatars—it's an epic narrative-driven universe.  ",
   },{
     _id: 10,
-    cardImage: image5,
+    cardImage: "/img/image5-cb18f9be.jpeg",
     cardTitle: "EarthNodes",
     price: '₳ 780',
     volume: '₳ 18m',
