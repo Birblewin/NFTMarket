@@ -11,10 +11,10 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 export default function Navbar(props) {
   return (
     <div className='navbar flex items-center bg-[#111111] text-white pb-[20px] h-[95px] p-[10px] mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between'>
-      <NavLink to="/">
+      <NavLink to="/home">
         <div className='flex justify-center items-center'>
           <img 
-            src='/img/birble.png'
+            src='../../../public/img/birble.png'
             className='w-[32px] h-auto m-[10px]'
           />
 

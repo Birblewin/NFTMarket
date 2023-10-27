@@ -15,10 +15,11 @@ import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
 const appRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout/>}>
+      <Route path='/' element={<Home/>}></Route>
       <Route path='allCollections' element={<AllCollections/>}></Route>
       <Route path='allNFTs' element={<AllNftsPage/>}></Route>
       <Route path='rewards' element={<RewardsPage/>}></Route>
-      <Route path='/' element={<Home/>}></Route>
+      <Route path='/home' element={<Home/>}></Route>
       
       <Route path='launchpad'>
         <Route path='launches' element={<LaunchesPage/>}></Route>

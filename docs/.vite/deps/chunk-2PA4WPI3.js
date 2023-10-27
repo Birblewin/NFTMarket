@@ -1,6 +1,6 @@
 import {
   __commonJS
-} from "./chunk-ROME4SDB.js";
+} from "deps/chunk-ROME4SDB.js";
 
 // node_modules/react/cjs/react.development.js
 var require_react_development = __commonJS({
