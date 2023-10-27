@@ -1,10 +1,4 @@
 // IMPORTING NECESSARY FILES
-import image1 from '../components/carousel/images/image1.png'
-import image2 from '../components/carousel/images/image2.jpeg'
-import image3 from '../components/carousel/images/image3.png'
-import image4 from '../components/carousel/images/image4.jpeg'
-import image5 from '../components/carousel/images/image5.jpeg'
-
 import livePhoto from '/img/launchpad/live_photo.png'
 import pastPhoto from '/img/launchpad/past_photo.png'
 
@@ -14,7 +8,7 @@ export const launchpadCollectionsData = {
     "carouselCollections": [
         {
             "_id": 1,
-            "cardImage": image1,
+            "cardImage": '/img/image1-a0c2a8f3.png',
             "cardTitle": "Apprentices",
             "price": "₳ 560",
             "volume": "5m",
@@ -24,7 +18,7 @@ export const launchpadCollectionsData = {
 
         {
             "_id": 2,
-            "cardImage": image2,
+            "cardImage": '/img/image2-ec2cf9c8.jpeg',
             "cardTitle": "EarthNodes",
             "price": "1650",
             "volume": "15m",
@@ -34,7 +28,7 @@ export const launchpadCollectionsData = {
 
         {
             "_id": 3,
-            "cardImage": image3,
+            "cardImage": '/img/image3-e1462d4e.png',
             "cardTitle": "The Ape Society",
             "released": "30m ago",
             "price": "₳ 440",
@@ -44,7 +38,7 @@ export const launchpadCollectionsData = {
         
         {
             "_id": 4,
-            "cardImage": image4,
+            "cardImage": '/img/image4-fd191eda.jpeg',
             "cardTitle": "Apprentices",
             "released": "9m ago",
             "price": "₳ 360",
@@ -54,7 +48,7 @@ export const launchpadCollectionsData = {
         
         {
             "_id": 5,
-            "cardImage": image5,
+            "cardImage": '/img/image5-cb18f9be.jpeg',
             "cardTitle": "EarthNodes",
             "price": "₳ 780",
             "volume": "₳ 18m",
