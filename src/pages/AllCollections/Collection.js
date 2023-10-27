@@ -1,10 +1,7 @@
-import image1 from "./imgg/image1.png";
-import image2 from "./imgg/image2.jpeg";
-import image3 from "./imgg/image3.png";
 const Details = [
   {
     _id: 1,
-    cardImage: image1,
+    cardImage: "/img/image1.png",
     cardTitle: "Apprentices",
     name: "Apprentices #74",
     price: "₳ 56",
@@ -15,7 +12,7 @@ const Details = [
   },
   {
     _id: 2,
-    cardImage: image2,
+    cardImage: "/img/image2.jpeg",
     cardTitle: "EarthNodes",
     name: "Earthnodes #922",
     price: "₳ 65",
@@ -26,7 +23,7 @@ const Details = [
   },
   {
     _id: 3,
-    cardImage: image3,
+    cardImage: "/img/image3.png",
     cardTitle: "Ape Society",
     name: "Ape society #927",
     released: "30m ago",
@@ -37,7 +34,7 @@ const Details = [
   },
   {
     _id: 4,
-    cardImage: image1,
+    cardImage: "/img/image1.png",
     cardTitle: "Apprentices",
     name: "Apprentices #74",
     price: "₳ 56",
@@ -48,7 +45,7 @@ const Details = [
   },
   {
     _id: 5,
-    cardImage: image2,
+    cardImage: "/img/image2.jpeg",
     cardTitle: "EarthNodes",
     name: "Earthnodes #922",
     price: "₳ 65",
@@ -59,7 +56,7 @@ const Details = [
   },
   {
     _id: 6,
-    cardImage: image3,
+    cardImage: "/img/image3.png",
     cardTitle: "Ape Society",
     name: "Ape society #927",
     released: "30m ago",
@@ -70,7 +67,7 @@ const Details = [
   },
   {
     _id: 7,
-    cardImage: image1,
+    cardImage: "/img/image1.png",
     cardTitle: "Apprentices",
     name: "Apprentices #74",
     price: "₳ 56",
@@ -81,7 +78,7 @@ const Details = [
   },
   {
     _id: 8,
-    cardImage: image2,
+    cardImage: "/img/image2.jpeg",
     cardTitle: "EarthNodes",
     name: "Earthnodes #922",
     price: "₳ 65",
@@ -92,7 +89,7 @@ const Details = [
   },
   {
     _id: 9,
-    cardImage: image3,
+    cardImage: "/img/image3.png",
     cardTitle: "Ape Society",
     name: "Ape society #927",
     released: "30m ago",
@@ -103,7 +100,7 @@ const Details = [
   },
   {
     _id: 10,
-    cardImage: image1,
+    cardImage: "/img/image1.png",
     cardTitle: "Apprentices",
     name: "Apprentices #74",
     price: "₳ 56",
@@ -114,7 +111,7 @@ const Details = [
   },
   {
     _id: 11,
-    cardImage: image2,
+    cardImage: "/img/image2.jpeg",
     cardTitle: "EarthNodes",
     name: "Earthnodes #922",
     price: "₳ 65",
@@ -125,7 +122,7 @@ const Details = [
   },
   {
     _id: 12,
-    cardImage: image3,
+    cardImage: "/img/image3.png",
     cardTitle: "Ape Society",
     name: "Ape society #927",
     released: "30m ago",
@@ -136,7 +133,7 @@ const Details = [
   },
   {
     _id: 13,
-    cardImage: image1,
+    cardImage: "/img/image1.png",
     cardTitle: "Apprentices",
     name: "Apprentices #74",
     price: "₳ 56",
@@ -147,7 +144,7 @@ const Details = [
   },
   {
     _id: 14,
-    cardImage: image2,
+    cardImage: "/img/image2.jpeg",
     cardTitle: "EarthNodes",
     name: "Earthnodes #922",
     price: "₳ 65",
@@ -158,7 +155,7 @@ const Details = [
   },
   {
     _id: 15,
-    cardImage: image3,
+    cardImage: "/img/image3.png",
     cardTitle: "Ape Society",
     name: "Ape society #927",
     released: "30m ago",
@@ -169,7 +166,7 @@ const Details = [
   },
   {
     _id: 16,
-    cardImage: image1,
+    cardImage: "/img/image1.png",
     cardTitle: "Apprentices",
     name: "Apprentices #74",
     price: "₳ 56",
@@ -180,7 +177,7 @@ const Details = [
   },
   {
     _id: 17,
-    cardImage: image2,
+    cardImage: "/img/image2.jpeg",
     cardTitle: "EarthNodes",
     name: "Earthnodes #922",
     price: "₳ 65",
@@ -191,7 +188,7 @@ const Details = [
   },
   {
     _id: 18,
-    cardImage: image3,
+    cardImage: "/img/image3.png",
     cardTitle: "Ape Society",
     name: "Ape society #927",
     released: "30m ago",
@@ -202,7 +199,7 @@ const Details = [
   },
   {
     _id: 19,
-    cardImage: image1,
+    cardImage: "/img/image1.png",
     cardTitle: "Apprentices",
     name: "Apprentices #628",
     price: "₳ 56",
@@ -213,7 +210,7 @@ const Details = [
   },
   {
     _id: 20,
-    cardImage: image2,
+    cardImage: "/img/image2.jpeg",
     cardTitle: "EarthNodes",
     name: "Earthnodes #952",
     price: "₳ 65",
