@@ -1,8 +1,8 @@
-import image1 from "./images/image1.png";
-import image2 from "./images/image2.jpeg";
-import image3 from "./images/image3.png";
-import image4 from "./images/image4.jpeg";
-import image5 from "./images/image5.jpeg";
+import image1 from "/img/image1-a0c2a8f3.png";
+import image2 from "/img/image2-ec2cf9c8.jpeg";
+import image3 from "/img/image3-e1462d4e.png";
+import image4 from "/img/image4-fd191eda.jpeg";
+import image5 from "/img/image5-cb18f9be.jpeg";
 
 const Details = [
   {
