@@ -20,7 +20,7 @@ export default function WalletSidePanel(props){
     ) 
 
     return(
-        <div className="absolute w-full h-full bg-link-side-panel-container transition-all duration-500 ease-in-out z-[1]">
+        <div className="absolute w-full h-full bg-link-side-panel-container transition-all duration-500 ease-in-out z-10">
             <div className="bg-link-side-panel-container__side-panel h-full flex flex-col gap-[10px] w-[380px] items-start absolute right-0 p-[10px] border-solid border-[1px] border-black rounded-bl-[10px] rounded-tl-[10px] transition-all duration-500 ease-in-out shadow-link-side-panel-container__side-panel">
                 <figure className="font-[Lexend] text-left text-white flex flex-col gap-[10px] items-start">
                     <p 

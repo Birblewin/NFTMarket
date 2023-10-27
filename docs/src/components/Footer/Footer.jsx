@@ -11,7 +11,7 @@ export default function Footer(){
                 <figure className="footer__description--title flex items-center justify-center gap-2.5">
                     <img 
                         className='w-7 h-auto'
-                        src="../../img/birble.png" 
+                        src="../../../public/img/birble.png" 
                         alt="birble-logo"
                         title='birble-logo'
                         loading='lazy'
