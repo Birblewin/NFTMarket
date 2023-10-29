@@ -45,9 +45,9 @@ const Cards = () => {
         md:text-5xl
         "
           >
-            {Details[index].cardTitle}
+            {image.cardTitle}
           </div>
-          <div>{Details[index].cardInfo}</div>
+          <div>{image.cardInfo}</div>
           <div>
             <button className="learn-more-button text-sm font-semi-bold mt-4 rounded-2xl">
               Learn More
@@ -57,7 +57,7 @@ const Cards = () => {
       </div>
 
       <div className="image-container flex-1 p-2.5 relative">
-        <img className="max-w-sm h-auto m-5" src={Details[index].cardImage} alt={`Image ${index}`} />
+        <img className="max-w-sm h-auto m-5" src={image.cardImage} alt={`Image ${index}`} />
       </div>
     </div>
   ));

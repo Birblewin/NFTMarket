@@ -14,7 +14,7 @@ export default function Navbar(props) {
       <NavLink to="/home">
         <div className='flex justify-center items-center'>
           <img 
-            src='../../../public/img/birble.png'
+            src='/img/birble.png'
             className='w-[32px] h-auto m-[10px]'
           />
 
