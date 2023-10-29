@@ -5,12 +5,12 @@ import {Outlet} from 'react-router-dom'
 // IMPORTING NECESSARY COMPONENTS
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer/Footer'
-import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
+//import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
 import LinkSidePanel from '../components/linkSidePanel/LinkSidePanel'
 import SearchBar from "../components/searchBar/SearchBar";
 
 // // IMPORTING NECESSARY HOOKS
- import WalletSidePanelContextHook from "../hooks/WalletSidePanelContextHook";
+ //import WalletSidePanelContextHook from "../hooks/WalletSidePanelContextHook";
 
 // EXPORTING A ROOTLAYOUT FUNCTION
 export default function RootLayout(){
@@ -25,7 +25,7 @@ export default function RootLayout(){
     })
 
     // OBTAINING VARIOUS CONTEXTS FROM HOOKS
-    const {showWalletPanel, dispatch} = WalletSidePanelContextHook()
+    //const {showWalletPanel, dispatch} = WalletSidePanelContextHook()
 
     // A FUNCTION TO UPDATE FORMDATA
     function updateFormData(e){
@@ -51,12 +51,12 @@ export default function RootLayout(){
                 />
             }
 
-            {
+            {/* {
                 showWalletPanel && <WalletSidePanel hideWalletSidePanel = {() => dispatch({ type: "HIDE_WALLET_PANEL" })}/>
-            }
+            } */}
 
             <Navbar 
-                showWalletSidePanel = {() => dispatch({ type: "SHOW_WALLET_PANEL" })}
+                // showWalletSidePanel = {() => dispatch({ type: "SHOW_WALLET_PANEL" })}
                 showLinkSidePanel = {() => setShowLinkSidePanel(true)}
                 showSearchBar = {() => setShowSearchBar(true)}
              />

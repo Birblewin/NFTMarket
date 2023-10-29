@@ -2,6 +2,10 @@
 // IMPORING NECESSARY MODULES
 import { NavLink } from 'react-router-dom';
 
+// connect wallet functionality by mkrs
+import { useWeb3Modal } from '@web3modal/react'; // Import the useWeb3Modal hook
+
+
 //  IMPORING NECESSARY COMPONENTS
 import SearchIcon from '@mui/icons-material/Search';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -9,6 +13,23 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
+
+
+// Use the useWeb3Modal hook to access the open and close functions
+const { open } = useWeb3Modal();
+
+// Function to connect the wallet
+const connectWallet = async () => {
+  try {
+    // Open the wallet modal using the open function from useWeb3Modal
+    await open();
+  } catch (error) {
+    console.error('Error connecting to wallet:', error);
+  }
+
+  
+};
+
   return (
     <div className='navbar flex items-center bg-[#111111] text-white pb-[20px] h-[95px] p-[10px] mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between'>
       <NavLink to="/home">
@@ -73,7 +94,7 @@ export default function Navbar(props) {
         <div className='medium-screen-buttons__button-container sm:flex sm:justify-center sm:items-center sm:gap-[15px]'>
           <button 
             className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
-            onClick={props.showWalletSidePanel}
+            // onClick={props.showWalletSidePanel}
             title='show-wallet'
           >
             <img 
@@ -88,7 +109,7 @@ export default function Navbar(props) {
           <button 
             className='small-screen-buttons__side-panel-button w-[45px] h-[45px] rounded-full bg-small-screen-buttons__search-button border-[2px] border-solid border-small-screen-buttons__search-button p-[4px] flex justify-center items-center flex-col'
             title='show-sidebar'
-            onClick={props.showLinkSidePanel}
+             onClick={props.showLinkSidePanel}
           >
             <div className='w-[20px] bg-[whitesmoke] rounded-[10px] h-[3px] my-[2px] mx-0 cursor-pointer transition-all duration-500 ease-in-out'></div>
             <div className='w-[20px] bg-[whitesmoke] rounded-[10px] h-[3px] my-[2px] mx-0 cursor-pointer transition-all duration-500 ease-in-out'></div>
@@ -109,7 +130,7 @@ export default function Navbar(props) {
           />
         </div>
 
-        <div className="nav-links items-center flex my-0 mr-[20px] ml-[30.104px] p-0 pl-[20px] justify-evenly">
+        <div className="nav-links items-center flex my-0 mr-[10px] ml-[10.104px] p-0 pl-[0px] justify-evenly">
           <div>
             <NavLink className='rewards m-0 mr-[32px] text-[#FFDB24] font-[Inter] font-[400] leading-normal text-[14px]' to="/rewards">Rewards</NavLink>
           </div>
@@ -203,7 +224,7 @@ export default function Navbar(props) {
           
           <button 
             className='text-[#000000] text-[14px] bg-[#FFDB24] py-[12px] px-[8px] border-none rounded-[10px] m-[10px] ml-[25px] transition-all duration-500 ease-in-out cursor-pointer active:scale-[0.8] active:opacity-[0.7]'
-            onClick={props.showWalletSidePanel}
+            onClick={connectWallet}
           >Connect wallet</button>
       </div>  
     </div>
