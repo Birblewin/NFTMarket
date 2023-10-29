@@ -56,9 +56,9 @@ export default {
         'overview-container__partnerships': 'rgb(255, 255, 255)',
 
       },
+      
       width: {
         '90': '90vw'
-
       }
     },
   },
