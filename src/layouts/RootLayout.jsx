@@ -40,7 +40,10 @@ export default function RootLayout(){
     return(
         <main className="min-h-[100vh] scroll-smooth relative w-[100%] overflow-x-hidden">
             {
-                showLinkSidePanel && <LinkSidePanel hideLinkSidePanel = {() => setShowLinkSidePanel(false)}/>
+                showLinkSidePanel && <LinkSidePanel 
+                    hideLinkSidePanel = {() => setShowLinkSidePanel(false)}
+                    showLinkSidePanel = {showLinkSidePanel}
+                />
             }           
 
             {   
