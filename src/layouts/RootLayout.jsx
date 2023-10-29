@@ -1,5 +1,5 @@
 // IMPORTING NECESSARY MODULES
-import  { useState } from 'react';
+import  {useState } from 'react';
 import {Outlet} from 'react-router-dom'
 
 // IMPORTING NECESSARY COMPONENTS

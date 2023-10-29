@@ -221,7 +221,7 @@ const connectWallet = async () => {
           
           <button 
             className='text-[#000000] text-[14px] bg-[#FFDB24] py-[12px] px-[8px] border-none rounded-[10px] m-[10px] ml-[25px] transition-all duration-500 ease-in-out cursor-pointer active:scale-[0.8] active:opacity-[0.7]'
-            onClick={connectWallet}
+            onClick={() => connectWallet()}
           >Connect wallet</button>
       </div>  
     </div>
