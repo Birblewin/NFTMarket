@@ -17,7 +17,7 @@ import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
  import { configureChains, createConfig, WagmiConfig } from 'wagmi'
  import { arbitrum, mainnet, polygon } from 'wagmi/chains'
  
- const chains = [arbitrum, mainnet, polygon]
+ const chains = [arbitrum, mainnet, polygon,]
  const projectId = 'a0879b9bbc96eb062ae8c28089833657'
  
  const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
@@ -52,8 +52,8 @@ const appRouter = createBrowserRouter(
 export default function App(){
   return(
     <div>
-       <WagmiConfig config={wagmiConfig}>
-       <RouterProvider router={appRouter}/>
+      <WagmiConfig config={wagmiConfig}>
+        <RouterProvider router={appRouter}/>
       </WagmiConfig>
 
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
