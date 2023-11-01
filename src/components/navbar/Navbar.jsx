@@ -91,7 +91,7 @@ const connectWallet = async () => {
         <div className='medium-screen-buttons__button-container sm:flex sm:justify-center sm:items-center sm:gap-[15px]'>
           <button 
             className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
-            // onClick={props.showWalletSidePanel}
+            onClick={props.showWalletSidePanel}
             title='show-wallet'
           >
             <img 
@@ -221,7 +221,7 @@ const connectWallet = async () => {
           
           <button 
             className='text-[#000000] text-[14px] bg-[#FFDB24] py-[12px] px-[8px] border-none rounded-[10px] m-[10px] ml-[25px] transition-all duration-500 ease-in-out cursor-pointer active:scale-[0.8] active:opacity-[0.7]'
-            onClick={() => connectWallet()}
+            onClick={props.showWalletSidePanel}
           >Connect wallet</button>
       </div>  
     </div>

@@ -263,7 +263,7 @@ export default function Launchpadcontainer(){
 
                 <button
                   className='my-[10px] mx-auto w-[95%] h-[44px] text-center p-[10px] bg-container__content-container--paying_stats--button text-container__selling_stats font-medium cursor-pointer transition-all duration-500 ease-in-out rounded-[20px] active:scale-[1.11] active:bg-[aqua] active:text-black' 
-                  onClick={() => connectWallet()}
+                  onClick={() => dispatch({ type: "SHOW_WALLET" })}
                 >Connect Wallet</button>
               </div>
             </div>
