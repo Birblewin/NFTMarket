@@ -8,6 +8,7 @@ import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
+import Team from './pages/Team/Team';
 
  import RootLayout from './layouts/RootLayout'
 
@@ -39,6 +40,8 @@ const appRouter = createBrowserRouter(
       <Route path='allNFTs' element={<AllNftsPage/>}></Route>
       <Route path='rewards' element={<RewardsPage/>}></Route>
       <Route path='/home' element={<Home/>}></Route>
+      <Route path='/team' element={<Team/>}></Route>
+      
       
       <Route path='launchpad'>
         <Route path='launches' element={<LaunchesPage/>}></Route>
