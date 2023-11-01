@@ -1,8 +1,13 @@
 // IMPORTING REACT ROUTER
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 
+import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi/react'
+
+import { WagmiConfig } from 'wagmi'
+import { arbitrum, mainnet } from 'wagmi/chains'
+
 // IMPORTING THE NECESSARY PAGES AND LAYOUTS
- import AllCollections from './pages/AllCollections/AllCollections';
+import AllCollections from './pages/AllCollections/AllCollections';
 import AllNftsPage from './pages/AllNft/AllNft';
 import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
@@ -10,23 +15,22 @@ import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
 import RootLayout from './layouts/RootLayout'
 
-import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
-import { Web3Modal } from '@web3modal/react'
-import { configureChains, createConfig, WagmiConfig } from 'wagmi'
-import { arbitrum, mainnet, polygon } from 'wagmi/chains'
-
-const chains = [arbitrum, mainnet, polygon,]
+// 1. Get projectId
 const projectId = 'a0879b9bbc96eb062ae8c28089833657'
 
-const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
+// 2. Create wagmiConfig
+const metadata = {
+  name: 'Web3Modal',
+  description: 'Web3Modal Component',
+  url: 'https://web3modal.com',
+  icons: ['https://avatars.githubusercontent.com/u/37784886']
+}
 
-const wagmiConfig = createConfig({
-  autoConnect: true,
-  connectors: w3mConnectors({ projectId, chains }),
-  publicClient
-})
+const chains = [mainnet, arbitrum]
+const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata })
 
-const ethereumClient = new EthereumClient(wagmiConfig, chains)
+// 3. Create modal
+createWeb3Modal({ wagmiConfig, projectId, chains })
 
 // CREATING A APPROUTER FUNCTION
 const appRouter = createBrowserRouter(
@@ -53,9 +57,6 @@ export default function App(){
       <WagmiConfig config={wagmiConfig}>
         <RouterProvider router={appRouter}/>
       </WagmiConfig>
-
-      <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
-     
     </div>
   )
 }

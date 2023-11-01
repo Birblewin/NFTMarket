@@ -2,7 +2,7 @@
   // IMPORTING NECESSARY HOOKS
 import WalletSidePanelContextHook from '../../../hooks/WalletSidePanelContextHook'
 // connect wallet functionality by mkrs
-import { useWeb3Modal } from '@web3modal/react'; // Import the useWeb3Modal hook
+import { useWeb3Modal } from '@web3modal/wagmi/react' // Import the useWeb3Modal hook
   // IMPORT NECESSARY MODULES
 import { useSearchParams } from 'react-router-dom'
 import {formatDistance} from 'date-fns'
@@ -263,7 +263,7 @@ export default function Launchpadcontainer(){
 
                 <button
                   className='my-[10px] mx-auto w-[95%] h-[44px] text-center p-[10px] bg-container__content-container--paying_stats--button text-container__selling_stats font-medium cursor-pointer transition-all duration-500 ease-in-out rounded-[20px] active:scale-[1.11] active:bg-[aqua] active:text-black' 
-                  onClick={() => dispatch({ type: "SHOW_WALLET" })}
+                  onClick={() => connectWallet()}
                 >Connect Wallet</button>
               </div>
             </div>

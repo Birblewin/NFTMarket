@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
 // IMPORING NECESSARY MODULES
 import { NavLink } from 'react-router-dom';
-
-// connect wallet functionality by mkrs
-import { useWeb3Modal } from '@web3modal/react'; // Import the useWeb3Modal hook
+import { useWeb3Modal } from '@web3modal/wagmi/react'
 
 //  IMPORING NECESSARY COMPONENTS
 import SearchIcon from '@mui/icons-material/Search';
@@ -12,20 +10,17 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
-// Use the useWeb3Modal hook to access the open and close functions
-const { open } = useWeb3Modal();
+  const { open } = useWeb3Modal()
 
-// Function to connect the wallet
-const connectWallet = async () => {
-  try {
-    // Open the wallet modal using the open function from useWeb3Modal
-    await open();
-  } catch (error) {
-    console.error('Error connecting to wallet:', error);
+  // Function to connect the wallet
+  const connectWallet = async () => {
+    try {
+      // Open the wallet modal using the open function from useWeb3Modal
+      await open();
+    }catch (error) {
+      console.error('Error connecting to wallet:', error);
+    }
   }
-
-  
-};
 
   return (
     <div className='navbar flex items-center bg-[#111111] text-white pb-[20px] h-[95px] p-[10px] mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between'>
@@ -53,7 +48,7 @@ const connectWallet = async () => {
 
         <button 
           className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
-          onClick={props.showWalletSidePanel}
+          onClick={() => connectWallet()}
           title='show-wallet'
         >
           <img 
@@ -91,7 +86,7 @@ const connectWallet = async () => {
         <div className='medium-screen-buttons__button-container sm:flex sm:justify-center sm:items-center sm:gap-[15px]'>
           <button 
             className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
-            onClick={props.showWalletSidePanel}
+            onClick={() => connectWallet()}
             title='show-wallet'
           >
             <img 
@@ -221,7 +216,7 @@ const connectWallet = async () => {
           
           <button 
             className='text-[#000000] text-[14px] bg-[#FFDB24] py-[12px] px-[8px] border-none rounded-[10px] m-[10px] ml-[25px] transition-all duration-500 ease-in-out cursor-pointer active:scale-[0.8] active:opacity-[0.7]'
-            onClick={props.showWalletSidePanel}
+            onClick={() => connectWallet()}
           >Connect wallet</button>
       </div>  
     </div>
