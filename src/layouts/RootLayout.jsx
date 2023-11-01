@@ -56,7 +56,6 @@ export default function RootLayout(){
             {
                 showWalletPanel && <WalletSidePanel 
                     hideWalletSidePanel = {() => dispatch({ type: "HIDE_WALLET_PANEL" })}
-                    showLinkSidePanel = {showLinkSidePanel}
                 />
             }
 
