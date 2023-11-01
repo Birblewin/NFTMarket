@@ -6,7 +6,7 @@
     // CREATING A LINKSIDEPANEL FUNCTION THAT RETURNS THE SIDE PANEL
     export default function LinkSidePanel(props){
         return(
-            <div className='absolute w-[100%] h-[100%] z-[1] bg-link-side-panel-container transition-all duration-500 ease-in-out'>
+            <div className='absolute w-[100%] h-[100%] z-10 bg-link-side-panel-container transition-all duration-500 ease-in-out'>
                 <div className='absolute right-0 h-[100%] flex flex-col gap-[10px] w-[380px] bg-link-side-panel-container__side-panel rounded-bl-[5px] rounded-tl-[5px] transition-all duration-500 ease-in-out shadow-link-side-panel-container__side-panel p-[10px] items-start'>
                     <nav className='flex justify-between w-[100%] p-[10px] mb-[15px] border-b-[2px] border-b-link-side-panel-container__side-panel--navbar pb-[20px] rounded-b-[2px]'>
                         <div className='flex justify-center items-center gap-[10px] text-center'>

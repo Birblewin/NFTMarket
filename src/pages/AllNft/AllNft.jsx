@@ -50,7 +50,7 @@ function AllNfts() {
                 </div>
                
               </div>
-              <div className="vertical-line h-14 py-0 mr-3 w-0.5  bg-slate-400 "></div>
+              <div className="vertical-line h-14 py-0 mr-3 w-0.5 bg-slate-400 "></div>
               
               <div className="cursor-pointer" onClick={toggleModal}>
                 <div className="flex items-center relative ">
@@ -104,7 +104,7 @@ function AllNfts() {
                     </div>
                    
                     <div className="lg:ml-3 mt-3 sm:ml-0">
-                    <div className="vertical-line absolute h-20 py-0 mx-0 top-48  w-0.5  bg-slate-400 "></div>
+                    <div className="vertical-line absolute h-20 py-0 mx-0 top-0  w-0.5  bg-slate-400 "></div>
                       <span className="verified flex justify-center text-center items-center text-white font-bold m-1">
                         Verified Only
                         <Icon icon="fluent:checkmark-starburst-16-filled" color="#75a8f9" width="16" height="16" />

@@ -14,7 +14,7 @@ export default function CarouselEntry(props){
                     loading="lazy"
                     width={200}
                     height={200}
-                    className='w-[90%] h-[90%] rounded-[10px] sm:w-full sm:h-[130%] lg:w-full lg:h-full'
+                    className='w-[85%] h-[90%] rounded-[10px] sm:w-full sm:h-[130%] lg:w-fit lg:h-full'
                 />
                 
                 <div className="flex flex-col justify-center items-start gap-[10px]">

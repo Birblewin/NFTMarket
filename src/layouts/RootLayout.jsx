@@ -40,7 +40,9 @@ export default function RootLayout(){
     return(
         <main className="min-h-[100vh] scroll-smooth relative w-[100%] overflow-x-hidden">
             {
-                showLinkSidePanel && <LinkSidePanel hideLinkSidePanel = {() => setShowLinkSidePanel(false)}/>
+                showLinkSidePanel && <LinkSidePanel 
+                    hideLinkSidePanel = {() => setShowLinkSidePanel(false)}
+                />
             }           
 
             {   
@@ -52,7 +54,10 @@ export default function RootLayout(){
             }
 
             {
-                showWalletPanel && <WalletSidePanel hideWalletSidePanel = {() => dispatch({ type: "HIDE_WALLET_PANEL" })}/>
+                showWalletPanel && <WalletSidePanel 
+                    hideWalletSidePanel = {() => dispatch({ type: "HIDE_WALLET_PANEL" })}
+                    showLinkSidePanel = {showLinkSidePanel}
+                />
             }
 
             <Navbar 
