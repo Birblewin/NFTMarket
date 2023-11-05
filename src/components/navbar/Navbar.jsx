@@ -3,32 +3,16 @@
 import { NavLink } from 'react-router-dom';
 import { useWeb3Modal } from '@web3modal/wagmi/react'
 import { useState } from 'react';
-
-
 // import { useWallet } from '@meshsdk/react';
 
 //  IMPORING NECESSARY COMPONENTS
 import SearchIcon from '@mui/icons-material/Search';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-
-
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
-
-
-
-
-
 
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
-
- 
-
-
-  
-
   const { open } = useWeb3Modal()
 
   // Function to connect the wallet

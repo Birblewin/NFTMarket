@@ -55,23 +55,13 @@ const appRouter = createBrowserRouter(
 
 // CREATING AN APP FUNCTION
 export default function App(){
-
-  
-
-
- 
-   
-  
   return(
-    
     <div>
-      
       <MeshProvider>
       <WagmiConfig config={wagmiConfig}>
          <RouterProvider router={appRouter}/>
       </WagmiConfig>
       </MeshProvider>
-   
     </div>
   )
 }
