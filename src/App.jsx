@@ -1,10 +1,12 @@
 // IMPORTING REACT ROUTER
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
-
+//import React from 'react'
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi/react'
-
+import { MeshProvider } from "@meshsdk/react";
 import { WagmiConfig } from 'wagmi'
 import { arbitrum, mainnet } from 'wagmi/chains'
+
+//
 
 // IMPORTING THE NECESSARY PAGES AND LAYOUTS
 import AllCollections from './pages/AllCollections/AllCollections';
@@ -32,6 +34,7 @@ const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata })
 // 3. Create modal
 createWeb3Modal({ wagmiConfig, projectId, chains })
 
+
 // CREATING A APPROUTER FUNCTION
 const appRouter = createBrowserRouter(
   createRoutesFromElements(
@@ -52,11 +55,23 @@ const appRouter = createBrowserRouter(
 
 // CREATING AN APP FUNCTION
 export default function App(){
+
+  
+
+
+ 
+   
+  
   return(
+    
     <div>
+      
+      <MeshProvider>
       <WagmiConfig config={wagmiConfig}>
-        <RouterProvider router={appRouter}/>
+         <RouterProvider router={appRouter}/>
       </WagmiConfig>
+      </MeshProvider>
+   
     </div>
   )
 }
