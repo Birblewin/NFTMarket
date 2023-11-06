@@ -23,7 +23,8 @@ export default {
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)',
         'description--buttons--link++hover': 'rgb(255, 255, 255, 0.7)',
         'carousel-container__button++hover': 'rgba(255, 255, 255, 0.5)',
-        'greenish':'#093030'
+        'greenish':'#093030',
+        'blackish':'#18191b'
       },
 
       boxShadow: { 
@@ -44,7 +45,8 @@ export default {
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(20, 20, 20)',
         'text-green':'#31c48d',
-        'text-gray':'#9ca3af'
+        'text-gray':'#9ca3af',
+        'border-gray':'#2f3641'
       },
 
       borderColor: {
