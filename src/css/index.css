@@ -51,7 +51,20 @@
   .banner{
     background-color: #382e00;
   }
+ .animateModal1{
+  animation-name: animateModal1;
+  animation-duration: 0.5s;
+ }
+ @keyframes animateModal1 {
+  from {
+   right: -300px;
+    
+  }
+  to {
+    right: 0;
  
+  }
+}
   @media screen and (max-width: 640px){
     .cards{
       display: grid;
@@ -117,5 +130,7 @@
         margin-top: 10%;
         margin-bottom: 20px;
     }
+
+   
 }
   

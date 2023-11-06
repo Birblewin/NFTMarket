@@ -1,6 +1,8 @@
 // IMPORTING NECESSARY FILES
   // IMPORTING NECESSARY HOOKS
 import WalletSidePanelContextHook from '../../../hooks/WalletSidePanelContextHook'
+// connect wallet functionality by mkrs
+import { useWeb3Modal } from '@web3modal/wagmi/react' // Import the useWeb3Modal hook
   // IMPORT NECESSARY MODULES
 import { useSearchParams } from 'react-router-dom'
 import {formatDistance} from 'date-fns'
@@ -11,6 +13,8 @@ import { launchpadCollectionsData } from '../../../database/launchpadCollections
 export default function Launchpadcontainer(){
   // GETTING GLOBAL CONTEXTS FROM HOOKS
   const {dispatch} = WalletSidePanelContextHook()
+  // Use the useWeb3Modal hook to access the open and close functions
+  const { open } = useWeb3Modal();
   // GETTING THE QUERY PARAMETERS FROM THE USESEARCHPARAMS FUNCTION
   const [searchParams] = useSearchParams()
   // GETTING THE DISTANCE BETWEEN THE DATE OF PRODUCTION AND NOW
@@ -50,6 +54,16 @@ export default function Launchpadcontainer(){
     // IF NO QUERY IS PASSED, THROW AN ERROR
     }else{
       throw new Error("Invalid query parameter")
+    }
+  }
+
+  // Function to connect the wallet
+  const connectWallet = async () => {
+    try {
+      // Open the wallet modal using the open function from useWeb3Modal
+      await open();
+    }catch (error) {
+      console.error('Error connecting to wallet:', error);
     }
   }
 
@@ -249,7 +263,7 @@ export default function Launchpadcontainer(){
 
                 <button
                   className='my-[10px] mx-auto w-[95%] h-[44px] text-center p-[10px] bg-container__content-container--paying_stats--button text-container__selling_stats font-medium cursor-pointer transition-all duration-500 ease-in-out rounded-[20px] active:scale-[1.11] active:bg-[aqua] active:text-black' 
-                  onClick={() => dispatch({ type: "SHOW_WALLET_PANEL" })}
+                  onClick={() => connectWallet()}
                 >Connect Wallet</button>
               </div>
             </div>

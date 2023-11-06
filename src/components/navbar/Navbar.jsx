@@ -1,21 +1,22 @@
 /* eslint-disable react/prop-types */
 /** @jsxImportSource theme-ui */
 // IMPORING NECESSARY MODULES
-import { NavLink } from "react-router-dom";
-import { useColorMode } from "theme-ui";
 
-// connect wallet functionality by mkrs
-import { useWeb3Modal } from "@web3modal/react"; // Import the useWeb3Modal hook
+import { NavLink } from 'react-router-dom';
+  import { useColorMode } from "theme-ui";
+import { useWeb3Modal } from '@web3modal/wagmi/react'
+import { useState } from 'react';
+// import { useWallet } from '@meshsdk/react';
 
 //  IMPORING NECESSARY COMPONENTS
-import SearchIcon from "@mui/icons-material/Search";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+import SearchIcon from '@mui/icons-material/Search';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
-  // Use the useWeb3Modal hook to access the open and close functions
-  const { open } = useWeb3Modal();
+  const { open } = useWeb3Modal()
   const [colorMode, setColorMode] = useColorMode();
 
   // Function to connect the wallet
@@ -23,16 +24,24 @@ export default function Navbar(props) {
     try {
       // Open the wallet modal using the open function from useWeb3Modal
       await open();
-    } catch (error) {
-      console.error("Error connecting to wallet:", error);
+
+    }catch (error) {
+      console.error('Error connecting to wallet:', error);
     }
+  }
+
+  const [showAdditionalButtons, setShowAdditionalButtons] = useState(false);
+  const toggleAdditionalButtons = () => {
+    setShowAdditionalButtons(!showAdditionalButtons);
   };
 
-  return (
+
+
+ return (
     <div
       className="navbar flex items-center  pb-[20px] h-[95px] p-[10px] mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between "
       sx={{ bg: "bgBlack", color: "text" }}
-    >
+
       <NavLink to="/home">
         <div className="flex justify-center items-center">
           <img src="/img/birble.png" className="w-[32px] h-auto m-[10px]" />
@@ -54,10 +63,12 @@ export default function Navbar(props) {
           />
         </button>
 
-        <button
-          className="w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center"
-          onClick={props.showWalletSidePanel}
-          title="show-wallet"
+
+        <button 
+          className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
+           onClick={toggleAdditionalButtons}
+          title='show-wallet'
+
         >
           <img
             crossOrigin="anonymous"
@@ -91,11 +102,13 @@ export default function Navbar(props) {
           />
         </div>
 
-        <div className="medium-screen-buttons__button-container sm:flex sm:justify-center sm:items-center sm:gap-[15px]">
-          <button
-            className="w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center"
-            // onClick={props.showWalletSidePanel}
-            title="show-wallet"
+
+        <div className='medium-screen-buttons__button-container sm:flex sm:justify-center sm:items-center sm:gap-[15px]'>
+          <button 
+            className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
+             onClick={toggleAdditionalButtons}
+            title='show-wallet'
+
           >
             <img
               crossOrigin="anonymous"
@@ -130,7 +143,7 @@ export default function Navbar(props) {
           />
         </div>
 
-        <div className="nav-links items-center flex my-0 mr-[10px] ml-[10.104px] p-0 pl-[0px] justify-evenly">
+        <div className="nav-links  items-center flex my-0 mr-[10px] ml-[10.104px] p-0 pl-[0px] justify-evenly">
           <div>
             <NavLink
               className="rewards m-0 mr-[32px] text-[#FFDB24] font-[Inter] font-[400] leading-normal text-[14px]"
@@ -243,16 +256,28 @@ export default function Navbar(props) {
             <NotificationsIcon className="text-[#9CA3AF] cursor-pointer" />
           </span>
 
-          <div className="text-[#9CA3AF] text-[16px]">EN</div>
 
-          <button
-            className="text-[#000000] text-[14px] bg-[#FFDB24] py-[12px] px-[8px] border-none rounded-[10px] m-[10px] ml-[25px] transition-all duration-500 ease-in-out cursor-pointer active:scale-[0.8] active:opacity-[0.7]"
-            onClick={connectWallet}
-          >
-            Connect wallet
-          </button>
-        </div>
+          <div className='text-[#9CA3AF] text-[16px]' onClick={props.toggleLanguage}>
+        EN
       </div>
+          
+          <button 
+            className='text-[#000000] flex text-[14px] bg-[#FFDB24] py-[8px] px-[4px] border-none rounded-[8px] m-[0px] ml-[3px] transition-all duration-500 ease-in-out cursor-pointer active:scale-[0.8] active:opacity-[0.7]'
+            onClick={toggleAdditionalButtons}
+          ><span>Connect wallet </span><span><KeyboardArrowDownIcon className='m-0 p-0 -ml-1'/></span></button>
+
+         
+      </div>  
+      
     </div>
+    {showAdditionalButtons && (
+        <div className="additional-buttons absolute top-14 right-0 mt-[10px] mr-5 flex flex-col space-y-2 ">
+          
+          <button  onClick={props.toggleCardanoModal} className="additional-button text-[#ffffff] text-[14px] bg-[#1864F8] py-[8px] px-[4px] border-none rounded-[8px]">Cardano wallet</button>
+         
+          <button onClick={connectWallet} className="additional-button text-[#ffffff] text-[14px] bg-[#1864F8] py-[8px] px-[4px] border-none rounded-[8px]" >Etherium wallet</button>
+        </div>
+      )}
+  </div>
   );
 }

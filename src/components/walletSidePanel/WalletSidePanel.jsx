@@ -58,6 +58,14 @@ export default function WalletSidePanel(props){
             
             title={
                 <figure className="font-[Lexend] text-left text-white flex flex-col gap-[10px] items-start bg-black">
+                    <img 
+                            crossOrigin="anonymous" 
+                            src="https://static.jpgstoreapis.com/icons/close-dark.svg" 
+                            alt="close"
+                            onClick={props.hideWalletSidePanel}
+                            className='w-[24px] h-[24px] cursor-pointer transition-all duration-500 ease-in-out'
+                    />
+
                     <h3 className='text-[24px] font-[500] leading-[32px]'>Connect Wallet</h3>
                     
                     <figcaption className='side_panel--title--description'>

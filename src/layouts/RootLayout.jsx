@@ -7,7 +7,13 @@ import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
 import LinkSidePanel from '../components/linkSidePanel/LinkSidePanel'
-import SearchBar from "../components/searchBar/SearchBar";
+import SearchBar from "../components/searchBar/SearchBar"
+
+import ConnectWallet  from './cardano';
+
+
+
+
 
 // // IMPORTING NECESSARY HOOKS
  import WalletSidePanelContextHook from "../hooks/WalletSidePanelContextHook";
@@ -37,6 +43,17 @@ export default function RootLayout(){
         }))
     }
 
+   
+  
+    const [isCardanoModalOpen, setIsCardanoModalOpen] = useState(false); // State to manage the Cardano modal
+
+    // Function to open or close the Cardano modal
+    const toggleCardanoModal = () => {
+      setIsCardanoModalOpen(!isCardanoModalOpen);
+    };
+ 
+
+
     return(
         <main className="min-h-[100vh] scroll-smooth relative w-[100%] overflow-x-hidden">
             {
@@ -56,7 +73,6 @@ export default function RootLayout(){
             {
                 showWalletPanel && <WalletSidePanel 
                     hideWalletSidePanel = {() => dispatch({ type: "HIDE_WALLET_PANEL" })}
-                    showLinkSidePanel = {showLinkSidePanel}
                 />
             }
 
@@ -64,9 +80,19 @@ export default function RootLayout(){
                 showWalletSidePanel = {() => dispatch({ type: "SHOW_WALLET_PANEL" })}
                 showLinkSidePanel = {() => setShowLinkSidePanel(true)}
                 showSearchBar = {() => setShowSearchBar(true)}
+                // toggleLanguage={toggleLanguage}
+                // currentLanguage={currentLanguage}
+               
+                toggleCardanoModal={toggleCardanoModal}
              />
 
-             <Outlet/>
+          {/* <IntlProvider locale={currentLanguage} messages={locales[currentLanguage]}> */}
+          {isCardanoModalOpen && <ConnectWallet closeModal={toggleCardanoModal} />}
+              <Outlet
+              
+              />
+         {/* </IntlProvider> */}
+             
              <Footer/>
          </main>
      )
