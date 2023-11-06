@@ -9,6 +9,12 @@ import Home from './pages/Home';
 import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
 import Team from './pages/Team/Team';
+import Verification from './pages/Verification/Verification';
+import Mining from './pages/Mining/Mining';
+import Impact from './pages/Impact/Impact';
+import Faq from './pages/FAQ/Faq';
+import TnC from './pages/T&C/T&C';
+import PPolicy from './pages/PrivacyPolicy/PPolicy';
 
  import RootLayout from './layouts/RootLayout'
 
@@ -41,6 +47,12 @@ const appRouter = createBrowserRouter(
       <Route path='rewards' element={<RewardsPage/>}></Route>
       <Route path='/home' element={<Home/>}></Route>
       <Route path='/team' element={<Team/>}></Route>
+      <Route path='/verification' element={<Verification/>}></Route>
+      <Route path='/mining' element={<Mining/>}></Route>
+      <Route path='/impact' element={<Impact/>}></Route>
+      <Route path='/FAQ' element={<Faq/>}></Route>
+      <Route path='/T&C' element={<TnC/>}></Route>
+      <Route path='/privacy-policy' element={<PPolicy/>}></Route>
       
       
       <Route path='launchpad'>
