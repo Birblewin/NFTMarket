@@ -25,17 +25,20 @@ export default function Footer(){
                 <p className="footer__description--description text-gray-400 font-inter text-base font-normal leading-normal whitespace-normal max-w-prose">Birble is the largest Cardano NFT marketplace. We believe in people, planet, & purpose before profit. We believe in endlessly supporting creators. We believe in YOU. Join us in our mission to create a brighter future for all.</p>
                 
                 <div className="footer__description--social_links flex justify-between items-center mt-5">
-                    <NavLink to="https://www.instagram.com" className="footer__description--social_links--link mr-1 cursor-pointer border-r border-white px-2 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
-                    <Icon icon="ri:instagram-fill" width={35} height={35}/>
+                    <NavLink to="https://github.com/Birblewin" className="footer__description--social_links--link mr-1 cursor-pointer  border-white px-3 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
+                    <Icon icon="ant-design:github-filled" color="#9ca3af" width="26" height="26" />
                     </NavLink>
-                    <NavLink to="https://www.facebook.com" className="footer__description--social_links--link mr-1 cursor-pointer border-r border-white px-2 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
-                    <Icon icon="ic:baseline-facebook" width={35} height={35}/>  
+                    <NavLink to="https://www.facebook.com/profile.php?id=100085621089512" className="footer__description--social_links--link mr-1 cursor-pointer  border-white px-3 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
+                    <Icon icon="logos:discord-icon" width="26" height="26" /> 
                     </NavLink>
-                    <NavLink to="https://www.telegram.com" className="footer__description--social_links--link mr-1 cursor-pointer border-r border-white px-2 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
-                    <Icon icon="ic:baseline-telegram" width={35} height={35}/>
+                    <NavLink to="https://t.me/birblemain" className="footer__description--social_links--link mr-1 cursor-pointer  border-white px-3 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
+                    <Icon icon="logos:telegram" width="26" height="26" />
                     </NavLink>
-                    <NavLink to="https://www.x.com" className="footer__description--social_links--link mr-1 cursor-pointer border-r border-white px-2 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
-                    <Icon icon="ic:baseline-facebook" width={35} height={35}/>
+                    <NavLink to="https://x.com/Birble_AI" className="footer__description--social_links--link mr-1 cursor-pointer  border-white px-3 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
+                    <Icon icon="pajamas:twitter" color="#9ca3af" width="26" height="26" />
+                    </NavLink>
+                    <NavLink to="https://www.linkedin.com/in/birble-ai-3a73a8250/" className="footer__description--social_links--link mr-1 cursor-pointer  border-white px-3 py-0.5 w-full h-full bg-transparent transition-transform hover:scale-125 transform scale-125 " target='_blank'>
+                    <Icon icon="skill-icons:linkedin" width="26" height="26" />
                     </NavLink>
                 </div>
             </div>
@@ -50,17 +53,17 @@ export default function Footer(){
 
             <div className='footer__list  flex flex-col justify-center items-start gap-3 mt-[-100px] pr-5 '>
                 <h3 className="footer__list--title text-gray-600 font-inter text-xl  font-semibold leading-normal">Creators</h3>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/'>Verification</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/'>NFT Mining</a>
+                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/verification'>Verification</a>
+                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/mining'>NFT Mining</a>
             </div>
 
             <div className='footer__list about grid mt-[-50px]'>
                 <h3 className="footer__list--title text-gray-600 font-inter text-xl  font-semibold leading-normal">About</h3>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/'>Our Team</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/'>Our Impact</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/'>See FAQ</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/'>Terms and conditions</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/'>Privacy Policy</a>
+                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/team'>Our Team</a>
+                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/impact'>Our Impact</a>
+                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/FAQ'>See FAQ</a>
+                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/T&C'>Terms and conditions</a>
+                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/privacy-policy'>Privacy Policy</a>
             </div>
         </footer>
     )

@@ -10,15 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@iconify/react": "^4.1.1",
     "@meshsdk/core": "^1.5.7",
     "@meshsdk/react": "^1.1.8",
     "@mui/icons-material": "^5.14.11",
-    "@supabase/supabase-js": "^2.38.4",
+
+    "@mui/material": "^5.14.16",
     "@web3modal/ethereum": "^2.7.1",
+
+    "@supabase/supabase-js": "^2.38.4",
+    
     "@web3modal/react": "^2.7.1",
     "@web3modal/wagmi": "^3.2.0",
+
     "antd": "^5.10.2",
     "date-fns": "^2.30.0",
     "de": "file:./de.json",
@@ -39,9 +45,13 @@
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.17.0",
     "swiper": "^11.0.2",
+
+    "theme-ui": "^0.16.1",
+
     "viem": "^1.18.2",
     "wagmi": "^1.4.5",
     "zh": "file:./zh.json"
+
   },
   "devDependencies": {
     "@iconify/react": "^4.1.1",

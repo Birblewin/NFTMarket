@@ -1,32 +1,83 @@
-/* eslint-disable react/display-name */
-/* eslint-disable react/prop-types */
-import { useImperativeHandle, useState, forwardRef } from 'react'
-import { createPortal } from 'react-dom'
+// import { useImperativeHandle, useState, ReactNode, forwardRef } from 'react'
+// import { createPortal } from 'react-dom'
+// import React from 'react'
 
-export default function Modal(){
-	forwardRef(({ children }, ref) => {
-		const [display, setDisplay] = useState(false)
+// export type ModalHandler = {
+// 	openModal: () => void
+// 	closeModal: () => void
+// }
 
-		useImperativeHandle(ref, () => {
-			return { openModal: () => open(), closeModal: () => close() }
-		})
+// type ModalProps = {
+// 	children: ReactNode
+// }
 
-		const open = () => {
-			setDisplay(true)
-		}
+// const Modal = forwardRef<ModalHandler, ModalProps>(({ children }, ref) => {
+// 	const [display, setDisplay] = useState<boolean>(false)
 
-		const close = () => {
-			setDisplay(false)
-		}
+// 	useImperativeHandle(ref, () => {
+// 		return { openModal: () => open(), closeModal: () => close() }
+// 	})
 
-		if (display) {
-			return createPortal(
-				<div className='modal'>
-					<div className='modal__content'>{children}</div>
-				</div>,
-				document.getElementById('modal-root')
-			)
-		}
+// 	const open = (): void => {
+// 		setDisplay(true)
+// 	}
 
-		return null
-})}
+// 	const close = (): void => {
+// 		setDisplay(false)
+// 	}
+
+// 	if (display) {
+// 		return createPortal(
+// 			<div className='modal'>
+// 				<div className='modal__content'>{children}</div>
+// 			</div>,
+// 			document.getElementById('modal-root') as Element
+// 		)
+// 	}
+// 	return null
+// })
+
+// export default Modal
+
+import { useImperativeHandle, useState, forwardRef } from 'react';
+import { createPortal } from 'react-dom';
+import PropTypes from 'prop-types';
+
+const Modal = forwardRef(({ children }, ref) => {
+  const [display, setDisplay] = useState(false);
+
+  useImperativeHandle(ref, () => ({
+    openModal: () => open(),
+    closeModal: () => close(),
+  }));
+
+  const open = () => {
+    setDisplay(true);
+  };
+
+  const close = () => {
+    setDisplay(false);
+  };
+
+  const modalRoot = document.getElementById('modal-root');
+
+  if (display && modalRoot) {
+    return createPortal(
+      <div className='modal'>
+        <div className='modal__content'>{children}</div>
+      </div>,
+      modalRoot
+    );
+  }
+
+  return null;
+});
+
+Modal.displayName = 'Modal'; // Add a display name
+
+Modal.propTypes = {
+  children: PropTypes.node, // Prop type for 'children'
+};
+
+
+export default Modal;

@@ -6,7 +6,7 @@ const Table = () => {
   return (
     <div className="table">
       <div className="top-coll-header">
-          <h3>Top Collections</h3>
+          <h3 className="text-white">Top Collections</h3>
         
         <div className="total-time">
           <div className="total-bar">
