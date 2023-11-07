@@ -3,7 +3,7 @@
 // IMPORING NECESSARY MODULES
 
 import { NavLink } from 'react-router-dom';
-  import { useColorMode } from "theme-ui";
+ 
 import { useWeb3Modal } from '@web3modal/wagmi/react'
 import { useState } from 'react';
 // import { useWallet } from '@meshsdk/react';
@@ -17,7 +17,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
   const { open } = useWeb3Modal()
-  const [colorMode, setColorMode] = useColorMode();
+  
 
   // Function to connect the wallet
   const connectWallet = async () => {
@@ -38,15 +38,16 @@ export default function Navbar(props) {
 
 
  return (
+  <div>
     <div
-      className="navbar flex items-center  pb-[20px] h-[95px] p-[10px] mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between "
-      sx={{ bg: "bgBlack", color: "text" }}
+      className="navbar flex items-center  pb-[20px] h-[95px] p-[5px] pr-0 mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between ">
+      
 
       <NavLink to="/home">
         <div className="flex justify-center items-center">
           <img src="/img/birble.png" className="w-[32px] h-auto m-[10px]" />
 
-          <p className="ml-[-10px] mr-[30px] text-center  font-[Inter] text-[20px] font-[600] leading-normal sm:text-[24px] " sx={{color: 'text'}}>
+          <p className="ml-[-10px] mr-[30px] text-center  font-[Inter] text-[20px] font-[600] leading-normal sm:text-[24px] " >
             Birble.store
           </p>
         </div>
@@ -54,7 +55,7 @@ export default function Navbar(props) {
 
       <div className="small-screen-buttons flex justify-center items-center gap-[15px] sm:hidden">
         <button
-          className="w-[45px] h-[45px] rounded-full bg-small-screen-buttons__search-button border-[2px] border-solid border-small-screen-buttons__search-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out " sx={{color: 'primary'}}
+          className="w-[45px] h-[45px] rounded-full bg-small-screen-buttons__search-button border-[2px] border-solid border-small-screen-buttons__search-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out " 
           title="search-button"
         >
           <SearchIcon
@@ -247,7 +248,7 @@ export default function Navbar(props) {
           </div>
 
           <span className="m-0 mr-[20px] text-[#FFF] text-[14px] font-[400] leading-normal">
-            <button onClick={console.log(colorMode)}>
+            <button >
               <LightModeIcon className="text-[#FFDB24] cursor-pointer" />
             </button>
           </span>
@@ -262,7 +263,7 @@ export default function Navbar(props) {
       </div>
           
           <button 
-            className='text-[#000000] flex text-[14px] bg-[#FFDB24] py-[8px] px-[4px] border-none rounded-[8px] m-[0px] ml-[3px] transition-all duration-500 ease-in-out cursor-pointer active:scale-[0.8] active:opacity-[0.7]'
+            className='text-[#000000] flex text-[14px] bg-[#FFDB24] py-[8px] px-[4px] border-none rounded-[8px] m-[0px] ml-[5px] transition-all duration-500 ease-in-out cursor-pointer active:scale-[0.8] active:opacity-[0.7]'
             onClick={toggleAdditionalButtons}
           ><span>Connect wallet </span><span><KeyboardArrowDownIcon className='m-0 p-0 -ml-1'/></span></button>
 
@@ -278,6 +279,7 @@ export default function Navbar(props) {
           <button onClick={connectWallet} className="additional-button text-[#ffffff] text-[14px] bg-[#1864F8] py-[8px] px-[4px] border-none rounded-[8px]" >Etherium wallet</button>
         </div>
       )}
+  </div>
   </div>
   );
 }
