@@ -1,16 +1,4 @@
-import React from "react"
-
-type ButtonType = {
-	children?: React.ReactNode
-	loading?: boolean
-	onClick?(event?: React.MouseEvent): void
-	loadingIndicator?: string | React.ReactNode
-	variant?: string
-	size?: string
-	disabled?: boolean
-	noShadow?: boolean
-}
-
+/* eslint-disable react/prop-types */
 const Button = ({
 	onClick,
 	children,
@@ -20,7 +8,7 @@ const Button = ({
 	size,
 	disabled,
 	noShadow,
-}: ButtonType) => {
+}) => {
 	return (
 		<button
 			onClick={onClick}

@@ -1,11 +1,5 @@
-import React from 'react'
-
-type DropdownProps = {
-	title: string | React.ReactNode
-	children: React.ReactNode
-}
-
-const Dropdown = ({ title, children }: DropdownProps) => {
+/* eslint-disable react/prop-types */
+const Dropdown = ({ title, children }) => {
 	return (
 		<div className='dropdown'>
 			<div className='dropdown__button'>{title}</div>

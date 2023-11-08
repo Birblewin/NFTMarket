@@ -1,26 +1,20 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from 'react'
 import { useWallet, useWalletList } from '@meshsdk/react'
 import Button from './Button'
 import Dropdown from './Dropdown'
 import Image from 'next/image'
-import {ModalHandler} from './Modal'
 import Modal from './Modal'
-import React from 'react'
-
-interface Wallet {
-	name: string
-	icon: string
-}
 
 const ConnectWallet = ({ closeModal }) => {
 	const { connect, disconnect, connecting } = useWallet()
 	const wallets = useWalletList()
 
-	const [selectedWallet, setSelectedWallet] = useState<Wallet | null>(null)
-	const [connectionError, setConnectionError] = useState<string | null>(null)
+	const [selectedWallet, setSelectedWallet] = useState(null)
+	const [connectionError, setConnectionError] = useState(null)
 
 	//error ref
-	const errorRef = useRef<ModalHandler>(null)
+	const errorRef = useRef(null)
 
 
 	useEffect(() => {
@@ -29,15 +23,15 @@ const ConnectWallet = ({ closeModal }) => {
 			setSelectedWallet(JSON.parse(storedWallet))
 			connect(JSON.parse(storedWallet).name)
 		}
-	}, [])
+	}, [connect])
 
-	const handleWalletSelection = async (wallet: Wallet) => {
+	const handleWalletSelection = async (wallet) => {
 		try {
 			localStorage.setItem('selectedWallet', JSON.stringify(wallet))
 			setSelectedWallet(wallet)
 			await connect(wallet.name)
 			setConnectionError(null)
-		} catch (error: any) {
+		} catch (error) {
 			setConnectionError(error.message)
 			errorRef.current?.openModal()
 		}
@@ -94,7 +88,7 @@ const ConnectWallet = ({ closeModal }) => {
 			<div className='connect-wallet'>
 				{!selectedWallet && !connecting && (
 					<ul>
-						{wallets.map((wallet: Wallet) => (
+						{wallets.map((wallet) => (
 							<li
               className='text-[#9CA3AF] text-[16px] border p-3 rounded-md mb-2 flex'
 								key={wallet.name}
@@ -151,7 +145,3 @@ const ConnectWallet = ({ closeModal }) => {
 }
 
 export default ConnectWallet
-
-
-
-
