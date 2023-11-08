@@ -17,8 +17,8 @@
     "@meshsdk/react": "^1.1.8",
     "@mui/icons-material": "^5.14.11",
     "@mui/material": "^5.14.16",
-    "@web3modal/ethereum": "^2.7.1",
     "@supabase/supabase-js": "^2.38.4",
+    "@web3modal/ethereum": "^2.7.1",
     "@web3modal/react": "^2.7.1",
     "@web3modal/wagmi": "^3.2.0",
     "antd": "^5.10.2",
@@ -44,6 +44,7 @@
     "theme-ui": "^0.16.1",
     "viem": "^1.18.2",
     "wagmi": "^1.4.5",
+    "yarn": "^1.22.19",
     "zh": "file:./zh.json"
   },
   "devDependencies": {
