@@ -231,7 +231,7 @@ export default function Navbar(props) {
 
                 <NavLink
                   className="text-[#fff] block py-[12px] px-[16px] hover:bg-[#2a2929]"
-                  to="#"
+                  to="/launchpad/apply for launchpad"
                 >
                   Apply For Launchpad
                 </NavLink>

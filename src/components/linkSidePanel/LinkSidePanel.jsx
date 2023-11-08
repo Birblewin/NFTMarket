@@ -153,7 +153,7 @@
                     
                     <div className='flex justify-evenly items-center mt-[10px]'>
                         <Link className='cursor-pointer transition-all duration-500 font-bold text-link-side-panel-container__side-panel--rewards-button tracking-[0.3px]' to={'/launchpad/launches'}>Launches</Link>
-                        <Link className='cursor-pointer transition-all duration-500 font-bold text-link-side-panel-container__side-panel--rewards-button tracking-[0.3px]' to={'#'}>Apply for launchpad</Link>
+                        <Link className='cursor-pointer transition-all duration-500 font-bold text-link-side-panel-container__side-panel--rewards-button tracking-[0.3px]' to={'/launchpad/apply for launchpad'}>Apply for launchpad</Link>
                     </div>
                 </div>
             </Drawer>

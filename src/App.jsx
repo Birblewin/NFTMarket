@@ -15,6 +15,7 @@ import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
+import ApplyForLaunchpadPage from './pages/launchpad/applyForLaunchpadPage/ApplyForLaunchpadPage';
 
 import Team from './pages/Team/Team';
 import Verification from './pages/Verification/Verification';
@@ -81,6 +82,7 @@ const appRouter = createBrowserRouter(
       <Route path='launchpad'>
         <Route path='launches' element={<LaunchesPage/>}></Route>
         <Route path='launch details' element={<LaunchpadPage/>}></Route>
+        <Route path='apply for launchpad' element={<ApplyForLaunchpadPage/>}></Route>
       </Route>
     </Route>
   )
