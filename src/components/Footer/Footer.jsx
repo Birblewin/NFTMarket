@@ -46,24 +46,24 @@ export default function Footer(){
             <div className='footer__list  flex flex-col justify-center items-start gap-3 mt-[-100px] pr-5'>
                 <h3 className="footer__list--title text-gray-600 font-inter text-xl  font-semibold leading-normal">Browse</h3>
 
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/allNFTs'>Marketplace</NavLink>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/allCollections'>Collections</NavLink>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/explore/allNFTs'>Marketplace</NavLink>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/explore/allCollections'>Collections</NavLink>
 
             </div>
 
             <div className='footer__list  flex flex-col justify-center items-start gap-3 mt-[-100px] pr-5 '>
                 <h3 className="footer__list--title text-gray-600 font-inter text-xl  font-semibold leading-normal">Creators</h3>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/verification'>Verification</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/mining'>NFT Mining</a>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/creators/verification'>Verification</NavLink>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/creators/mining'>NFT Mining</NavLink>
             </div>
 
             <div className='footer__list about grid mt-[-50px]'>
                 <h3 className="footer__list--title text-gray-600 font-inter text-xl  font-semibold leading-normal">About</h3>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/team'>Our Team</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/impact'>Our Impact</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/FAQ'>See FAQ</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/T&C'>Terms and conditions</a>
-                <a className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/privacy-policy'>Privacy Policy</a>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/about/team'>Our Team</NavLink>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/about/impact'>Our Impact</NavLink>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/about/FAQ'>See FAQ</NavLink>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/about/T&C'>Terms and conditions</NavLink>
+                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/about/privacy-policy'>Privacy Policy</NavLink>
             </div>
         </footer>
     )

@@ -81,7 +81,7 @@
                             loading='lazy'
                         />
 
-                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/allCollections'}>All Collections</Link>
+                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/explore/allCollections'}>All Collections</Link>
                     </figure>
 
                     <figure className='flex items-center gap-[10px] mt-[10px]'>
@@ -92,7 +92,7 @@
                             loading='lazy'
                         />
 
-                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/allNFTs'}>All NFTs</Link>
+                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/explore/allNFTs'}>All NFTs</Link>
                     </figure>
                 </div>
 
@@ -107,7 +107,7 @@
                             loading='lazy'
                         />
 
-                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/'}>Create your collection</Link>
+                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/creators/mining'}>Create your collection</Link>
                     </figure>
 
                     <figure className='flex items-center gap-[10px] mt-[10px]'>
@@ -118,7 +118,7 @@
                             loading='lazy'
                         />
 
-                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/'}>Verify your collection</Link>
+                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/creators/verification'}>Verify your collection</Link>
                     </figure>
                 </div>
 
@@ -133,7 +133,7 @@
                             loading='lazy'
                         />
 
-                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/'}>Our Team</Link>
+                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/about/team'}>Our Team</Link>
                     </figure>
 
                     <figure className='flex items-center gap-[10px] mt-[10px]'>
@@ -144,7 +144,7 @@
                             loading='lazy'
                         />
 
-                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/'}>Our Impact</Link>
+                        <Link className='cursor-pointer transition-all duration-500 ease-in-out font-extrabold text-side-panel--navbar--side-buttons--p active:scale-[0.95]' to={'/about/impact'}>Our Impact</Link>
                     </figure>
                 </div>
                 
@@ -153,7 +153,7 @@
                     
                     <div className='flex justify-evenly items-center mt-[10px]'>
                         <Link className='cursor-pointer transition-all duration-500 font-bold text-link-side-panel-container__side-panel--rewards-button tracking-[0.3px]' to={'/launchpad/launches'}>Launches</Link>
-                        <Link className='cursor-pointer transition-all duration-500 font-bold text-link-side-panel-container__side-panel--rewards-button tracking-[0.3px]' to={'#'}>Apply for launchpad</Link>
+                        <Link className='cursor-pointer transition-all duration-500 font-bold text-link-side-panel-container__side-panel--rewards-button tracking-[0.3px]' to={'/launchpad/apply for launchpad'}>Apply for launchpad</Link>
                     </div>
                 </div>
             </Drawer>

@@ -15,6 +15,7 @@ import RewardsPage from './pages/RewardsPage'
 import Home from './pages/Home';
 import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
+import ApplyForLaunchpadPage from './pages/launchpad/applyForLaunchpadPage/ApplyForLaunchpadPage';
 
 import Team from './pages/Team/Team';
 import Verification from './pages/Verification/Verification';
@@ -49,23 +50,39 @@ createWeb3Modal({ wagmiConfig, projectId, chains })
 const appRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout/>}>
+      {/* HOMEPAGE */}
       <Route path='/' element={<Home/>}></Route>
-      <Route path='allCollections' element={<AllCollections/>}></Route>
-      <Route path='allNFTs' element={<AllNftsPage/>}></Route>
+      <Route path='home' element={<Home/>}></Route>
+      
+      {/* REWARDS */}
       <Route path='rewards' element={<RewardsPage/>}></Route>
-      <Route path='/home' element={<Home/>}></Route>
-      <Route path='/team' element={<Team/>}></Route>
-      <Route path='/verification' element={<Verification/>}></Route>
-      <Route path='/mining' element={<Mining/>}></Route>
-      <Route path='/impact' element={<Impact/>}></Route>
-      <Route path='/FAQ' element={<Faq/>}></Route>
-      <Route path='/T&C' element={<TnC/>}></Route>
-      <Route path='/privacy-policy' element={<PPolicy/>}></Route>
       
+      {/* EXPLORE */}
+      <Route path='explore'>
+        <Route path='allCollections' element={<AllCollections/>}></Route>
+        <Route path='allNFTs' element={<AllNftsPage/>}></Route>
+      </Route>
+
+      {/* ABOUT */}
+      <Route path='about'>
+        <Route path='team' element={<Team/>}></Route>
+        <Route path='impact' element={<Impact/>}></Route>
+        <Route path='FAQ' element={<Faq/>}></Route>
+        <Route path='T&C' element={<TnC/>}></Route>
+        <Route path='privacy-policy' element={<PPolicy/>}></Route>
+      </Route>
+
+      {/* CREATORS */}
+      <Route path='creators'>
+        <Route path='verification' element={<Verification/>}></Route>
+        <Route path='mining' element={<Mining/>}></Route>
+      </Route>
       
+      {/* LAUNCHPAD */}
       <Route path='launchpad'>
         <Route path='launches' element={<LaunchesPage/>}></Route>
         <Route path='launch details' element={<LaunchpadPage/>}></Route>
+        <Route path='apply for launchpad' element={<ApplyForLaunchpadPage/>}></Route>
       </Route>
     </Route>
   )

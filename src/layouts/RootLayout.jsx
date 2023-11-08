@@ -8,13 +8,7 @@ import Footer from '../components/Footer/Footer'
 import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
 import LinkSidePanel from '../components/linkSidePanel/LinkSidePanel'
 import SearchBar from "../components/searchBar/SearchBar"
-
 import ConnectWallet  from './cardano';
-
-
-
-
-
 // // IMPORTING NECESSARY HOOKS
  import WalletSidePanelContextHook from "../hooks/WalletSidePanelContextHook";
 
@@ -43,8 +37,6 @@ export default function RootLayout(){
         }))
     }
 
-   
-  
     const [isCardanoModalOpen, setIsCardanoModalOpen] = useState(false); // State to manage the Cardano modal
 
     // Function to open or close the Cardano modal
@@ -52,8 +44,6 @@ export default function RootLayout(){
       setIsCardanoModalOpen(!isCardanoModalOpen);
     };
  
-
-
     return(
         <main className="min-h-[100vh] scroll-smooth relative w-[100%] overflow-x-hidden">
             {
@@ -88,11 +78,8 @@ export default function RootLayout(){
 
           {/* <IntlProvider locale={currentLanguage} messages={locales[currentLanguage]}> */}
           {isCardanoModalOpen && <ConnectWallet closeModal={toggleCardanoModal} />}
-              <Outlet
-              
-              />
-         {/* </IntlProvider> */}
-             
+              <Outlet/>
+                {/* </IntlProvider> */}
              <Footer/>
          </main>
      )
