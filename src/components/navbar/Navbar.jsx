@@ -30,13 +30,14 @@ export default function Navbar(props) {
   }
 
   const [showAdditionalButtons, setShowAdditionalButtons] = useState(false);
+  
   const toggleAdditionalButtons = () => {
     setShowAdditionalButtons(!showAdditionalButtons);
   };
 
  return (
   <div>
-    <div className="navbar flex items-center  pb-[20px] h-[95px] p-[5px] pr-0 mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between">
+    <div className="navbar flex items-center pb-[20px] h-[95px] p-[5px] pr-0 mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between shadow-dropdown-content">
       <NavLink to="/home">
         <div className="flex justify-center items-center">
           <img src="/img/birble.png" className="w-[32px] h-auto m-[10px]" />
