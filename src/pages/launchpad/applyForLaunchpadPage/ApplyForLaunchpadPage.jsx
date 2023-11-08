@@ -1,13 +1,13 @@
 // IMPORTING NECESSARY FILES
     // IMPORTING NECESSARY HOOKS
-// import UserContextHook from "../../../hooks/UserContextHook";
+import UserContextHook from "../../../hooks/UserContextHook";
     // IMPORTING NECESSARY COMPONENTS
 import AuthModal from "../../../components/authModal/AuthModal";
 
 // EXPORTING DEFAULT APPLYFORLAUNCHPADPAGE
 export default function ApplyForLaunchpadPage(){
     // OBTAINING USERCONTEXT FROM HOOK
-    // const {user, dispatch} = UserContextHook()
+    const {user, dispatch} = UserContextHook()
 
     return(
         // A CONTAINER FOR THE WHOLE PAGE
