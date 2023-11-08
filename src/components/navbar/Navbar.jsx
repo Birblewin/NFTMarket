@@ -17,7 +17,6 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
   const { open } = useWeb3Modal()
-  
 
   // Function to connect the wallet
   const connectWallet = async () => {
@@ -35,14 +34,9 @@ export default function Navbar(props) {
     setShowAdditionalButtons(!showAdditionalButtons);
   };
 
-
-
  return (
   <div>
-    <div
-      className="navbar flex items-center  pb-[20px] h-[95px] p-[5px] pr-0 mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between ">
-      
-
+    <div className="navbar flex items-center  pb-[20px] h-[95px] p-[5px] pr-0 mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between">
       <NavLink to="/home">
         <div className="flex justify-center items-center">
           <img src="/img/birble.png" className="w-[32px] h-auto m-[10px]" />
@@ -107,9 +101,8 @@ export default function Navbar(props) {
         <div className='medium-screen-buttons__button-container sm:flex sm:justify-center sm:items-center sm:gap-[15px]'>
           <button 
             className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
-             onClick={toggleAdditionalButtons}
+            onClick={toggleAdditionalButtons}
             title='show-wallet'
-
           >
             <img
               crossOrigin="anonymous"
@@ -162,14 +155,14 @@ export default function Navbar(props) {
                 {/* Dropdown links */}
                 <NavLink
                   className="text-[#fff] block py-[12px] px-[16px] hover:bg-[#2a2929]"
-                  to="/allcollections"
+                  to="/explore/allcollections"
                 >
                   All collections
                 </NavLink>
 
                 <NavLink
                   className="text-[#fff] block py-[12px] px-[16px] hover:bg-[#2a2929]"
-                  to="/allnfts"
+                  to="/explore/allnfts"
                 >
                   All NFTs
                 </NavLink>
@@ -185,14 +178,14 @@ export default function Navbar(props) {
                 {/* Dropdown links */}
                 <NavLink
                   className="text-[#fff] block py-[12px] px-[16px] hover:bg-[#2a2929]"
-                  to="#"
+                  to="/creators/mining"
                 >
                   Create your collection
                 </NavLink>
 
                 <NavLink
                   className="text-[#fff] block py-[12px] px-[16px] hover:bg-[#2a2929]"
-                  to="#"
+                  to="/creators/verification"
                 >
                   Verify your collection
                 </NavLink>
@@ -208,14 +201,14 @@ export default function Navbar(props) {
                 {/* Dropdown links */}
                 <NavLink
                   className="text-[#fff] block py-[12px] px-[16px] hover:bg-[#2a2929]"
-                  to="/team"
+                  to="/about/team"
                 >
                   Our team
                 </NavLink>
 
                 <NavLink
                   className="text-[#fff] block py-[12px] px-[16px] hover:bg-[#2a2929]"
-                  to="/impact"
+                  to="/about/impact"
                 >
                   Our impact
                 </NavLink>
