@@ -44,7 +44,6 @@
     "theme-ui": "^0.16.1",
     "viem": "^1.18.2",
     "wagmi": "^1.4.5",
-    "yarn": "^1.22.19",
     "zh": "file:./zh.json"
   },
   "devDependencies": {
