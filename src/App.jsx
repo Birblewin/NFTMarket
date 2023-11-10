@@ -16,6 +16,7 @@ import Home from './pages/Home';
 import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
 import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
 import ApplyForLaunchpadPage from './pages/launchpad/applyForLaunchpadPage/ApplyForLaunchpadPage';
+import AuthenticationPage from './pages/launchpad/applyForLaunchpadPage/AuthenticationPage';
 
 import Team from './pages/Team/Team';
 import Verification from './pages/Verification/Verification';
@@ -26,6 +27,7 @@ import TnC from './pages/T&C/T&C';
 import PPolicy from './pages/PrivacyPolicy/PPolicy';
 
 import RootLayout from './layouts/RootLayout'
+import ApplyForLaunchpadLayout from './layouts/ApplyForLaunchpadLayout'
 
 
 // 1. Get projectId
@@ -83,10 +85,10 @@ const appRouter = createBrowserRouter(
         <Route path='launches' element={<LaunchesPage/>}></Route>
         <Route path='launch details' element={<LaunchpadPage/>}></Route>
         
-        {/* <Route path='apply for launchpad' element={<ApplyForLaunchpadLayout/>}>
-          <Route path='/' element={<ApplyForLaunchpadPage/>}></Route>
-          <Route path='/auth' element={<AuthenticationPage/>}></Route>
-        </Route> */}
+        <Route path='apply for launchpad' element={<ApplyForLaunchpadLayout/>}>
+          <Route path='apply' element={<ApplyForLaunchpadPage/>}></Route>
+          <Route path='auth' element={<AuthenticationPage/>}></Route>
+        </Route>
       </Route>
     </Route>
   )
