@@ -24,7 +24,8 @@ export default function AuthModal(props){
                 {/* CONTAINER FOR GITHUB BUTTON */}
                 <button 
                     className=" w-[90%] sm:w-[80%] mx-auto flex bg-black justify-around items-center p-[10px] gap-[20px] h-[50px] rounded-[10px] shadow-dropdown-content border-slate-400 border cursor-pointer transition-all duration-500 ease-in-out text-white active:bg-white active:text-black active:scale-95 my-[10px] active:border-black"
-                    onClick={props.authFunction}
+                    onClick={props.socialAuthFunction}
+                    disabled={props.disabled}
                 >
                     <Icon icon="ant-design:github-filled" color="#9ca3af" width="26" height="26" />
                     <p className="font-bold tracking-wide">{props.socialAuthStatement}</p>
@@ -45,6 +46,8 @@ export default function AuthModal(props){
                         required={true}
                         autoComplete="on"
                         className="w-full bg-gray-500 active:border active:borser-black h-[40px] rounded-[10px] pl-[10px] my-auto text-black font-semibold transition-all duration-500 ease-in-out"
+                        onChange={props.handleFormData}
+                        value={props.formData.email}
                     />
                 </div>
 
@@ -56,18 +59,25 @@ export default function AuthModal(props){
                         name="password"
                         required={true}
                         autoComplete="on"
-                        className="w-full bg-gray-500 active:border active:border-black h-[40px] rounded-[10px] pl-[10px] my-auto text-black font-semibold transition-all duration-500 ease-in-out" 
+                        className="w-full bg-gray-500 active:border active:border-black h-[40px] rounded-[10px] pl-[10px] my-auto text-black font-semibold transition-all duration-500 ease-in-out"
+                        onChange={props.handleFormData}
+                        value={props.formData.password} 
                     />
                 </div>
 
                 <button 
                     className="w-[90%] sm:w-[80%] mx-auto flex bg-white justify-around items-center p-[10px] gap-[20px] h-[60px] rounded-[10px] shadow-dropdown-content border-black border cursor-pointer transition-all duration-500 ease-in-out text-black active:bg-black active:border-white active:text-white active:scale-95 my-[10px] text-lg font-bold"
                     onClick={props.authFunction}
+                    disabled = {props.disabled}
                 >{props.emailAuthStatement}</button>
 
                 <p className="text-center w-full tracking-wide text-white">
                     {props.switchAuthStatement[0]}
-                    <span className="ml-[10px] text-blue-500 cursor-pointer active:text-lime-500 transition-all duration-500 ease-in-out active:underline">{props.switchAuthStatement[1]}</span>
+                    
+                    <span 
+                        className="ml-[10px] text-blue-500 cursor-pointer active:text-lime-500 transition-all duration-500 ease-in-out active:underline"
+                        onClick={props.switchAuthFunction}
+                    >{props.switchAuthStatement[1]}</span>
                 </p>
             </div>
         </div>

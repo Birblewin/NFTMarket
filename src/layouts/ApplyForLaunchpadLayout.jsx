@@ -11,6 +11,7 @@ export default function ApplyForLaunchpadLayout(){
     // GETTING USER CONTEXT
     const {user, dispatch} = UserContextHook()
 
+    // GETTING USER FROM DATABASE
     React.useEffect(() => {
         dispatch({type: "GET_USER"})
     }, [dispatch])
@@ -34,6 +35,4 @@ export default function ApplyForLaunchpadLayout(){
             <Outlet/>
         </div>
     )
-
-
 }

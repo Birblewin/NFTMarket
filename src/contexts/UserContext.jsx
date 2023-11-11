@@ -18,8 +18,9 @@ export function UserContextReducer(state, action){
             localStorage.removeItem('user')
 
             return { user: null }
-        case "GET_USER":
-            return { user: JSON.parse(localStorage.getItem('user')) }
+        case "GET_USER":{
+            return {user: JSON.parse(localStorage.getItem('user'))}
+        } 
         default:
             return state
     }
