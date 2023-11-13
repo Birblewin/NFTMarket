@@ -65,7 +65,7 @@ export default function Navbar(props) {
 
         <button 
           className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
-           onClick={toggleAdditionalButtons}
+          onClick={toggleAdditionalButtons}
           title='show-wallet'
 
         >
@@ -278,13 +278,6 @@ export default function Navbar(props) {
       
       {showAdditionalButtons && (
         <div className="additional-buttons absolute top-14 right-0 mt-[10px] mr-5 flex flex-col space-y-2 ">
-          <button
-            onClick={props.toggleCardanoModal}
-            className="additional-button text-[#ffffff] text-[14px] bg-[#1864F8] py-[8px] px-[4px] border-none rounded-[8px]"
-          >
-            Cardano wallet
-          </button>
-
           <button
             onClick={connectWallet}
             className="additional-button text-[#ffffff] text-[14px] bg-[#1864F8] py-[8px] px-[4px] border-none rounded-[8px]"
