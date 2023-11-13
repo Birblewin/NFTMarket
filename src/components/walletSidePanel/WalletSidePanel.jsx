@@ -11,7 +11,7 @@ export default function WalletSidePanel(props){
         walletData => (
             <Link 
                 key={walletData.index}
-                className='text-left text-white bg-link-side-panel-container__side-panel--rewards-section p-[12px] border-solid border-[1px] w-full border-white rounded-[10px] transition-all duration-500 ease-in-out font-[700] active:bg-white active:text-black'
+                className='text-left  bg-link-side-panel-container__side-panel--rewards-section p-[12px] border-solid border-[1px] w-full border-white rounded-[10px] transition-all duration-500 ease-in-out font-[700] active:bg-white active:text-black'
                 to={`https://${walletData.site_address}`}
                 target='_blank'
                 rel='noreferrer'
@@ -57,7 +57,7 @@ export default function WalletSidePanel(props){
             }}
             
             title={
-                <figure className="font-[Lexend] text-left text-white flex flex-col gap-[10px] items-start bg-black">
+                <figure className="font-[Lexend] text-left  flex flex-col gap-[10px] items-start bg-black">
                     <img 
                             crossOrigin="anonymous" 
                             src="https://static.jpgstoreapis.com/icons/close-dark.svg" 
@@ -74,7 +74,7 @@ export default function WalletSidePanel(props){
                 </figure>
             }
         >
-            <small className="text-[14px] font-[300] text-white mt-[20px]">Select a wallet to install it</small>
+            <small className="text-[14px] font-[300] mt-[20px]">Select a wallet to install it</small>
 
             <div className="side_panel_container__side_panel--wallets_grid flex flex-col justify-center w-full items-start gap-[10px] mt-[5px]">
                 {generatedWalletArray}                   

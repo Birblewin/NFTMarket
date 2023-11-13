@@ -9,14 +9,14 @@ function CollectionModal({ closeModal }) {
         &times;
       </span>
       <div className="header mb-24  ">
-        <span className="filter text-xl font-bold absolute top-6  text-white left-1/2">Filter</span>
+        <span className="filter text-xl font-bold absolute top-6   left-1/2">Filter</span>
         <span className="reset absolute top-7 right-8  text-blue-500 text-sm">Reset</span>
       </div>
 
       <div className="content flex items-center m-5 my-2 justify-between border-b border-slate-400 p-6   ">
-        <span className="collections  text-lg font-bold text-white ">Sort</span>
+        <span className="collections  text-lg font-bold  ">Sort</span>
         <div>
-        <span className="selected text-white text-sm">
+        <span className="selected  text-sm">
           All Time Volume
         </span>
         <span><NavigateNextIcon className="next-icon text-gray-600 text-lg" /></span>
@@ -24,9 +24,9 @@ function CollectionModal({ closeModal }) {
         </div>
        
       <div className="content flex items-center m-5 my-2 justify-between border-b border-slate-400 p-6  ">
-        <span className="collections  text-lg font-bold text-white ">Verification</span>
+        <span className="collections  text-lg font-bold  ">Verification</span>
         <div>
-        <span className="selected text-white text-sm">
+        <span className="selected  text-sm">
         Verified Only
         </span>
         <span><NavigateNextIcon className="next-icon text-gray-600 text-lg" /></span>
@@ -34,9 +34,9 @@ function CollectionModal({ closeModal }) {
         </div>
 
         <div className="content flex items-center m-2 my-2 justify-between border-b border-slate-400 p-6  ">
-        <span className="collections  text-lg font-bold text-white ">Categories</span>
+        <span className="collections  text-lg font-bold  ">Categories</span>
         <div>
-        <span className="selected text-white text-sm">
+        <span className="selected  text-sm">
           All
         </span>
         <span><NavigateNextIcon className="next-icon text-gray-600 text-lg" /></span>

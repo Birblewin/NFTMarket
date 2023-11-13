@@ -29,7 +29,7 @@ export default function Carousel(){
                 TRENDING
                 </h3>
 
-                <div
+                <div 
                 className="mb-5 relative
                 tracking-wide
                 font-bold
@@ -38,14 +38,14 @@ export default function Carousel(){
                 text-left
                 left-2
                 md:text-5xl
-                text-white
                 text-[Inter]
+
                 "
                 >
                     {image.cardTitle}
                 </div>
 
-                <div className="text-gray-600 font-[Inter] text-[20px] not-italic font-[400] leading-normal max-h-[6ch] overflow-y-scroll lg:max-h-[10ch] lg:overflow-y-hidden">{image.cardInfo}</div>
+                <div className=" font-[Inter] text-text-gray text-[20px] not-italic font-[400] leading-normal max-h-[6ch] overflow-y-scroll lg:max-h-[10ch] lg:overflow-y-hidden">{image.cardInfo}</div>
                 
                 <button className="h-[50px] w-[267px] p-[10px] rounded-[10px] bg-[#FFDB24] text-[#000] font-[Inter] text-[20px] not-italic font-[400] leading-normal cursor-pointer transition-all duration-500 ease-in-out hover:bg-description--buttons--link++hover hover:scale-[0.9] sm:w-full lg:w-[80%] mx-auto sm:mx-0">
                 Learn More
@@ -63,7 +63,7 @@ export default function Carousel(){
         for(let i = 0; i < Details.length; i ++){
             dotSelectorsArray.push(
                 <p 
-                    className="font-bold text-6xl cursor-pointer text-white transition-all duration-500"
+                    className="font-bold text-6xl cursor-pointer  transition-all duration-500"
                     onClick={() => setCurrentCard(i)}
                     key={i}
                     
@@ -79,7 +79,7 @@ export default function Carousel(){
         }
 
         return(
-            <div className="w-[70%] flex justify-center items-center gap-[10px] mb-[30px] sm:mt-[20px] text-white mx-auto">
+            <div className="w-[70%] flex justify-center items-center gap-[10px] mb-[30px] sm:mt-[20px]  mx-auto">
                 {dotSelectorsArray}
             </div>
         )

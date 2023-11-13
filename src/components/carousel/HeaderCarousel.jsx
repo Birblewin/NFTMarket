@@ -7,8 +7,8 @@ export default function HeaderCarousel(props){
                 <div className="w-full flex items-center justify-around gap-[20px] my-0 mx-auto flex-col">
                     <div>{props.carouselItems[props.currentCarouselItem]}</div>
 
-                    <div className="w-full flex justify-center items-center gap-[20px] mt-[20px] text-white">
-                        {props.dotScrollerButtonsGrid || <div className="w-full flex justify-center items-center gap-[20px] mt-[20px] text-white">
+                    <div className="w-full flex justify-center items-center gap-[20px] mt-[20px] ">
+                        {props.dotScrollerButtonsGrid || <div className="w-full flex justify-center items-center gap-[20px] mt-[20px] ">
                             {props.dotScrollerButtons}
                         </div>}
                     </div>
@@ -25,7 +25,7 @@ export default function HeaderCarousel(props){
                     <div className="flex flex-col w-full gap-[10px]">
                         {props.carouselItems[props.currentCarouselItem]}
 
-                        {props.dotScrollerButtonsGrid || <div className="w-full flex justify-center items-center gap-[20px] mt-[20px] text-white">
+                        {props.dotScrollerButtonsGrid || <div className="w-full flex justify-center items-center gap-[20px] mt-[20px] ">
                             {props.dotScrollerButtons}
                         </div>}
                     </div>

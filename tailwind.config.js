@@ -23,8 +23,7 @@ export default {
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(231, 215, 150)',
         'description--buttons--link++hover': 'rgb(255, 255, 255, 0.7)',
         'carousel-container__button++hover': 'rgba(255, 255, 255, 0.5)',
-        'greenish':'#093030',
-        'blackish':'#18191b'
+        'greenish':'#093030'
       },
 
       boxShadow: { 
@@ -38,10 +37,10 @@ export default {
         'link-side-panel-container__side-panel--launchpad-section--div--a': 'rgb(231, 215, 150)',
         'link-side-panel-container__side-panel--rewards-button': 'rgb(231, 215, 150)',
         'side_panel--title--description--p--a': 'rgb(118, 169, 250)',
-        'container--h1': 'rgb(248, 247, 248)',
-        'container__selling_stats': 'rgb(245, 243, 247)',
-        'overview-container__footer--p': 'rgb(150, 142, 142)',
-        'list--entry--description': 'rgb(161, 151, 170)',
+        'container--h1': "#9ca3af",
+        'container__selling_stats': "#9ca3af",
+        'overview-container__footer--p': "#9ca3af",
+        'list--entry--description': "#9ca3af",
         // SPECIAL CLASSES
         'link-side-panel-container__side-panel--rewards-button++active': 'rgb(20, 20, 20)',
         'text-green':'#31c48d',

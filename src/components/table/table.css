@@ -12,9 +12,7 @@
 .gray-color{
     color: #9ca3af;
 }
-body {
-    background-color: #141414;
-}
+
 
 @media screen and (max-width: 640px) {
     .small-hidden {
@@ -27,14 +25,12 @@ body {
 
 .TableContainer {
   /* 50% of the viewport height */
-  background-color: #141414;
   display: flex;
   flex-flow: row nowrap;
   gap: 20px;
   justify-content: center; /* Center the table horizontally */
   align-items: center; /* Center the table vertically */
   padding: 20px 30px;
-  color: #ffffff;
   font-size: 14px;
 }
 

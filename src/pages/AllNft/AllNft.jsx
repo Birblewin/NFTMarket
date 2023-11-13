@@ -25,7 +25,7 @@ function AllNfts() {
     <div >
       
         
-          <div className=" flex px-4 text-white">
+          <div className=" flex px-4 ">
             <h3 className="text-2xl flex md:text-3xl ml-8">
               Explore <span className="text-blue-500  mx-2 ">All NFTs</span>
             </h3>
@@ -33,14 +33,14 @@ function AllNfts() {
           </div>
 
           <div className=" px-4 lg:hidden sticky top-2 justify-between" >
-            <div className="flex items-center rounded-lg bg-black border-2 border-gray-600 ">
+            <div className="flex items-center rounded-lg  border-2 border-gray-600 ">
               <div className="flex-1">
                 <div className="relative ">
                   <input
                     type="text"
                   
                     name="searchInput"
-                    className="form-input rounded-lg  bg-black text-white border-none p-1  custom-placeholder"
+                    className="form-input rounded-lg    border-none p-1  custom-placeholder"
                     placeholder="Search collection or NFT"
                    
                   />
@@ -66,15 +66,15 @@ function AllNfts() {
       
 
             <div className="filter-bar-container sticky top-2 hidden lg:block">
-              <div className="filter-bar h-20 w-11/12 m-auto bg-black border-solid border-2 border-gray-600 mb-2 mt-5 flex justify-between rounded-xl items-center">
+              <div className="filter-bar h-20 w-11/12 m-auto border-solid border-2 border-gray-600 mb-2 mt-5 flex justify-between rounded-xl items-center">
                 <div className="flex">
                   <div className="flex items-center pl-3 pr-4">
-                    <span className="font-bold pr-2 text-white"><FilterAltOutlinedIcon /></span>
-                    <span className="font-bold text-white">Collections</span>
+                    <span className="font-bold pr-2 "><FilterAltOutlinedIcon /></span>
+                    <span className="font-bold ">Collections</span>
                   </div>
                   <div className="flex items-center pr-4">
-                    <span className="font-bold pr-2 text-white"><BlurOnOutlinedIcon /></span>
-                    <span className="font-bold text-white">All prices</span>
+                    <span className="font-bold pr-2 "><BlurOnOutlinedIcon /></span>
+                    <span className="font-bold ">All prices</span>
                   </div>
                   <div className="flex items-center pr-4">
                     <span className="font-bold pr-2">
@@ -83,11 +83,11 @@ function AllNfts() {
                         color="white"
                       />
                     </span>
-                    <span className="font-bold text-white">Price: Low to High</span>
+                    <span className="font-bold ">Price: Low to High</span>
                   </div>
                   <div className="flex items-center">
-                    <span className="font-bold text-white">Sale Type</span>
-                    <span className="font-bold text-white pl-2"><KeyboardArrowDownIcon /></span>
+                    <span className="font-bold ">Sale Type</span>
+                    <span className="font-bold  pl-2"><KeyboardArrowDownIcon /></span>
                   </div>
                 </div>
 
@@ -95,7 +95,7 @@ function AllNfts() {
                   <div className="search-area flex">
                     <div className="search-area-bar flex items-center border-b border-slate-400 max-w-max p-1 w-60">
                       <input
-                        className="coll-search-bar text-white bg-transparent p-1 w-11/12 rounded-lg "
+                        className="coll-search-bar  bg-transparent p-1 w-11/12 rounded-lg "
                         type="text"
                         placeholder="Search collection or NFT"
                         name="searchInput"
@@ -105,7 +105,7 @@ function AllNfts() {
                    
                     <div className="lg:ml-3 mt-3 sm:ml-0">
                     <div className="vertical-line absolute h-20 py-0 mx-0 top-0  w-0.5  bg-slate-400 "></div>
-                      <span className="verified flex justify-center text-center items-center text-white font-bold m-1">
+                      <span className="verified flex justify-center text-center items-center  font-bold m-1">
                         Verified Only
                         <Icon icon="fluent:checkmark-starburst-16-filled" color="#75a8f9" width="16" height="16" />
                         <span className="drop ml-1">

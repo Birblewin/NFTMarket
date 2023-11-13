@@ -6,12 +6,12 @@ const Table = () => {
   return (
     <div className="table">
       <div className="top-coll-header">
-          <h3 className="text-white">Top Collections</h3>
+          <h3 className="">Top Collections</h3>
         
         <div className="total-time">
           <div className="total-bar">
             
-              <span className="tot-24-vol flex flex-row flex-nowrap">Total 24h Volume: </span> <span className="flex flex-row flex-nowrap"><span className="font-bold text-white mx-2">450.6k ₳</span>{" "}
+              <span className="tot-24-vol flex flex-row flex-nowrap">Total 24h Volume: </span> <span className="flex flex-row flex-nowrap"><span className="font-bold  mx-2">450.6k ₳</span>{" "}
               <span className="loss flex flex-row flex-nowrap">
                 <Icon
                   icon="tdesign:arrow-left-down"
