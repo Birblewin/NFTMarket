@@ -44,8 +44,8 @@ const ConnectWallet = ({ closeModal }) => {
 	}
 
 	return (
-    <div className="fixed right-0 -top-0 p-5 items-center text-white justify-center w-96 z-50  bg-black bg-opacity-100 border rounded-md animateModal1">
-     <span className="close-button text-white text-3xl absolute top-2 right-4 cursor-pointer" onClick={closeModal}>
+    <div className="fixed right-0 -top-0 p-5 items-center  justify-center w-96 z-50  bg-black bg-opacity-100 border rounded-md animateModal1">
+     <span className="close-button  text-3xl absolute top-2 right-4 cursor-pointer" onClick={closeModal}>
             &times;
          </span>
 

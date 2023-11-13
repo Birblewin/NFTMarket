@@ -5,15 +5,15 @@ import { Icon } from "@iconify/react";
 const FilterBar = () => {
   return (
     <div className="px-6">
-        <div className="filter-bar-container   rounded-lg bg-[#141414] border-2 h-20 p-5 pt-7 border-gray-600 w-full ">
+        <div className="filter-bar-container   rounded-lg  border-2 h-20 p-5 pt-7 border-gray-600 w-full ">
       
       <div className="filter-bar flex justify-between">
         <div className="flex gap-10 items-center">
-          <div className="flex items-center gap-2 text-white">
+          <div className="flex items-center gap-2 ">
             <FilterAltOutlinedIcon className="text-gray-200 " />
             Categories
           </div>
-          <div className="flex items-center gap-2 text-white">
+          <div className="flex items-center gap-2 ">
             <Icon
               icon="tabler:caret-up-down"
               color="white"
@@ -28,7 +28,7 @@ const FilterBar = () => {
        <div className="search-area flex">
           <div className="search-area-bar flex items-center border-b border-gray-500">
             <input
-              className="coll-search-bar flex-shrink-0 bg-transparent text-white rounded-md"
+              className="coll-search-bar flex-shrink-0 bg-transparent  rounded-md"
               type="text"
               placeholder="Search collections"
               name="searchInput"

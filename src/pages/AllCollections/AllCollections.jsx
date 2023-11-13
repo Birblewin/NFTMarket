@@ -22,21 +22,21 @@ const AllCollections = () => {
   }
 
   return (
-    <div className="bg-[#141414] min-h-screen mt-[-40px]">
+    <div className=" min-h-screen mt-[-40px]">
       
         <>
-          <div className="flex justify-between p-4 bg-[#141414]">
-            <h3 className="text-white text-3xl collections-title mt-[20px]">Explore <span className="text-blue-400">All Collections
+          <div className="flex justify-between p-4 ">
+            <h3 className=" text-3xl collections-title mt-[20px]">Explore <span className="text-blue-400">All Collections
             <KeyboardArrowDown className="text-blue-400" />
             </span></h3>
            
           </div>
 
-          <div className="flex justify-between items-center bg-[#141414] mx-6 sticky top-2 md:hidden">
-            <div className="flex items-center justify-between rounded-lg bg-[#141414] border-2 border-gray-600 w-full " >
+          <div className="flex justify-between items-center  mx-6 sticky top-2 md:hidden">
+            <div className="flex items-center justify-between rounded-lg  border-2 border-gray-600 w-full " >
               <div className="relative">
                 <input
-                  className="bg-transparent border-b border-gray-600   text-white w-40 pl-1 rounded-md"
+                  className="bg-transparent border-b border-gray-600   w-40 pl-1 rounded-md"
                   type="text"
                   placeholder="Search collections"
                   name="searchInput"
