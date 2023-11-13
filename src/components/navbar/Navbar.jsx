@@ -245,7 +245,7 @@ export default function Navbar(props) {
                 {mode === "dark" ? (
                   <LightModeIcon className="text-[#FFDB24] cursor-pointer" />
                 ) : (
-                 <NightlightIcon className="text-[#FFDB24] cursor-pointer" />
+                 <NightlightIcon className="text-[#9ca3af] cursor-pointer" />
                 )}
               </button>
             </span>
