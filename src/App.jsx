@@ -16,21 +16,27 @@ import { createTheme, ThemeProvider, CssBaseline, useTheme } from "@mui/material
 //
 
 // IMPORTING THE NECESSARY PAGES AND LAYOUTS
-import AllCollections from "./pages/AllCollections/AllCollections";
-import AllNftsPage from "./pages/AllNft/AllNft";
-import RewardsPage from "./pages/RewardsPage";
-import Home from "./pages/Home";
-import LaunchpadPage from "./pages/launchpad/Launchpadpage/launchpad";
-import LaunchesPage from "./pages/launchpad/launchesPage/LaunchesPage";
-import ApplyForLaunchpadPage from "./pages/launchpad/applyForLaunchpadPage/ApplyForLaunchpadPage";
 
-import Team from "./pages/Team/Team";
-import Verification from "./pages/Verification/Verification";
-import Mining from "./pages/Mining/Mining";
-import Impact from "./pages/Impact/Impact";
-import Faq from "./pages/FAQ/Faq";
-import TnC from "./pages/T&C/T&C";
-import PPolicy from "./pages/PrivacyPolicy/PPolicy";
+import AllCollections from './pages/AllCollections/AllCollections';
+import AllNftsPage from './pages/AllNft/AllNft';
+import RewardsPage from './pages/RewardsPage'
+import Home from './pages/Home';
+import LaunchpadPage from './pages/launchpad/Launchpadpage/launchpad';
+import LaunchesPage from './pages/launchpad/launchesPage/LaunchesPage';
+import ApplyForLaunchpadPage from './pages/launchpad/applyForLaunchpadPage/ApplyForLaunchpadPage';
+import AuthenticationPage from './pages/launchpad/applyForLaunchpadPage/AuthenticationPage';
+
+import Team from './pages/Team/Team';
+import Verification from './pages/Verification/Verification';
+import Mining from './pages/Mining/Mining';
+import Impact from './pages/Impact/Impact';
+import Faq from './pages/FAQ/Faq';
+import TnC from './pages/T&C/T&C';
+import PPolicy from './pages/PrivacyPolicy/PPolicy';
+
+import RootLayout from './layouts/RootLayout'
+import ApplyForLaunchpadLayout from './layouts/ApplyForLaunchpadLayout'
+
 
 import RootLayout from "./layouts/RootLayout";
 import {ThemeContext} from "./contexts/ThemeProvider";
@@ -85,13 +91,16 @@ const appRouter = createBrowserRouter(
       </Route>
 
       {/* LAUNCHPAD */}
-      <Route path="launchpad">
-        <Route path="launches" element={<LaunchesPage />}></Route>
-        <Route path="launch details" element={<LaunchpadPage />}></Route>
-        <Route
-          path="apply for launchpad"
-          element={<ApplyForLaunchpadPage />}
-        ></Route>
+
+      <Route path='launchpad'>
+        <Route path='launches' element={<LaunchesPage/>}></Route>
+        <Route path='launch details' element={<LaunchpadPage/>}></Route>
+        
+        <Route path='apply for launchpad' element={<ApplyForLaunchpadLayout/>}>
+          <Route path='apply' element={<ApplyForLaunchpadPage/>}></Route>
+          <Route path='auth' element={<AuthenticationPage/>}></Route>
+        </Route>
+
       </Route>
     </Route>
   )

@@ -33,16 +33,63 @@ export default function Navbar(props) {
   };
 
   const [showAdditionalButtons, setShowAdditionalButtons] = useState(false);
+  
   const toggleAdditionalButtons = () => {
     setShowAdditionalButtons(!showAdditionalButtons);
   };
 
-  return (
-    <div>
-      <div className="navbar flex items-center  pb-[20px] h-[95px] p-[5px] pr-0 mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between">
-        <NavLink to="/home">
-          <div className="flex justify-center items-center">
-            <img src="/img/birble.png" className="w-[32px] h-auto m-[10px]" />
+
+
+ return (
+  <div>
+    <div className="navbar flex items-center pb-[20px] h-[95px] p-[5px] pr-0 mb-[40px] w-[100%] relative transition-all duration-500 ease-in-out justify-between font-[Inter] sm:justify-between shadow-dropdown-content">
+      <NavLink to="/home">
+        <div className="flex justify-center items-center">
+          <img src="/img/birble.png" className="w-[32px] h-auto m-[10px]" />
+
+          <p className="ml-[-10px] mr-[30px] text-center  font-[Inter] text-[20px] font-[600] leading-normal sm:text-[24px] " >
+            Birble.store
+          </p>
+        </div>
+      </NavLink>
+
+      <div className="small-screen-buttons flex justify-center items-center gap-[15px] sm:hidden">
+        <button
+          className="w-[45px] h-[45px] rounded-full bg-small-screen-buttons__search-button border-[2px] border-solid border-small-screen-buttons__search-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out " 
+          title="search-button"
+        >
+          <SearchIcon
+            className="text-[#706f6f] cursor-pointer"
+            onClick={props.showSearchBar}
+          />
+        </button>
+
+
+        <button 
+          className='w-[45px] h-[45px] rounded-full bg-small-screen-buttons__wallet-button border-[2px] border-solid border-small-screen-buttons__wallet-button p-[4px] cursor-pointer transition-all duration-500 ease-in-out flex justify-center items-center'
+           onClick={toggleAdditionalButtons}
+          title='show-wallet'
+
+        >
+          <img
+            crossOrigin="anonymous"
+            id=""
+            src="https://static.jpgstoreapis.com/icons/wallet-outline-dark.svg"
+            alt="wallet icon"
+            loading="lazy"
+          />
+        </button>
+
+        <button
+          className="small-screen-buttons__side-panel-button w-[45px] h-[45px] rounded-full bg-small-screen-buttons__search-button border-[2px] border-solid border-small-screen-buttons__search-button p-[4px] flex justify-center items-center flex-col"
+          title="show-sidebar"
+          onClick={props.showLinkSidePanel}
+        >
+          <div className="w-[20px] bg-[whitesmoke] rounded-[10px] h-[3px] my-[2px] mx-0 cursor-pointer transition-all duration-500 ease-in-out"></div>
+          <div className="w-[20px] bg-[whitesmoke] rounded-[10px] h-[3px] my-[2px] mx-0 cursor-pointer transition-all duration-500 ease-in-out"></div>
+          <div className="w-[20px] bg-[whitesmoke] rounded-[10px] h-[3px] my-[2px] mx-0 cursor-pointer transition-all duration-500 ease-in-out"></div>
+        </button>
+      </div>
 
             <p className="ml-[-10px] mr-[30px] text-center  font-[Inter] text-[20px] font-[600] leading-normal sm:text-[24px] ">
               Birble.store
