@@ -1,5 +1,5 @@
 // IMPORTING NECESSARY MODULES
-import  { useState } from 'react';
+import  { useState, useContext } from 'react';
 import {Outlet} from 'react-router-dom'
 
 // IMPORTING NECESSARY COMPONENTS
@@ -9,6 +9,13 @@ import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
 import LinkSidePanel from '../components/linkSidePanel/LinkSidePanel'
 import SearchBar from "../components/searchBar/SearchBar"
 import ConnectWallet  from './cardano';
+
+import NightlightIcon from '@mui/icons-material/Nightlight';
+import LightModeIcon from "@mui/icons-material/LightMode";
+
+// IMPORTING NECESSARY CONTEXTS
+import { ThemeContext } from "../contexts/ThemeProvider";
+
 // // IMPORTING NECESSARY HOOKS
  import WalletSidePanelContextHook from "../hooks/WalletSidePanelContextHook";
 
@@ -26,6 +33,9 @@ export default function RootLayout(){
 
     // OBTAINING VARIOUS CONTEXTS FROM HOOKS
     const {showWalletPanel, dispatch} = WalletSidePanelContextHook()
+
+    // OBTAINING CONTEXTS OF THEMES
+    const [mode, toggleTheme] = useContext(ThemeContext);
 
     // A FUNCTION TO UPDATE FORMDATA
     function updateFormData(e){
@@ -49,6 +59,15 @@ export default function RootLayout(){
             {
                 showLinkSidePanel && <LinkSidePanel 
                     hideLinkSidePanel = {() => setShowLinkSidePanel(false)}
+                    toggleTheme = {() => toggleTheme()}
+                    
+                    themeIcon = {
+                        mode === "dark" 
+                            ? 
+                        <LightModeIcon className="text-[#FFDB24] cursor-pointer" /> 
+                            : 
+                        <NightlightIcon className="text-[#9ca3af] cursor-pointer" />
+                    }
                 />
             }           
 
