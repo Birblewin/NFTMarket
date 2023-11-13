@@ -2,17 +2,13 @@
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 import {RedirectToSignIn, SignedIn, SignedOut} from "@clerk/clerk-react"
 //import React from 'react'
-import { useContext, useMemo, createContext } from "react";
+import { useContext, useMemo } from "react";
 import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react";
 import { MeshProvider } from "@meshsdk/react";
 import { WagmiConfig } from "wagmi";
 import { arbitrum, mainnet } from "wagmi/chains";
 import { createTheme, ThemeProvider, CssBaseline} from "@mui/material";
-
-//
-
 // IMPORTING THE NECESSARY PAGES AND LAYOUTS
-
 import AllCollections from './pages/AllCollections/AllCollections';
 import AllNftsPage from './pages/AllNft/AllNft';
 import RewardsPage from './pages/RewardsPage'
@@ -116,7 +112,7 @@ const appRouter = createBrowserRouter(
 
 // CREATING AN APP FUNCTION
 export default function App() {
-  const {mode} = useContext(createContext(ThemeContext))
+  const [mode] = useContext(ThemeContext)
   
   const getDesignTokens = (mode) => ({
     palette: {
@@ -146,7 +142,7 @@ export default function App() {
       },
     },
   });
-  
+
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
   
   return (

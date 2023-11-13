@@ -3,9 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { ThemeUIProvider } from "theme-ui";
 import { ClerkProvider } from "@clerk/clerk-react";
-import theme from "./theme/theme.jsx";
 // IMPORTING NECESSARY CONTEXTS
 import WalletSidePanelContextProvider from "./contexts/WalletSidePanelContext.jsx";
 import UserContextProvider from "./contexts/UserContext.jsx";
@@ -27,15 +25,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       publishableKey={clerkPublishableKey}
       supportEmail="ronniedenzel0@gmail.com"
     >
-      <ThemeUIProvider theme={theme}>
-        <ThemeContextProvider>
-          <UserContextProvider>
-            <WalletSidePanelContextProvider>
-              <App />
-            </WalletSidePanelContextProvider>
-          </UserContextProvider>
-        </ThemeContextProvider>
-      </ThemeUIProvider>
+      <ThemeContextProvider>
+        <UserContextProvider>
+          <WalletSidePanelContextProvider>
+            <App />
+          </WalletSidePanelContextProvider>
+        </UserContextProvider>
+      </ThemeContextProvider>
     </ClerkProvider>
   </React.StrictMode>
 );
