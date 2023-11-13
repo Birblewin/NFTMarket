@@ -1,5 +1,6 @@
 // IMPORTING REACT ROUTER
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
+import {RedirectToSignIn, SignedIn, SignedOut} from "@clerk/clerk-react"
 //import React from 'react'
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi/react'
 import { MeshProvider } from "@meshsdk/react";
@@ -86,8 +87,23 @@ const appRouter = createBrowserRouter(
         <Route path='launch details' element={<LaunchpadPage/>}></Route>
         
         <Route path='apply for launchpad' element={<ApplyForLaunchpadLayout/>}>
-          <Route path='apply' element={<ApplyForLaunchpadPage/>}></Route>
           <Route path='auth' element={<AuthenticationPage/>}></Route>
+          
+          <Route 
+            path='apply' 
+            
+            element={
+              <div>
+                <SignedIn>
+                  <ApplyForLaunchpadPage/>
+                </SignedIn>
+
+                <SignedOut>
+                  <RedirectToSignIn redirectUrl={"/launchpad/apply for launchpad/apply"}/>
+                </SignedOut>
+              </div>
+            }
+          ></Route>
         </Route>
       </Route>
     </Route>
