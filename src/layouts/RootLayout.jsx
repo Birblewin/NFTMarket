@@ -8,7 +8,6 @@ import Footer from '../components/Footer/Footer'
 import WalletSidePanel from '../components/walletSidePanel/WalletSidePanel'
 import LinkSidePanel from '../components/linkSidePanel/LinkSidePanel'
 import SearchBar from "../components/searchBar/SearchBar"
-import ConnectWallet  from './cardano';
 
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import LightModeIcon from "@mui/icons-material/LightMode";
@@ -95,11 +94,10 @@ export default function RootLayout(){
                 toggleCardanoModal={toggleCardanoModal}
              />
 
-          {/* <IntlProvider locale={currentLanguage} messages={locales[currentLanguage]}> */}
-          {isCardanoModalOpen && <ConnectWallet closeModal={toggleCardanoModal} />}
-              <Outlet/>
-                {/* </IntlProvider> */}
-             <Footer/>
+            {/* <IntlProvider locale={currentLanguage} messages={locales[currentLanguage]}> */}
+            <Outlet/>
+            {/* </IntlProvider> */}
+            <Footer/>
          </main>
      )
 }
