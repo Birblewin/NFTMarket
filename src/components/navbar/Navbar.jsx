@@ -91,11 +91,7 @@ export default function Navbar(props) {
         </button>
       </div>
 
-            <p className="ml-[-10px] mr-[30px] text-center  font-[Inter] text-[20px] font-[600] leading-normal sm:text-[24px] ">
-              Birble.store
-            </p>
-          </div>
-        </NavLink>
+          
 
         <div className="small-screen-buttons flex justify-center items-center gap-[15px] sm:hidden">
           <button
