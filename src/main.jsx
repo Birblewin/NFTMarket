@@ -9,6 +9,7 @@ import theme from "./theme/theme.jsx";
 // IMPORTING NECESSARY CONTEXTS
 import WalletSidePanelContextProvider from "./contexts/WalletSidePanelContext.jsx";
 import UserContextProvider from "./contexts/UserContext.jsx";
+import ThemeContextProvider from "./contexts/ThemeProvider.jsx";
 
 // IMPORTING A CSS FILE
 import "./css/index.css";
@@ -27,11 +28,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       supportEmail="ronniedenzel0@gmail.com"
     >
       <ThemeUIProvider theme={theme}>
+        <ThemeContextProvider>
           <UserContextProvider>
             <WalletSidePanelContextProvider>
               <App />
             </WalletSidePanelContextProvider>
           </UserContextProvider>
+        </ThemeContextProvider>
       </ThemeUIProvider>
     </ClerkProvider>
   </React.StrictMode>

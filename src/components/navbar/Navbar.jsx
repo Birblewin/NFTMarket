@@ -12,7 +12,6 @@ import NightlightIcon from '@mui/icons-material/Nightlight';
 //  IMPORING NECESSARY COMPONENTS
 import SearchIcon from "@mui/icons-material/Search";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import { Icon } from "@iconify/react";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { ThemeContext } from "../../contexts/ThemeProvider";
@@ -20,7 +19,7 @@ import { ThemeContext } from "../../contexts/ThemeProvider";
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
   const { open } = useWeb3Modal();
-  const [mode, toggleTheme] = useContext(ThemeContext);
+  const {mode, toggleTheme} = useContext(ThemeContext);
 
   // Function to connect the wallet
   const connectWallet = async () => {

@@ -1,8 +1,6 @@
 import Navbar from "../components/navbar/Navbar";
 
-
-
-export default getDesignTokens = (mode) => ({
+export const getDesignTokens = (mode) => ({
     palette: {
       mode,
      
@@ -30,4 +28,5 @@ export default getDesignTokens = (mode) => ({
       },
     },
   });
+  
   <Navbar mode = {getDesignTokens()} />
