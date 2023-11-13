@@ -83,7 +83,7 @@ export default function LaunchesPage(){
         for(let i = 0; i < carouselCollections.length; i ++){
             dotSelectorsArray.push(
                 <p 
-                    className="font-bold text-6xl cursor-pointer text-white transition-all duration-500"
+                    className="font-bold text-6xl cursor-pointer   transition-all duration-500"
                     onClick={() => setCurrentCard(i)}
                     key={i}
                     

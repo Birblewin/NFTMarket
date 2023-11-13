@@ -10,7 +10,7 @@ const TableContainer = () => {
     return (
       <tr className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700" key={index}>
 
-        <td className="text-white">{nft.id}</td>
+        <td className="">{nft.id}</td>
         <td className="text-left">
           <div className="flex flex-row flex-nowrap items-center px-4 py-2">
             <div className="mr-3">
@@ -23,11 +23,11 @@ const TableContainer = () => {
               />
             </div>
             <div>
-              <div className=" text-white">
+              <div className="">
                 {nft.Collections}
                 </div>
                 <div className=" md:hidden lg:hidden xl:hidden sm:hidden 2xl:hidden flex flex-row flex-nowrap gray-color">
-                  FLOOR: {" "}<div className="ml-2 font-bold text-white">{nft.Floors[0]}</div>
+                  FLOOR: {" "}<div className="ml-2 font-bold ">{nft.Floors[0]}</div>
                   <div className="gain flex flex-row flex-nowrap justify-self-center items-center ">
                     <Icon
                     className="small-hidden"
@@ -46,7 +46,7 @@ const TableContainer = () => {
         </td>
         <td>
           <div className="flex flex-col flex-nowrap items-center px-4 py-2">
-            <div className="font-bold text-white">{nft.Volume[0]}</div>
+            <div className="font-bold">{nft.Volume[0]}</div>
             <div className="loss flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
               <Icon
                 icon="ph:arrow-up-left-light"
@@ -61,7 +61,7 @@ const TableContainer = () => {
         </td>
         <td className="small-hidden">
           <div className="flex flex-col flex-nowrap px-4 py-2">
-            <div className="font-bold text-white">{nft.Floors[0]}</div>
+            <div className="font-bold ">{nft.Floors[0]}</div>
             <div className="gain flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
               <Icon
                 icon="ph:arrow-up-left-light"
@@ -76,7 +76,7 @@ const TableContainer = () => {
         </td>
         <td className="small-hidden">
           <div className="flex flex-col flex-nowrap px-4 py-2">
-            <div className="font-bold text-white">{nft.Owners[0]}</div>
+            <div className="font-bold ">{nft.Owners[0]}</div>
             <div className="loss flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
               <Icon
                 icon="ph:arrow-up-left-light"
@@ -96,7 +96,7 @@ const TableContainer = () => {
     return (
       <tr  className="whitespace-nowrap min-w-full text-sm border-b divide-slate-700" key={index}>
 
-        <td className="text-white">{nft.id}</td>
+        <td className="">{nft.id}</td>
         <td className="text-left">
           <div className="flex flex-row flex-nowrap items-center px-4 py-2">
             <div className="mr-3">
@@ -109,11 +109,11 @@ const TableContainer = () => {
               />
             </div>
             <div>
-              <div className=" text-white">
+              <div className=" ">
                 {nft.Collections}
                 </div>
                 <div className=" md:hidden lg:hidden xl:hidden sm:hidden 2xl:hidden flex flex-row flex-nowrap gray-color">
-                  FLOOR: {" "}<div className="ml-2 font-bold text-white">{nft.Floors[0]}</div>
+                  FLOOR: {" "}<div className="ml-2 font-bold ">{nft.Floors[0]}</div>
                   <div className="gain flex flex-row flex-nowrap justify-self-center items-center ">
                     <Icon
                     className="small-hidden"
@@ -132,7 +132,7 @@ const TableContainer = () => {
         </td>
         <td>
           <div className="flex flex-col flex-nowrap items-center px-4 py-2">
-            <div className="font-bold text-white">{nft.Volume[0]}</div>
+            <div className="font-bold ">{nft.Volume[0]}</div>
             <div className="loss flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
               <Icon
                 icon="ph:arrow-up-left-light"
@@ -147,7 +147,7 @@ const TableContainer = () => {
         </td>
         <td className="small-hidden">
           <div className="flex flex-col flex-nowrap px-4 py-2">
-            <div className="font-bold text-white">{nft.Floors[0]}</div>
+            <div className="font-bold ">{nft.Floors[0]}</div>
             <div className="gain flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
               <Icon
                 icon="ph:arrow-up-left-light"
@@ -162,7 +162,7 @@ const TableContainer = () => {
         </td>
         <td className="small-hidden">
           <div className="flex flex-col flex-nowrap px-4 py-2">
-            <div className="font-bold text-white">{nft.Owners[0]}</div>
+            <div className="font-bold ">{nft.Owners[0]}</div>
             <div className="loss flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
               <Icon
                 icon="ph:arrow-up-left-light"

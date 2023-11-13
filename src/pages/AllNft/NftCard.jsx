@@ -10,15 +10,15 @@ function NftCard() {
         <p className="text-blue-500  text-base">{collection.cardTitle}</p>
         <VerifiedIcon className="verified-icon text-blue-500 p-1 text-xs" />
       </div>
-      <span className="name text-white p-2 text-lg">{collection.name}</span>
+      <span className="name  p-2 text-lg">{collection.name}</span>
       <div className="details flex justify-between items-center">
-        <span className="price  text-white text-xl p-1 m-2 font-bold">{collection.price}</span>
+        <span className="price   text-xl p-1 m-2 font-bold">{collection.price}</span>
         <span className="banner  text-yellow-600 m-2 px-2 py-0.5 rounded font-bold">
           <span>For Sale</span>
         </span>
       </div>
       <hr className="line border-t border-gray-500" />
-      <div className="action text-white flex">
+      <div className="action  flex">
         <span className="text-lg "><FavoriteBorderOutlinedIcon /></span>
         <span className="text-lg mx-1">0</span>
       </div>

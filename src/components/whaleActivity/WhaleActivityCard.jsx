@@ -28,7 +28,7 @@ const Cards = () => {
           <p className="text-text-green text-xs">Purchase</p>
         </span>
         <p>{Details[index].cardTitle}</p>
-        <p className="text-md font-bold text-white">{Details[index].price}</p>
+        <p className="text-md font-bold ">{Details[index].price}</p>
         <p>{Details[index].released}</p>
       </div>
     </div>

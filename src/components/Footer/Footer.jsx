@@ -19,7 +19,7 @@ export default function Footer(){
                         height={100}
                     />
 
-                    <figcaption className='text-white font-inter text-2xl font-semibold'>Birble.store</figcaption>
+                    <figcaption className=' font-inter text-2xl font-semibold'>Birble.store</figcaption>
                 </figure>
 
                 <p className="footer__description--description text-gray-400 font-inter text-base font-normal leading-normal whitespace-normal max-w-prose">Birble is the largest Cardano NFT marketplace. We believe in people, planet, & purpose before profit. We believe in endlessly supporting creators. We believe in YOU. Join us in our mission to create a brighter future for all.</p>
@@ -46,24 +46,24 @@ export default function Footer(){
             <div className='footer__list  flex flex-col justify-center items-start gap-3 mt-[-100px] pr-5'>
                 <h3 className="footer__list--title text-gray-600 font-inter text-xl  font-semibold leading-normal">Browse</h3>
 
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/explore/allNFTs'>Marketplace</NavLink>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/explore/allCollections'>Collections</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" to='/explore/allNFTs'>Marketplace</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" to='/explore/allCollections'>Collections</NavLink>
 
             </div>
 
             <div className='footer__list  flex flex-col justify-center items-start gap-3 mt-[-100px] pr-5 '>
                 <h3 className="footer__list--title text-gray-600 font-inter text-xl  font-semibold leading-normal">Creators</h3>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/creators/verification'>Verification</NavLink>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/creators/mining'>NFT Mining</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" to='/creators/verification'>Verification</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" to='/creators/mining'>NFT Mining</NavLink>
             </div>
 
             <div className='footer__list about grid mt-[-50px]'>
                 <h3 className="footer__list--title text-gray-600 font-inter text-xl  font-semibold leading-normal">About</h3>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/about/team'>Our Team</NavLink>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/about/impact'>Our Impact</NavLink>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/about/FAQ'>See FAQ</NavLink>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" to='/about/T&C'>Terms and conditions</NavLink>
-                <NavLink className="footer__list--link no-underline text-white font-inter text-base  font-medium leading-normal" href='/about/privacy-policy'>Privacy Policy</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" to='/about/team'>Our Team</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" to='/about/impact'>Our Impact</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" to='/about/FAQ'>See FAQ</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" to='/about/T&C'>Terms and conditions</NavLink>
+                <NavLink className="footer__list--link no-underline  font-inter text-base  font-medium leading-normal" href='/about/privacy-policy'>Privacy Policy</NavLink>
             </div>
         </footer>
     )

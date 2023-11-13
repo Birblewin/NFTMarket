@@ -19,7 +19,7 @@ export default function SearchBar(props){
                 />
                 
                 <div 
-                    className='search-container__search-bar--close-button cursor-pointer bg-[red] w-[30px] h-[30px] border-[2px] border-solid border-black rounded-[10px] flex justify-center items-center font-[1rem] text-white font-[Inter] mr-[10px] transition-all duration-500 ease-in-out hover:scale-[1.4] active:bg-[greenyellow]'
+                    className='search-container__search-bar--close-button cursor-pointer bg-[red] w-[30px] h-[30px] border-[2px] border-solid border-black rounded-[10px] flex justify-center items-center font-[1rem] font-[Inter] mr-[10px] transition-all duration-500 ease-in-out hover:scale-[1.4] active:bg-[greenyellow]'
                     onClick={props.hideSearchBar}
                 >X</div>
             </div>
