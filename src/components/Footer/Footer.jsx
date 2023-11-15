@@ -2,8 +2,6 @@
 import { NavLink } from 'react-router-dom'
 import { Icon } from '@iconify/react';
 
-
-
 export default function Footer(){
     return(
         <footer className='footer w-full h-72 flex justify-between items-center p-10  border-t-2 border-b-2 border-white  '>

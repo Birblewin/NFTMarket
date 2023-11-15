@@ -31,7 +31,7 @@ export default function RootLayout(){
     })
 
     // OBTAINING VARIOUS CONTEXTS FROM HOOKS
-    const {showWalletPanel, dispatch} = WalletSidePanelContextHook()
+    const { showWalletPanel, dispatch } = WalletSidePanelContextHook()
 
     // OBTAINING CONTEXTS OF THEMES
     const [mode, toggleTheme] = useContext(ThemeContext);
@@ -45,13 +45,6 @@ export default function RootLayout(){
             [name]: value
         }))
     }
-
-    const [isCardanoModalOpen, setIsCardanoModalOpen] = useState(false); // State to manage the Cardano modal
-
-    // Function to open or close the Cardano modal
-    const toggleCardanoModal = () => {
-      setIsCardanoModalOpen(!isCardanoModalOpen);
-    };
  
     return(
         <main className="min-h-[100vh] scroll-smooth relative w-[100%] overflow-x-hidden">
@@ -90,8 +83,6 @@ export default function RootLayout(){
                 showSearchBar = {() => setShowSearchBar(true)}
                 // toggleLanguage={toggleLanguage}
                 // currentLanguage={currentLanguage}
-               
-                toggleCardanoModal={toggleCardanoModal}
              />
 
             {/* <IntlProvider locale={currentLanguage} messages={locales[currentLanguage]}> */}

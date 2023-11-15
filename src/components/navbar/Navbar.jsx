@@ -3,8 +3,6 @@
 // IMPORING NECESSARY MODULES
 
 import { NavLink } from "react-router-dom";
-
-import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useState, useContext } from "react";
 import NightlightIcon from '@mui/icons-material/Nightlight';
 // import { useWallet } from '@meshsdk/react';
@@ -18,18 +16,7 @@ import { ThemeContext } from "../../contexts/ThemeProvider";
 
 // EXPORTING A FUNCTION THAT CREATES A NAVBAR COMPONENT
 export default function Navbar(props) {
-  const { open } = useWeb3Modal();
   const [mode, toggleTheme] = useContext(ThemeContext);
-
-  // Function to connect the wallet
-  const connectWallet = async () => {
-    try {
-      // Open the wallet modal using the open function from useWeb3Modal
-      await open();
-    } catch (error) {
-      console.error("Error connecting to wallet:", error);
-    }
-  };
 
   const [showAdditionalButtons, setShowAdditionalButtons] = useState(false);
   
@@ -279,7 +266,6 @@ export default function Navbar(props) {
       {showAdditionalButtons && (
         <div className="additional-buttons absolute top-14 right-0 mt-[10px] mr-5 flex flex-col space-y-2 ">
           <button
-            onClick={connectWallet}
             className="additional-button text-[#ffffff] text-[14px] bg-[#1864F8] py-[8px] px-[4px] border-none rounded-[8px]"
           >
             Etherium wallet
