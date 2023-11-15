@@ -1,5 +1,5 @@
 /* IMPORTING FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
 
 /* IMPORTING TAILWIND */
 @tailwind base;
@@ -14,123 +14,112 @@
 .nav-links span a,
 .rewards,
 .dropdown-content a,
-
 .link-side-panel-container__side-panel--rewards-button,
 .link-side-panel-container__side-panel--link-section figure a,
 .link-side-panel-container__side-panel--launchpad-section div a,
 .side_panel--title--description p a,
 .side_panel_container__side_panel--wallets_grid a,
-
 .description--buttons--link,
-
 .live_collection_container,
-.past_collection_container{
-    text-decoration: none
+.past_collection_container {
+  text-decoration: none;
 }
 
 /* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
-
 
 /* Modal animation by mkrs */
 .animate-modal {
-    animation-name: animateModal;
-    animation-duration: 0.1s;
-   
-  }
+  animation-name: animateModal;
+  animation-duration: 0.1s;
+}
 @keyframes animateModal {
-    from {
-      right: -300px;
-    }
-    to {
-      right: 0;
-    }
-  }
-  .banner{
-    background-color: #382e00;
-  }
- .animateModal1{
-  animation-name: animateModal1;
-  animation-duration: 0.5s;
- }
- @keyframes animateModal1 {
   from {
-   right: -300px;
-    
+    right: -300px;
   }
   to {
     right: 0;
- 
   }
 }
-  @media screen and (max-width: 640px){
-    .cards{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-    }
-    
+.banner {
+  background-color: #382e00;
+}
+.animateModal1 {
+  animation-name: animateModal1;
+  animation-duration: 0.5s;
+}
+@keyframes animateModal1 {
+  from {
+    right: -300px;
   }
-
-  @media screen and (max-width: 377px){
-    .banner span{
-      font-size: 14px ;
-
+  to {
+    right: 0;
   }
-  .banner{
-    padding: 2px 3px ;
+}
+@media screen and (max-width: 640px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .banner span {
+    font-size: 14px;
+  }
+  .banner {
+    padding: 2px 3px;
     margin: 0;
     margin-right: 3%;
-}
-  .price{
+  }
+  .price {
     font-size: 18px;
     margin-left: 1%;
   }
-  .name{
+  .name {
     font-size: 14px;
   }
   .custom-placeholder::placeholder {
     font-size: 12px;
-    
   }
-  .ml-48{
+  .ml-48 {
     margin-left: 150px;
   }
-  .px-4{
+  .px-4 {
     padding: 0;
-    
   }
-  .ml-8{
+  .ml-8 {
     margin-left: 3px;
-
   }
-  .vertical-line{
+  .vertical-line {
     height: 2.5rem;
   }
-  .collections-title{
+  .collections-title {
     font-size: 20px;
   }
-  .cards{
+  .cards {
     padding-right: 0px;
     padding-left: 0px;
   }
-  }
-
-  @media screen and (max-width: 768px){
-    .footer{
-      display: grid;
-      height: 100%;
-    }
-    .footer__list{
-        margin-top: 10%;
-    }
-    .footer__list.about{
-        margin-top: 10%;
-        margin-bottom: 20px;
-    }
-
-   
 }
-  
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: grid;
+    height: 100%;
+  }
+  .footer__list {
+    margin-top: 10%;
+  }
+  .footer__list.about {
+    margin-top: 10%;
+    margin-bottom: 20px;
+  }
+}
+
+.spitfire {
+  display: flex;
+}
